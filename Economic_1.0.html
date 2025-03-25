@@ -541,29 +541,30 @@
     let startX = 0, startY = 0;
     let origX = 0, origY = 0;
     document.querySelectorAll('.node').forEach(div => {
-      div.addEventListener('mousedown', (e) => {
+      div.addEventListener('pointerdown', (e) => {
         selectedNode = div;
         startX = e.clientX;
         startY = e.clientY;
         const i = +div.dataset.index;
         origX = nodes[i].x;
         origY = nodes[i].y;
+        div.setPointerCapture(e.pointerId);
         e.preventDefault();
       });
     });
-    document.addEventListener('mousemove', (e) => {
+    document.addEventListener('pointermove', (e) => {
       if (!selectedNode) return;
       const i = +selectedNode.dataset.index;
-      const dx = e.clientX - startX;
-      const dy = e.clientY - startY;
+      const dx = e.clientX - startX, dy = e.clientY - startY;
       nodes[i].x = origX + dx;
       nodes[i].y = origY + dy;
       selectedNode.style.left = nodes[i].x + 'px';
-      selectedNode.style.top  = nodes[i].y + 'px';
+      selectedNode.style.top = nodes[i].y + 'px';
       scheduleUpdate();
     });
-    document.addEventListener('mouseup', () => {
+    document.addEventListener('pointerup', (e) => {
       if (selectedNode) {
+        selectedNode.releasePointerCapture(e.pointerId);
         selectedNode = null;
       }
     });
