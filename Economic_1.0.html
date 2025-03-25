@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Day Trading Strategies - 动态思维导图</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Include MathJax (如需渲染公式，可保留此脚本) -->
+  <script type="text/javascript"
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <style>
+    /* 页面基本样式 */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f0f4f8;
+    }
+    /* 外部容器 */
+    #container {
+      width: 1200px;
+      height: 800px;
+      border: 1px solid #ccc;
+      position: relative;
+      overflow: auto;
+      background-color: #ffffff;
+    }
+    /* 地图主体 */
+    #map {
+      position: relative;
+    }
+    /* 节点样式 */
+    .node {
+      position: absolute;
+      cursor: grab;
+      border-radius: 8px;
+      padding: 8px 12px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      user-select: none;
+      transition: background-color 0.2s;
+    }
+    .node:active {
+      cursor: grabbing;
+      background-color: #e0e0e0;
+    }
+    /* 富文本编辑区域：控制宽度与换行 */
+    .rich-text {
+      margin-top: 8px;
+      min-width: 100px;
+      min-height: 50px;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      padding: 4px;
+      background-color: #fdfdfd;
+      font-size: 0.9rem;
+      outline: none;
+      white-space: pre-wrap;
+      word-break: break-word;
+      touch-action: manipulation;
+    }
+    .rich-text:focus {
+      border-color: #4f46e5;
+    }
+    /* 编辑按钮样式 */
+    .edit-btn {
+      margin-top: 4px;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #4f46e5;
+      color: white;
+      cursor: pointer;
+    }
+    .edit-btn:hover {
+      background-color: #4338ca;
+    }
+    /* 重要节点额外信息 */
+    .extra-info {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: #333;
+    }
+    .extra-info img {
+      display: block;
+      margin-top: 4px;
+      width: 100px;
+      height: auto;
+    }
+    /* 展开/折叠按钮 */
+    .toggle-btn {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background-color: #4f46e5;
+      color: white;
+      border-radius: 50%;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+    /* 连接线的 SVG */
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    /* 功能按钮 */
+    #controls {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    #controls button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4f46e5;
+      color: white;
+      cursor: pointer;
+    }
+    #controls button:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="map">
+      <!-- 节点与 SVG 连线将动态插入 -->
+    </div>
+  </div>
+  <!-- 三种布局模式 + 缩放 -->
+  <div id="controls">
+    <button id="zoomIn">放大</button>
+    <button id="zoomOut">缩小</button>
+    <button id="btnVertical">垂直布局</button>
+    <button id="btnHorizontal">水平布局</button>
+    <button id="btnStar">星型布局</button>
+  </div>
+  <script>
+    /************************************************************
+     * 1. 初始化数据：节点与连接关系
+     ************************************************************/
+    const colorPalette = [
+      "#FFB6C1", "#ADD8E6", "#90EE90", "#FFFFE0", "#FFDEAD",
+      "#E6E6FA", "#F5DEB3", "#F0E68C", "#FFA07A", "#DDA0DD"
+    ];
+    const nodes = [
+      { text: "Economics", important: true, classic: "经典理论：市场均衡", person: "亚当·斯密", image: "https://via.placeholder.com/100?text=Adam+Smith" },
+      { text: "Microeconomics" },
+      { text: "Macroeconomics" },
+      { text: "Demand & Supply" },
+      { text: "Market Structures" },
+      { text: "Production Theory" },
+      { text: "Cost Theory" },
+      { text: "Utility Theory" },
+      { text: "GDP" },
+      { text: "Inflation" },
+      { text: "Unemployment" },
+      { text: "Fiscal Policy" },
+      { text: "Monetary Policy" },
+      { text: "International Trade" },
+      { text: "Exchange Rates" },
+      { text: "Supply-Demand Curve" },
+      { text: "Perfect Competition" },
+      { text: "Cost-Benefit Analysis" },
+      { text: "Law of Diminishing Returns" },
+      { text: "Keynesian Theory", important: true, classic: "经典理论：凯恩斯理论", person: "凯恩斯", image: "https://via.placeholder.com/100?text=Keynes" },
+      { text: "Phillips Curve" },
+      { text: "IS-LM Model", important: true, classic: "经典理论：IS-LM 模型", person: "凯恩斯", image: "https://via.placeholder.com/100?text=IS-LM" },
+      { text: "Quantity Theory of Money" },
+      { text: "Comparative Advantage" },
+      { text: "Purchasing Power Parity" },
+      { text: "Behavioral Economics" },
+      { text: "Development Economics" },
+      { text: "Environmental Economics" },
+      { text: "Health Economics" },
+      { text: "International Finance" },
+      { text: "Financial Markets" },
+      { text: "Corporate Finance" },
+      { text: "Investment Analysis" },
+      { text: "Risk Management" },
+      { text: "Derivatives" },
+      { text: "Portfolio Theory" },
+      { text: "Asset Pricing" },
+      { text: "Game Theory" },
+      { text: "Public Economics" },
+      { text: "Urban Economics" },
+      { text: "Agricultural Economics" },
+      { text: "Labor Economics" },
+      { text: "Political Economy" },
+      { text: "Behavioral Finance" }
+    ];
+    const connections = [
+      [0, 1], [0, 2],
+      [1, 3], [1, 4], [1, 5], [1, 6], [1, 7],
+      [2, 8], [2, 9], [2, 10], [2, 11], [2, 12], [2, 13], [2, 14],
+      [3, 15],
+      [4, 16],
+      [5, 17],
+      [6, 18],
+      [8, 19],
+      [9, 20],
+      [10, 21],
+      [11, 22],
+      [13, 23],
+      [14, 24],
+      // 新增连接
+      [0, 25], [0, 26], [0, 27], [0, 28],
+      [2, 29], [2, 30], [2, 31], [2, 32],
+      [2, 33], [2, 34], [2, 35], [2, 36],
+      [0, 37], [0, 38], [0, 39], [0, 40],
+      [0, 41], [0, 42], [0, 43]
+    ];
+    const childrenMap = {};
+    connections.forEach(([p, c]) => {
+      if (!childrenMap[p]) childrenMap[p] = [];
+      childrenMap[p].push(c);
+    });
+    connections.forEach(([p, c]) => {
+      nodes[c].parent = p;
+    });
+    nodes[0].parent = null;
+    nodes.forEach(n => n.expanded = true);
+
+    /************************************************************
+     * 2. DOM 创建：插入节点元素和 SVG 连线
+     ************************************************************/
+    const container = document.getElementById('container');
+    const mapEl = document.getElementById('map');
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    mapEl.appendChild(svg);
+
+    // 创建节点 DOM（包含展开/折叠按钮、富文本编辑、编辑按钮）
+    nodes.forEach((node, i) => {
+      const div = document.createElement('div');
+      div.className = 'node';
+      // 若为根节点，可额外突出显示
+      if (i === 0) {
+        div.style.fontSize = '1.2rem';
+        div.style.border = '2px solid #000';
+        div.style.padding = '12px';
+      }
+      // 标题
+      const titleEl = document.createElement('div');
+      titleEl.textContent = node.text;
+      titleEl.style.fontWeight = 'bold';
+      // 展开/折叠按钮
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'toggle-btn';
+      toggleBtn.textContent = "−";
+      toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        node.expanded = !node.expanded;
+        toggleBtn.textContent = node.expanded ? "−" : "+";
+        updateVisibility();
+      });
+      // 富文本编辑区域（默认不可编辑）
+      const richTextEl = document.createElement('div');
+      richTextEl.className = 'rich-text';
+      richTextEl.contentEditable = "false";
+      richTextEl.innerHTML = node.description || "在此输入说明和评论...";
+      // 编辑按钮
+      const editBtn = document.createElement('button');
+      editBtn.className = 'edit-btn';
+      editBtn.textContent = '编辑';
+      editBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (richTextEl.contentEditable === "true") {
+          richTextEl.contentEditable = "false";
+          editBtn.textContent = "编辑";
+          richTextEl.blur();
+        } else {
+          richTextEl.contentEditable = "true";
+          editBtn.textContent = "确认";
+          richTextEl.focus();
+        }
+      });
+      // 组装节点内容
+      div.appendChild(titleEl);
+      div.appendChild(toggleBtn);
+      div.appendChild(richTextEl);
+      div.appendChild(editBtn);
+      // 若为重要节点，添加额外信息（图片等）
+      if (node.important) {
+        const extraInfo = document.createElement('div');
+        extraInfo.className = 'extra-info';
+        extraInfo.innerHTML = `<div>${node.classic}</div><div>人物：${node.person}</div>`;
+        if (node.image) {
+          const img = document.createElement('img');
+          img.src = node.image;
+          extraInfo.appendChild(img);
+        }
+        div.appendChild(extraInfo);
+      }
+      // 设置初始位置
+      div.style.left = (node.x || 0) + 'px';
+      div.style.top  = (node.y || 0) + 'px';
+      div.style.backgroundColor = colorPalette[i % colorPalette.length];
+      div.dataset.index = i;
+      mapEl.appendChild(div);
+      // 记录节点尺寸
+      const rect = div.getBoundingClientRect();
+      node.width = rect.width;
+      node.height = rect.height;
+    });
+
+    // 创建连线 DOM
+    connections.forEach(([startIdx, endIdx]) => {
+      const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      line.setAttribute('stroke', '#999');
+      line.setAttribute('stroke-width', '2');
+      line.dataset.conn = `${startIdx}-${endIdx}`;
+      svg.appendChild(line);
+    });
+
+    /************************************************************
+     * 3. 布局逻辑：垂直 / 水平 / 星型
+     ************************************************************/
+    let layoutMode = 'vertical'; // 'vertical' | 'horizontal' | 'star'
+
+    // ---------- 垂直布局 ----------
+    let baseX = 50, nextY = 50;
+    const xGap = 150, yGap = 150;
+    function layoutVertical(index, level) {
+      const node = nodes[index];
+      node.x = baseX + level * xGap;
+      const children = childrenMap[index];
+      if (children && children.length > 0) {
+        // 先布局子节点
+        children.forEach(child => layoutVertical(child, level + 1));
+        // 父节点 y = 第一个子节点 y 和最后一个子节点 y 的中间
+        const firstChild = nodes[children[0]];
+        const lastChild  = nodes[children[children.length - 1]];
+        node.y = (firstChild.y + lastChild.y) / 2;
+      } else {
+        // 叶子节点 y 逐次增加
+        node.y = nextY;
+        nextY += yGap;
+      }
+    }
+
+    // ---------- 水平布局 ----------
+    let baseY = 50, nextX = 50;
+    const xGap2 = 150, yGap2 = 150;
+    function layoutHorizontal(index, level) {
+      const node = nodes[index];
+      node.y = baseY + level * yGap2;
+      const children = childrenMap[index];
+      if (children && children.length > 0) {
+        children.forEach(child => layoutHorizontal(child, level + 1));
+        const firstChild = nodes[children[0]];
+        const lastChild  = nodes[children[children.length - 1]];
+        node.x = (firstChild.x + lastChild.x) / 2;
+      } else {
+        node.x = nextX;
+        nextX += xGap2;
+      }
+    }
+
+    // ---------- 星型布局 ----------
+    const centerX = 600, centerY = 400;
+    const radialGap = 250;
+    function countNodes(index) {
+      let count = 1;
+      if (childrenMap[index]) {
+        childrenMap[index].forEach(child => {
+          count += countNodes(child);
+        });
+      }
+      return count;
+    }
+    function layoutStar(index, level, angleStart, angleEnd) {
+      const node = nodes[index];
+      if (level === 0) {
+        // 根节点放在中心
+        node.x = centerX;
+        node.y = centerY;
+      } else {
+        const radius = level * radialGap;
+        const angle = (angleStart + angleEnd) / 2;
+        node.x = centerX + radius * Math.cos(angle);
+        node.y = centerY + radius * Math.sin(angle);
+      }
+      if (childrenMap[index]) {
+        let total = 0;
+        childrenMap[index].forEach(child => {
+          total += countNodes(child);
+        });
+        let currentAngle = angleStart;
+        childrenMap[index].forEach(child => {
+          const childCount = countNodes(child);
+          const angleSpan = (angleEnd - angleStart) * (childCount / total);
+          layoutStar(child, level + 1, currentAngle, currentAngle + angleSpan);
+          currentAngle += angleSpan;
+        });
+      }
+    }
+
+    // 统一布局函数
+    function layoutNodes() {
+      if (layoutMode === 'vertical') {
+        nextY = 50;
+        layoutVertical(0, 0);
+      } else if (layoutMode === 'horizontal') {
+        nextX = 50;
+        layoutHorizontal(0, 0);
+      } else if (layoutMode === 'star') {
+        layoutStar(0, 0, 0, Math.PI * 2);
+      }
+      scheduleUpdate();
+    }
+
+    /************************************************************
+     * 4. 动态边界计算 & 坐标校正
+     ************************************************************/
+    function updateBoundingBox() {
+      let minX = Infinity, minY = Infinity;
+      let maxX = -Infinity, maxY = -Infinity;
+      nodes.forEach(n => {
+        const left   = n.x;
+        const right  = n.x + (n.width  || 0);
+        const top    = n.y;
+        const bottom = n.y + (n.height || 0);
+        if (left < minX)  minX = left;
+        if (top < minY)   minY = top;
+        if (right > maxX) maxX = right;
+        if (bottom > maxY) maxY = bottom;
+      });
+      let shiftX = 0, shiftY = 0;
+      if (minX < 0) shiftX = -minX;
+      if (minY < 0) shiftY = -minY;
+      if (shiftX !== 0 || shiftY !== 0) {
+        nodes.forEach(n => {
+          n.x += shiftX;
+          n.y += shiftY;
+        });
+        minX = 0; minY = 0;
+        maxX += shiftX; maxY += shiftY;
+      }
+      const width  = maxX - minX;
+      const height = maxY - minY;
+      const marginX = width * 0.2;
+      const marginY = height * 0.2;
+      minX -= marginX;
+      minY -= marginY;
+      maxX += marginX;
+      maxY += marginY;
+      if (minX < 0) minX = 0;
+      if (minY < 0) minY = 0;
+      const mapWidth  = Math.max(800, maxX - minX);
+      const mapHeight = Math.max(600, maxY - minY);
+      mapEl.style.width  = mapWidth + 'px';
+      mapEl.style.height = mapHeight + 'px';
+      document.querySelectorAll('.node').forEach(div => {
+        const i = +div.dataset.index;
+        div.style.left = nodes[i].x + 'px';
+        div.style.top  = nodes[i].y + 'px';
+      });
+      svg.setAttribute('viewBox', `${minX} ${minY} ${mapWidth} ${mapHeight}`);
+      svg.style.width  = mapWidth + 'px';
+      svg.style.height = mapHeight + 'px';
+    }
+
+    /************************************************************
+     * 5. 连线更新
+     ************************************************************/
+    function updateConnections() {
+      connections.forEach(([s, e]) => {
+        const line = svg.querySelector(`line[data-conn="${s}-${e}"]`);
+        const start = nodes[s], end = nodes[e];
+        // 若某节点不可见则隐藏连线
+        if (!start.visible || !end.visible) {
+          line.style.display = 'none';
+        } else {
+          line.style.display = 'block';
+          line.setAttribute('x1', start.x + start.width / 2);
+          line.setAttribute('y1', start.y + start.height / 2);
+          line.setAttribute('x2', end.x + end.width / 2);
+          line.setAttribute('y2', end.y + end.height / 2);
+        }
+      });
+    }
+
+    /************************************************************
+     * 6. 性能优化：使用 requestAnimationFrame
+     ************************************************************/
+    let scheduled = false;
+    function scheduleUpdate() {
+      if (!scheduled) {
+        scheduled = true;
+        requestAnimationFrame(() => {
+          scheduled = false;
+          updateConnections();
+          updateBoundingBox();
+          updateVisibility();
+        });
+      }
+    }
+
+    /************************************************************
+     * 7. 节点可见性更新
+     ************************************************************/
+    function computeVisibility(index, isVisible) {
+      nodes[index].visible = isVisible;
+      if (childrenMap[index]) {
+        childrenMap[index].forEach(child => {
+          computeVisibility(child, isVisible && nodes[index].expanded);
+        });
+      }
+    }
+    function updateVisibility() {
+      computeVisibility(0, true);
+      document.querySelectorAll('.node').forEach(div => {
+        const i = +div.dataset.index;
+        div.style.display = nodes[i].visible ? 'block' : 'none';
+      });
+      updateConnections();
+    }
+
+    /************************************************************
+     * 8. 拖拽功能：节点移动后动态更新
+     ************************************************************/
+    let selectedNode = null;
+    let startX = 0, startY = 0;
+    let origX = 0, origY = 0;
+    document.querySelectorAll('.node').forEach(div => {
+      div.addEventListener('mousedown', (e) => {
+        selectedNode = div;
+        startX = e.clientX;
+        startY = e.clientY;
+        const i = +div.dataset.index;
+        origX = nodes[i].x;
+        origY = nodes[i].y;
+        e.preventDefault();
+      });
+    });
+    document.addEventListener('mousemove', (e) => {
+      if (!selectedNode) return;
+      const i = +selectedNode.dataset.index;
+      const dx = e.clientX - startX;
+      const dy = e.clientY - startY;
+      nodes[i].x = origX + dx;
+      nodes[i].y = origY + dy;
+      selectedNode.style.left = nodes[i].x + 'px';
+      selectedNode.style.top  = nodes[i].y + 'px';
+      scheduleUpdate();
+    });
+    document.addEventListener('mouseup', () => {
+      if (selectedNode) {
+        selectedNode = null;
+      }
+    });
+
+    /************************************************************
+     * 9. 缩放功能：与动态尺寸兼容
+     ************************************************************/
+    let scale = 1;
+    function setScale(newScale) {
+      scale = newScale;
+      mapEl.style.transform = `scale(${scale})`;
+      mapEl.style.transformOrigin = '0 0';
+      updateConnections();
+      updateBoundingBox();
+    }
+    document.getElementById('zoomIn').addEventListener('click', () => {
+      setScale(Math.min(scale * 1.1, 3));
+    });
+    document.getElementById('zoomOut').addEventListener('click', () => {
+      setScale(Math.max(scale * 0.9, 0.3));
+    });
+    function handleWheel(e) {
+      e.preventDefault();
+      const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
+      setScale(Math.min(Math.max(scale * zoomFactor, 0.3), 3));
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        document.addEventListener('wheel', handleWheel, { passive: false });
+      }
+    });
+    document.addEventListener('keyup', (e) => {
+      if (!e.ctrlKey && !e.metaKey) {
+        document.removeEventListener('wheel', handleWheel);
+      }
+    });
+
+    /************************************************************
+     * 10. 分别绑定三个按钮切换布局
+     ************************************************************/
+    document.getElementById('btnVertical').addEventListener('click', () => {
+      layoutMode = 'vertical';
+      // 重置辅助变量
+      nextY = 50; 
+      layoutNodes();
+    });
+    document.getElementById('btnHorizontal').addEventListener('click', () => {
+      layoutMode = 'horizontal';
+      // 重置辅助变量
+      nextX = 50; 
+      layoutNodes();
+    });
+    document.getElementById('btnStar').addEventListener('click', () => {
+      layoutMode = 'star';
+      layoutNodes();
+    });
+
+    /************************************************************
+     * 11. 初始化：默认垂直布局
+     ************************************************************/
+    layoutNodes();
+  </script>
+</body>
+</html>
