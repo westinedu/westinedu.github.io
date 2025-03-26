@@ -1,0 +1,166 @@
+/* style.css */
+
+/* 页面基本样式 */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4f8;
+}
+
+/* 高亮样式 */
+.highlighted {
+  border: 2px solid red;
+  box-shadow: 0 0 10px red;
+  transition: all 0.3s ease;
+}
+
+/* 外部容器 */
+#container {
+  width: 1200px;
+  height: 800px;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: auto;
+  background-color: #ffffff;
+}
+
+/* 地图主体 */
+#map {
+  position: relative;
+}
+
+/* 节点样式 */
+.node {
+  position: absolute;
+  cursor: grab;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  user-select: none;
+  transition: background-color 0.2s;
+}
+.node:active {
+  cursor: grabbing;
+  background-color: #e0e0e0;
+}
+
+/* 富文本编辑区域 */
+.rich-text {
+  margin-top: 8px;
+  min-width: 100px;
+  min-height: 50px;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  background-color: #fdfdfd;
+  font-size: 0.9rem;
+  outline: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+  touch-action: manipulation;
+}
+.rich-text:focus {
+  border-color: #4f46e5;
+}
+
+/* 编辑按钮样式 */
+.edit-btn {
+  margin-top: 4px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+.edit-btn:hover {
+  background-color: #4338ca;
+}
+
+/* 重要节点额外信息 */
+.extra-info {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #333;
+}
+.extra-info img {
+  display: block;
+  margin-top: 4px;
+  width: 100px;
+  height: auto;
+}
+
+/* 展开/折叠按钮 */
+.toggle-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* SVG 连接线 */
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* 功能按钮 */
+#controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#controls button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+#controls button:hover {
+  background-color: #4338ca;
+}
+
+/* 搜索面板样式 */
+#searchPanel {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 8px;
+  z-index: 999;
+}
+#searchPanel input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+#searchPanel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
