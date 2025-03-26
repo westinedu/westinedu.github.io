@@ -86,6 +86,23 @@ function initMindmap(data) {
       div.appendChild(toggleBtn);
       div.appendChild(richTextEl);
       div.appendChild(editBtn);
+
+      // 如果是视频节点且设置了 videoUrl，则创建 iframe 用于视频嵌入
+      if (node.videoUrl) {
+        const iframe = document.createElement('iframe');
+        iframe.src = node.videoUrl;
+        iframe.width = "300";
+        iframe.height = "169";  // 16:9比例
+        iframe.frameBorder = "0";
+        iframe.style.border = "none";
+        iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+        iframe.allowFullscreen = true;
+        iframe.style.display = "block";
+        iframe.style.marginTop = "8px";
+        div.appendChild(iframe);
+      }
+
+
       // 若为重要节点，添加额外信息（图片等）
       if (node.important) {
         const extraInfo = document.createElement('div');
