@@ -22,7 +22,7 @@ body {
 /* 外部容器 */
 #container {
   width: 1200px;
-  height: 800px;
+  /* height: 800px; */
   width: 90%;        /* 移动端自适应 */
   margin: 20px auto; /* 水平居中 */
   border: 1px solid #ccc;
