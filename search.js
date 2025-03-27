@@ -30,13 +30,26 @@ window.setupSearchFeature = function(nodes) {
   });
 };
 
-function focusOnNode(index) {
-  const el = document.querySelector(`.node[data-index="${index}"]`);
-  if (!el) return;
-  el.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
-  el.classList.add("highlighted");
-  setTimeout(() => {
-    el.classList.remove("highlighted");
-  }, 3000);
-}
+// function focusOnNode(index) {
+//   const el = document.querySelector(`.node[data-index="${index}"]`);
+//   if (!el) return;
+
+//   // 移除其他节点的高亮
+//   document.querySelectorAll('.node').forEach(node => {
+//     node.classList.remove("highlighted");
+//   });
+
+//   // 添加新高亮并设置更明显的样式
+//   el.classList.add("highlighted");
+//   el.style.zIndex = 9999; // 确保在最上层
+
+//   // 滚动到视图
+//   el.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+
+//   // 延长高亮持续时间
+//   setTimeout(() => {
+//     el.classList.remove("highlighted");
+//     el.style.zIndex = ''; // 恢复层级
+//   }, 5000); // 延长至5秒
+// }
 window.focusOnNode = focusOnNode;

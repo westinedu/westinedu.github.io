@@ -1,11 +1,13 @@
 /* style.css */
 
 /* 页面基本样式 */
-body {
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   /* height: 100vh; */
-  /*overflow: hidden;*/
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,27 +15,75 @@ body {
 }
 
 /* 高亮样式 */
-.highlighted {
+/* .highlighted {
   border: 2px solid red;
   box-shadow: 0 0 10px red;
   transition: all 0.3s ease;
+} */
+
+/* 添加高亮覆盖层 */
+#highlightOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 允许穿透点击 */
+  z-index: 9998; /* 低于高亮节点 */
+}
+
+/* 修改高亮样式为绝对定位 */
+.highlighted {
+  position: relative; /* 保持相对定位 */
+  border: 3px solid #FF6B6B !important;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.5) !important;
+  animation: pulse 1.5s infinite;
+  z-index: 9999 !important; /* 强制突破层叠上下文限制 */
+  /* 移除 transform 避免坐标系冲突 */
+}
+
+/* 移除原 transform 动画 */
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+/* 确保节点层级 */
+#map .node {
+  position: absolute;
+  z-index: 1; /* 基础层级 */
+}
+
+#map .node.highlighted {
+  z-index: 9999 !important; /* 强制最高层级 */
 }
 
 /* 外部容器 */
-#container {
+/* #container {
   width: 1200px;
   /* height: 800px; */
-  width: 90%;        /* 移动端自适应 */
-  margin: 20px auto; /* 水平居中 */
-  border: 1px solid #ccc;
+  /* width: 90%;        移动端自适应 */
+  /* margin: 20px auto; 水平居中 */
+  /* border: 1px solid #ccc;
   position: relative;
   overflow: auto;
   background-color: #ffffff;
+} */ 
+
+
+/* 外层容器：可视区域 */
+#container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* 不出现滚动条 */
+  background: #ffffff;
 }
 
-/* 地图主体 */
+/* 允许画布扩展至完整内容尺寸 */
 #map {
-  position: relative;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 
 /* 节点样式 */
@@ -166,3 +216,30 @@ svg {
   margin: 0;
   padding: 0;
 }
+/* 让 mapWrap 作为一个可移动的“画布容器” */
+/* #mapWrap {
+  position: absolute;
+  /* 不需要 scrollbar，可用 overflow:hidden; 或者保留 overflow: visible; */
+  /* overflow: hidden;
+  width: 100%;
+  height: 100%; */
+  /* 初始 transform */
+  /* transform: translate(0px, 0px); */
+  /* 让 transform 在 GPU 加速层执行更流畅 */
+  /* will-change: transform; */
+/* } */ 
+/* 在 style.css 中添加 */
+#mapWrap {
+  min-width: 100%;
+  min-height: 100%;
+  will-change: transform; /* 启用GPU加速 */
+  isolation: isolate; /* 创建新的层叠上下文 */
+  position: absolute;   /* 绝对定位是关键，没有这个设定水平布局的节点和连接线有很大偏移量 */
+  top: 0;
+  left: 0;
+  /* 初始 transform */
+  transform: translate(0, 0) scale(1);
+  transform-origin: 0 0;
+}
+
+
