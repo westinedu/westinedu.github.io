@@ -14,10 +14,13 @@
     <ul id="searchResults"></ul>
   </div>
   
-  <!-- 导图容器 -->
-  <div id="container">
-    <div id="map">
+    <!-- 导图容器 -->
+    <div id="container">
+      <!-- 外层包裹，放滚动条或不放滚动条都行，这里可以overflow:hidden -->
+    <div id="mapWrap">
+      <div id="map">
       <!-- 节点与 SVG 连线将动态插入 -->
+      </div>
     </div>
   </div>
   
@@ -44,9 +47,7 @@
     setupSearchFeature(window.nodes);
 
     // 延时500毫秒后自动聚焦到根节点（索引0）
-  setTimeout(() => {
-    focusOnNode(0);
-  }, 500);
+  setTimeout(() => { focusOnNode(0); }, 500);
   </script>
 </body>
 </html>
