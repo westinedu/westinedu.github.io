@@ -230,7 +230,6 @@ function initMindmap(data) {
 
   /********* 4. 动态边界计算 & 坐标校正 **********/
   function updateBoundingBox() {
-    if (isDragging) return; // 拖拽中不执行自动校正
     let minX = Infinity, minY = Infinity;
     let maxX = -Infinity, maxY = -Infinity;
     nodes.forEach(n => {
@@ -337,8 +336,10 @@ function initMindmap(data) {
   let nodeStartX = 0, nodeStartY = 0;
   let nodeOrigX = 0, nodeOrigY = 0;
 
-  // 新增全局标志
-let isDragging = false;
+  // 全局对象用于记录活动中的 pointer 事件
+  let activePointers = {};
+  let pinchInitialDistance = null;
+  let pinchInitialScale = 1;
 
   document.querySelectorAll('.node').forEach(div => {
     div.addEventListener('pointerdown', (e) => {
@@ -359,7 +360,17 @@ let isDragging = false;
       nodeOrigY = nodes[i].y;
       div.setPointerCapture(e.pointerId);
       e.preventDefault();
-      isDragging = true; // 标记拖拽开始
+
+      activePointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+      // 当当前活动指针数量为2时，初始化捏合缩放
+      if (Object.keys(activePointers).length === 2) {
+        const pointers = Object.values(activePointers);
+        pinchInitialDistance = Math.hypot(
+          pointers[0].x - pointers[1].x,
+          pointers[0].y - pointers[1].y
+        );
+        pinchInitialScale = currentScale;
+      }
     });
   });
   document.addEventListener('pointermove', (e) => {
@@ -371,15 +382,43 @@ let isDragging = false;
     selectedNode.style.left = nodes[i].x + 'px';
     selectedNode.style.top  = nodes[i].y + 'px';
     scheduleUpdate();
+//two fingers to zoom in and out
+if (activePointers[e.pointerId]) {
+  activePointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+}
+  // 如果有两个指针，则执行捏合缩放
+  if (Object.keys(activePointers).length === 2) {
+    const pointers = Object.values(activePointers);
+    const currentDistance = Math.hypot(
+      pointers[0].x - pointers[1].x,
+      pointers[0].y - pointers[1].y
+    );
+    if (pinchInitialDistance) {
+      let newScale = pinchInitialScale * (currentDistance / pinchInitialDistance);
+      // 限制缩放范围，与原有缩放功能保持一致
+      newScale = Math.min(Math.max(newScale, 0.3), 3);
+      setScale(newScale);
+    }
+  }
+
   });
   document.addEventListener('pointerup', (e) => {
     if (selectedNode) {
       selectedNode.releasePointerCapture(e.pointerId);
       selectedNode = null;
-      isDragging = false;
-      // 拖拽结束后强制校正布局
-      updateBoundingBox();
-      scheduleUpdate();
+    }
+
+    // two fingers to zoom in and out
+    delete activePointers[e.pointerId];
+    if (Object.keys(activePointers).length < 2) {
+      pinchInitialDistance = null;
+    }
+  });
+
+  document.addEventListener('pointercancel', (e) => {
+    delete activePointers[e.pointerId];
+    if (Object.keys(activePointers).length < 2) {
+      pinchInitialDistance = null;
     }
   });
 
