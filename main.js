@@ -230,6 +230,7 @@ function initMindmap(data) {
 
   /********* 4. 动态边界计算 & 坐标校正 **********/
   function updateBoundingBox() {
+    if (isDragging) return; // 拖拽中不执行自动校正
     let minX = Infinity, minY = Infinity;
     let maxX = -Infinity, maxY = -Infinity;
     nodes.forEach(n => {
@@ -335,6 +336,10 @@ function initMindmap(data) {
   let selectedNode = null;
   let nodeStartX = 0, nodeStartY = 0;
   let nodeOrigX = 0, nodeOrigY = 0;
+
+  // 新增全局标志
+let isDragging = false;
+
   document.querySelectorAll('.node').forEach(div => {
     div.addEventListener('pointerdown', (e) => {
       // 如果点击的是编辑、折叠或富文本区域，则不启动节点拖拽
@@ -354,6 +359,7 @@ function initMindmap(data) {
       nodeOrigY = nodes[i].y;
       div.setPointerCapture(e.pointerId);
       e.preventDefault();
+      isDragging = true; // 标记拖拽开始
     });
   });
   document.addEventListener('pointermove', (e) => {
@@ -370,6 +376,10 @@ function initMindmap(data) {
     if (selectedNode) {
       selectedNode.releasePointerCapture(e.pointerId);
       selectedNode = null;
+      isDragging = false;
+      // 拖拽结束后强制校正布局
+      updateBoundingBox();
+      scheduleUpdate();
     }
   });
 
