@@ -2,10 +2,10 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <title>Ray Dalio  动态思维导图</title>
+  <title>Stock Investing - 动态思维导图</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 </head>
 <body>
   <!-- 搜索面板 -->
@@ -14,8 +14,8 @@
     <ul id="searchResults"></ul>
   </div>
   
-<div id="container" style="width:100vw; height:100vh; overflow:hidden;">
-  <div id="mapWrap" style="position: absolute; width: 100%; height: 100%;">
+  <div id="container" style="width:100vw; height:100vh; overflow:visible;">
+  <div id="mapWrap" style="position: absolute; width: 100vh; height: 100vh;">
     <!-- 独立连线层：覆盖整个容器，不影响鼠标交互 -->
     <svg id="connLayer" 
          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; z-index: 1;"></svg>
@@ -35,17 +35,21 @@
     <button id="btnStar">星型布局</button>
   </div>
   
-  <!-- 加载 JS 文件 -->
-  <script src="data/Ray-Dalio-data.js"></script>
+  <!-- 按顺序加载各个 JS 文件 -->
+  <!-- 先加载当前主题数据 -->
+  <script src="data/stock-investing-data.js"></script>
+  <!-- 加载主逻辑 -->
   <script src="main.js"></script>
+  <!-- 加载搜索功能 -->
   <script src="search.js"></script>
   <script>
-    // 初始化导图，使用当前主题的固定数据
+    // 初始化导图，使用当前数据文件里的数据（固定主题）
     initMindmap(window.mindmapData);
-    // 初始化搜索功能，假设 main.js 渲染后的节点存储在全局变量 nodes 中
+    // 初始化搜索功能，假设 main.js 中渲染后的节点存储在全局变量 nodes 中
     setupSearchFeature(window.nodes);
-    // 如需自动聚焦根节点，可调用：
-    setTimeout(() => { focusOnNode(0); }, 500);
+
+    // 延时500毫秒后自动聚焦到根节点（索引0）
+  setTimeout(() => { focusOnNode(0); }, 500);
   </script>
 </body>
 </html>

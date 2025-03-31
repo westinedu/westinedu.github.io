@@ -52,4 +52,4 @@ window.setupSearchFeature = function(nodes) {
 //     el.style.zIndex = ''; // 恢复层级
 //   }, 5000); // 延长至5秒
 // }
-window.focusOnNode = focusOnNode;
+//window.focusOnNode = focusOnNode;

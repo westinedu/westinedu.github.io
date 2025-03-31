@@ -7,10 +7,10 @@ html, body {
   width: 100%;
   height: 100%;
   /* height: 100vh; */
-  overflow: hidden;
-  display: flex;
+  overflow: hidden;   /* 防止滚动条 */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   background-color: #f0f4f8;
 }
 
@@ -77,13 +77,30 @@ html, body {
   width: 100vw;
   height: 100vh;
   overflow: hidden; /* 不出现滚动条 */
-  background: #ffffff;
+  background: #ffffff;  
 }
 
 /* 允许画布扩展至完整内容尺寸 */
 #map {
   min-width: fit-content;
   min-height: fit-content;
+}
+#connLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* 允许绘制区域超出视口 */
+  pointer-events: none; /* 穿透鼠标事件 */
+  z-index: 1;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 /* 节点样式 */
@@ -96,7 +113,23 @@ html, body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   user-select: none;
   transition: background-color 0.2s;
+/* 控制节点宽度，自动换行 */
+  width: auto;
+  white-space: normal;
+  word-wrap: break-word;
 }
+
+.node {
+  display: inline-block;        /* 让宽度随内容或 max-width 变化 */
+  position: absolute;           /* 依旧绝对定位，保留你的拖拽逻辑 */
+  width: auto;                  /* 内容自适应宽度 */
+  max-width: 350px;            /* 超过 300px 时换行 */
+  box-sizing: border-box;       /* 计算宽度时包含 padding/border */
+  white-space: normal;          /* 允许自动换行 */
+  word-break: break-word;       /* 或者使用 break-all / overflow-wrap: break-word */
+}
+
+
 .node:active {
   cursor: grabbing;
   background-color: #e0e0e0;
@@ -107,7 +140,8 @@ html, body {
   margin-top: 8px;
   min-width: 100px;
   min-height: 50px;
-  max-width: 300px;
+  max-width: 350px;      /* 当内容过长时，最大宽度限制为300px，内容超过时自动换行 */
+  width: auto;
   border: 1px solid #ccc;
   padding: 4px;
   background-color: #fdfdfd;
@@ -116,6 +150,7 @@ html, body {
   white-space: pre-wrap;
   word-break: break-word;
   touch-action: manipulation;
+  display: inline-block; /* 让宽度跟随内容 */
 }
 .rich-text:focus {
   border-color: #4f46e5;
@@ -214,7 +249,14 @@ svg {
 #searchPanel ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0; 
+}
+
+#searchPanel #searchResults {
+  max-height: 600px; /* 可根据需要修改 */
+  overflow-y: auto;
+  margin-top: 8px;
+  border: 1px solid #ccc;
 }
 /* 让 mapWrap 作为一个可移动的“画布容器” */
 /* #mapWrap {
@@ -240,6 +282,12 @@ svg {
   /* 初始 transform */
   transform: translate(0, 0) scale(1);
   transform-origin: 0 0;
+  background: #ffffff;
+  overflow: visible;
+}
+.link-node {
+  text-decoration: underline;
+  color: blue;
 }
 
 

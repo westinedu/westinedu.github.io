@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ray Dalio  动态思维导图</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Learning to Meditate - MindMap</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-  <!-- 搜索面板 -->
+  <!-- 搜索面板（若需搜索功能） -->
   <div id="searchPanel">
     <input id="searchInput" type="text" placeholder="搜索节点..." />
     <ul id="searchResults"></ul>
   </div>
-  
-<div id="container" style="width:100vw; height:100vh; overflow:hidden;">
+
+  <!-- // 方法1：The container is the outermost element that wraps the entire mind map.  这个方法更稳定，在放大倍数高的时候失真少-->
+  <div id="container" style="width:100vw; height:100vh; overflow:hidden;">
   <div id="mapWrap" style="position: absolute; width: 100%; height: 100%;">
     <!-- 独立连线层：覆盖整个容器，不影响鼠标交互 -->
     <svg id="connLayer" 
@@ -24,8 +25,20 @@
       <!-- 节点会在这里动态插入 -->
     </div>
   </div>
-</div>
+  </div>
   
+<!-- // 方法2：The container is the outermost element that wraps the entire mind map. -->
+  <!-- <div id="container"> -->
+    <!-- 新增高亮容器 -->
+    <!-- <div id="highlightOverlay"></div> -->
+<!--     
+    <div id="mapWrap">
+      <div id="map"> -->
+        <!-- 节点与 SVG 连线 -->
+      <!-- </div>
+    </div>
+  </div> -->
+
   <!-- 功能按钮 -->
   <div id="controls">
     <button id="zoomIn">放大</button>
@@ -34,17 +47,17 @@
     <button id="btnHorizontal">水平布局</button>
     <button id="btnStar">星型布局</button>
   </div>
-  
-  <!-- 加载 JS 文件 -->
-  <script src="data/Ray-Dalio-data.js"></script>
+
+  <!-- 加载 data、main.js、search.js -->
+  <script src="data/learning-to-meditate-data.js"></script>
   <script src="main.js"></script>
   <script src="search.js"></script>
   <script>
-    // 初始化导图，使用当前主题的固定数据
+    // 初始化思维导图
     initMindmap(window.mindmapData);
-    // 初始化搜索功能，假设 main.js 渲染后的节点存储在全局变量 nodes 中
+    // 初始化搜索功能
     setupSearchFeature(window.nodes);
-    // 如需自动聚焦根节点，可调用：
+    // 可选：聚焦到根节点
     setTimeout(() => { focusOnNode(0); }, 500);
   </script>
 </body>
