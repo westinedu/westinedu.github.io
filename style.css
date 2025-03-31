@@ -40,13 +40,25 @@ html, body {
   animation: pulse 1.5s infinite;
   z-index: 9999 !important; /* 强制突破层叠上下文限制 */
   /* 移除 transform 避免坐标系冲突 */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 添加过渡动画 */
 }
 
 /* 移除原 transform 动画 */
+/* 增加动画效果：缩放和渐变 */
 @keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.8; }
-  100% { opacity: 1; }
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); } /* 节点放大 */
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* 这是没有动画效果的高亮样式 */
+.selectedNode {
+  position: relative;
+  border: 3px solid #FF6B6B !important;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.5) !important;
+  z-index: 9999 !important;  /* 强制突破层叠上下文限制 */
+  transition: none; /* 禁用过渡动画 */
+  animation: none; /* 禁用动画 */
 }
 
 /* 确保节点层级 */
@@ -117,6 +129,7 @@ html, body {
   width: auto;
   white-space: normal;
   word-wrap: break-word;
+  min-width: 200px;  /* Ensure the node does not shrink below this width */
 }
 
 .node {

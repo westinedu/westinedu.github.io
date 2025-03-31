@@ -1,4 +1,4 @@
-// main.js  doubao 3.29version
+// main.js  V1.5 暂时不启用编辑文本框，因为还没有实现保存功能
 // 全局变量
 window.nodes = [];
 window.connections = [];
@@ -143,7 +143,7 @@ editableCommentEl.innerHTML = "在此输入说明和评论...";
 editableCommentEl.style.marginTop = "4px";
 editableCommentEl.style.border = "1px solid #ccc";
 editableCommentEl.style.padding = "4px";
-div.appendChild(editableCommentEl);
+
 
   // 创建编辑按钮，控制评论区域的编辑状态
   const editBtn = document.createElement('button');
@@ -161,15 +161,15 @@ div.appendChild(editableCommentEl);
       editableCommentEl.focus();
     }
   });
-  div.appendChild(editBtn);
+
 
 
     // 组装节点内容
     div.appendChild(titleEl);
     div.appendChild(staticDescEl);
     div.appendChild(toggleBtn);
-    div.appendChild(editableCommentEl);
-    div.appendChild(editBtn);
+    // div.appendChild(editableCommentEl);
+    // div.appendChild(editBtn);
 
         // 若节点包含视频
         if (node.videoUrl) {
@@ -533,6 +533,7 @@ div.appendChild(editableCommentEl);
 
       /********* 12. 聚焦函数 **********/
   // 使指定节点在容器中居中显示，并考虑放缩后的偏移
+  let currentZIndex = 1000;  // 初始化 z-index，从 1000 开始，每次递增，我认为现在还没有1000个节点已经被创建
   window.focusOnNode = function(index) {
     const node = nodes[index];
     if (!node) return;
@@ -547,13 +548,36 @@ div.appendChild(editableCommentEl);
     document.querySelectorAll('.node').forEach(n => n.classList.remove("highlighted"));
     const el = document.querySelector(`.node[data-index="${index}"]`);
     el.classList.add("highlighted");
-    el.style.zIndex = 9999;
+    el.style.zIndex = currentZIndex++;  // 每次聚焦，z-index 递增
     setTimeout(() => {
       el.classList.remove("highlighted");
-      el.style.zIndex = '';
+    //   el.style.zIndex = '';
     }, 3000);
   };
 
+  // 高亮显示点击或触摸的节点
+function highlightNodeOnClick(event) {
+    // 获取被点击的元素，排除不需要高亮的元素（如链接、按钮等）
+    const node = event.target.closest('.node');
+    if (!node) return;  // 如果点击的不是节点，直接返回
+    
+    const nodeIndex = node.dataset.index;
+    const nodeObj = nodes[nodeIndex];
+
+    if (!nodeObj) return;  // 如果该节点不存在，直接返回
+    
+    // 添加高亮类，没有动画
+    node.classList.add("selectedNode");
+    node.style.zIndex = currentZIndex++;  // 每次聚焦，z-index 递增
+    setTimeout(() => {
+        node.classList.remove("selectedNode");
+      //   el.style.zIndex = '';
+      }, 1000);
+}
+
+// 鼠标点击和触摸事件监听器
+document.addEventListener('click', highlightNodeOnClick);
+document.addEventListener('touchstart', highlightNodeOnClick);
 
       // 初始化布局
       layoutNodes();
