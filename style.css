@@ -12,6 +12,8 @@ html, body {
   align-items: center;
   justify-content: center; */
   background-color: #f0f4f8;
+  transform-origin: 0 0;
+  transform: scale(1);
 }
 
 /* 高亮样式 */
