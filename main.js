@@ -1,4 +1,4 @@
-// main.js  V1.5 暂时不启用编辑文本框，因为还没有实现保存功能
+// main.js  V1.6 重新添加pinch-zoom 功能
 // 全局变量
 window.nodes = [];
 window.connections = [];
@@ -574,6 +574,51 @@ function highlightNodeOnClick(event) {
       //   el.style.zIndex = '';
       }, 1000);
 }
+
+      /********* 13. pinch to zoom **********/
+  // 使指定节点在容器中居中显示，并考虑放缩后的偏移
+// 记录双指缩放相关变量
+let initialDistance = null;
+let initialScale = currentScale;
+
+// 监听 touchstart，检测是否有两个触摸点
+document.addEventListener('touchstart', function(e) {
+  if (e.touches.length === 2) {
+    // 计算初始两指距离
+    initialDistance = getDistance(e.touches[0], e.touches[1]);
+    initialScale = currentScale;
+    e.preventDefault();
+  }
+}, { passive: false });
+
+// 监听 touchmove，计算当前两指距离与初始距离的比例，更新缩放倍数
+document.addEventListener('touchmove', function(e) {
+  if (e.touches.length === 2 && initialDistance !== null) {
+    const currentDistance = getDistance(e.touches[0], e.touches[1]);
+    let newScale = initialScale * (currentDistance / initialDistance);
+    // 限制缩放范围，例如 0.3 至 3
+    newScale = Math.min(Math.max(newScale, 0.3), 3);
+    setScale(newScale);
+    e.preventDefault();
+  }
+}, { passive: false });
+
+// 监听 touchend，当手指数不足 2 时重置初始距离
+document.addEventListener('touchend', function(e) {
+  if (e.touches.length < 2) {
+    initialDistance = null;
+  }
+});
+
+// 辅助函数：计算两个触摸点之间的欧几里得距离
+function getDistance(touch1, touch2) {
+  const dx = touch1.clientX - touch2.clientX;
+  const dy = touch1.clientY - touch2.clientY;
+  return Math.sqrt(dx * dx + dy * dy);
+}
+
+
+  
 
 // 鼠标点击和触摸事件监听器
 document.addEventListener('click', highlightNodeOnClick);

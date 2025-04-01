@@ -3,12 +3,25 @@
 window.setupSearchFeature = function(nodes) {
   const searchInput = document.getElementById('searchInput');
   const searchResults = document.getElementById('searchResults');
+  // ① 获取你在 HTML 中已添加的取消按钮
+  const cancelButton = document.getElementById('cancelButton');
 
+  // 监听输入事件
   searchInput.addEventListener('input', () => {
     const query = searchInput.value.trim().toLowerCase();
+    // 清空之前的搜索结果
     searchResults.innerHTML = '';
-    if (query === '') return;
 
+    // 如果输入为空，则隐藏取消按钮并结束
+    if (query === '') {
+      cancelButton.style.display = 'none';
+      return;
+    } else {
+      // 如果有内容，显示取消按钮
+      cancelButton.style.display = 'inline'; 
+    }
+
+    // 保持原有的搜索逻辑
     nodes.forEach((node, i) => {
       const titleMatch = node.text.toLowerCase().includes(query);
       const descMatch = node.description && node.description.toLowerCase().includes(query);
@@ -28,7 +41,19 @@ window.setupSearchFeature = function(nodes) {
       }
     });
   });
+
+  // ② 点击取消按钮：清空搜索框和搜索结果，并隐藏按钮
+  cancelButton.addEventListener('click', () => {
+    searchInput.value = '';
+    searchResults.innerHTML = '';
+    cancelButton.style.display = 'none';
+    // 重新聚焦搜索输入框，确保后续输入能触发事件
+    searchInput.focus();
+  });
 };
+
+
+
 
 // function focusOnNode(index) {
 //   const el = document.querySelector(`.node[data-index="${index}"]`);

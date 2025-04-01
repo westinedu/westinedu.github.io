@@ -225,11 +225,11 @@ svg {
 /* 功能按钮 */
 #controls {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 2px;
+  right: 2px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 1px;
 }
 #controls button {
   padding: 6px 12px;
@@ -246,8 +246,8 @@ svg {
 /* 搜索面板样式 */
 #searchPanel {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
   width: 200px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -255,9 +255,27 @@ svg {
   z-index: 999;
 }
 #searchPanel input {
-  width: 100%;
-  margin-bottom: 8px;
-  padding: 4px;
+  width: calc(100% - 20px); /* leave space for the clear button */
+  box-sizing: border-box;
+  padding: 6px 8px;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 取消按钮在搜索结果右上角 */
+#cancelButton {
+  position: relative;
+  left: 4px;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: none; /* 默认隐藏，只有当有搜索结果或想显示时再显示 */
+}
+/* hover 效果（可选） */
+#cancelButton:hover {
+  color: #000;
 }
 #searchPanel ul {
   list-style: none;
@@ -266,10 +284,13 @@ svg {
 }
 
 #searchPanel #searchResults {
-  max-height: 600px; /* 可根据需要修改 */
+  max-height: 100px; /* or a specific px value you prefer */
   overflow-y: auto;
-  margin-top: 8px;
-  border: 1px solid #ccc;
+  list-style: none;
+  margin: 0px 0 0;
+  padding: 0;
+  border: 0px solid #ccc;
+  border-radius: 4px;
 }
 /* 让 mapWrap 作为一个可移动的“画布容器” */
 /* #mapWrap {
