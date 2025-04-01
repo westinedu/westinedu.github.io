@@ -11,15 +11,21 @@ const colorPalette = [
 // 记录画布平移与缩放状态（作用于 #mapWrap）
 let currentTranslateX = 0, currentTranslateY = 0;
 let currentScale = 1;  // 初始缩放倍数
+let pinchOriginX = 0;  // two fingers' pinch center
+let pinchOriginY = 0;
 
 /**
  * 应用平移 + 缩放到 #mapWrap
  */
 function applyTransform() {
     const mapWrap = document.getElementById('mapWrap');
+    // 设置 transformOrigin 为当前 pinchOrigin
+    //mapWrap.style.transformOrigin = `${currentTranslateX}px ${currentTranslateY}px`;
+    // 注意：CSS transform 的执行顺序是从右向左，
+    // 此处先执行 scale，再执行 translate，
+    // 如果你希望保证固定屏幕点，translate 已在 setScale 中计算好。
     mapWrap.style.transform = `translate(${currentTranslateX}px, ${currentTranslateY}px) scale(${currentScale})`;
-    mapWrap.style.transformOrigin = "0 0";
-}
+  }
 
 /**
  * 更新节点的尺寸与位置，根据最新的 DOM 渲染结果
@@ -473,32 +479,62 @@ editableCommentEl.style.padding = "4px";
     /************************************************************
      * 9. 缩放功能 (针对 #mapWrap)
      ************************************************************/
-  function setScale(newScale) {
-    currentScale = newScale;
-    applyTransform();
-    scheduleUpdate();
-  }
+    function setScale(newScale, fixedScreenX, fixedScreenY) {
+        // 计算旧缩放下，固定屏幕点对应的世界坐标
+        let oldScale = currentScale;
+        let worldX = (fixedScreenX - currentTranslateX) / oldScale;
+        let worldY = (fixedScreenY - currentTranslateY) / oldScale;
+        // 更新平移，使得固定屏幕点在放缩前后不变
+        currentTranslateX = fixedScreenX - newScale * worldX;
+        currentTranslateY = fixedScreenY - newScale * worldY;
+        // 更新 transformOrigin 使用固定点
+        pinchOriginX = fixedScreenX;
+        pinchOriginY = fixedScreenY;
+        // 更新缩放
+        currentScale = newScale;
+        applyTransform();
+        scheduleUpdate();
+        updateDebugInfo(); // 如有调试输出
+      }
+
   document.getElementById('zoomIn').addEventListener('click', () => {
-    setScale(Math.min(currentScale * 1.1, 3));
+    const container = document.getElementById('container');
+    const rect = container.getBoundingClientRect();
+    // 计算 container 的中心（视觉中心）
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    setScale(Math.min(currentScale * 1.1, 3), centerX, centerY);
   });
+  
   document.getElementById('zoomOut').addEventListener('click', () => {
-    setScale(Math.max(currentScale * 0.9, 0.3));
+    const container = document.getElementById('container');
+    const rect = container.getBoundingClientRect();
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    setScale(Math.max(currentScale * 0.9, 0.3), centerX, centerY);
   });
+  
   function handleWheel(e) {
+    if (!(e.ctrlKey || e.metaKey)) return;
     e.preventDefault();
     const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
-    setScale(Math.min(Math.max(currentScale * zoomFactor, 0.3), 3));
+    const container = document.getElementById('container');
+    const rect = container.getBoundingClientRect();
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    setScale(Math.min(Math.max(currentScale * zoomFactor, 0.3), 3), centerX, centerY);
   }
-  document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey || e.metaKey) {
-      document.addEventListener('wheel', handleWheel, { passive: false });
-    }
-  });
-  document.addEventListener('keyup', (e) => {
-    if (!e.ctrlKey && !e.metaKey) {
-      document.removeEventListener('wheel', handleWheel);
-    }
-  });
+//   document.addEventListener('keydown', (e) => {
+//     if (e.ctrlKey || e.metaKey) {
+//       document.addEventListener('wheel', handleWheel, { passive: false });
+//     }
+//   });
+//   document.addEventListener('keyup', (e) => {
+//     if (!e.ctrlKey && !e.metaKey) {
+//       document.removeEventListener('wheel', handleWheel);
+//     }
+//   });
+    document.addEventListener('wheel', handleWheel, { passive: false });
     /************************************************************
      * 10. 平移功能 (针对 #mapWrap)
      ************************************************************/
@@ -582,85 +618,79 @@ document.addEventListener('touchstart', highlightNodeOnClick);
     /********* 13. pinch to zoom **********/
   // 使指定节点在容器中居中显示，并考虑放缩后的偏移
 // 记录双指缩放相关变量
-// 辅助函数：计算两个触摸点之间的距离
+// 辅助函数：计算两指之间的距离
 function getDistance(touch1, touch2) {
     const dx = touch1.clientX - touch2.clientX;
     const dy = touch1.clientY - touch2.clientY;
     return Math.sqrt(dx * dx + dy * dy);
   }
   
-  // pinch-to-zoom 相关变量
-  let pinchInitialDistance = null;
-  let pinchInitialScale = currentScale;
-  let pinchInitialTranslateX = currentTranslateX;
-  let pinchInitialTranslateY = currentTranslateY;
-  let pinchInitialCenter = null; // 在 mapWrap 内的坐标
+  let initialDistance = null;
+  let initialScale = currentScale;
   
-  // 获取 mapWrap 容器
-//   const mapWrap = document.getElementById('mapWrap');
-  
-  // 监听 touchstart：当有两根手指时，记录初始数据
+  // 记录两指初始状态
   document.addEventListener('touchstart', function(e) {
     if (e.touches.length === 2) {
       const rect = mapWrap.getBoundingClientRect();
-      pinchInitialDistance = getDistance(e.touches[0], e.touches[1]);
-      pinchInitialScale = currentScale;
-      pinchInitialTranslateX = currentTranslateX;
-      pinchInitialTranslateY = currentTranslateY;
-      // 计算初始两指中点在 mapWrap 内的坐标
-      const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-      const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-      pinchInitialCenter = {
-        x: centerX - rect.left,
-        y: centerY - rect.top
-      };
+      // 计算两指中点在 mapWrap 内的坐标
+      pinchOriginX = ((e.touches[0].clientX + e.touches[1].clientX) / 2) - rect.left;
+      pinchOriginY = ((e.touches[0].clientY + e.touches[1].clientY) / 2) - rect.top;
+      initialDistance = getDistance(e.touches[0], e.touches[1]);
+      initialScale = currentScale;
       e.preventDefault();
     }
   }, { passive: false });
   
-  // 监听 touchmove：计算新的缩放比例与平移，使得初始中点在手势中的位置保持不变
+  // 监听 touchmove 时，实时更新缩放和中心点
   document.addEventListener('touchmove', function(e) {
-    if (e.touches.length === 2 && pinchInitialDistance !== null) {
+    if (e.touches.length === 2 && initialDistance !== null) {
       const rect = mapWrap.getBoundingClientRect();
-      // 当前两指距离
       const currentDistance = getDistance(e.touches[0], e.touches[1]);
-      let newScale = pinchInitialScale * (currentDistance / pinchInitialDistance);
-      // 限制缩放范围
+      let newScale = initialScale * (currentDistance / initialDistance);
       newScale = Math.min(Math.max(newScale, 0.3), 3);
   
-      // 当前两指中点（在 mapWrap 内的坐标）
-      const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-      const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-      const currentCenter = {
-        x: centerX - rect.left,
-        y: centerY - rect.top
-      };
+      // 当前两指中点在 mapWrap 内的坐标
+      const newOriginX = ((e.touches[0].clientX + e.touches[1].clientX) / 2) - rect.left;
+      const newOriginY = ((e.touches[0].clientY + e.touches[1].clientY) / 2) - rect.top;
   
-      // 计算初始中点对应的地图“世界坐标”
-      // worldCoordinate = (pinchInitialCenter - initialTranslate) / pinchInitialScale
-      const worldX = (pinchInitialCenter.x - pinchInitialTranslateX) / pinchInitialScale;
-      const worldY = (pinchInitialCenter.y - pinchInitialTranslateY) / pinchInitialScale;
-  
-      // 更新全局缩放值
-      currentScale = newScale;
-      // 新的平移计算公式，保证 worldX, worldY 对应的点落在当前两指中点上：
-      // newTranslate = currentCenter - newScale * worldCoordinate
-      currentTranslateX = currentCenter.x - newScale * worldX;
-      currentTranslateY = currentCenter.y - newScale * worldY;
-  
-      applyTransform();
-      scheduleUpdate();
+      // 调用 setScale 使用新的缩放倍数和中点
+      setScale(newScale, newOriginX, newOriginY);
       e.preventDefault();
     }
   }, { passive: false });
   
-  // 当手指数量不足 2 时，重置初始距离
+  // 手指离开时重置初始距离
   document.addEventListener('touchend', function(e) {
     if (e.touches.length < 2) {
-      pinchInitialDistance = null;
+      initialDistance = null;
     }
   });
   
+    /********* 14. debug  **********/
+// 如果页面中不存在调试信息的容器，则创建一个
+// if (!document.getElementById('debugInfo')) {
+//     const debugDiv = document.createElement('div');
+//     debugDiv.id = 'debugInfo';
+//     debugDiv.style.position = 'fixed';
+//     debugDiv.style.top = '0';
+//     debugDiv.style.left = '0';
+//     debugDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+//     debugDiv.style.color = '#fff';
+//     debugDiv.style.padding = '5px 10px';
+//     debugDiv.style.zIndex = '9999';
+//     debugDiv.style.fontSize = '12px';
+//     document.body.appendChild(debugDiv);
+//   }
+  
+  // 定义一个更新调试信息的函数
+  function updateDebugInfo() {
+    const debugDiv = document.getElementById('debugInfo');
+    if (debugDiv) {
+      debugDiv.textContent = `pinchOriginX: ${pinchOriginX.toFixed(2)}, pinchOriginY: ${pinchOriginY.toFixed(2)},currentScale: ${currentScale.toFixed(2)}, 
+      currentTranslateX: ${currentTranslateX.toFixed(2)}, currentTranslateY: ${currentTranslateY.toFixed(2)}`;
+    }
+  }
+
 
     /********* 初始化布局**********/
 
