@@ -575,56 +575,95 @@ function highlightNodeOnClick(event) {
       }, 1000);
 }
 
-      /********* 13. pinch to zoom **********/
-  // 使指定节点在容器中居中显示，并考虑放缩后的偏移
-// 记录双指缩放相关变量
-let initialDistance = null;
-let initialScale = currentScale;
-
-// 监听 touchstart，检测是否有两个触摸点
-document.addEventListener('touchstart', function(e) {
-  if (e.touches.length === 2) {
-    // 计算初始两指距离
-    initialDistance = getDistance(e.touches[0], e.touches[1]);
-    initialScale = currentScale;
-    e.preventDefault();
-  }
-}, { passive: false });
-
-// 监听 touchmove，计算当前两指距离与初始距离的比例，更新缩放倍数
-document.addEventListener('touchmove', function(e) {
-  if (e.touches.length === 2 && initialDistance !== null) {
-    const currentDistance = getDistance(e.touches[0], e.touches[1]);
-    let newScale = initialScale * (currentDistance / initialDistance);
-    // 限制缩放范围，例如 0.3 至 3
-    newScale = Math.min(Math.max(newScale, 0.3), 3);
-    setScale(newScale);
-    e.preventDefault();
-  }
-}, { passive: false });
-
-// 监听 touchend，当手指数不足 2 时重置初始距离
-document.addEventListener('touchend', function(e) {
-  if (e.touches.length < 2) {
-    initialDistance = null;
-  }
-});
-
-// 辅助函数：计算两个触摸点之间的欧几里得距离
-function getDistance(touch1, touch2) {
-  const dx = touch1.clientX - touch2.clientX;
-  const dy = touch1.clientY - touch2.clientY;
-  return Math.sqrt(dx * dx + dy * dy);
-}
-
-
-  
-
 // 鼠标点击和触摸事件监听器
 document.addEventListener('click', highlightNodeOnClick);
 document.addEventListener('touchstart', highlightNodeOnClick);
 
-      // 初始化布局
+    /********* 13. pinch to zoom **********/
+  // 使指定节点在容器中居中显示，并考虑放缩后的偏移
+// 记录双指缩放相关变量
+// 辅助函数：计算两个触摸点之间的距离
+function getDistance(touch1, touch2) {
+    const dx = touch1.clientX - touch2.clientX;
+    const dy = touch1.clientY - touch2.clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+  
+  // pinch-to-zoom 相关变量
+  let pinchInitialDistance = null;
+  let pinchInitialScale = currentScale;
+  let pinchInitialTranslateX = currentTranslateX;
+  let pinchInitialTranslateY = currentTranslateY;
+  let pinchInitialCenter = null; // 在 mapWrap 内的坐标
+  
+  // 获取 mapWrap 容器
+//   const mapWrap = document.getElementById('mapWrap');
+  
+  // 监听 touchstart：当有两根手指时，记录初始数据
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches.length === 2) {
+      const rect = mapWrap.getBoundingClientRect();
+      pinchInitialDistance = getDistance(e.touches[0], e.touches[1]);
+      pinchInitialScale = currentScale;
+      pinchInitialTranslateX = currentTranslateX;
+      pinchInitialTranslateY = currentTranslateY;
+      // 计算初始两指中点在 mapWrap 内的坐标
+      const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      pinchInitialCenter = {
+        x: centerX - rect.left,
+        y: centerY - rect.top
+      };
+      e.preventDefault();
+    }
+  }, { passive: false });
+  
+  // 监听 touchmove：计算新的缩放比例与平移，使得初始中点在手势中的位置保持不变
+  document.addEventListener('touchmove', function(e) {
+    if (e.touches.length === 2 && pinchInitialDistance !== null) {
+      const rect = mapWrap.getBoundingClientRect();
+      // 当前两指距离
+      const currentDistance = getDistance(e.touches[0], e.touches[1]);
+      let newScale = pinchInitialScale * (currentDistance / pinchInitialDistance);
+      // 限制缩放范围
+      newScale = Math.min(Math.max(newScale, 0.3), 3);
+  
+      // 当前两指中点（在 mapWrap 内的坐标）
+      const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      const currentCenter = {
+        x: centerX - rect.left,
+        y: centerY - rect.top
+      };
+  
+      // 计算初始中点对应的地图“世界坐标”
+      // worldCoordinate = (pinchInitialCenter - initialTranslate) / pinchInitialScale
+      const worldX = (pinchInitialCenter.x - pinchInitialTranslateX) / pinchInitialScale;
+      const worldY = (pinchInitialCenter.y - pinchInitialTranslateY) / pinchInitialScale;
+  
+      // 更新全局缩放值
+      currentScale = newScale;
+      // 新的平移计算公式，保证 worldX, worldY 对应的点落在当前两指中点上：
+      // newTranslate = currentCenter - newScale * worldCoordinate
+      currentTranslateX = currentCenter.x - newScale * worldX;
+      currentTranslateY = currentCenter.y - newScale * worldY;
+  
+      applyTransform();
+      scheduleUpdate();
+      e.preventDefault();
+    }
+  }, { passive: false });
+  
+  // 当手指数量不足 2 时，重置初始距离
+  document.addEventListener('touchend', function(e) {
+    if (e.touches.length < 2) {
+      pinchInitialDistance = null;
+    }
+  });
+  
+
+    /********* 初始化布局**********/
+
       layoutNodes();
       
         // 调度一次初始更新
