@@ -1,81 +1,81 @@
 window.mindmapData = {
   nodes: [
-    { text: "Business School Courses", description: "国际顶级商学院常见课程体系" },                // 0: 根节点
+    { text: "0. Business School Courses", description: "Common curriculum structure in top global business schools" },                // 0: 根节点
 
-    { text: "Undergraduate Courses", description: "本科阶段的商学院课程" },                      // 1
-    { text: "MBA Courses", description: "MBA 及硕士阶段核心与选修课程" },                         // 2
-    { text: "Financial Masters Courses", description: "金融硕士课程体系" },                        // 3
-    { text: "EMBA Courses", description: "高级管理人员工商管理硕士课程体系" },                      // 4
+    { text: "1. Undergraduate Courses", description: "Business courses typically offered at the undergraduate level" },                      // 1
+    { text: "2. MBA Courses", description: "Core and elective courses at the MBA and master's level" },                         // 2
+    { text: "3. Financial Masters Courses", description: "Curriculum structure for Master's in Finance programs" },                        // 3
+    { text: "4. EMBA Courses", description: "Curriculum for Executive MBA programs for senior managers" },                      // 4
 
     // Undergraduate Courses 下的子节点
-    { text: "Foundational Courses", description: "基础商科课程" },                                // 5
-    { text: "Advanced/Professional Courses", description: "专业进阶课程" },                       // 6
+    { text: "5. Foundational Courses", description: "Basic courses in business education" },                                // 5
+    { text: "6. Advanced/Professional Courses", description: "Advanced and professional-level business courses" },                       // 6
 
     // Foundational Courses 的子节点
-    { text: "Microeconomics", description: "研究个体经济行为" },                                  // 7
-    { text: "Macroeconomics", description: "国民经济整体分析" },                                   // 8
-    { text: "Principles of Accounting", description: "会计基本原理" },                              // 9
-    { text: "Principles of Marketing", description: "市场营销基本理论" },                            // 10
-    { text: "Principles of Management", description: "管理基本原理" },                              // 11
+    { text: "7. Microeconomics", description: "Study of individual economic behavior" },                                  // 7
+    { text: "8. Macroeconomics", description: "Analysis of the overall national economy" },                                   // 8
+    { text: "9. Principles of Accounting", description: "Basic principles of accounting" },                              // 9
+    { text: "10. Principles of Marketing", description: "Fundamentals of marketing theory" },                            // 10
+    { text: "11. Principles of Management", description: "Foundations of management theory" },                              // 11
 
     // Advanced/Professional Courses 的子节点
-    { text: "Financial Markets and Institutions", description: "金融市场及机构运作" },               // 12
-    { text: "Operations Management", description: "生产与服务系统设计与改进" },                     // 13
-    { text: "Business Data Analytics", description: "商业数据收集与分析" },                         // 14
-    { text: "International Business", description: "跨国企业经营与全球战略" },                        // 15
+    { text: "12. Financial Markets and Institutions", description: "Functioning of financial markets and institutions" },               // 12
+    { text: "13. Operations Management", description: "Design and improvement of production and service systems" },                     // 13
+    { text: "14. Business Data Analytics", description: "Collection and analysis of business data" },                         // 14
+    { text: "15. International Business", description: "Global strategy and management in multinational corporations" },                        // 15
 
     // MBA Courses 下的子节点
-    { text: "Core MBA Courses", description: "MBA核心课程" },                                   // 16
-    { text: "MBA Electives", description: "MBA选修课程" },                                       // 17
+    { text: "16. Core MBA Courses", description: "Core MBA curriculum" },                                   // 16
+    { text: "17. MBA Electives", description: "Elective courses in MBA programs" },                                       // 17
 
     // Core MBA Courses 的子节点
-    { text: "Managerial Economics", description: "企业决策中的经济分析" },                          // 18
-    { text: "Organizational Behavior", description: "组织内个体与群体行为研究" },                     // 19
-    { text: "Marketing Management", description: "市场营销战略及实践" },                               // 20
-    { text: "Financial Management", description: "企业财务管理基本原理" },                             // 21
-    { text: "Operations Management (MBA)", description: "MBA级运营管理" },                          // 22
-    { text: "Strategic Management", description: "企业战略规划与实施" },                              // 23
+    { text: "18. Managerial Economics", description: "Economic analysis for business decision-making" },                          // 18
+    { text: "19. Organizational Behavior", description: "Study of individual and group behavior within organizations" },                     // 19
+    { text: "20. Marketing Management", description: "Strategic planning and practice in marketing" },                               // 20
+    { text: "21. Financial Management", description: "Fundamentals of corporate financial management" },                             // 21
+    { text: "22. Operations Management (MBA)", description: "MBA-level operations management" },                          // 22
+    { text: "23. Strategic Management", description: "Corporate strategy formulation and execution" },                              // 23
 
     // MBA Electives 的子节点
-    { text: "Entrepreneurship Management", description: "创业过程与商业模式设计" },                   // 24
-    { text: "Project Management", description: "项目规划与风险控制" },                              // 25
-    { text: "Supply Chain Management", description: "供应链设计与优化" },                             // 26
-    { text: "Leadership Development", description: "领导力培养与团队管理" },                         // 27
-    { text: "E-commerce", description: "电子商务模式与市场趋势" },                                   // 28
+    { text: "24. Entrepreneurship Management", description: "Entrepreneurial processes and business model design" },                   // 24
+    { text: "25. Project Management", description: "Project planning and risk control" },                              // 25
+    { text: "26. Supply Chain Management", description: "Design and optimization of supply chains" },                             // 26
+    { text: "27. Leadership Development", description: "Leadership training and team management" },                         // 27
+    { text: "28. E-commerce", description: "E-commerce models and market trends" },                                   // 28
 
     // Financial Masters Courses 下的子节点
-    { text: "Core Courses (Financial Masters)", description: "金融硕士核心课程" },                  // 29
-    { text: "Electives (Financial Masters)", description: "金融硕士选修课程" },                       // 30
+    { text: "29. Core Courses (Financial Masters)", description: "Core courses for Master's in Finance programs" },                  // 29
+    { text: "30. Electives (Financial Masters)", description: "Elective courses in financial master's programs" },                       // 30
 
     // Core Courses (Financial Masters) 的子节点
-    { text: "Investment", description: "投资工具与组合理论" },                                     // 31
-    { text: "Corporate Finance", description: "企业融资与投资决策" },                                // 32
-    { text: "Financial Markets", description: "金融市场结构与机制" },                                // 33
-    { text: "Econometrics", description: "统计与数学模型在金融中的应用" },                            // 34
-    { text: "International Finance", description: "国际金融体系与汇率机制" },                         // 35
+    { text: "31. Investment", description: "Investment tools and portfolio theory" },                                     // 31
+    { text: "32. Corporate Finance", description: "Corporate financing and investment decisions" },                                // 32
+    { text: "33. Financial Markets", description: "Structure and mechanisms of financial markets" },                                // 33
+    { text: "34. Econometrics", description: "Application of statistics and mathematical models in finance" },                            // 34
+    { text: "35. International Finance", description: "Global financial systems and exchange rate mechanisms" },                         // 35
 
     // Electives (Financial Masters) 的子节点
-    { text: "Financial Risk Management", description: "金融风险识别与管理" },                          // 36
-    { text: "Fintech", description: "金融科技与区块链应用" },                                       // 37
-    { text: "Mergers and Acquisitions", description: "并购重组策略及财务分析" },                        // 38
-    { text: "Asset Securitization", description: "资产证券化基本原理" },                              // 39
+    { text: "36. Financial Risk Management", description: "Identification and management of financial risk" },                          // 36
+    { text: "37. Fintech", description: "Fintech and blockchain applications" },                                       // 37
+    { text: "38. Mergers and Acquisitions", description: "M&A strategies and financial analysis" },                        // 38
+    { text: "39. Asset Securitization", description: "Fundamentals of asset securitization" },                              // 39
 
     // EMBA Courses 下的子节点
-    { text: "Core Courses (EMBA)", description: "EMBA核心课程" },                                  // 40
-    { text: "Specialized Electives (EMBA)", description: "EMBA特色与选修课程" },                     // 41
+    { text: "40. Core Courses (EMBA)", description: "Core EMBA curriculum" },                                  // 40
+    { text: "41. Specialized Electives (EMBA)", description: "Specialized and elective courses in EMBA programs" },                     // 41
 
     // Core Courses (EMBA) 的子节点
-    { text: "Economic Analysis", description: "宏观与微观经济分析" },                                // 42
-    { text: "Marketing Management (EMBA)", description: "EMBA级市场营销管理" },                        // 43
-    { text: "Strategic Management Accounting", description: "战略决策的会计支持" },                      // 44
-    { text: "Organizational Behavior (EMBA)", description: "EMBA级组织行为学" },                        // 45
-    { text: "Operations Management (EMBA)", description: "EMBA级运营管理" },                          // 46
+    { text: "42. Economic Analysis", description: "Macro and microeconomic analysis" },                                // 42
+    { text: "43. Marketing Management (EMBA)", description: "Marketing management at the EMBA level" },                        // 43
+    { text: "44. Strategic Management Accounting", description: "Accounting support for strategic decision-making" },                      // 44
+    { text: "45. Organizational Behavior (EMBA)", description: "Organizational behavior for EMBA students" },                        // 45
+    { text: "46. Operations Management (EMBA)", description: "EMBA-level operations management" },                          // 46
 
     // Specialized Electives (EMBA) 的子节点
-    { text: "The Chinese Economy", description: "中国经济发展模式与机遇" },                           // 47
-    { text: "Leadership Development (EMBA)", description: "EMBA级领导力培养" },                        // 48
-    { text: "Overseas Modules", description: "国际学习交流模块" },                                  // 49
-    { text: "Digital Transformation", description: "数字化时代的企业转型" }                           // 50
+    { text: "47. The Chinese Economy", description: "China’s economic development model and opportunities" },                           // 47
+    { text: "48. Leadership Development (EMBA)", description: "Leadership training at the EMBA level" },                        // 48
+    { text: "49. Overseas Modules", description: "International exchange and learning modules" },                                  // 49
+    { text: "50. Digital Transformation", description: "Corporate transformation in the digital era" }                           // 50
   ],
   connections: [
     [0,1], [0,2], [0,3], [0,4],

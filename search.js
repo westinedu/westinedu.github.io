@@ -25,7 +25,8 @@ window.setupSearchFeature = function(nodes) {
     nodes.forEach((node, i) => {
       const titleMatch = node.text.toLowerCase().includes(query);
       const descMatch = node.description && node.description.toLowerCase().includes(query);
-      if (titleMatch || descMatch) {
+      const person = node.person && node.person.toLowerCase().includes(query);
+      if (titleMatch || descMatch || person) {
         const li = document.createElement('li');
         li.textContent = node.text;
         li.style.cursor = 'pointer';
@@ -48,7 +49,7 @@ window.setupSearchFeature = function(nodes) {
     searchResults.innerHTML = '';
     cancelButton.style.display = 'none';
     // 重新聚焦搜索输入框，确保后续输入能触发事件
-    searchInput.focus();
+    //searchInput.focus();
   });
 };
 

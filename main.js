@@ -1,4 +1,4 @@
-// main.js  V1.6 重新添加pinch-zoom 功能
+// main.js  V1.9 节点内容可以展开折叠.  
 // 全局变量
 window.nodes = [];
 window.connections = [];
@@ -10,10 +10,10 @@ const colorPalette = [
 ];
 // 记录画布平移与缩放状态（作用于 #mapWrap）
 let currentTranslateX = 0, currentTranslateY = 0;
-let currentScale = 1;  // 初始缩放倍数
+let currentScale = 0.8;  // 初始缩放倍数
 let pinchOriginX = 0;  // two fingers' pinch center
 let pinchOriginY = 0;
-
+let activeNodeIndex = null;
 /**
  * 应用平移 + 缩放到 #mapWrap
  */
@@ -98,6 +98,11 @@ function initMindmap(data) {
 // 创建标题元素
 const titleEl = document.createElement('div');
 titleEl.style.fontWeight = 'bold';
+titleEl.className = 'node-title';
+
+const iconSpan = document.createElement('span');
+iconSpan.className = 'toggle-icon';
+iconSpan.textContent = '▶';
 
 // 如果 node.link 存在，则使用 <a> 包裹文字，点击跳转
 if (node.link) {
@@ -113,13 +118,18 @@ if (node.link) {
   // 将 linkEl 放进 titleEl
   titleEl.appendChild(linkEl);
 } else {
+  const titleText = document.createElement('span');
   // 否则，直接用 textContent 显示标题
-  titleEl.textContent = node.text || `Node ${i}`;
+  titleText.textContent = node.text || `Node ${i}`;
+  titleEl.appendChild(titleText);
 }
+
+// 插入箭头图标
+titleEl.appendChild(iconSpan);
+
 
 // 然后把 titleEl 放进节点 div
 div.appendChild(titleEl);
-
 
     // 创建展开/折叠按钮
     const toggleBtn = document.createElement('button');
@@ -135,11 +145,19 @@ div.appendChild(titleEl);
 // 创建静态介绍区域，显示节点的主要介绍（不可编辑）
 const staticDescEl = document.createElement('div');
 staticDescEl.className = 'static-desc';
-staticDescEl.innerHTML = node.description || "无节点介绍";
+staticDescEl.innerHTML = node.description || "No description.";
 staticDescEl.style.marginTop = "4px";
 staticDescEl.style.fontStyle = "normal";
 // 可以添加其他样式，例如颜色、字号等
 div.appendChild(staticDescEl);
+
+
+// 点击切换描述展开/收起
+titleEl.addEventListener('click', () => {
+  const isExpanded = staticDescEl.classList.contains('expanded');
+  staticDescEl.classList.toggle('expanded');
+  iconSpan.textContent = isExpanded ? '▶' : '▼';
+});
 
 // 创建可编辑评论区域，供用户输入补充说明（初始为默认提示）
 const editableCommentEl = document.createElement('div');
@@ -172,10 +190,68 @@ editableCommentEl.style.padding = "4px";
 
     // 组装节点内容
     div.appendChild(titleEl);
+
+    // 显示所有非空 extra 信息字段
+    const extraInfo = document.createElement('div');
+    extraInfo.className = 'extra-info';
+
+    if (node.classic) {
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>Classic:</strong> ${node.classic}`;
+      extraInfo.appendChild(el);
+    }
+    if (node.person) {
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>Person:</strong> ${node.person}`;
+      extraInfo.appendChild(el);
+    }
+    if (node.Nobel) {
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>Nobel:</strong> ${node.Nobel}`;
+      extraInfo.appendChild(el);
+    }
+    if (node.formula) {
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>Formula:</strong> <code>${node.formula}</code>`;
+      extraInfo.appendChild(el);
+    }
+    if (node.chart) {
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>Chart:</strong> ${node.chart}`;
+      extraInfo.appendChild(el);
+    }
+    if (node.application) {
+      const el = document.createElement('div');
+      el.innerHTML = `<strong>Application:</strong> ${node.application}`;
+      extraInfo.appendChild(el);
+    }
+    if (node.image) {
+      const img = document.createElement('img');
+      img.src = node.image;
+      img.alt = "image";
+      img.style.maxWidth = "100%";
+      img.style.marginTop = "6px";
+      extraInfo.appendChild(img);
+    }
+
     div.appendChild(staticDescEl);
     div.appendChild(toggleBtn);
     // div.appendChild(editableCommentEl);
     // div.appendChild(editBtn);
+
+    // 创建朗读按钮
+const speakBtn = document.createElement('button');
+speakBtn.className = 'speak-btn';
+speakBtn.textContent = '🔊';
+speakBtn.title = 'Read Aloud';
+
+speakBtn.addEventListener('click', (e) => {
+  e.stopPropagation(); // 防止触发其他点击事件
+  const textToSpeak = `${node.text}. ${stripHTML(node.description || '')}`;
+  speakText(textToSpeak, speakBtn);
+});
+
+div.appendChild(speakBtn);
 
         // 若节点包含视频
         if (node.videoUrl) {
@@ -191,18 +267,28 @@ editableCommentEl.style.padding = "4px";
             iframe.style.marginTop = "8px";
             div.appendChild(iframe);
         }
-        // 重要节点信息
-        if (node.important) {
-            const extraInfo = document.createElement('div');
-            extraInfo.className = 'extra-info';
-            extraInfo.innerHTML = `<div>${node.classic}</div><div>人物：${node.person}</div>`;
-            if (node.image) {
-                const img = document.createElement('img');
-                img.src = node.image;
-                extraInfo.appendChild(img);
-            }
-            div.appendChild(extraInfo);
-        }
+        // // 重要节点信息
+        // if (node.important) {
+        //     const extraInfo = document.createElement('div');
+        //     extraInfo.className = 'extra-info';
+        //     extraInfo.innerHTML = `<div>${node.classic}</div><div>人物：${node.person}</div>`;
+        //     if (node.image) {
+        //         const img = document.createElement('img');
+        //         img.src = node.image;
+        //         extraInfo.appendChild(img);
+        //     }
+        //     div.appendChild(extraInfo);
+        // }
+
+
+
+    // 只有当有内容时再添加到节点中
+    if (extraInfo.children.length > 0) {
+      div.appendChild(extraInfo);
+    }
+
+
+
         // 基本样式
         div.style.backgroundColor = colorPalette[i % colorPalette.length];
         div.dataset.index = i;
@@ -414,7 +500,9 @@ editableCommentEl.style.padding = "4px";
                 e.target.closest('a') ||
                 e.target.closest('.edit-btn') ||
                 e.target.closest('.toggle-btn') ||
-                e.target.classList.contains('rich-text')
+                e.target.classList.contains('rich-text')||
+                e.target.classList.contains('toggle-icon') ||
+                e.target.closest('.speak-btn')
             ) {
                 return;
             }
@@ -503,7 +591,7 @@ editableCommentEl.style.padding = "4px";
     // 计算 container 的中心（视觉中心）
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    setScale(Math.min(currentScale * 1.1, 3), centerX, centerY);
+    setScale(Math.min(currentScale * 1.1, 2), centerX, centerY);
   });
   
   document.getElementById('zoomOut').addEventListener('click', () => {
@@ -592,15 +680,20 @@ editableCommentEl.style.padding = "4px";
   };
 
   // 高亮显示点击或触摸的节点
-function highlightNodeOnClick(event) {
+function highlightNodeOnClick(e) {
     // 获取被点击的元素，排除不需要高亮的元素（如链接、按钮等）
-    const node = event.target.closest('.node');
+    const node = e.target.closest('.node');
     if (!node) return;  // 如果点击的不是节点，直接返回
+
+      // Only skip if the user clicked directly on the toggle icon (▶ / ▼)
+  if (e.target.classList.contains('toggle-icon') || e.target.closest('.speak-btn')) return;
     
-    const nodeIndex = node.dataset.index;
+    const nodeIndex = Number(node.dataset.index);
     const nodeObj = nodes[nodeIndex];
 
+    if (activeNodeIndex === nodeIndex) return;
     if (!nodeObj) return;  // 如果该节点不存在，直接返回
+    activeNodeIndex = nodeIndex;
     
     // 添加高亮类，没有动画
     node.classList.add("selectedNode");
@@ -690,7 +783,46 @@ function getDistance(touch1, touch2) {
       currentTranslateX: ${currentTranslateX.toFixed(2)}, currentTranslateY: ${currentTranslateY.toFixed(2)}`;
     }
   }
-
+    /********* 15. 朗读功能  **********/
+    let currentUtterance = null;
+    let currentSpeakBtn = null;
+    
+    function speakText(text, btn) {
+      if (speechSynthesis.speaking || speechSynthesis.pending) {
+        // 正在播放，点击则停止
+        speechSynthesis.cancel();
+        if (currentSpeakBtn) currentSpeakBtn.textContent = '🔊';
+        return;
+      }
+    
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US'; // 可改为 "zh-CN" 等
+      currentUtterance = utterance;
+      currentSpeakBtn = btn;
+      btn.textContent = '⏹️';
+    
+      utterance.onend = () => {
+        btn.textContent = '🔊';
+        currentUtterance = null;
+        currentSpeakBtn = null;
+      };
+    
+      utterance.onerror = () => {
+        btn.textContent = '🔊';
+        currentUtterance = null;
+        currentSpeakBtn = null;
+      };
+    
+      speechSynthesis.speak(utterance);
+    }
+    
+  
+  // 可选：移除 HTML 标签
+  function stripHTML(html) {
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = html;
+    return tempDiv.textContent || tempDiv.innerText || '';
+  }
 
     /********* 初始化布局**********/
 
@@ -703,6 +835,7 @@ function getDistance(touch1, touch2) {
       updateNodePositions();
       updateBoundingBox();
       setTimeout(() => focusOnNode(0), 100);
+      activeNodeIndex = 0;
 }
 
 

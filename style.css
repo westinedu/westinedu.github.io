@@ -185,7 +185,7 @@ html, body {
 }
 
 /* 重要节点额外信息 */
-.extra-info {
+/* .extra-info {
   margin-top: 8px;
   font-size: 0.8rem;
   color: #333;
@@ -195,6 +195,19 @@ html, body {
   margin-top: 4px;
   width: 100px;
   height: auto;
+} */
+
+.extra-info {
+  margin-top: 6px;
+  font-size: 0.9em;
+  color: #333;
+}
+.extra-info div {
+  margin-bottom: 4px;
+}
+.extra-info img {
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 /* 展开/折叠按钮 */
@@ -323,5 +336,44 @@ svg {
   text-decoration: underline;
   color: blue;
 }
+/* 节点内容展开折叠，预览2行 */
+.static-desc {
+  max-height: 3.2em;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
 
+.static-desc.expanded {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.toggle-icon {
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #666;
+  margin-left: 6px;
+}
+
+.speak-btn {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 4px 6px;
+  cursor: pointer;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 6px;
+}
+.speak-btn:hover {
+  background-color: #4338ca;
+  opacity: 0.7;
+}
 
