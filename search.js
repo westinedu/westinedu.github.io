@@ -1,4 +1,4 @@
-// search.js
+// search.js V1.1 基本完成准备上线
 
 window.setupSearchFeature = function(nodes) {
   const searchInput = document.getElementById('searchInput');

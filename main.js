@@ -1,4 +1,4 @@
-// main.js  V1.9 节点内容可以展开折叠.  
+// main.js  V2.2 展播功能已完成  
 // 全局变量
 window.nodes = [];
 window.connections = [];

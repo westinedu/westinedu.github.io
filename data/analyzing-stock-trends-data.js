@@ -267,7 +267,6 @@ window.mindmapData = {
     {
       text: "17. Stop-Loss Placement",
       person: "Alexander Elder",
-      image: "https://via.placeholder.com/100?text=Elder",
       description: `
         <strong>Stop-Loss Placement</strong> is a cornerstone of capital protection. It limits losses when trades move against you.
         Effective stop-losses balance breathing room and capital preservation.
@@ -279,13 +278,11 @@ window.mindmapData = {
         📘 Elder’s Rule: “If you must be in the market, be prepared to get out.”<br><br>
         📊 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stop_loss_example.svg/800px-Stop_loss_example.svg.png" width="100%" alt="Stop Loss Example"><br>
         🔗 <a href="https://www.investopedia.com/articles/trading/06/stopplacement.asp" target="_blank">Stop-Loss Techniques – Investopedia</a><br>
-        💡 <em>Master stop-loss tactics in our exclusive risk-control lesson (included in Pro subscription)</em>
       `
     },
     {
       text: "18. Position Sizing",
       person: "Van K. Tharp",
-      image: "https://via.placeholder.com/100?text=Tharp",
       description: `
         <strong>Position Sizing</strong> determines how much capital to allocate per trade based on risk tolerance.
         It directly impacts profitability, drawdown, and emotional stability.
@@ -295,15 +292,13 @@ window.mindmapData = {
         • <strong>Kelly Criterion</strong>: based on expected value<br>
         • <strong>Volatility-Adjusted</strong>: based on ATR or standard deviation<br><br>
         🧠 "It's not whether you're right or wrong, but how much you win when you're right." – Soros<br><br>
-        📊 <img src="https://www.chartmill.com/documentation/images/position_sizing_chartmill.png" width="100%" alt="Position Sizing Chart"><br>
+        📊 <img src="https://cdn.prod.website-files.com/5fba23eb8789c3c7fcfb5f31/60db6a7981ecb05e38bcddde_%25%20Risked%20Per%20Trade.png" width="100%" alt="Position Sizing Chart"><br>
         🔗 <a href="https://www.tradingview.com/scripts/positionsizing/" target="_blank">TradingView Position Sizing Scripts</a><br>
-        ✅ <em>Included in the Pro Trader Toolkit for subscribers</em>
       `
     },
     {
       text: "19. Trend Following Strategy",
       person: "Richard Dennis",
-      image: "https://via.placeholder.com/100?text=Richard+Dennis",
       description: `
         <strong>Trend Following</strong> is a strategy that profits from sustained price movement. 
         It ignores short-term noise and focuses on capturing big swings.
@@ -315,13 +310,11 @@ window.mindmapData = {
         ✅ Famous Example: The <em>Turtle Traders</em> used 20/55-day breakouts for entries<br><br>
         📊 <img src="https://26693533.fs1.hubspotusercontent-eu1.net/hubfs/26693533/CADJPY_2023-08-15_09-58-05.png" width="100%" alt="Trend Following Example"><br>
         🔗 <a href="https://www.newtraderu.com/2023/03/04/trend-following-trading-strategies/" target="_blank">Trend Following Strategies – NewTraderU</a><br>
-        🧩 <em>Explore our full Trend Trading Course – Available for Premium Subscribers</em>
       `
     },
     {
       text: "20. Counter-Trend Strategy",
       person: "John Bollinger",
-      image: "https://via.placeholder.com/100?text=Bollinger",
       description: `
         <strong>Counter-Trend Strategy</strong> (or Mean Reversion) seeks to identify short-term extremes that are likely to revert back to the mean.
         It’s best used in range-bound or consolidating markets.
@@ -333,7 +326,6 @@ window.mindmapData = {
         ⚠️ Requires tight stops and precise timing<br><br>
         📊 <img src="https://www.forexboat.com/wp-content/uploads/2017/01/bollinger-bands-trading.png" width="100%" alt="Counter-Trend with Bollinger Bands"><br>
         🔗 <a href="https://www.bollingerbands.com/bollinger-bands/" target="_blank">Bollinger Band Basics</a><br>
-        🎓 <em>Master this advanced tactic in our exclusive Reversal Playbook – Subscribe to unlock</em>
       `
     }
     
