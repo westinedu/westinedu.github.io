@@ -824,6 +824,187 @@ function getDistance(touch1, touch2) {
     return tempDiv.textContent || tempDiv.innerText || '';
   }
 
+
+    /********* 16. Flashcard 展播功能  **********/
+
+const playCardBtn = document.createElement('button');
+playCardBtn.textContent = "播放卡片";
+playCardBtn.id = "btnPlayCard";
+document.getElementById('controls').appendChild(playCardBtn);
+
+// 卡片模态 DOM 创建
+const cardOverlay = document.createElement('div');
+cardOverlay.id = 'cardOverlay';
+cardOverlay.style.cssText = `
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+`;
+
+const cardBox = document.createElement('div');
+cardBox.id = 'cardBox';
+cardBox.style.cssText = `
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+`;
+
+const closeBtn = document.createElement('button');
+
+closeBtn.textContent = "✖";
+closeBtn.style.cssText = `
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  z-index: 10000;
+  cursor: pointer;
+`;
+
+
+closeBtn.addEventListener('mouseenter', () => {
+  closeBtn.style.backgroundColor = '#c0392b';
+});
+closeBtn.addEventListener('mouseleave', () => {
+  closeBtn.style.backgroundColor = '#e74c3c';
+});
+
+
+closeBtn.addEventListener('click', () => {
+  cardOverlay.style.display = 'none';
+});
+
+cardOverlay.appendChild(closeBtn);
+cardOverlay.appendChild(cardBox);
+document.body.appendChild(cardOverlay);
+
+// 点击按钮播放当前节点
+document.getElementById('btnPlayCard').addEventListener('click', () => {
+  if (typeof activeNodeIndex === 'undefined') return;
+
+  const node = nodes[activeNodeIndex];
+  if (!node) return;
+
+  let content = `<h2>${node.text}</h2>`;
+  content += `<button id="speakNodeBtn" style="
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 12px;">🔊</button>`;
+  if (node.description) content += `<div>${node.description}</div>`;
+  if (node.image) content += `<img src="${node.image}" style="margin-top: 12px; max-width: 100%;">`;
+  if (node.classic) content += `<p><strong>🌟 Classic:</strong> ${node.classic}</p>`;
+  if (node.person) content += `<p><strong>👤 Person:</strong> ${node.person}</p>`;
+  if (node.videoUrl) content += `<iframe width="100%" height="200" src="${node.videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+
+  cardBox.innerHTML = content;
+  cardOverlay.style.display = 'flex';
+
+  document.getElementById('speakNodeBtn').addEventListener('click', () => {
+    const text = `${node.text}. ${stripHTML(node.description || '')}`;
+    speakText(text,speakNodeBtn);
+  });
+});
+
+// 展播功能，逐个顺序播放幻灯片
+let isAutoPlaying = false;
+let autoPlayIndex = 0;
+const autoPlayBtn = document.createElement('button');
+autoPlayBtn.id = 'btnAutoPlayCard';
+autoPlayBtn.textContent = '📽️ 连续播放';
+document.getElementById('controls').appendChild(autoPlayBtn);
+
+autoPlayBtn.addEventListener('click', () => {
+  if (isAutoPlaying) {
+    stopAutoPlay();
+  } else {
+    isAutoPlaying = true;
+    autoPlayBtn.textContent = '⏹️ 停止播放';
+    autoPlayIndex = activeNodeIndex ?? 0;
+    playNextCard();
+  }
+});
+
+function stopAutoPlay() {
+  isAutoPlaying = false;
+  autoPlayBtn.textContent = '📽️ 连续播放';
+  cardOverlay.style.display = 'none';
+  window.speechSynthesis.cancel();
+}
+
+function playNextCard() {
+  if (!isAutoPlaying || autoPlayIndex >= nodes.length) {
+    stopAutoPlay();
+    return;
+  }
+
+  const node = nodes[autoPlayIndex];
+  if (!node) {
+    autoPlayIndex++;
+    return playNextCard();
+  }
+
+  // 构建卡片内容（与之前一样）
+  let content = `<h2>${node.text}</h2>`;
+  content += `<button id="speakNodeBtn" style="margin-bottom: 12px;">🔊 朗读</button>`;
+  if (node.description) content += `<div>${node.description}</div>`;
+  if (node.image) content += `<img src="${node.image}" style="margin-top: 12px; max-width: 100%;">`;
+  if (node.classic) content += `<p><strong>🌟 Classic:</strong> ${node.classic}</p>`;
+  if (node.person) content += `<p><strong>👤 Person:</strong> ${node.person}</p>`;
+  if (node.videoUrl) content += `<iframe width="100%" height="200" src="${node.videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+  cardBox.innerHTML = content;
+  cardOverlay.style.display = 'flex';
+
+  // 自动朗读 + 播放完成后继续
+  const speech = new SpeechSynthesisUtterance(`${node.text}. ${stripHTML(node.description || '')}`);
+  speech.lang = 'en-US';
+  speech.onend = () => {
+    if (isAutoPlaying) {
+      autoPlayIndex++;
+      setTimeout(playNextCard, 800); // 节奏间隔
+    }
+  };
+  speech.onerror = () => {
+    autoPlayIndex++;
+    playNextCard();
+  };
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(speech);
+
+  // 可手动朗读按钮
+  document.getElementById('speakNodeBtn').addEventListener('click', (e) => {
+    e.stopPropagation();
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(speech);
+  });
+}
+
+closeBtn.addEventListener('click', () => {
+  cardOverlay.style.display = 'none';
+  stopAutoPlay();
+});
+
+
     /********* 初始化布局**********/
 
       layoutNodes();
