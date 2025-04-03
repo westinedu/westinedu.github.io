@@ -929,6 +929,11 @@ document.getElementById('btnPlayCard').addEventListener('click', () => {
 // 展播功能，逐个顺序播放幻灯片
 let isAutoPlaying = false;
 let autoPlayIndex = 0;
+let currentSpeech = null;
+let isSpeaking = false;
+let userStoppedManually = false;
+
+
 const autoPlayBtn = document.createElement('button');
 autoPlayBtn.id = 'btnAutoPlayCard';
 autoPlayBtn.textContent = '📽️ 连续播放';
@@ -952,52 +957,117 @@ function stopAutoPlay() {
   window.speechSynthesis.cancel();
 }
 
+
+
+
+
+function createSpeechForNode(node, onEnd) {
+  if (!node || !node.text) return null;
+  const utter = new SpeechSynthesisUtterance(`${node.text}. ${stripHTML(node.description || '')}`);
+  utter.lang = 'en-US';
+  utter.rate = 1;
+  utter.pitch = 1;
+  // 当语音自然播放结束时，如果自动播放模式开启且用户没有手动停止，则自动调用 onEnd 回调
+  utter.onend = () => {
+    isSpeaking = false;
+    if (isAutoPlaying && !userStoppedManually && typeof onEnd === 'function') {
+         onEnd();
+    }
+    // 重置手动停止状态
+    userStoppedManually = false;
+  };
+  utter.onerror = () => {
+    isSpeaking = false;
+    userStoppedManually = false;
+  };
+  return utter;
+}
+
+
+
+
 function playNextCard() {
   if (!isAutoPlaying || autoPlayIndex >= nodes.length) {
     stopAutoPlay();
     return;
   }
-
+  
   const node = nodes[autoPlayIndex];
   if (!node) {
     autoPlayIndex++;
     return playNextCard();
   }
-
-  // 构建卡片内容（与之前一样）
+  
+  // 构建当前页的卡片内容
   let content = `<h2>${node.text}</h2>`;
-  content += `<button id="speakNodeBtn" style="margin-bottom: 12px;">🔊 朗读</button>`;
+  content += `
+    <button id="speakNodeBtn" style="margin: 6px 6px 12px 0;">⏹️ Stop</button>
+    <button id="nextNodeBtn" style="margin: 6px 6px 12px 0;">⏭️ Next</button>
+  `;
   if (node.description) content += `<div>${node.description}</div>`;
   if (node.image) content += `<img src="${node.image}" style="margin-top: 12px; max-width: 100%;">`;
-  if (node.classic) content += `<p><strong>🌟 Classic:</strong> ${node.classic}</p>`;
-  if (node.person) content += `<p><strong>👤 Person:</strong> ${node.person}</p>`;
-  if (node.videoUrl) content += `<iframe width="100%" height="200" src="${node.videoUrl}" frameborder="0" allowfullscreen></iframe>`;
   cardBox.innerHTML = content;
   cardOverlay.style.display = 'flex';
 
-  // 自动朗读 + 播放完成后继续
-  const speech = new SpeechSynthesisUtterance(`${node.text}. ${stripHTML(node.description || '')}`);
-  speech.lang = 'en-US';
-  speech.onend = () => {
-    if (isAutoPlaying) {
-      autoPlayIndex++;
-      setTimeout(playNextCard, 800); // 节奏间隔
-    }
-  };
-  speech.onerror = () => {
-    autoPlayIndex++;
-    playNextCard();
-  };
+  // 取消之前的朗读
   window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(speech);
 
-  // 可手动朗读按钮
-  document.getElementById('speakNodeBtn').addEventListener('click', (e) => {
+  // 获取按钮引用
+  const speakBtn = document.getElementById('speakNodeBtn');
+  const nextBtn = document.getElementById('nextNodeBtn');
+
+  // 如果用户之前手动停止了朗读，则新页面保持静音状态
+  if (!userStoppedManually) {
+    currentSpeech = createSpeechForNode(node, () => {
+      autoPlayIndex++;
+      setTimeout(playNextCard, 300);
+    });
+    window.speechSynthesis.speak(currentSpeech);
+    isSpeaking = true;
+    speakBtn.textContent = '⏹️ Stop';
+  } else {
+    currentSpeech = null;
+    isSpeaking = false;
+    speakBtn.textContent = '🔊 Resume';
+  }
+
+  // “朗读/恢复”按钮事件：点击时切换朗读状态
+  speakBtn.addEventListener('click', (e) => {
     e.stopPropagation();
+    if (isSpeaking) {
+      // 用户点击停止，则标记为手动停止，并保持静音
+      userStoppedManually = true;
+      window.speechSynthesis.cancel();
+      isSpeaking = false;
+      speakBtn.textContent = '🔊 Resume';
+    } else {
+      // 用户点击恢复，则清除手动停止标记，并启动朗读（自动朗读结束后自动跳转）
+      userStoppedManually = false;
+      currentSpeech = createSpeechForNode(node, () => {
+         autoPlayIndex++;
+         setTimeout(playNextCard, 300);
+      });
+      window.speechSynthesis.speak(currentSpeech);
+      isSpeaking = true;
+      speakBtn.textContent = '⏹️ Stop';
+    }
+  });
+
+  // “下一页”按钮事件：点击时直接切换下一页，新页保持静音状态
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    // 设置为手动停止状态，这样新页不会自动朗读
+    userStoppedManually = true;
     window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(speech);
+    isSpeaking = false;
+    currentSpeech = null;
+    autoPlayIndex++;
+    setTimeout(playNextCard, 300);
   });
 }
+
+
+
 
 closeBtn.addEventListener('click', () => {
   cardOverlay.style.display = 'none';
