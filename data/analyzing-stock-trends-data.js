@@ -4,7 +4,6 @@ window.mindmapData = {
       text: "0. Analyzing Stock Trends",
       important: true,
       classic: "Key Concepts: Trend Lines, Moving Averages",
-      person: "Various Analysts",
       description: `
         <strong>Analyzing Stock Trends</strong> is a foundational practice in technical analysis, aiming to identify the direction and strength of price movements over time.
         By studying historical price data, traders attempt to detect <em>uptrends</em>, <em>downtrends</em>, or <em>sideways consolidation</em> that can inform buying or selling decisions.
@@ -15,7 +14,6 @@ window.mindmapData = {
         • Momentum indicators (RSI, MACD)<br>
         • Volume confirmation<br><br>
         🔗 <a href="https://www.investopedia.com/articles/trading/04/092204.asp" target="_blank">Investopedia: Trend Trading Strategies</a><br>
-        🔗 <a href="https://www.stockcharts.com/school/doku.php?id=chart_school:chart_analysis:trend_lines" target="_blank">StockCharts: Understanding Trends</a>
       `
     },
     {
@@ -94,7 +92,8 @@ window.mindmapData = {
         📘 Trend lines act as dynamic support and resistance levels. The more touches a line has, the more significant it becomes.<br>
         ⚠️ Always use closing prices for better consistency.<br><br>
         🔗 <a href="https://www.investopedia.com/terms/t/trendline.asp" target="_blank">Investopedia: What Is a Trendline?</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=ITXWzC2ZP4M" target="_blank">YouTube: How to Draw Trend Lines</a>
+        📺
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/Mr0StMfAZZU?si=tz8FUIwR4GvPVoVS" title="YouTube: How to Draw Trend Lines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       `
     },
     {
@@ -153,7 +152,8 @@ window.mindmapData = {
         ✅ <strong>Below 30</strong>: Often considered oversold<br><br>
         📘 RSI is most powerful when combined with trend context, divergence signals, or support/resistance zones.<br>
         🔗 <a href="https://www.investopedia.com/terms/r/rsi.asp" target="_blank">Investopedia: RSI Explained</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=PkYPSh3TPFs" target="_blank">YouTube: RSI Basics</a>
+        📺 
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/TQMayZS9o1U?si=tul1lNsFqwqK6fc8" title="YouTube: RSI Basics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       `
     },
     {
@@ -168,8 +168,9 @@ window.mindmapData = {
         ✅ Bearish signal: MACD crosses below signal line<br><br>
         📘 MACD helps identify trend direction, strength, and reversals, especially when divergence appears.<br>
         🔗 <a href="https://www.investopedia.com/terms/m/macd.asp" target="_blank">Investopedia: MACD</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=2_5lNsmdTzQ" target="_blank">YouTube: MACD in Practice</a>
-      `
+        📺 YouTube: MACD in Practice
+      `,
+       videoUrl:"https://www.youtube.com/embed/W78Xg_pnJ1A?si=MYfNVX31YWQDhhmC"
     },
     {
       text: "11. Bollinger Bands",
@@ -196,8 +197,9 @@ window.mindmapData = {
         📌 Volume spikes can indicate breakouts, climaxes, or institutional activity<br><br>
         📘 Combine volume with patterns, RSI/MACD, or candlestick signals for better trade entries.<br>
         🔗 <a href="https://www.investopedia.com/articles/technical/02/121702.asp" target="_blank">Investopedia: Understanding Volume</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=4T1GR4TGKBg" target="_blank">YouTube: Using Volume Like a Pro</a>
-      `
+        📺 YouTube: Using Volume Like a Pro
+      `,
+       videoUrl:"https://www.youtube.com/embed/CrHdBH6yBJ8?si=HAlYAcQ3FJ-QRkGB"
     },
     
 
@@ -215,8 +217,9 @@ window.mindmapData = {
         • <strong>Flags & Pennants</strong> – Short-term continuation<br><br>
         📘 Chart patterns are more effective when supported by volume and trend context.<br>
         🔗 <a href="https://www.investopedia.com/articles/technical/02/121702.asp" target="_blank">Investopedia: Chart Patterns</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=K-SdM18nN04" target="_blank">YouTube: Chart Patterns Explained</a>
-      `
+        📺 YouTube: Chart Patterns Explained
+      `,
+       videoUrl:"https://www.youtube.com/embed/aRlWle9smww?si=w_bmTAHv9dZc1Pya"
     },
     {
       text: "14. Candlestick Patterns",
@@ -231,8 +234,9 @@ window.mindmapData = {
         • <strong>Shooting Star / Morning Star</strong><br><br>
         📘 Look for patterns at key levels (support/resistance), especially with volume confirmation.<br>
         🔗 <a href="https://www.investopedia.com/trading/candlestick-charting-what-is-it/" target="_blank">Investopedia: Candlestick Basics</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=2Hj5UqVbZ_M" target="_blank">YouTube: Candlestick Crash Course</a>
-      `
+        📺 YouTube: Candlestick Pattern Guide
+      `,
+       videoUrl:"https://www.youtube.com/embed/tW13N4Hll88?si=00sliPvkI8n7Y2fg"
     },
     {
       text: "15. Breakouts & Pullbacks",
@@ -258,7 +262,6 @@ window.mindmapData = {
         • <strong>Horizontal Channel</strong> – range-bound market<br><br>
         📘 Channels are often used with oscillators like RSI for timing entries.<br>
         🔗 <a href="https://www.tradingview.com/ideas/channels/" target="_blank">TradingView: Price Channel Ideas</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=kClWD1TIwV0" target="_blank">YouTube: Trading with Channels</a>
       `
     },
     
@@ -276,7 +279,7 @@ window.mindmapData = {
         • <strong>Structure-based Stop</strong>: placed below recent swing low<br>
         • <strong>Percentage-based Stop</strong>: fixed percentage of account equity<br><br>
         📘 Elder’s Rule: “If you must be in the market, be prepared to get out.”<br><br>
-        📊 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Stop_loss_example.svg/800px-Stop_loss_example.svg.png" width="100%" alt="Stop Loss Example"><br>
+        📊 <img src="https://m.foolcdn.com/media/dubs/images/stop-loss-order-infographic.width-880.png" width="100%" alt="Stop Loss Example"><br>
         🔗 <a href="https://www.investopedia.com/articles/trading/06/stopplacement.asp" target="_blank">Stop-Loss Techniques – Investopedia</a><br>
       `
     },
@@ -324,7 +327,7 @@ window.mindmapData = {
         • Bollinger Band bounces<br>
         • Support/Resistance rejection<br><br>
         ⚠️ Requires tight stops and precise timing<br><br>
-        📊 <img src="https://www.forexboat.com/wp-content/uploads/2017/01/bollinger-bands-trading.png" width="100%" alt="Counter-Trend with Bollinger Bands"><br>
+        📊 <img src="https://howtotrade.com/wp-content/uploads/2023/10/counter-trend-anatomy-of-bollinger-bands.png" width="100%" alt="Counter-Trend with Bollinger Bands"><br>
         🔗 <a href="https://www.bollingerbands.com/bollinger-bands/" target="_blank">Bollinger Band Basics</a><br>
       `
     }

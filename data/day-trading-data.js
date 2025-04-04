@@ -70,7 +70,7 @@ window.mindmapData = {
       person: "Thomas Bulkowski",
       description: "Recognize head-and-shoulders, double bottoms, etc., to predict reversals or continuations.",
       application: "Visual cues for trade entries and exits.",
-      videoUrl: "https://www.youtube.com/embed/kT2UAr7Xz14"
+      // videoUrl: "https://www.youtube.com/embed/kT2UAr7Xz14"
     },
     {
       text: "9. Technical Indicators",

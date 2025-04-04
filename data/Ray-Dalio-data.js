@@ -41,6 +41,7 @@ window.mindmapData = {
     {
       text: "4. Principles",
       description: "Core philosophies and systems that Ray Dalio uses to guide decision-making and company culture.",
+      videoUrl: "https://www.youtube.com/embed/Nu4lHaSh7D4?si=k0D0lFbfecglx0lk",
       expanded: true
     },
     {

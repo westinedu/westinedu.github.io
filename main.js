@@ -149,7 +149,89 @@ staticDescEl.innerHTML = node.description || "No description.";
 staticDescEl.style.marginTop = "4px";
 staticDescEl.style.fontStyle = "normal";
 // 可以添加其他样式，例如颜色、字号等
+staticDescEl.contentEditable = "false";  // 编辑节点的开关 ************
+staticDescEl.classList.add("editable-html");
+
+// 缓存原始内容以便取消编辑时恢复
+let originalContent = staticDescEl.innerHTML;
+
+// 创建“编辑”按钮
+const editDescBtn = document.createElement('button');
+editDescBtn.className = "editDescBtn";
+editDescBtn.textContent = "✏️ Edit";
+editDescBtn.style.marginRight = "8px";
+editDescBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+
+  originalContent = staticDescEl.innerHTML; // 保存进入编辑前的内容
+  staticDescEl.contentEditable = true;
+  staticDescEl.focus();
+
+  editDescBtn.style.display = 'none';
+  saveDescBtn.style.display = 'inline-block';
+  cancelDescBtn.style.display = 'inline-block'; // 显示取消按钮
+});
+
+// 创建“保存”按钮
+const saveDescBtn = document.createElement('button');
+saveDescBtn.className = "saveDescBtn";
+saveDescBtn.textContent = "💾 Save";
+saveDescBtn.style.display = 'none';
+saveDescBtn.style.marginRight = "8px";
+saveDescBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  staticDescEl.contentEditable = false;
+  node.description = staticDescEl.innerHTML;
+
+  editDescBtn.style.display = 'inline-block';
+  saveDescBtn.style.display = 'none';
+  cancelDescBtn.style.display = 'none';
+  scheduleUpdate(); // 如果你有这个函数，用于保存更改
+});
+
+// ✅ 创建“取消”按钮
+const cancelDescBtn = document.createElement('button');
+cancelDescBtn.className = "cancelDescBtn";
+cancelDescBtn.textContent = "❌ Cancel";
+cancelDescBtn.style.display = 'none';
+cancelDescBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  staticDescEl.innerHTML = originalContent; // 恢复原内容
+  staticDescEl.contentEditable = false;
+
+  editDescBtn.style.display = 'inline-block';
+  saveDescBtn.style.display = 'none';
+  cancelDescBtn.style.display = 'none';
+});
+
+// 添加到卡片视图中
 div.appendChild(staticDescEl);
+// 编辑节点的按钮，开关  ***********************************************
+div.appendChild(editDescBtn);
+div.appendChild(saveDescBtn);
+div.appendChild(cancelDescBtn);
+
+
+// 防止清除格式的粘贴行为
+staticDescEl.addEventListener('paste', function(e) {
+  e.preventDefault();
+  const html = e.clipboardData.getData('text/html');
+  const plain = e.clipboardData.getData('text/plain');
+  document.execCommand('insertHTML', false, html || plain);
+});
+
+const editHtmlBtn = document.createElement('button');
+editHtmlBtn.textContent = "🖊 Edit HTML";
+editHtmlBtn.addEventListener('click', () => {
+  const isEditing = staticDescEl.contentEditable === "true";
+  if (isEditing) {
+    staticDescEl.contentEditable = "false";
+    editHtmlBtn.textContent = "🖊 Edit HTML";
+  } else {
+    staticDescEl.contentEditable = "true";
+    editHtmlBtn.textContent = "✅ Done";
+  }
+});
 
 
 // 点击切换描述展开/收起
@@ -233,9 +315,19 @@ editableCommentEl.style.padding = "4px";
       img.style.marginTop = "6px";
       extraInfo.appendChild(img);
     }
+    // 在创建节点的描述时加上这一段
+if (node.categoryPath && Array.isArray(node.categoryPath)) {
+  const categoryDiv = document.createElement('div');
+  categoryDiv.className = "category-path";
+  categoryDiv.innerHTML = `<em>📂 Major:</em> ${node.categoryPath.join(" → ")}`;
+  div.appendChild(categoryDiv);
+}
 
     div.appendChild(staticDescEl);
     div.appendChild(toggleBtn);
+    /**
+ *  这里是可编辑的评论区域   的开关，暂时关闭comment 功能 ****************************
+ */
     // div.appendChild(editableCommentEl);
     // div.appendChild(editBtn);
 
@@ -502,7 +594,10 @@ div.appendChild(speakBtn);
                 e.target.closest('.toggle-btn') ||
                 e.target.classList.contains('rich-text')||
                 e.target.classList.contains('toggle-icon') ||
-                e.target.closest('.speak-btn')
+                e.target.closest('.speak-btn') ||
+                e.target.closest('.editDescBtn') ||
+                e.target.closest('.saveDescBtn') ||
+                e.target.closest('.cancelDescBtn') 
             ) {
                 return;
             }
@@ -686,7 +781,9 @@ function highlightNodeOnClick(e) {
     if (!node) return;  // 如果点击的不是节点，直接返回
 
       // Only skip if the user clicked directly on the toggle icon (▶ / ▼)
-  if (e.target.classList.contains('toggle-icon') || e.target.closest('.speak-btn')) return;
+  if (e.target.classList.contains('toggle-icon') || e.target.closest('.speak-btn') ||
+      e.target.closest('.editDescBtn') ||
+      e.target.closest('.saveDescBtn') ) return;
     
     const nodeIndex = Number(node.dataset.index);
     const nodeObj = nodes[nodeIndex];
@@ -1002,10 +1099,14 @@ function playNextCard() {
   let content = `<h2>${node.text}</h2>`;
   content += `
     <button id="speakNodeBtn" style="margin: 6px 6px 12px 0;">⏹️ Stop</button>
+    <button id="prevNodeBtn" style="margin: 6px 6px 12px 0;">⏮️ Previous</button>
     <button id="nextNodeBtn" style="margin: 6px 6px 12px 0;">⏭️ Next</button>
   `;
   if (node.description) content += `<div>${node.description}</div>`;
   if (node.image) content += `<img src="${node.image}" style="margin-top: 12px; max-width: 100%;">`;
+  if (node.classic) content += `<p><strong>🌟 Classic:</strong> ${node.classic}</p>`;
+  if (node.person) content += `<p><strong>👤 Person:</strong> ${node.person}</p>`;
+  if (node.videoUrl) content += `<iframe width="100%" height="200" src="${node.videoUrl}" frameborder="0" allowfullscreen></iframe>`;
   cardBox.innerHTML = content;
   cardOverlay.style.display = 'flex';
 
@@ -1014,6 +1115,7 @@ function playNextCard() {
 
   // 获取按钮引用
   const speakBtn = document.getElementById('speakNodeBtn');
+  const prevBtn = document.getElementById('prevNodeBtn');
   const nextBtn = document.getElementById('nextNodeBtn');
 
   // 如果用户之前手动停止了朗读，则新页面保持静音状态
@@ -1053,6 +1155,20 @@ function playNextCard() {
     }
   });
 
+    // “上一页”按钮事件：点击时直接切换上一页，前页保持静音状态
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    // 停止当前朗读
+    window.speechSynthesis.cancel();
+    isSpeaking = false;
+    currentSpeech = null;
+  
+    // 倒退一个节点
+    autoPlayIndex = Math.max(0, autoPlayIndex - 1);
+    userStoppedManually = true;
+    setTimeout(playNextCard, 300);
+  });
+
   // “下一页”按钮事件：点击时直接切换下一页，新页保持静音状态
   nextBtn.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -1073,6 +1189,63 @@ closeBtn.addEventListener('click', () => {
   cardOverlay.style.display = 'none';
   stopAutoPlay();
 });
+
+
+    /********* 17. 节点html粘帖编辑功能，可以导出新的data.js  **********/
+
+const exportBtn = document.createElement('button');
+exportBtn.textContent = "💾 Export Data";
+exportBtn.id = "btnExportData";
+document.getElementById('controls').appendChild(exportBtn);
+    
+
+// ⏳ 获取原始 <script src="data/xxx.js"> 文件路径
+const getOriginalDataFilename = () => {
+  const scriptTags = document.querySelectorAll('script[src]');
+  for (const tag of scriptTags) {
+    const src = tag.getAttribute('src');
+    if (src.includes('data/') && src.endsWith('.js')) {
+      return src.split('/').pop(); // 提取如 business-school-data.js
+    }
+  }
+  return 'data.js';
+};
+
+// ⌛ 时间戳备份名生成
+const generateBackupName = (originalName) => {
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  return `${originalName.replace('.js', '')}.backup.${timestamp}.js`;
+};
+
+// 📦 导出逻辑
+exportBtn.addEventListener('click', () => {
+  const filename = getOriginalDataFilename();
+  const backupName = generateBackupName(filename);
+
+  // 准备 JSON 内容
+  const content = `window.mindmapData = ${JSON.stringify(window.mindmapData, null, 2)};`;
+
+  // 备份文件
+  const backupBlob = new Blob([content], { type: 'application/javascript' });
+  const backupLink = document.createElement('a');
+  backupLink.href = URL.createObjectURL(backupBlob);
+  backupLink.download = backupName;
+  backupLink.click();
+
+  // 提示用户保存正式文件
+  alert(`✅ Backup saved as: ${backupName}\n\nYou can now choose to export the final version.`);
+
+  // 下载主文件（手动保存，需确认）
+  const confirmExport = confirm(`Do you want to export the main file now?\n(${filename})`);
+  if (confirmExport) {
+    const blob = new Blob([content], { type: 'application/javascript' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    link.click();
+  }
+});
+
 
 
     /********* 初始化布局**********/

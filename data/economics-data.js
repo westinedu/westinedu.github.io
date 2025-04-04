@@ -5,13 +5,14 @@ window.mindmapData = {
       important: true, 
       classic: "Classic Theory: Market Equilibrium", 
       person: "Adam Smith", 
-      image: "https://via.placeholder.com/100?text=Adam+Smith",
+      // image: "https://via.placeholder.com/100?text=Adam+Smith",
       description: `
         <strong>Economics</strong> is the social science that studies how individuals, businesses, governments, and societies allocate scarce resources to satisfy unlimited wants.
         It includes microeconomics and macroeconomics and is central to decision-making in both public and private sectors.
         <br><br>
         🔗 <a href="https://plato.stanford.edu/entries/economics/" target="_blank">Stanford Encyclopedia of Philosophy: Economics</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=3ez10ADR_gM" target="_blank">Crash Course: What is Economics?</a>
+        📺 What is Economics?
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/SwaCg7Gwtzw?si=B8gwg_1FIbPwHwCe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       `
     },
     { text: "1. Microeconomics",
@@ -30,8 +31,9 @@ window.mindmapData = {
         It is essential for understanding national policies and global economic trends.
         <br><br>
         🔗 <a href="https://www.imf.org/en/About/Factsheets/Sheets/2022/03/11/what-is-macroeconomics" target="_blank">What is Macroeconomics? (IMF)</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=1mT5Y07S5zU" target="_blank">Crash Course: Macroeconomics Intro</a>
-      `
+        📺 Crash Course: Macroeconomics Intro
+      `,
+      videoUrl: "https://www.youtube.com/embed/d8uTB5XorBw?si=o9S6RlHO65Tx0elR"
     },
     { text: "3. Demand & Supply",
       description: `
@@ -186,15 +188,16 @@ window.mindmapData = {
       important: true,
       classic: "Classic Theory: Keynesian Theory",
       person: "Keynes",
-      image: "https://via.placeholder.com/100?text=Keynes",
+      // image: "https://via.placeholder.com/100?text=Keynes",
       description: `
         <strong>Keynesian Theory</strong>, developed by John Maynard Keynes during the Great Depression, emphasizes the role of government spending and aggregate demand in influencing economic activity.
         It challenges classical views that markets always self-correct.
         <br><br>
         📘 Key ideas: multiplier effect, fiscal stimulus, sticky wages and prices.<br>
         🔗 <a href="https://www.investopedia.com/terms/k/keynesianeconomics.asp" target="_blank">Investopedia: Keynesian Economics</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=x5M5c3bl0xk" target="_blank">Crash Course: Keynesian vs Classical Economics</a>
-      `
+        📺 Keynesian vs Classical Economics
+      `,
+      videoUrl: "https://www.youtube.com/embed/o6UXRZ2XwgU?si=hzyVyrWxBT64lxxp"
     },
     { text: "20. Phillips Curve",
       description: `
@@ -381,8 +384,9 @@ window.mindmapData = {
         <br><br>
         📘 Introduced by Markowitz, later expanded by Sharpe (CAPM) and others.<br>
         🔗 <a href="https://corporatefinanceinstitute.com/resources/wealth-management/modern-portfolio-theory-mpt/" target="_blank">CFI: Modern Portfolio Theory</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=ehc7N9P0ANU" target="_blank">YouTube: MPT & Efficient Frontier</a>
-      `
+        📺 YouTube: MPT & Efficient Frontier
+      `,
+      videoUrl: "https://www.youtube.com/embed/8TJQhQ2GZ0Y?si=efAe_1KadL2ObEwT"
     },
     { text: "36. Asset Pricing",
       classic: "Capital Asset Pricing Model (CAPM), Arbitrage Pricing Theory (APT)",
@@ -550,8 +554,9 @@ window.mindmapData = {
         📊 Graphically, it's the area below the demand curve and above the market price.<br>
         📘 Useful in welfare economics and policy analysis.<br>
         🔗 <a href="https://www.investopedia.com/terms/c/consumer_surplus.asp" target="_blank">Investopedia: Consumer Surplus</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=q1YrfSln1Jk" target="_blank">YouTube: Consumer Surplus Explained</a>
-      `
+        
+      `,
+      // videoUrl: "https://www.youtube.com/embed/kT2UAr7Xz14"
     },
     {
       text: "48. Producer Surplus",
@@ -572,8 +577,9 @@ window.mindmapData = {
         <br><br>
         📈 The short-run inelasticity of demand causes steep price reactions.<br>
         📘 Long-run adaptation includes switching to fuel-efficient cars or alternative transport.<br>
-        📺 <a href="https://www.youtube.com/watch?v=G7TV9sMb5ZI" target="_blank">YouTube: How Gas Prices Affect Markets</a>
-      `
+        `
+        // 📺 <a href="https://www.youtube.com/watch?v=G7TV9sMb5ZI" target="_blank">YouTube: How Gas Prices Affect Markets</a>
+      
     },
     {
       text: "50. Video: Crash Course #4",
@@ -595,9 +601,9 @@ window.mindmapData = {
         <br><br>
         📉 The IS curve is downward sloping because lower interest rates stimulate investment, increasing aggregate demand and output.<br>
         📘 Fiscal policy shifts the IS curve left or right.<br>
-        🔗 <a href="https://www.economicsdiscussion.net/is-lm-model/is-curve/31579" target="_blank">IS Curve Explained</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=r2X3h-HZkYI" target="_blank">YouTube: IS Curve Intuition</a>
-      `
+        🔗 <a href="https://www.economicsdiscussion.net/is-lm-model/is-curve/31579" target="_blank">IS Curve Explained</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=r2X3h-HZkYI" target="_blank">YouTube: IS Curve Intuition</a>
+      
     },
     {
       text: "52. LM Curve",
@@ -607,9 +613,9 @@ window.mindmapData = {
         <br><br>
         📈 The LM curve is upward sloping because as income rises, people demand more money, pushing up interest rates (if supply is fixed).<br>
         📘 Monetary policy (e.g., changing money supply) shifts the LM curve.<br>
-        🔗 <a href="https://www.economicshelp.org/blog/glossary/lm-curve/" target="_blank">Economics Help: LM Curve</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=cFh8AE5wUlA" target="_blank">YouTube: LM Curve Basics</a>
-      `
+        🔗 <a href="https://www.economicshelp.org/blog/glossary/lm-curve/" target="_blank">Economics Help: LM Curve</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=cFh8AE5wUlA" target="_blank">YouTube: LM Curve Basics</a>
+      
     },
     {
       text: "53. Shifts in IS/LM",
@@ -632,9 +638,9 @@ window.mindmapData = {
         • Precautionary<br>
         • Speculative<br><br>
         📘 The interest rate adjusts to balance money demand and supply.<br>
-        🔗 <a href="https://www.investopedia.com/terms/l/liquiditypreference.asp" target="_blank">Liquidity Preference - Investopedia</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=XEDCEnCV0PE" target="_blank">YouTube: Keynes & Liquidity Preference</a>
-      `
+        🔗 <a href="https://www.investopedia.com/terms/l/liquiditypreference.asp" target="_blank">Liquidity Preference - Investopedia</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=XEDCEnCV0PE" target="_blank">YouTube: Keynes & Liquidity Preference</a>
+      
     },
     {
       text: "55. Video: IS-LM Explanation",
@@ -659,9 +665,9 @@ window.mindmapData = {
         • <strong>Loss Aversion</strong>: losses hurt more than equivalent gains please<br>
         • <strong>Diminishing sensitivity</strong>: value function is concave for gains, convex for losses<br>
         • <strong>Probability weighting</strong>: people overweight small probabilities and underweight large ones<br><br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/prospect-theory/" target="_blank">BehavioralEconomics.com: Prospect Theory</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=gfGtCfeJ_BA" target="_blank">YouTube: Prospect Theory in Action</a>
-      `
+        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/prospect-theory/" target="_blank">BehavioralEconomics.com: Prospect Theory</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=gfGtCfeJ_BA" target="_blank">YouTube: Prospect Theory in Action</a>
+      
     },
     {
       text: "57. Bounded Rationality",
@@ -670,9 +676,9 @@ window.mindmapData = {
         Instead of optimizing, people often <em>satisfice</em> — choosing a solution that is good enough — due to limited time, information, or computational capacity.
         <br><br>
         📘 Bounded rationality helps explain real-world behavior like defaults, biases, and heuristics.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/bounded-rationality/" target="_blank">Mini Encyclopedia: Bounded Rationality</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=m7HcUdawS7M" target="_blank">YouTube: Bounded Rationality Explained</a>
-      `
+        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/bounded-rationality/" target="_blank">Mini Encyclopedia: Bounded Rationality</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=m7HcUdawS7M" target="_blank">YouTube: Bounded Rationality Explained</a>
+      
     },
     {
       text: "58. Nudge Theory",
@@ -684,9 +690,9 @@ window.mindmapData = {
         • Auto-enrolling employees into retirement savings<br>
         • Default organ donation settings<br><br>
         📘 Nudges are subtle, cost-effective tools for public policy and behavioral design.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/nudge/" target="_blank">What is Nudge Theory?</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=lF5tUDyD8Vg" target="_blank">YouTube: Nudge - Behavioral Science in Practice</a>
-      `
+        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/nudge/" target="_blank">What is Nudge Theory?</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=lF5tUDyD8Vg" target="_blank">YouTube: Nudge - Behavioral Science in Practice</a>
+      
     },
     {
       text: "59. Video: Dan Ariely TED Talk",
@@ -696,9 +702,9 @@ window.mindmapData = {
         <br><br>
         📘 Ariely’s work bridges psychology, marketing, and public policy.<br>
         🔗 <a href="https://www.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" target="_blank">Watch on TED.com</a><br><br>
-        📺 <iframe width="100%" height="200" src="https://www.youtube.com/embed/EXAMPLE_VIDEO_ID" title="Dan Ariely TED Talk" frameborder="0" allowfullscreen></iframe>
+        📺 <iframe width="100%" height="200" src="https://www.youtube.com/embed/9X68dm92HVI?si=wqMprkRLxjPCzMuZ" title="Dan Ariely TED Talk" frameborder="0" allowfullscreen></iframe>
       `,
-      videoUrl: "https://www.youtube.com/embed/EXAMPLE_VIDEO_ID"
+      // videoUrl: "https://www.youtube.com/embed/EXAMPLE_VIDEO_ID"
     },    
 
     // Children of Behavioral Finance (Node 43)
@@ -710,9 +716,9 @@ window.mindmapData = {
         <br><br>
         📉 Studies show that overconfident investors trade more frequently and achieve lower returns.<br>
         📘 A key concept in explaining market anomalies and irrational behavior.<br>
-        🔗 <a href="https://corporatefinanceinstitute.com/resources/behavioral-finance/overconfidence-bias/" target="_blank">CFI: Overconfidence Bias</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=4ynO29zBOSU" target="_blank">YouTube: Overconfidence in Financial Markets</a>
-      `
+        🔗 <a href="https://corporatefinanceinstitute.com/resources/behavioral-finance/overconfidence-bias/" target="_blank">CFI: Overconfidence Bias</a><br>`
+        // 📺 <a href="https://www.youtube.com/watch?v=4ynO29zBOSU" target="_blank">YouTube: Overconfidence in Financial Markets</a>
+      
     },
     {
       text: "61. Loss Aversion",
@@ -721,9 +727,9 @@ window.mindmapData = {
         A loss feels approximately twice as painful as the pleasure from a comparable gain.
         <br><br>
         📘 Central to Prospect Theory and explains why investors cling to losing assets or sell winners too early.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/loss-aversion/" target="_blank">BehavioralEconomics.com: Loss Aversion</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=2KhGXl4Zx7I" target="_blank">YouTube: Why Losses Hurt More</a>
-      `
+        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/loss-aversion/" target="_blank">BehavioralEconomics.com: Loss Aversion</a><br> `
+        // 📺 <a href="https://www.youtube.com/watch?v=2KhGXl4Zx7I" target="_blank">YouTube: Why Losses Hurt More</a>
+    
     },
     {
       text: "62. Herd Behavior",
@@ -745,10 +751,10 @@ window.mindmapData = {
         This engaging video provides a concise <strong>overview of Behavioral Finance</strong>, including key cognitive biases, emotional drivers, and market implications.
         It's ideal for students, investors, or anyone seeking to understand why markets often deviate from rational expectations.
         <br><br>
-        📺 Covers heuristics, framing, mental accounting, and more.<br>
-        📽️Watch on YouTube
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/EXAMPLE_VIDEO_ID" title="Behavioral Finance Overview" frameborder="0" allowfullscreen></iframe>
-      `
+        📺 Covers heuristics, framing, mental accounting, and more.<br>`
+        // 📽️Watch on YouTube
+        // <iframe width="100%" height="200" src="https://www.youtube.com/embed/EXAMPLE_VIDEO_ID" title="Behavioral Finance Overview" frameborder="0" allowfullscreen></iframe>
+      
     }    
   ],
 

@@ -1,4 +1,4 @@
-/* style.css V1.4 基本完成准备上线*/
+/* style.css V1.4 展播已实现*/
 
 /* 页面基本样式 */
 html, body {
@@ -385,4 +385,29 @@ svg {
 #cardOverlay p, #cardOverlay div {
   font-size: 1em;
   line-height: 1.5;
+}
+
+
+
+.editable-html {
+  border: 1px dashed #ccc;
+  padding: 6px;
+  min-height: 60px;
+  background: #fdfdfd;
+  transition: all 0.3s;
+}
+.editable-html:focus {
+  outline: none;
+  background: #fffdf5;
+}
+
+.static-desc[contenteditable="true"] {
+  outline: 2px dashed #4f46e5;
+  background: #f9f9ff;
+}
+
+.category-path {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #666;
 }
