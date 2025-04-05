@@ -12,16 +12,18 @@
           "previewImage": "https://westinedu.github.io/images/stock-investing-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/Stock-investing_index1.0.html",
           "description": "Long-term value investing strategies, fundamental analysis, and portfolio design.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": "com.AIGraph.stock_investing"
         },
         {
-          "id": "investing-trends",
+          "id": "analyzing-trends",
           "title": "Analyzing Stock Trends",
           "coverImage": "https://westinedu.github.io/images/stock-trends-cover.jpg",
           "previewImage": "https://westinedu.github.io/images/stock-trends-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/analyzing-stock-trends_index1.0.html",
           "description": "Explore trendlines, indicators, market phases, and chart patterns.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": "com.AIGraph.investing_trends"
         },
         {
           "id": "stock-market",
@@ -30,7 +32,8 @@
           "previewImage": "https://westinedu.github.io/images/stock-market-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/Stock-market_index1.0.html",
           "description": "Structure of exchanges, trading rules, indices, liquidity and participants.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": "com.AIGraph.stock_market"
         },
         {
           "id": "investing",
@@ -39,7 +42,8 @@
           "previewImage": "https://westinedu.github.io/images/investing-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/Investing_index1.0.html",
           "description": "Foundations of investing, portfolio management, styles, metrics, global markets.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": "com.AIGraph.investing"
         },
         {
           "id": "investing-practices",
@@ -48,7 +52,8 @@
           "previewImage": "https://westinedu.github.io/images/investing-practices-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/Investing&Trading_index.html",
           "description": "Best practices for asset selection, diversification, and rebalancing.",
-          "requiresSubscription": true
+          "requiresSubscription": true,
+          "productId": "com.AIGraph.investing_practices"
         }
       ]
     },
@@ -63,7 +68,8 @@
           "previewImage": "https://westinedu.github.io/images/day-trading-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/DayTrading_index1.0.html",
           "description": "Learn candlesticks, scalping, momentum plays, and intraday risk control.",
-          "requiresSubscription": true
+          "requiresSubscription": true,
+          "productId": "com.AIGraph.day_trading"
         },
         {
           "id": "global-events-impact",
@@ -72,7 +78,8 @@
           "previewImage": "https://westinedu.github.io/images/global-events-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/EventsOnStock_index1.0.html",
           "description": "Geopolitical, economic, and crisis-based events affecting market sentiment.",
-          "requiresSubscription": true
+          "requiresSubscription": true,
+          "productId": "com.AIGraph.global_events"
         }
       ]
     },
@@ -87,7 +94,8 @@
           "previewImage": "https://westinedu.github.io/images/business-school-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/business-school.html",
           "description": "MBA, Financial Masters, EMBA curriculum including strategy, operations, finance.",
-          "requiresSubscription": true
+          "requiresSubscription": true,
+          "productId": "com.AIGraph.business_school"
         },
         {
           "id": "mobile-apps",
@@ -96,7 +104,8 @@
           "previewImage": "https://westinedu.github.io/images/mobile-apps-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/MoblieAppSale_index1.0.html",
           "description": "App monetization, marketing, ASO, product design for App Store success.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": "com.AIGraph.mobile_apps"
         }
       ]
     },
@@ -111,7 +120,8 @@
           "previewImage": "https://westinedu.github.io/images/economics-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/Economic_1.3_index.html",
           "description": "Macro and micro theories, models, inflation, unemployment, policy frameworks.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": "com.AIGraph.economics"
         },
         {
           "id": "ray-dalio",
@@ -120,7 +130,8 @@
           "previewImage": "https://westinedu.github.io/images/ray-dalio-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/Ray-Dalio-index1.0.html",
           "description": "Life principles, economic models, videos, Bridgewater culture and strategy.",
-          "requiresSubscription": true
+          "requiresSubscription": true,
+          "productId": "com.AIGraph.ray_dalio"
         }
       ]
     },
@@ -135,7 +146,8 @@
           "previewImage": "https://westinedu.github.io/images/meditate-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/LearningToMeditate_index1.0.html",
           "description": "Reduce stress, build focus, and develop mindfulness through step-by-step mindmaps.",
-          "requiresSubscription": false
+          "requiresSubscription": false,
+          "productId": null
         }
       ]
     }
