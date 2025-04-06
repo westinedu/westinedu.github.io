@@ -308,6 +308,209 @@
         "description": "Explore how behavioral biases and psychological factors impact communication and decision-making in financial markets and everyday life.",
         "tags": ["behavioral finance", "communication", "bias"],
         "associatedGraphIDs": ["business-school"]
+      },
+      {
+        "id": 44,
+        "title": "📈 What is Economics?",
+        "description": "The study of how societies use limited resources to produce valuable commodities and distribute them among different people.",
+        "tags": ["economics", "economics?"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 45,
+        "title": "📉 What is Microeconomics?",
+        "description": "Focuses on individual decision-makers within an economy—like households, workers, and businesses—and how they interact in markets.",
+        "tags": ["economics", "microeconomics"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 46,
+        "title": "📊 What is Macroeconomics?",
+        "description": "Looks at the economy as a whole, including topics like inflation, unemployment, and economic growth.",
+        "tags": ["economics", "macroeconomics"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 47,
+        "title": "📘 What is Supply and Demand?",
+        "description": "Explains how prices and quantities of goods are determined in a market system based on consumer and producer behavior.",
+        "tags": ["economics", "supply and demand"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 48,
+        "title": "💡 What is Opportunity Cost?",
+        "description": "The value of the next best alternative that is forgone when making a decision.",
+        "tags": ["economics", "opportunity cost"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 49,
+        "title": "🔮 What is GDP?",
+        "description": "Gross Domestic Product measures the total value of goods and services produced in a country over a specific period.",
+        "tags": ["economics", "gdp"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 50,
+        "title": "🧠 What is Inflation?",
+        "description": "The rate at which the general level of prices for goods and services is rising, reducing purchasing power.",
+        "tags": ["economics", "inflation"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 51,
+        "title": "📚 What is Unemployment?",
+        "description": "Occurs when people who are willing and able to work cannot find a job.",
+        "tags": ["economics", "unemployment"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 52,
+        "title": "💸 What is Fiscal Policy?",
+        "description": "Government policy regarding taxation and spending to influence the economy.",
+        "tags": ["economics", "fiscal policy"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 53,
+        "title": "🏛️ What is Monetary Policy?",
+        "description": "Central bank actions, such as changing interest rates, to control the money supply and stabilize the economy.",
+        "tags": ["economics", "monetary policy"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 54,
+        "title": "💬 What is Market Failure?",
+        "description": "When markets fail to allocate resources efficiently on their own, often justifying government intervention.",
+        "tags": ["economics", "market failure"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 55,
+        "title": "🔎 What is Elasticity?",
+        "description": "Measures how much the quantity demanded or supplied of a good responds to a change in price.",
+        "tags": ["economics", "elasticity"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 56,
+        "title": "🧾 What is Comparative Advantage?",
+        "description": "The ability of an entity to produce a good at a lower opportunity cost than another.",
+        "tags": ["economics", "comparative advantage"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 57,
+        "title": "💼 What is the Business Cycle?",
+        "description": "The periodic growth and decline in economic activity over time, including expansion, peak, recession, and recovery.",
+        "tags": ["economics", "business cycle"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 58,
+        "title": "🌍 What is International Trade?",
+        "description": "The exchange of goods and services across national borders, and its effects on economies.",
+        "tags": ["economics", "international trade"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 59,
+        "title": "🔧 What is Productivity?",
+        "description": "The amount of output produced per unit of input, often linked to technological progress and efficiency.",
+        "tags": ["economics", "productivity"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 60,
+        "title": "🏦 What is a Central Bank?",
+        "description": "A national institution that manages currency, money supply, and interest rates, such as the Federal Reserve.",
+        "tags": ["economics", "central bank"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 61,
+        "title": "🌍 Impact of Global Events on Stocks",
+        "description": "Global Events can dramatically shift market behavior, driving investor fear or enthusiasm, impacting valuations and capital flows across sectors and geographies.\n\n💡 Why It Matters\n- Stock markets are highly sensitive to external shocks and policy responses.\n- Investors who anticipate or hedge against major events often outperform peers.\n🌍 Major Event Categories\n- Geopolitical risks (war, conflict)\n- Natural disasters (earthquakes, floods)\n- Global health crises (pandemics)\n- Central bank policies\n- Political shifts (elections)\n🎯 Use Case\n- Investors track news, apply scenario analysis, or use event-driven strategies to mitigate risk or seize short-term alpha opportunities.",
+        "tags": ["global events", "stocks", "impact of global events on stocks"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 62,
+        "title": "💣 Geopolitical Tensions",
+        "description": "Wars, military escalations, and diplomatic disputes introduce global uncertainty that rattles investor confidence.\n\n📉 Impact\n- Defense stocks may rise, while broader markets fall.\n- Safe havens like gold or bonds attract inflows.\n- Energy prices often spike (e.g., Russia-Ukraine conflict and oil).\n📰 Example\n- 2022 Russia-Ukraine war caused volatility in European markets and energy stocks.\n📈 Short-Term Effects\n- Risk-off sentiment → shift to safe haven assets (gold, bonds)\n- Commodity prices (oil, wheat) spike\n🛡️ Risk Management\n- Diversify geographically\n- Increase cash buffer during heightened tensions\n📘 Reference\n- Council on Foreign Relations – Conflict Tracker",
+        "tags": ["global events", "stocks", "geopolitical tensions"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 63,
+        "title": "🌀 Natural Disasters",
+        "description": "Earthquakes, floods, and wildfires can disrupt production, logistics, and regional economies.\n\n🌀 Economic Effects\n- Insurance claims spike, utilities and infrastructure companies often impacted.\n- Supply chains may suffer (e.g., Taiwan earthquakes and chip production delays).\n💼 Sectors Affected\n- Construction, commodities, retail (inventory damage), insurance.\n🧭 Response Strategy\n- Consider exposure to reinsurance and construction sectors.\n- Evaluate disaster recovery funds or ESG impact themes.\n📚 Case Study\n- Japan’s 2011 earthquake led to massive supply chain disruption in auto and electronics sectors.",
+        "tags": ["global events", "stocks", "natural disasters"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 64,
+        "title": "🦠 Pandemics and Health Crises",
+        "description": "COVID-19 and other global pandemics introduce massive disruption across sectors, policy responses, and consumer behavior.\n\n💊 Economic Consequences\n- GDP drops, unemployment spikes, supply/demand shocks.\n- Acceleration of digital economy, remote work, e-commerce.\n💼 Affected Sectors\n- Healthcare (positive), airlines and hospitality (negative), tech (mixed).\n🧠 Investor Response\n- Rotate into remote/tech stocks.\n- Avoid high-contact businesses.\n📚 Reference\n- IMF and OECD pandemic economic impact reports.",
+        "tags": ["global events", "stocks", "pandemics"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 65,
+        "title": "💼 Corporate Scandals and Governance",
+        "description": "Major frauds, accounting irregularities, or executive misconduct can tank stock prices and raise market mistrust.\n\n💥 Effects\n- Stock price collapse, lawsuits, delisting risks.\n- Industry-wide contagion (e.g., Enron, Wirecard).\n📈 Watch for\n- Sudden CFO resignation.\n- Short seller reports.\n🧰 Investor Tool\n- Monitor whistleblower data, Glassdoor reviews, forensic accounting reports.\n📚 Example\n- Enron (2001), Luckin Coffee (2020)",
+        "tags": ["global events", "stocks", "corporate scandals"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 66,
+        "title": "🏦 Central Bank Rate Decisions",
+        "description": "Decisions on interest rates and monetary policy drive credit conditions, liquidity, and investor sentiment.\n\n📊 Market Impact\n- Rising rates → pressure on tech and growth stocks.\n- Lower rates → boost to housing, banks, equities.\n📆 Events to Track\n- FOMC meetings (Fed)\n- ECB, BOJ, PBoC announcements\n💡 Forward Guidance\n- Language used by central banks can signal future policy shifts.\n📘 Reference\n- Federal Reserve Dot Plot and Summary of Economic Projections.",
+        "tags": ["global events", "stocks", "interest rates"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 67,
+        "title": "🗳️ Political Elections",
+        "description": "Elections shift policy landscapes. Changes in tax, trade, or regulation can affect entire sectors.\n\n🗺️ Market Themes\n- Defense spending under Republicans?\n- Green energy push by Democrats?\n📈 Election Year Volatility\n- Markets prefer predictable outcomes.\n📚 Example\n- 2020 US election impacted renewable energy, Big Tech regulation expectations.",
+        "tags": ["global events", "stocks", "elections"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 68,
+        "title": "⚖️ Regulatory Changes",
+        "description": "New laws or enforcement actions can shift business models or introduce risk.\n\n🧾 Examples\n- Antitrust investigations in tech (Google, Meta).\n- SEC accounting rules (SPACs, crypto).\n- EU privacy laws (GDPR).\n📉 Market Response\n- Sharp re-ratings when regulation surprises investors.\n📘 Risk Monitoring\n- Watch law proposals, FTC/DOJ investigations.",
+        "tags": ["global events", "stocks", "regulation"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 69,
+        "title": "⛽ Energy Crises and Oil Shocks",
+        "description": "Supply chain disruptions, war, or policy limits on fossil fuels lead to oil price shocks.\n\n💥 Sector Effects\n- Energy stocks rise, airlines fall.\n📊 Inflationary Pressure\n- Oil feeds into food, transport, manufacturing costs.\n📆 Examples\n- 1970s OPEC embargo\n- 2022 Ukraine war and oil prices\n🛢️ Hedge Strategy\n- Commodities, energy ETFs, options.",
+        "tags": ["global events", "stocks", "oil"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 70,
+        "title": "💱 Currency Crises",
+        "description": "Rapid devaluation or speculative attacks destabilize economies and markets.\n\n🌍 Effects\n- Debt defaults, import costs soar, central bank intervention.\n📉 Investor Risk\n- Emerging markets, currency-exposed corporates.\n📘 Example\n- Argentina 2018, Turkey 2021\n🧠 Monitoring\n- FX reserves, bond yields, CDS spreads.",
+        "tags": ["global events", "stocks", "currency crisis"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 71,
+        "title": "📰 Media and Misinformation",
+        "description": "Fake news, viral social posts, or rumors can rapidly shift market sentiment.\n\n💡 Investor Caution\n- Distinguish signal from noise.\n📉 Example\n- False tweet about White House explosion briefly crashed Dow in 2013.\n🔍 Tools\n- Use verified sources, sentiment monitoring tools.",
+        "tags": ["global events", "stocks", "misinformation"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 72,
+        "title": "🤖 AI and Automation Shocks",
+        "description": "Sudden advances in automation/AI (e.g., ChatGPT) cause sector disruption, investor euphoria or fear.\n\n📊 Market Reaction\n- Rotation into AI winners (chips, software).\n- Layoffs in exposed industries (support, media).\n🧠 Monitor\n- Corporate AI investments\n- Regulatory pushback\n📚 Example\n- Microsoft, Nvidia surge on AI narrative.",
+        "tags": ["global events", "stocks", "ai"],
+        "associatedGraphIDs": ["global-events-impact"]
       }
     ]
   }
