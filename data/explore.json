@@ -1,229 +1,314 @@
 {
-  "version": "1.0",
-  "entries": [
-    {
-      "id": 0,
-      "title": "Stock Investing",
-      "description": "Long-term value investing strategies, fundamental analysis, and portfolio design.",
-      "tags": ["stocks", "investing", "portfolio", "value investing"],
-      "associatedGraphIDs": ["stock-investing"]
-    },
-    {
-      "id": 1,
-      "title": "Analyzing Stock Trends",
-      "description": "Explore trendlines, indicators, market phases, and chart patterns.",
-      "tags": ["trend", "technical analysis", "chart patterns"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 2,
-      "title": "Stock Market",
-      "description": "Structure of exchanges, trading rules, indices, liquidity and participants.",
-      "tags": ["market", "exchange", "trading"],
-      "associatedGraphIDs": ["stock-market"]
-    },
-    {
-      "id": 3,
-      "title": "Investing",
-      "description": "Foundations of investing, portfolio management, styles, metrics, global markets.",
-      "tags": ["investing", "global", "portfolio"],
-      "associatedGraphIDs": ["investing"]
-    },
-    {
-      "id": 4,
-      "title": "Investing Practices",
-      "description": "Best practices for asset selection, diversification, and rebalancing.",
-      "tags": ["practices", "diversification", "investment strategy"],
-      "associatedGraphIDs": ["investing-practices"]
-    },
-    {
-      "id": 5,
-      "title": "Day Trading Strategies",
-      "description": "Learn candlesticks, scalping, momentum plays, and intraday risk control.",
-      "tags": ["day trading", "scalping", "intraday"],
-      "associatedGraphIDs": ["day-trading"]
-    },
-    {
-      "id": 6,
-      "title": "Impact of Global Events on Stocks",
-      "description": "Geopolitical, economic, and crisis-based events affecting market sentiment.",
-      "tags": ["global events", "market sentiment", "geopolitics"],
-      "associatedGraphIDs": ["global-events-impact"]
-    },
-    {
-      "id": 7,
-      "title": "Business School Courses",
-      "description": "MBA, Financial Masters, EMBA curriculum including strategy, operations, finance.",
-      "tags": ["MBA", "business", "courses", "strategy"],
-      "associatedGraphIDs": ["business-school"]
-    },
-    {
-      "id": 8,
-      "title": "Develop and Sell Mobile Apps",
-      "description": "App monetization, marketing, ASO, product design for App Store success.",
-      "tags": ["mobile apps", "development", "marketing", "app store"],
-      "associatedGraphIDs": ["mobile-apps"]
-    },
-    {
-      "id": 9,
-      "title": "Economics",
-      "description": "Macro and micro theories, models, inflation, unemployment, policy frameworks.",
-      "tags": ["economics", "macro", "micro"],
-      "associatedGraphIDs": ["economics"]
-    },
-    {
-      "id": 10,
-      "title": "Ray Dalio",
-      "description": "Life principles, economic models, videos, Bridgewater culture and strategy.",
-      "tags": ["Ray Dalio", "investment principles", "philosophy"],
-      "associatedGraphIDs": ["ray-dalio"]
-    },
-    {
-      "id": 11,
-      "title": "Learning to Meditate",
-      "description": "Reduce stress, build focus, and develop mindfulness through step-by-step mindmaps.",
-      "tags": ["meditation", "mindfulness", "lifestyle"],
-      "associatedGraphIDs": ["meditation"]
-    },
-    {
-      "id": 12,
-      "title": "Trend Identification",
-      "description": "Trend Identification is the process of recognizing the prevailing market direction—whether bullish, bearish, or neutral.",
-      "tags": ["trend", "identification", "analysis"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 13,
-      "title": "Indicators & Tools",
-      "description": "Technical indicators and tools assist traders in quantifying price data to confirm trends and identify reversals.",
-      "tags": ["indicators", "tools", "technical analysis"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 14,
-      "title": "Patterns & Structures",
-      "description": "Chart patterns and structures reveal recurring formations that signal potential reversals or continuations.",
-      "tags": ["patterns", "structures", "charts"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 15,
-      "title": "Risk & Strategy",
-      "description": "Effective risk management and clear trading strategies are key to long-term trading success.",
-      "tags": ["risk", "strategy", "trading"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 16,
-      "title": "Trend Lines",
-      "description": "Trend lines connect successive swing highs or lows to indicate the direction and strength of a trend.",
-      "tags": ["trend lines", "support", "resistance"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 17,
-      "title": "Moving Averages",
-      "description": "Moving averages smooth price data to help identify trends by filtering out short-term fluctuations.",
-      "tags": ["moving averages", "SMA", "EMA"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 18,
-      "title": "Market Phases",
-      "description": "Market phases describe the cyclical behavior of asset prices and help traders anticipate trend changes.",
-      "tags": ["market phases", "cycles", "trends"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 19,
-      "title": "Support & Resistance",
-      "description": "Support and resistance levels indicate price zones where buying or selling pressure is concentrated.",
-      "tags": ["support", "resistance", "price levels"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 20,
-      "title": "RSI",
-      "description": "The Relative Strength Index (RSI) is a momentum oscillator that helps identify overbought or oversold conditions.",
-      "tags": ["RSI", "oscillator", "momentum"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 21,
-      "title": "MACD",
-      "description": "MACD (Moving Average Convergence Divergence) shows the relationship between two moving averages to signal momentum changes.",
-      "tags": ["MACD", "momentum", "technical indicator"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 22,
-      "title": "Bollinger Bands",
-      "description": "Bollinger Bands consist of a moving average and two standard deviation lines to illustrate market volatility.",
-      "tags": ["Bollinger Bands", "volatility", "technical analysis"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 23,
-      "title": "Volume Analysis",
-      "description": "Volume analysis interprets the traded volume to confirm trends or signal potential reversals.",
-      "tags": ["volume", "analysis", "trading"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 24,
-      "title": "Chart Patterns",
-      "description": "Chart patterns are identifiable shapes in price data that can indicate future market behavior.",
-      "tags": ["chart patterns", "head and shoulders", "triangles"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 25,
-      "title": "Candlestick Patterns",
-      "description": "Candlestick patterns, based on Japanese charting techniques, provide visual insights into market sentiment.",
-      "tags": ["candlestick", "patterns", "technical analysis"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 26,
-      "title": "Breakouts & Pullbacks",
-      "description": "Breakouts signal fresh momentum while pullbacks offer potential re-entry opportunities in a trend.",
-      "tags": ["breakouts", "pullbacks", "trend"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 27,
-      "title": "Price Channels",
-      "description": "Price channels, formed by parallel trendlines, help define overbought or oversold market conditions.",
-      "tags": ["price channels", "trend", "channels"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 28,
-      "title": "Stop-Loss Placement",
-      "description": "Stop-loss placement is essential for risk management, limiting potential losses when the market moves against you.",
-      "tags": ["stop-loss", "risk management"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 29,
-      "title": "Position Sizing",
-      "description": "Position sizing determines how much capital to risk on a trade based on your risk tolerance.",
-      "tags": ["position sizing", "risk", "trading"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 30,
-      "title": "Trend Following Strategy",
-      "description": "Trend following strategies aim to capture large price movements by riding sustained market trends.",
-      "tags": ["trend following", "strategy", "trading"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    },
-    {
-      "id": 31,
-      "title": "Counter-Trend Strategy",
-      "description": "Counter-trend strategies seek to profit from short-term reversals against the prevailing trend.",
-      "tags": ["counter-trend", "mean reversion", "strategy"],
-      "associatedGraphIDs": ["analyzing-trends"]
-    }
-  ]
-}
+    "version": "1.0",
+    "entries": [
+      {
+        "id": 0,
+        "title": "💹 Stock Investing: Master the Art of Long-Term Wealth",
+        "description": "Learn long-term value investing strategies, fundamental analysis, and portfolio design to build sustainable wealth.",
+        "tags": ["investing", "stocks", "wealth"],
+        "associatedGraphIDs": ["stock-investing"]
+      },
+      {
+        "id": 1,
+        "title": "🔍 Analyzing Stock Trends: Spot the Market's Hidden Signals",
+        "description": "Explore trendlines, indicators, market phases, and chart patterns to better understand market movements.",
+        "tags": ["trend", "analysis", "charts"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 2,
+        "title": "🏦 Discover the Inner Workings of the Stock Market",
+        "description": "Uncover the structure of exchanges, trading rules, indices, liquidity, and market participants.",
+        "tags": ["stock market", "trading", "exchanges"],
+        "associatedGraphIDs": ["stock-market"]
+      },
+      {
+        "id": 3,
+        "title": "🌍 Investing Fundamentals for Global Markets",
+        "description": "Understand the foundations of investing, portfolio management, and the different styles and metrics used worldwide.",
+        "tags": ["investing", "global", "portfolio"],
+        "associatedGraphIDs": ["investing"]
+      },
+      {
+        "id": 4,
+        "title": "🔄 Best Practices: Diversify and Rebalance Your Investments",
+        "description": "Explore asset selection, diversification, and rebalancing techniques to manage risk and optimize returns.",
+        "tags": ["diversification", "rebalancing", "risk management"],
+        "associatedGraphIDs": ["investing-practices"]
+      },
+      {
+        "id": 5,
+        "title": "⚡ Day Trading Strategies: Quick Decisions in a Fast Market",
+        "description": "Learn candlestick patterns, scalping, momentum plays, and intraday risk control to excel at day trading.",
+        "tags": ["day trading", "scalping", "momentum"],
+        "associatedGraphIDs": ["day-trading"]
+      },
+      {
+        "id": 6,
+        "title": "🌐 How Global Events Impact Stock Prices",
+        "description": "Discover how geopolitical, economic, and crisis-based events can shift market sentiment and affect stock performance.",
+        "tags": ["global events", "market sentiment", "economics"],
+        "associatedGraphIDs": ["global-events-impact"]
+      },
+      {
+        "id": 7,
+        "title": "🎓 Business School Courses: A Gateway to Modern Leadership",
+        "description": "Explore comprehensive business school curricula covering strategy, operations, finance, and entrepreneurship.",
+        "tags": ["business school", "MBA", "leadership"],
+        "associatedGraphIDs": ["business-school"]
+      },
+      {
+        "id": 8,
+        "title": "📱 Develop and Sell Mobile Apps: From Idea to Marketplace",
+        "description": "Learn about app monetization, marketing, ASO, and product design strategies that lead to App Store success.",
+        "tags": ["mobile apps", "development", "marketing"],
+        "associatedGraphIDs": ["mobile-apps"]
+      },
+      {
+        "id": 9,
+        "title": "📘 Economics Explained: From Theory to Real-World Impact",
+        "description": "Delve into macro and micro theories, models, inflation, and policy frameworks that shape our economic landscape.",
+        "tags": ["economics", "theory", "policy"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 10,
+        "title": "👤 Lessons from Ray Dalio: Principles for Life and Business",
+        "description": "Discover Ray Dalio's insights on life principles, economic models, and strategies that have influenced modern investing.",
+        "tags": ["Ray Dalio", "principles", "investing"],
+        "associatedGraphIDs": ["ray-dalio"]
+      },
+      {
+        "id": 11,
+        "title": "🧘 Learning to Meditate: Finding Focus in a Busy World",
+        "description": "Reduce stress and build focus through step-by-step mindmaps and mindfulness techniques.",
+        "tags": ["meditation", "mindfulness", "focus"],
+        "associatedGraphIDs": ["meditation"]
+      },
+      {
+        "id": 12,
+        "title": "📈 Trend Identification: Recognize Market Directions",
+        "description": "Learn to identify prevailing market trends—whether bullish, bearish, or neutral—using simple yet effective methods.",
+        "tags": ["trend", "identification", "market"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 13,
+        "title": "🛠️ Indicators & Tools: Quantify the Market's Pulse",
+        "description": "Use technical indicators and analytical tools to confirm trends, spot reversals, and make informed trading decisions.",
+        "tags": ["indicators", "tools", "technical analysis"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 14,
+        "title": "🔮 Chart Patterns: Decoding Signals for Entry and Exit",
+        "description": "Explore how recurring chart patterns reveal potential market behavior and guide trading strategies.",
+        "tags": ["chart patterns", "reversal", "continuation"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 15,
+        "title": "⚖️ Risk & Strategy: Balancing Ambition with Caution",
+        "description": "Understand the importance of risk management and strategic planning in achieving long-term trading success.",
+        "tags": ["risk", "strategy", "trading"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 16,
+        "title": "✏️ Trend Lines: Visualizing Market Momentum",
+        "description": "Learn how drawing trend lines can help you identify support, resistance, and the strength of market trends.",
+        "tags": ["trend lines", "support", "resistance"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 17,
+        "title": "📉 Moving Averages: Smoothing Out Market Noise",
+        "description": "Discover how moving averages filter out short-term fluctuations to reveal underlying market trends.",
+        "tags": ["moving averages", "SMA", "EMA"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 18,
+        "title": "⏳ Market Phases: The Rhythm of the Economy",
+        "description": "Explore how different market phases—from accumulation to distribution—affect investment decisions.",
+        "tags": ["market phases", "business cycle", "investment"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 19,
+        "title": "🛡️ Support & Resistance: The Battle Lines of Price",
+        "description": "Learn how to identify key price levels that act as barriers or catalysts for market movements.",
+        "tags": ["support", "resistance", "price levels"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 20,
+        "title": "📊 RSI: Detecting Overbought and Oversold Markets",
+        "description": "Understand the Relative Strength Index and how it can signal potential market reversals.",
+        "tags": ["RSI", "oscillator", "momentum"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 21,
+        "title": "📉 MACD: Spotting Shifts in Market Momentum",
+        "description": "Learn how the MACD indicator helps traders identify changes in market momentum and potential trend reversals.",
+        "tags": ["MACD", "momentum", "trend"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 22,
+        "title": "📐 Bollinger Bands: Tracking Market Volatility",
+        "description": "Discover how Bollinger Bands use moving averages and standard deviations to provide a dynamic view of market volatility.",
+        "tags": ["Bollinger Bands", "volatility", "technical analysis"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 23,
+        "title": "🔊 Volume Analysis: Confirm Trends with Market Activity",
+        "description": "Use volume data to validate price movements and detect potential reversals or breakouts.",
+        "tags": ["volume", "analysis", "trading"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 24,
+        "title": "📊 Chart Patterns: Recognize Entry and Exit Signals",
+        "description": "Identify familiar chart patterns that can hint at future market behavior, enabling timely entry and exit strategies.",
+        "tags": ["chart patterns", "signals", "entry exit"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 25,
+        "title": "🕯️ Candlestick Patterns: Deciphering Market Stories",
+        "description": "Learn how Japanese candlestick patterns provide insights into market sentiment and potential reversals.",
+        "tags": ["candlestick", "patterns", "technical analysis"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 26,
+        "title": "🚀 Breakouts & Pullbacks: Timing Your Market Moves",
+        "description": "Understand how to detect breakouts and pullbacks to optimize your trading entries and exits.",
+        "tags": ["breakouts", "pullbacks", "timing"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 27,
+        "title": "📏 Price Channels: Defining Market Boundaries",
+        "description": "Discover how parallel trendlines can create price channels that highlight potential overbought or oversold zones.",
+        "tags": ["price channels", "trends", "boundaries"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 28,
+        "title": "🛑 Stop-Loss Placement: Safeguard Your Investments",
+        "description": "Learn strategies for setting effective stop-loss orders to limit potential losses in volatile markets.",
+        "tags": ["stop-loss", "risk management", "trading"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 29,
+        "title": "💡 Position Sizing: Optimize Risk and Reward",
+        "description": "Discover techniques to determine the optimal amount to invest in each trade, balancing potential gains with acceptable risk.",
+        "tags": ["position sizing", "risk management", "investment"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 30,
+        "title": "🏄‍♂️ Trend Following Strategy: Ride the Market Wave",
+        "description": "Learn how to capitalize on sustained market trends by aligning your strategy with the prevailing direction.",
+        "tags": ["trend following", "strategy", "investing"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 31,
+        "title": "↩️ Counter-Trend Strategy: Profit from Reversals",
+        "description": "Explore methods to identify and exploit short-term reversals in the market, turning contrarian moves into profit opportunities.",
+        "tags": ["counter-trend", "strategy", "reversal"],
+        "associatedGraphIDs": ["analyzing-trends"]
+      },
+      {
+        "id": 32,
+        "title": "💰 How to Become Rich by Investing Smartly",
+        "description": "Discover practical strategies and mindset shifts that top investors use to build wealth. Learn about long-term planning, diversification, and disciplined market analysis.",
+        "tags": ["rich", "investing", "wealth", "finance"],
+        "associatedGraphIDs": ["investing", "stock-investing"]
+      },
+      {
+        "id": 33,
+        "title": "💘 How to Date a Girl Successfully",
+        "description": "Explore the art of communication, confidence, and emotional intelligence that can help you build meaningful relationships.",
+        "tags": ["dating", "relationships", "communication", "confidence"],
+        "associatedGraphIDs": ["business-school"]
+      },
+      {
+        "id": 34,
+        "title": "⏰ Why Am I Always Late? Unravel Time Management Secrets",
+        "description": "Analyze the reasons behind chronic lateness and learn techniques for better time management, scheduling, and self-discipline.",
+        "tags": ["time management", "lateness", "discipline"],
+        "associatedGraphIDs": ["meditation"]
+      },
+      {
+        "id": 35,
+        "title": "🌐 How to Build a Global Empire from Your Living Room",
+        "description": "Learn how digital innovation and an entrepreneurial mindset can break geographical barriers and turn small ideas into global ventures.",
+        "tags": ["entrepreneurship", "global", "innovation", "digital"],
+        "associatedGraphIDs": ["mobile-apps", "business-school"]
+      },
+      {
+        "id": 36,
+        "title": "🚀 How to Turn a Small Idea into a Big Business",
+        "description": "Explore the process of scaling up—from identifying opportunities to executing effective business strategies that drive growth and profitability.",
+        "tags": ["entrepreneurship", "scaling", "business growth"],
+        "associatedGraphIDs": ["business-school", "investing-practices"]
+      },
+      {
+        "id": 37,
+        "title": "📚 Why Traditional Education Fails in the Modern Economy",
+        "description": "Examine the gaps in conventional learning models and discover how innovative methods and online courses are reshaping success.",
+        "tags": ["education", "modern economy", "innovation"],
+        "associatedGraphIDs": ["business-school"]
+      },
+      {
+        "id": 38,
+        "title": "💻 How to Navigate Digital Transformation in Your Career",
+        "description": "Understand the impact of technology on industries and learn strategies to adapt, innovate, and stay ahead in a rapidly changing digital landscape.",
+        "tags": ["digital transformation", "career", "innovation", "technology"],
+        "associatedGraphIDs": ["mobile-apps"]
+      },
+      {
+        "id": 39,
+        "title": "🤯 How to Master Leadership Without Losing Your Mind",
+        "description": "Discover leadership principles that balance strategic vision, emotional intelligence, and practical management to inspire teams and drive success.",
+        "tags": ["leadership", "management", "emotional intelligence"],
+        "associatedGraphIDs": ["business-school", "meditation"]
+      },
+      {
+        "id": 40,
+        "title": "🔥 How to Innovate When Resources Are Scarce",
+        "description": "Learn creative problem-solving techniques and strategic resource management to foster innovation even in challenging conditions.",
+        "tags": ["innovation", "creativity", "resource management"],
+        "associatedGraphIDs": ["investing", "investing-practices"]
+      },
+      {
+        "id": 41,
+        "title": "📈 Day Trading Secrets: Unlock the Market's Intraday Opportunities",
+        "description": "Dive into day trading strategies that combine technical analysis, rapid decision-making, and risk management to capitalize on volatile market movements.",
+        "tags": ["day trading", "intraday", "volatile"],
+        "associatedGraphIDs": ["day-trading"]
+      },
+      {
+        "id": 42,
+        "title": "💸 How to Capitalize on Economic Trends and Beat the Market",
+        "description": "Learn how to analyze economic indicators and leverage macroeconomic trends to inform your trading and investment decisions.",
+        "tags": ["economics", "market trends", "investment"],
+        "associatedGraphIDs": ["economics"]
+      },
+      {
+        "id": 43,
+        "title": "🗣️ Why I Sometimes Fail to Communicate: A Lesson in Behavioral Finance",
+        "description": "Explore how behavioral biases and psychological factors impact communication and decision-making in financial markets and everyday life.",
+        "tags": ["behavioral finance", "communication", "bias"],
+        "associatedGraphIDs": ["business-school"]
+      }
+    ]
+  }
+  
