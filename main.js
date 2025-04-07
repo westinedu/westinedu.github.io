@@ -207,7 +207,7 @@ cancelDescBtn.addEventListener('click', (e) => {
 // 添加到卡片视图中
 div.appendChild(staticDescEl);
 // 编辑节点的按钮，开关  ***********************************************
-div.appendChild(editDescBtn);
+// div.appendChild(editDescBtn);
 div.appendChild(saveDescBtn);
 div.appendChild(cancelDescBtn);
 
@@ -925,7 +925,7 @@ function getDistance(touch1, touch2) {
     /********* 16. Flashcard 展播功能  **********/
 
 const playCardBtn = document.createElement('button');
-playCardBtn.textContent = "播放卡片";
+playCardBtn.textContent = "flashcard";
 playCardBtn.id = "btnPlayCard";
 document.getElementById('controls').appendChild(playCardBtn);
 
@@ -1033,7 +1033,7 @@ let userStoppedManually = false;
 
 const autoPlayBtn = document.createElement('button');
 autoPlayBtn.id = 'btnAutoPlayCard';
-autoPlayBtn.textContent = '📽️ 连续播放';
+autoPlayBtn.textContent = '📽️ movie';
 document.getElementById('controls').appendChild(autoPlayBtn);
 
 autoPlayBtn.addEventListener('click', () => {
@@ -1041,7 +1041,7 @@ autoPlayBtn.addEventListener('click', () => {
     stopAutoPlay();
   } else {
     isAutoPlaying = true;
-    autoPlayBtn.textContent = '⏹️ 停止播放';
+    autoPlayBtn.textContent = '⏹️ stop';
     autoPlayIndex = activeNodeIndex ?? 0;
     playNextCard();
   }
@@ -1049,7 +1049,7 @@ autoPlayBtn.addEventListener('click', () => {
 
 function stopAutoPlay() {
   isAutoPlaying = false;
-  autoPlayBtn.textContent = '📽️ 连续播放';
+  autoPlayBtn.textContent = '📽️ movie';
   cardOverlay.style.display = 'none';
   window.speechSynthesis.cancel();
 }
@@ -1196,7 +1196,7 @@ closeBtn.addEventListener('click', () => {
 const exportBtn = document.createElement('button');
 exportBtn.textContent = "💾 Export Data";
 exportBtn.id = "btnExportData";
-document.getElementById('controls').appendChild(exportBtn);
+// document.getElementById('controls').appendChild(exportBtn);
     
 
 // ⏳ 获取原始 <script src="data/xxx.js"> 文件路径
