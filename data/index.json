@@ -13,7 +13,9 @@
           "htmlUrl": "https://westinedu.github.io/Stock-investing_index1.0.html",
           "description": "Long-term value investing strategies, fundamental analysis, and portfolio design.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.stock_investing"
+          "productID": "com.AIGraph0.stock_investing",
+          "promption": true,
+          "moreDescription": "Learn how to invest in stocks for the long term, focusing on value investing strategies. This course covers fundamental analysis, portfolio design, and the principles of successful investing."
         },
         {
           "id": "analyzing-trends",
@@ -23,7 +25,9 @@
           "htmlUrl": "https://westinedu.github.io/analyzing-stock-trends_index1.0.html",
           "description": "Explore trendlines, indicators, market phases, and chart patterns.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.investing_trends"
+          "productID": "com.AIGraph0.investing_trends",
+          "promption": true,
+          "moreDescription": "Dive into the world of stock trends and learn how to analyze them effectively. This course covers trendlines, indicators, market phases, and various chart patterns to help you make informed investment decisions."
         },
         {
           "id": "stock-market",
@@ -33,7 +37,9 @@
           "htmlUrl": "https://westinedu.github.io/Stock-market_index1.0.html",
           "description": "Structure of exchanges, trading rules, indices, liquidity and participants.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.stock_market"
+          "productID": "com.AIGraph0.stock_market",
+          "promption": true,
+          "moreDescription": "Understand the structure of stock exchanges, trading rules, indices, liquidity, and the various participants in the market. This course provides a comprehensive overview of how the stock market operates."
         },
         {
           "id": "investing",
@@ -43,7 +49,9 @@
           "htmlUrl": "https://westinedu.github.io/Investing_index1.0.html",
           "description": "Foundations of investing, portfolio management, styles, metrics, global markets.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.investing"
+          "productID": "com.AIGraph0.investing",
+          "promption": true,
+          "moreDescription": "Explore the foundations of investing, including portfolio management, investment styles, key metrics, and the dynamics of global markets. This course is designed to provide a solid understanding of the investment landscape."
         },
         {
           "id": "investing-practices",
@@ -53,7 +61,9 @@
           "htmlUrl": "https://westinedu.github.io/Investing&Trading_index.html",
           "description": "Best practices for asset selection, diversification, and rebalancing.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.investing_practices"
+          "productID": "com.AIGraph0.investing_practices",
+          "promption": true,
+          "moreDescription": "Learn the best practices for asset selection, diversification, and rebalancing in your investment portfolio. This course provides practical insights to enhance your investment strategies."
         }
       ]
     },
@@ -69,7 +79,9 @@
           "htmlUrl": "https://westinedu.github.io/DayTrading_index1.0.html",
           "description": "Learn candlesticks, scalping, momentum plays, and intraday risk control.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.day_trading"
+          "productID": "com.AIGraph0.day_trading",
+          "promption": true,
+          "moreDescription": "Master day trading strategies with a focus on candlestick patterns, scalping techniques, momentum plays, and effective intraday risk control. This course is designed for traders looking to enhance their skills in fast-paced markets."
         },
         {
           "id": "global-events-impact",
@@ -79,7 +91,9 @@
           "htmlUrl": "https://westinedu.github.io/EventsOnStock_index1.0.html",
           "description": "Geopolitical, economic, and crisis-based events affecting market sentiment.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.global_events"
+          "productID": "com.AIGraph0.global_events",
+          "promption": true,
+          "moreDescription": "Explore how geopolitical, economic, and crisis-based events impact market sentiment and stock prices. This course provides insights into the relationship between global events and trading strategies."
         }
       ]
     },
@@ -95,7 +109,9 @@
           "htmlUrl": "https://westinedu.github.io/business-school.html",
           "description": "MBA, Financial Masters, EMBA curriculum including strategy, operations, finance.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.business_school"
+          "productID": "com.AIGraph0.business_school",
+          "promption": true,
+          "moreDescription": "Access a comprehensive curriculum from top business schools, including MBA, Financial Masters, and EMBA programs. This course covers essential topics such as strategy, operations, and finance to equip you with the skills needed for success in the business world."
         },
         {
           "id": "mobile-apps",
@@ -105,7 +121,9 @@
           "htmlUrl": "https://westinedu.github.io/MoblieAppSale_index1.0.html",
           "description": "App monetization, marketing, ASO, product design for App Store success.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.mobile_apps"
+          "productID": "com.AIGraph0.mobile_apps",
+          "promption": true,
+          "moreDescription": "Learn how to develop and sell mobile apps successfully. This course covers app monetization strategies, marketing techniques, App Store Optimization (ASO), and product design principles to help you achieve success in the competitive app market."
         }
       ]
     },
@@ -121,7 +139,9 @@
           "htmlUrl": "https://westinedu.github.io/Economic_1.3_index.html",
           "description": "Macro and micro theories, models, inflation, unemployment, policy frameworks.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.economics"
+          "productID": "com.AIGraph0.economics",
+          "promption": true,
+          "moreDescription": "Explore macro and microeconomic theories and models, including inflation, unemployment, and policy frameworks. This course provides a comprehensive understanding of economic principles and their applications in real-world scenarios."
         },
         {
           "id": "ray-dalio",
@@ -131,7 +151,9 @@
           "htmlUrl": "https://westinedu.github.io/Ray-Dalio-index1.0.html",
           "description": "Life principles, economic models, videos, Bridgewater culture and strategy.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.ray_dalio"
+          "productID": "com.AIGraph0.ray_dalio",
+          "promption": true,
+          "moreDescription": "Delve into the life principles and economic models of Ray Dalio, founder of Bridgewater Associates. This course includes videos, insights into Bridgewater's culture and strategy, and a comprehensive overview of Dalio's investment philosophy."
         }
       ]
     },
@@ -147,7 +169,9 @@
           "htmlUrl": "https://westinedu.github.io/LearningToMeditate_index1.0.html",
           "description": "Reduce stress, build focus, and develop mindfulness through step-by-step mindmaps.",
           "requiresSubscription": true,
-          "productID": "com.AIGraph0.meditation"
+          "productID": "com.AIGraph0.meditation",
+          "promption": true,
+          "moreDescription": "Learn to meditate effectively with step-by-step mindmaps designed to reduce stress, build focus, and develop mindfulness. This course provides practical techniques and insights to help you incorporate meditation into your daily life."
         }
       ]
     }
