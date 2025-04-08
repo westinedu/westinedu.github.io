@@ -38,7 +38,7 @@
           "description": "Structure of exchanges, trading rules, indices, liquidity and participants.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.stock_market",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Understand the structure of stock exchanges, trading rules, indices, liquidity, and the various participants in the market. This course provides a comprehensive overview of how the stock market operates."
         },
         {
@@ -50,7 +50,7 @@
           "description": "Foundations of investing, portfolio management, styles, metrics, global markets.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.investing",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Explore the foundations of investing, including portfolio management, investment styles, key metrics, and the dynamics of global markets. This course is designed to provide a solid understanding of the investment landscape."
         },
         {
@@ -62,7 +62,7 @@
           "description": "Best practices for asset selection, diversification, and rebalancing.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.investing_practices",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Learn the best practices for asset selection, diversification, and rebalancing in your investment portfolio. This course provides practical insights to enhance your investment strategies."
         }
       ]
@@ -80,7 +80,7 @@
           "description": "Learn candlesticks, scalping, momentum plays, and intraday risk control.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.day_trading",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Master day trading strategies with a focus on candlestick patterns, scalping techniques, momentum plays, and effective intraday risk control. This course is designed for traders looking to enhance their skills in fast-paced markets."
         },
         {
@@ -92,7 +92,7 @@
           "description": "Geopolitical, economic, and crisis-based events affecting market sentiment.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.global_events",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Explore how geopolitical, economic, and crisis-based events impact market sentiment and stock prices. This course provides insights into the relationship between global events and trading strategies."
         }
       ]
@@ -110,7 +110,7 @@
           "description": "MBA, Financial Masters, EMBA curriculum including strategy, operations, finance.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.business_school",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Access a comprehensive curriculum from top business schools, including MBA, Financial Masters, and EMBA programs. This course covers essential topics such as strategy, operations, and finance to equip you with the skills needed for success in the business world."
         },
         {
@@ -122,7 +122,7 @@
           "description": "App monetization, marketing, ASO, product design for App Store success.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.mobile_apps",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Learn how to develop and sell mobile apps successfully. This course covers app monetization strategies, marketing techniques, App Store Optimization (ASO), and product design principles to help you achieve success in the competitive app market."
         }
       ]
@@ -152,7 +152,7 @@
           "description": "Life principles, economic models, videos, Bridgewater culture and strategy.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.ray_dalio",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Delve into the life principles and economic models of Ray Dalio, founder of Bridgewater Associates. This course includes videos, insights into Bridgewater's culture and strategy, and a comprehensive overview of Dalio's investment philosophy."
         }
       ]
@@ -170,7 +170,7 @@
           "description": "Reduce stress, build focus, and develop mindfulness through step-by-step mindmaps.",
           "requiresSubscription": true,
           "productID": "com.AIGraph0.meditation",
-          "promption": true,
+          "promption": false,
           "moreDescription": "Learn to meditate effectively with step-by-step mindmaps designed to reduce stress, build focus, and develop mindfulness. This course provides practical techniques and insights to help you incorporate meditation into your daily life."
         }
       ]
