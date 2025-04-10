@@ -178,7 +178,9 @@ window.mindmapData = {
 
         <h4>📉 Risk</h4>
         - Volatility in emerging markets due to reliance on commodity exports.
-      `
+        📺 How Commodity Markets Work
+      `,
+      videoUrl: "https://www.youtube.com/embed/EtqVmE2U4Xo?si=j58KZkaQJIN4g2t3"
     },
     {
       text: "9. Currency Fluctuations",
