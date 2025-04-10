@@ -75,7 +75,7 @@
     </div>
     <div class="main-content">
         <div class="chart-column">
-            <canvas id="lineChart"></canvas>
+            <canvas id="lineChart" width="400" height="300" style="max-width: 100%; display: block;"></canvas>
         </div>
         <div class="indicator-box">
             <h3>Core Economic Indicators</h3>
@@ -114,6 +114,108 @@
     </div>
 </div>
 <script>
+    window.onload = function () {
+        const slider = document.getElementById('tariffSlider');
+        const tariffValue = document.getElementById('tariffValue');
+        const ctx = document.getElementById("lineChart").getContext("2d");
+    
+        const generateData = () => {
+            const importData = [];
+            const gdpData = [];
+            const inflationData = [];
+    
+            for (let t = 0; t <= 100; t++) {
+                const tNorm = t / 100;
+                importData.push(3.4 * (1 - 0.6 * tNorm));
+                gdpData.push(2.1 + (-0.03 * t));
+                inflationData.push(2.8 + (0.25 * t));
+            }
+    
+            return [importData, gdpData, inflationData];
+        };
+    
+        const [importData, gdpData, inflationData] = generateData();
+    
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: Array.from({ length: 101 }, (_, i) => `${i}%`),
+                datasets: [
+                    {
+                        label: "Import Volume (T)",
+                        data: importData,
+                        borderColor: "#2563eb",
+                        fill: false
+                    },
+                    {
+                        label: "GDP Growth (%)",
+                        data: gdpData,
+                        borderColor: "#10b981",
+                        fill: false
+                    },
+                    {
+                        label: "Inflation (%)",
+                        data: inflationData,
+                        borderColor: "#ef4444",
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                animation: {
+                    duration: 500,
+                    easing: 'easeOutQuart'
+                },
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' },
+                    title: { display: true, text: 'Tariff Effects Simulation' }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false
+                    }
+                }
+            }
+        });
+    
+        const updateIndicators = () => {
+            const t = parseFloat(slider.value) / 100;
+            const t100 = t * 100;
+    
+            const importVal = 3.4 * (1 - 0.6 * t);
+            const exportVal = 2.5 * (1 - 0.2 * t);
+            const gdp = 2.1 + (-0.03 * t100);
+            const inflation = 2.8 + (0.25 * t100);
+            const totalTrade = importVal + exportVal;
+            const revenue = importVal * t100;
+            const exchange = 6.9 * (1 - 0.002 * t100);
+            const profit = 100 * (1 + 2 * (gdp / 100));
+            const sp500 = 4538 * (1 + ((gdp - inflation) * -1.2 / 100));
+            const income = 72900 * (1 - (inflation / 100));
+            const consumption = income * (1 - 0.3 * t);
+    
+            tariffValue.innerText = t100.toFixed(0);
+            document.getElementById('importValue').innerText = `$${importVal.toFixed(2)}T`;
+            document.getElementById('exportValue').innerText = `$${exportVal.toFixed(2)}T`;
+            document.getElementById('totalTrade').innerText = `$${totalTrade.toFixed(2)}T`;
+            document.getElementById('gdpGrowthValue').innerText = `${gdp.toFixed(2)}%`;
+            document.getElementById('inflationValue').innerText = `${inflation.toFixed(2)}%`;
+            document.getElementById('govRevenueValue').innerText = `$${revenue.toFixed(1)}B`;
+            document.getElementById('exchangeRateValue').innerText = `${exchange.toFixed(2)}`;
+            document.getElementById('corporateProfitValue').innerText = `${profit.toFixed(1)}%`;
+            document.getElementById('sp500Value').innerText = `${sp500.toFixed(0)}`;
+            document.getElementById('householdIncomeValue').innerText = `$${income.toFixed(0)}`;
+            document.getElementById('consumptionValue').innerText = `$${consumption.toFixed(0)}`;
+            document.getElementById('consumptionGrowthValue').innerText = `${((income / 72900 - 1 - 0.3 * t) * 100).toFixed(1)}%`;
+            document.getElementById('investmentGrowthValue').innerText = `${(gdp * 1.2).toFixed(1)}%`;
+            document.getElementById('exchangeRateChangeValue').innerText = `${((1 - (exchange / 6.9)) * 100).toFixed(2)}%`;
+        };
+    
+        slider.addEventListener('input', updateIndicators);
+        updateIndicators();
+    };
+
     const slider = document.getElementById('tariffSlider');
     const tariffValue = document.getElementById('tariffValue');
     const chart = new Chart(document.getElementById("lineChart"), {
