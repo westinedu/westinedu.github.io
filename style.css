@@ -411,3 +411,15 @@ svg {
   font-size: 13px;
   color: #666;
 }
+
+/* 超链接的样式 */
+
+.standard-link {
+  color: #0066cc; /* 标准链接蓝 */
+  text-decoration: underline;
+  cursor: pointer;
+}
+.standard-link:hover {
+  color: #004499; /* 悬停时稍深的蓝色 */
+  text-decoration: underline;
+}
