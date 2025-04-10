@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tariff Economic Impact Simulator – Enhanced UI</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 2rem;
+        }
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #111827;
+        }
+        .slider-container {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .slider-container label {
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+        input[type="range"] {
+            width: 200px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            max-width: 100%;
+        }
+        .chart-column {
+            min-width: 300px;
+        }
+        .indicator-box {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            min-width: 300px;
+        }
+        .indicator-box h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #111827;
+        }
+        .indicator-box p, .indicator-box div {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            color: #111827;
+        }
+        .indicator-box b {
+            color: #2563eb;
+        }
+        .formula {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+        canvas {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>U.S. Tariff Economic Impact Simulator</h2>
+    <div class="slider-container">
+        <label>Tariff Rate: <span id="tariffValue">25</span>%</label>
+        <input type="range" min="0" max="100" value="25" id="tariffSlider">
+    </div>
+    <div class="main-content">
+        <div class="chart-column">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <div class="indicator-box">
+            <h3>Core Economic Indicators</h3>
+            <p>Import Volume: <b id="importValue"></b></p>
+            <p class="formula">IM = 3.4T × (1 - 0.6 × ΔT)</p>
+            <p>Export Volume: <b id="exportValue"></b></p>
+            <p class="formula">EX = 2.5T × (1 - 0.2 × ΔT)</p>
+            <p>Total Trade: <b id="totalTrade"></b></p>
+            <p class="formula">Total = IM + EX</p>
+            <p>GDP Growth: <b id="gdpGrowthValue"></b></p>
+            <p class="formula">ΔGDP = 2.1% + (-0.03 × ΔT)</p>
+            <p>Inflation Rate (CPI): <b id="inflationValue"></b></p>
+            <p class="formula">CPI = 2.8% + (0.25 × ΔT)</p>
+        </div>
+        <div class="indicator-box">
+            <h3>Business & Household</h3>
+            <p>Tariff Revenue: <b id="govRevenueValue"></b></p>
+            <p class="formula">Revenue = Import × ΔT</p>
+            <p>USD/CNY Exchange: <b id="exchangeRateValue"></b></p>
+            <p class="formula">ΔRate = -0.2% × ΔT</p>
+            <p>Corporate Profits: <b id="corporateProfitValue"></b></p>
+            <p class="formula">Profit = 100 × (1 + 2 × ΔGDP)</p>
+            <p>S&P 500 Index: <b id="sp500Value"></b></p>
+            <p class="formula">S&P500 = Baseline × [1 + (GDP - CPI) × -1.2]</p>
+            <p>Household Income: <b id="householdIncomeValue"></b></p>
+            <p class="formula">Income = Baseline × (1 - Inflation)</p>
+            <p>Consumption Capacity: <b id="consumptionValue"></b></p>
+            <p class="formula">Consumption = Income × (1 + -0.3 × ΔT)</p>
+            <p>Consumption Growth Rate: <b id="consumptionGrowthValue"></b></p>
+            <p class="formula">ΔConsumption = %ΔIncome + Elasticity</p>
+            <p>Investment Growth Rate: <b id="investmentGrowthValue"></b></p>
+            <p class="formula">Investment = f(Confidence, ΔGDP)</p>
+            <p>USD Exchange Rate Change: <b id="exchangeRateChangeValue"></b></p>
+            <p class="formula">ΔFX = f(Tariff Shock)</p>
+        </div>
+    </div>
+</div>
+<script>
+    const slider = document.getElementById('tariffSlider');
+    const tariffValue = document.getElementById('tariffValue');
+    const chart = new Chart(document.getElementById("lineChart"), {
+        type: 'line',
+        data: {
+            labels: Array.from({length: 101}, (_, i) => `${i}%`),
+            datasets: [
+                {
+                    label: "Import Volume (T)",
+                    data: [],
+                    borderColor: "#2563eb",
+                    fill: false
+                },
+                {
+                    label: "GDP Growth (%)",
+                    data: [],
+                    borderColor: "#10b981",
+                    fill: false
+                },
+                {
+                    label: "Inflation (%)",
+                    data: [],
+                    borderColor: "#ef4444",
+                    fill: false
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'top' },
+                title: { display: true, text: 'Tariff Effects Simulation' }
+            },
+            scales: {
+                y: {
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+
+    const updateIndicators = () => {
+        const t = parseFloat(slider.value) / 100;
+        const importVal = 3.4 * (1 - 0.6 * t);
+        const exportVal = 2.5 * (1 - 0.2 * t);
+        const gdp = 2.1 + (-0.03 * (t * 100));
+        const inflation = 2.8 + (0.25 * (t * 100));
+        const totalTrade = importVal + exportVal;
+        const revenue = importVal * (t * 100);
+        const exchange = 6.9 * (1 - 0.002 * (t * 100));
+        const profit = 100 * (1 + 2 * (gdp / 100));
+        const sp500 = 4538 * (1 + ((gdp - inflation) * -1.2 / 100));
+        const income = 72900 * (1 - (inflation / 100));
+        const consumption = income * (1 - 0.3 * t);
+
+        document.getElementById('tariffValue').innerText = (t * 100).toFixed(0);
+        document.getElementById('importValue').innerText = `$${importVal.toFixed(2)}T`;
+        document.getElementById('exportValue').innerText = `$${exportVal.toFixed(2)}T`;
+        document.getElementById('totalTrade').innerText = `$${totalTrade.toFixed(2)}T`;
+        document.getElementById('gdpGrowthValue').innerText = `${gdp.toFixed(2)}%`;
+        document.getElementById('inflationValue').innerText = `${inflation.toFixed(2)}%`;
+        document.getElementById('govRevenueValue').innerText = `$${revenue.toFixed(1)}B`;
+        document.getElementById('exchangeRateValue').innerText = `${exchange.toFixed(2)}`;
+        document.getElementById('corporateProfitValue').innerText = `${profit.toFixed(1)}%`;
+        document.getElementById('sp500Value').innerText = `${sp500.toFixed(0)}`;
+        document.getElementById('householdIncomeValue').innerText = `$${income.toFixed(0)}`;
+        document.getElementById('consumptionValue').innerText = `$${consumption.toFixed(0)}`;
+        document.getElementById('consumptionGrowthValue').innerText = `${((income / 72900 - 1 - 0.3 * t) * 100).toFixed(1)}%`;
+        document.getElementById('investmentGrowthValue').innerText = `${(gdp * 1.2).toFixed(1)}%`;
+        document.getElementById('exchangeRateChangeValue').innerText = `${((1 - (exchange / 6.9)) * 100).toFixed(2)}%`;
+
+        chart.data.datasets[0].data[parseInt(t * 100)] = importVal;
+        chart.data.datasets[1].data[parseInt(t * 100)] = gdp;
+        chart.data.datasets[2].data[parseInt(t * 100)] = inflation;
+        chart.update();
+    };
+
+    slider.addEventListener('input', updateIndicators);
+    updateIndicators();
+</script>
+</body>
+</html>
