@@ -1,1000 +1,1847 @@
 {
     "version": "1.0",
     "entries": [
-      {
-        "id": 0,
-        "title": "💹 Stock Investing: Master the Art of Long-Term Wealth",
-        "description": "Learn long-term value investing strategies, fundamental analysis, and portfolio design to build sustainable wealth.",
-        "tags": ["investing", "stocks", "wealth"],
-        "associatedGraphIDs": ["stock-investing"]
-      },
-      {
-        "id": 1,
-        "title": "🔍 Analyzing Stock Trends: Spot the Market's Hidden Signals",
-        "description": "Explore trendlines, indicators, market phases, and chart patterns to better understand market movements.",
-        "tags": ["trend", "analysis", "charts"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 2,
-        "title": "🏦 Discover the Inner Workings of the Stock Market",
-        "description": "Uncover the structure of exchanges, trading rules, indices, liquidity, and market participants.",
-        "tags": ["stock market", "trading", "exchanges"],
-        "associatedGraphIDs": ["stock-market"]
-      },
-      {
-        "id": 3,
-        "title": "🌍 Investing Fundamentals for Global Markets",
-        "description": "Understand the foundations of investing, portfolio management, and the different styles and metrics used worldwide.",
-        "tags": ["investing", "global", "portfolio"],
-        "associatedGraphIDs": ["investing"]
-      },
-      {
-        "id": 4,
-        "title": "🔄 Best Practices: Diversify and Rebalance Your Investments",
-        "description": "Explore asset selection, diversification, and rebalancing techniques to manage risk and optimize returns.",
-        "tags": ["diversification", "rebalancing", "risk management"],
-        "associatedGraphIDs": ["investing-practices"]
-      },
-      {
-        "id": 5,
-        "title": "⚡ Day Trading Strategies: Quick Decisions in a Fast Market",
-        "description": "Learn candlestick patterns, scalping, momentum plays, and intraday risk control to excel at day trading.",
-        "tags": ["day trading", "scalping", "momentum"],
-        "associatedGraphIDs": ["day-trading"]
-      },
-      {
-        "id": 6,
-        "title": "🌐 How Global Events Impact Stock Prices",
-        "description": "Discover how geopolitical, economic, and crisis-based events can shift market sentiment and affect stock performance.",
-        "tags": ["global events", "market sentiment", "economics"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 7,
-        "title": "🎓 Business School Courses: A Gateway to Modern Leadership",
-        "description": "Explore comprehensive business school curricula covering strategy, operations, finance, and entrepreneurship.",
-        "tags": ["business school", "MBA", "leadership"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 8,
-        "title": "📱 Develop and Sell Mobile Apps: From Idea to Marketplace",
-        "description": "Learn about app monetization, marketing, ASO, and product design strategies that lead to App Store success.",
-        "tags": ["mobile apps", "development", "marketing"],
-        "associatedGraphIDs": ["mobile-apps"]
-      },
-      {
-        "id": 9,
-        "title": "📘 Economics Explained: From Theory to Real-World Impact",
-        "description": "Delve into macro and micro theories, models, inflation, and policy frameworks that shape our economic landscape.",
-        "tags": ["economics", "theory", "policy"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 10,
-        "title": "👤 Lessons from Ray Dalio: Principles for Life and Business",
-        "description": "Discover Ray Dalio's insights on life principles, economic models, and strategies that have influenced modern investing.",
-        "tags": ["Ray Dalio", "principles", "investing"],
-        "associatedGraphIDs": ["ray-dalio"]
-      },
-      {
-        "id": 11,
-        "title": "🧘 Learning to Meditate: Finding Focus in a Busy World",
-        "description": "Reduce stress and build focus through step-by-step mindmaps and mindfulness techniques.",
-        "tags": ["meditation", "mindfulness", "focus"],
-        "associatedGraphIDs": ["meditation"]
-      },
-      {
-        "id": 12,
-        "title": "📈 Trend Identification: Recognize Market Directions",
-        "description": "Learn to identify prevailing market trends—whether bullish, bearish, or neutral—using simple yet effective methods.",
-        "tags": ["trend", "identification", "market"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 13,
-        "title": "🛠️ Indicators & Tools: Quantify the Market's Pulse",
-        "description": "Use technical indicators and analytical tools to confirm trends, spot reversals, and make informed trading decisions.",
-        "tags": ["indicators", "tools", "technical analysis"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 14,
-        "title": "🔮 Chart Patterns: Decoding Signals for Entry and Exit",
-        "description": "Explore how recurring chart patterns reveal potential market behavior and guide trading strategies.",
-        "tags": ["chart patterns", "reversal", "continuation"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 15,
-        "title": "⚖️ Risk & Strategy: Balancing Ambition with Caution",
-        "description": "Understand the importance of risk management and strategic planning in achieving long-term trading success.",
-        "tags": ["risk", "strategy", "trading"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 16,
-        "title": "✏️ Trend Lines: Visualizing Market Momentum",
-        "description": "Learn how drawing trend lines can help you identify support, resistance, and the strength of market trends.",
-        "tags": ["trend lines", "support", "resistance"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 17,
-        "title": "📉 Moving Averages: Smoothing Out Market Noise",
-        "description": "Discover how moving averages filter out short-term fluctuations to reveal underlying market trends.",
-        "tags": ["moving averages", "SMA", "EMA"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 18,
-        "title": "⏳ Market Phases: The Rhythm of the Economy",
-        "description": "Explore how different market phases—from accumulation to distribution—affect investment decisions.",
-        "tags": ["market phases", "business cycle", "investment"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 19,
-        "title": "🛡️ Support & Resistance: The Battle Lines of Price",
-        "description": "Learn how to identify key price levels that act as barriers or catalysts for market movements.",
-        "tags": ["support", "resistance", "price levels"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 20,
-        "title": "📊 RSI: Detecting Overbought and Oversold Markets",
-        "description": "Understand the Relative Strength Index and how it can signal potential market reversals.",
-        "tags": ["RSI", "oscillator", "momentum"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 21,
-        "title": "📉 MACD: Spotting Shifts in Market Momentum",
-        "description": "Learn how the MACD indicator helps traders identify changes in market momentum and potential trend reversals.",
-        "tags": ["MACD", "momentum", "trend"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 22,
-        "title": "📐 Bollinger Bands: Tracking Market Volatility",
-        "description": "Discover how Bollinger Bands use moving averages and standard deviations to provide a dynamic view of market volatility.",
-        "tags": ["Bollinger Bands", "volatility", "technical analysis"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 23,
-        "title": "🔊 Volume Analysis: Confirm Trends with Market Activity",
-        "description": "Use volume data to validate price movements and detect potential reversals or breakouts.",
-        "tags": ["volume", "analysis", "trading"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 24,
-        "title": "📊 Chart Patterns: Recognize Entry and Exit Signals",
-        "description": "Identify familiar chart patterns that can hint at future market behavior, enabling timely entry and exit strategies.",
-        "tags": ["chart patterns", "signals", "entry exit"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 25,
-        "title": "🕯️ Candlestick Patterns: Deciphering Market Stories",
-        "description": "Learn how Japanese candlestick patterns provide insights into market sentiment and potential reversals.",
-        "tags": ["candlestick", "patterns", "technical analysis"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 26,
-        "title": "🚀 Breakouts & Pullbacks: Timing Your Market Moves",
-        "description": "Understand how to detect breakouts and pullbacks to optimize your trading entries and exits.",
-        "tags": ["breakouts", "pullbacks", "timing"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 27,
-        "title": "📏 Price Channels: Defining Market Boundaries",
-        "description": "Discover how parallel trendlines can create price channels that highlight potential overbought or oversold zones.",
-        "tags": ["price channels", "trends", "boundaries"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 28,
-        "title": "🛑 Stop-Loss Placement: Safeguard Your Investments",
-        "description": "Learn strategies for setting effective stop-loss orders to limit potential losses in volatile markets.",
-        "tags": ["stop-loss", "risk management", "trading"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 29,
-        "title": "💡 Position Sizing: Optimize Risk and Reward",
-        "description": "Discover techniques to determine the optimal amount to invest in each trade, balancing potential gains with acceptable risk.",
-        "tags": ["position sizing", "risk management", "investment"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 30,
-        "title": "🏄‍♂️ Trend Following Strategy: Ride the Market Wave",
-        "description": "Learn how to capitalize on sustained market trends by aligning your strategy with the prevailing direction.",
-        "tags": ["trend following", "strategy", "investing"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 31,
-        "title": "↩️ Counter-Trend Strategy: Profit from Reversals",
-        "description": "Explore methods to identify and exploit short-term reversals in the market, turning contrarian moves into profit opportunities.",
-        "tags": ["counter-trend", "strategy", "reversal"],
-        "associatedGraphIDs": ["analyzing-trends"]
-      },
-      {
-        "id": 32,
-        "title": "💰 How to Become Rich by Investing Smartly",
-        "description": "Discover practical strategies and mindset shifts that top investors use to build wealth. Learn about long-term planning, diversification, and disciplined market analysis.",
-        "tags": ["rich", "investing", "wealth", "finance"],
-        "associatedGraphIDs": ["investing", "stock-investing"]
-      },
-      {
-        "id": 33,
-        "title": "💘 How to Date a Girl Successfully",
-        "description": "Explore the art of communication, confidence, and emotional intelligence that can help you build meaningful relationships.",
-        "tags": ["dating", "relationships", "communication", "confidence"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 34,
-        "title": "⏰ Why Am I Always Late? Unravel Time Management Secrets",
-        "description": "Analyze the reasons behind chronic lateness and learn techniques for better time management, scheduling, and self-discipline.",
-        "tags": ["time management", "lateness", "discipline"],
-        "associatedGraphIDs": ["meditation"]
-      },
-      {
-        "id": 35,
-        "title": "🌐 How to Build a Global Empire from Your Living Room",
-        "description": "Learn how digital innovation and an entrepreneurial mindset can break geographical barriers and turn small ideas into global ventures.",
-        "tags": ["entrepreneurship", "global", "innovation", "digital"],
-        "associatedGraphIDs": ["mobile-apps", "business-school"]
-      },
-      {
-        "id": 36,
-        "title": "🚀 How to Turn a Small Idea into a Big Business",
-        "description": "Explore the process of scaling up—from identifying opportunities to executing effective business strategies that drive growth and profitability.",
-        "tags": ["entrepreneurship", "scaling", "business growth"],
-        "associatedGraphIDs": ["business-school", "investing-practices"]
-      },
-      {
-        "id": 37,
-        "title": "📚 Why Traditional Education Fails in the Modern Economy",
-        "description": "Examine the gaps in conventional learning models and discover how innovative methods and online courses are reshaping success.",
-        "tags": ["education", "modern economy", "innovation"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 38,
-        "title": "💻 How to Navigate Digital Transformation in Your Career",
-        "description": "Understand the impact of technology on industries and learn strategies to adapt, innovate, and stay ahead in a rapidly changing digital landscape.",
-        "tags": ["digital transformation", "career", "innovation", "technology"],
-        "associatedGraphIDs": ["mobile-apps"]
-      },
-      {
-        "id": 39,
-        "title": "🤯 How to Master Leadership Without Losing Your Mind",
-        "description": "Discover leadership principles that balance strategic vision, emotional intelligence, and practical management to inspire teams and drive success.",
-        "tags": ["leadership", "management", "emotional intelligence"],
-        "associatedGraphIDs": ["business-school", "meditation"]
-      },
-      {
-        "id": 40,
-        "title": "🔥 How to Innovate When Resources Are Scarce",
-        "description": "Learn creative problem-solving techniques and strategic resource management to foster innovation even in challenging conditions.",
-        "tags": ["innovation", "creativity", "resource management"],
-        "associatedGraphIDs": ["investing", "investing-practices"]
-      },
-      {
-        "id": 41,
-        "title": "📈 Day Trading Secrets: Unlock the Market's Intraday Opportunities",
-        "description": "Dive into day trading strategies that combine technical analysis, rapid decision-making, and risk management to capitalize on volatile market movements.",
-        "tags": ["day trading", "intraday", "volatile"],
-        "associatedGraphIDs": ["day-trading"]
-      },
-      {
-        "id": 42,
-        "title": "💸 How to Capitalize on Economic Trends and Beat the Market",
-        "description": "Learn how to analyze economic indicators and leverage macroeconomic trends to inform your trading and investment decisions.",
-        "tags": ["economics", "market trends", "investment"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 43,
-        "title": "🗣️ Why I Sometimes Fail to Communicate: A Lesson in Behavioral Finance",
-        "description": "Explore how behavioral biases and psychological factors impact communication and decision-making in financial markets and everyday life.",
-        "tags": ["behavioral finance", "communication", "bias"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 44,
-        "title": "📈 What is Economics?",
-        "description": "The study of how societies use limited resources to produce valuable commodities and distribute them among different people.",
-        "tags": ["economics", "economics?"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 45,
-        "title": "📉 What is Microeconomics?",
-        "description": "Focuses on individual decision-makers within an economy—like households, workers, and businesses—and how they interact in markets.",
-        "tags": ["economics", "microeconomics"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 46,
-        "title": "📊 What is Macroeconomics?",
-        "description": "Looks at the economy as a whole, including topics like inflation, unemployment, and economic growth.",
-        "tags": ["economics", "macroeconomics"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 47,
-        "title": "📘 What is Supply and Demand?",
-        "description": "Explains how prices and quantities of goods are determined in a market system based on consumer and producer behavior.",
-        "tags": ["economics", "supply and demand"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 48,
-        "title": "💡 What is Opportunity Cost?",
-        "description": "The value of the next best alternative that is forgone when making a decision.",
-        "tags": ["economics", "opportunity cost"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 49,
-        "title": "🔮 What is GDP?",
-        "description": "Gross Domestic Product measures the total value of goods and services produced in a country over a specific period.",
-        "tags": ["economics", "gdp"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 50,
-        "title": "🧠 What is Inflation?",
-        "description": "The rate at which the general level of prices for goods and services is rising, reducing purchasing power.",
-        "tags": ["economics", "inflation"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 51,
-        "title": "📚 What is Unemployment?",
-        "description": "Occurs when people who are willing and able to work cannot find a job.",
-        "tags": ["economics", "unemployment"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 52,
-        "title": "💸 What is Fiscal Policy?",
-        "description": "Government policy regarding taxation and spending to influence the economy.",
-        "tags": ["economics", "fiscal policy"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 53,
-        "title": "🏛️ What is Monetary Policy?",
-        "description": "Central bank actions, such as changing interest rates, to control the money supply and stabilize the economy.",
-        "tags": ["economics", "monetary policy"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 54,
-        "title": "💬 What is Market Failure?",
-        "description": "When markets fail to allocate resources efficiently on their own, often justifying government intervention.",
-        "tags": ["economics", "market failure"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 55,
-        "title": "🔎 What is Elasticity?",
-        "description": "Measures how much the quantity demanded or supplied of a good responds to a change in price.",
-        "tags": ["economics", "elasticity"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 56,
-        "title": "🧾 What is Comparative Advantage?",
-        "description": "The ability of an entity to produce a good at a lower opportunity cost than another.",
-        "tags": ["economics", "comparative advantage"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 57,
-        "title": "💼 What is the Business Cycle?",
-        "description": "The periodic growth and decline in economic activity over time, including expansion, peak, recession, and recovery.",
-        "tags": ["economics", "business cycle"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 58,
-        "title": "🌍 What is International Trade?",
-        "description": "The exchange of goods and services across national borders, and its effects on economies.",
-        "tags": ["economics", "international trade"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 59,
-        "title": "🔧 What is Productivity?",
-        "description": "The amount of output produced per unit of input, often linked to technological progress and efficiency.",
-        "tags": ["economics", "productivity"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 60,
-        "title": "🏦 What is a Central Bank?",
-        "description": "A national institution that manages currency, money supply, and interest rates, such as the Federal Reserve.",
-        "tags": ["economics", "central bank"],
-        "associatedGraphIDs": ["economics"]
-      },
-      {
-        "id": 61,
-        "title": "🌍 Impact of Global Events on Stocks",
-        "description": "Global Events can dramatically shift market behavior, driving investor fear or enthusiasm, impacting valuations and capital flows across sectors and geographies.\n\n💡 Why It Matters\n- Stock markets are highly sensitive to external shocks and policy responses.\n- Investors who anticipate or hedge against major events often outperform peers.\n🌍 Major Event Categories\n- Geopolitical risks (war, conflict)\n- Natural disasters (earthquakes, floods)\n- Global health crises (pandemics)\n- Central bank policies\n- Political shifts (elections)\n🎯 Use Case\n- Investors track news, apply scenario analysis, or use event-driven strategies to mitigate risk or seize short-term alpha opportunities.",
-        "tags": ["global events", "stocks", "impact of global events on stocks"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 62,
-        "title": "💣 Geopolitical Tensions",
-        "description": "Wars, military escalations, and diplomatic disputes introduce global uncertainty that rattles investor confidence.\n\n📉 Impact\n- Defense stocks may rise, while broader markets fall.\n- Safe havens like gold or bonds attract inflows.\n- Energy prices often spike (e.g., Russia-Ukraine conflict and oil).\n📰 Example\n- 2022 Russia-Ukraine war caused volatility in European markets and energy stocks.\n📈 Short-Term Effects\n- Risk-off sentiment → shift to safe haven assets (gold, bonds)\n- Commodity prices (oil, wheat) spike\n🛡️ Risk Management\n- Diversify geographically\n- Increase cash buffer during heightened tensions\n📘 Reference\n- Council on Foreign Relations – Conflict Tracker",
-        "tags": ["global events", "stocks", "geopolitical tensions"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 63,
-        "title": "🌀 Natural Disasters",
-        "description": "Earthquakes, floods, and wildfires can disrupt production, logistics, and regional economies.\n\n🌀 Economic Effects\n- Insurance claims spike, utilities and infrastructure companies often impacted.\n- Supply chains may suffer (e.g., Taiwan earthquakes and chip production delays).\n💼 Sectors Affected\n- Construction, commodities, retail (inventory damage), insurance.\n🧭 Response Strategy\n- Consider exposure to reinsurance and construction sectors.\n- Evaluate disaster recovery funds or ESG impact themes.\n📚 Case Study\n- Japan’s 2011 earthquake led to massive supply chain disruption in auto and electronics sectors.",
-        "tags": ["global events", "stocks", "natural disasters"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 64,
-        "title": "🦠 Pandemics and Health Crises",
-        "description": "COVID-19 and other global pandemics introduce massive disruption across sectors, policy responses, and consumer behavior.\n\n💊 Economic Consequences\n- GDP drops, unemployment spikes, supply/demand shocks.\n- Acceleration of digital economy, remote work, e-commerce.\n💼 Affected Sectors\n- Healthcare (positive), airlines and hospitality (negative), tech (mixed).\n🧠 Investor Response\n- Rotate into remote/tech stocks.\n- Avoid high-contact businesses.\n📚 Reference\n- IMF and OECD pandemic economic impact reports.",
-        "tags": ["global events", "stocks", "pandemics"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 65,
-        "title": "💼 Corporate Scandals and Governance",
-        "description": "Major frauds, accounting irregularities, or executive misconduct can tank stock prices and raise market mistrust.\n\n💥 Effects\n- Stock price collapse, lawsuits, delisting risks.\n- Industry-wide contagion (e.g., Enron, Wirecard).\n📈 Watch for\n- Sudden CFO resignation.\n- Short seller reports.\n🧰 Investor Tool\n- Monitor whistleblower data, Glassdoor reviews, forensic accounting reports.\n📚 Example\n- Enron (2001), Luckin Coffee (2020)",
-        "tags": ["global events", "stocks", "corporate scandals"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 66,
-        "title": "🏦 Central Bank Rate Decisions",
-        "description": "Decisions on interest rates and monetary policy drive credit conditions, liquidity, and investor sentiment.\n\n📊 Market Impact\n- Rising rates → pressure on tech and growth stocks.\n- Lower rates → boost to housing, banks, equities.\n📆 Events to Track\n- FOMC meetings (Fed)\n- ECB, BOJ, PBoC announcements\n💡 Forward Guidance\n- Language used by central banks can signal future policy shifts.\n📘 Reference\n- Federal Reserve Dot Plot and Summary of Economic Projections.",
-        "tags": ["global events", "stocks", "interest rates"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 67,
-        "title": "🗳️ Political Elections",
-        "description": "Elections shift policy landscapes. Changes in tax, trade, or regulation can affect entire sectors.\n\n🗺️ Market Themes\n- Defense spending under Republicans?\n- Green energy push by Democrats?\n📈 Election Year Volatility\n- Markets prefer predictable outcomes.\n📚 Example\n- 2020 US election impacted renewable energy, Big Tech regulation expectations.",
-        "tags": ["global events", "stocks", "elections"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 68,
-        "title": "⚖️ Regulatory Changes",
-        "description": "New laws or enforcement actions can shift business models or introduce risk.\n\n🧾 Examples\n- Antitrust investigations in tech (Google, Meta).\n- SEC accounting rules (SPACs, crypto).\n- EU privacy laws (GDPR).\n📉 Market Response\n- Sharp re-ratings when regulation surprises investors.\n📘 Risk Monitoring\n- Watch law proposals, FTC/DOJ investigations.",
-        "tags": ["global events", "stocks", "regulation"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 69,
-        "title": "⛽ Energy Crises and Oil Shocks",
-        "description": "Supply chain disruptions, war, or policy limits on fossil fuels lead to oil price shocks.\n\n💥 Sector Effects\n- Energy stocks rise, airlines fall.\n📊 Inflationary Pressure\n- Oil feeds into food, transport, manufacturing costs.\n📆 Examples\n- 1970s OPEC embargo\n- 2022 Ukraine war and oil prices\n🛢️ Hedge Strategy\n- Commodities, energy ETFs, options.",
-        "tags": ["global events", "stocks", "oil"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 70,
-        "title": "💱 Currency Crises",
-        "description": "Rapid devaluation or speculative attacks destabilize economies and markets.\n\n🌍 Effects\n- Debt defaults, import costs soar, central bank intervention.\n📉 Investor Risk\n- Emerging markets, currency-exposed corporates.\n📘 Example\n- Argentina 2018, Turkey 2021\n🧠 Monitoring\n- FX reserves, bond yields, CDS spreads.",
-        "tags": ["global events", "stocks", "currency crisis"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 71,
-        "title": "📰 Media and Misinformation",
-        "description": "Fake news, viral social posts, or rumors can rapidly shift market sentiment.\n\n💡 Investor Caution\n- Distinguish signal from noise.\n📉 Example\n- False tweet about White House explosion briefly crashed Dow in 2013.\n🔍 Tools\n- Use verified sources, sentiment monitoring tools.",
-        "tags": ["global events", "stocks", "misinformation"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 72,
-        "title": "🤖 AI and Automation Shocks",
-        "description": "Sudden advances in automation/AI (e.g., ChatGPT) cause sector disruption, investor euphoria or fear.\n\n📊 Market Reaction\n- Rotation into AI winners (chips, software).\n- Layoffs in exposed industries (support, media).\n🧠 Monitor\n- Corporate AI investments\n- Regulatory pushback\n📚 Example\n- Microsoft, Nvidia surge on AI narrative.",
-        "tags": ["global events", "stocks", "ai"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 73,
-        "title": "🏫 What is Business School Courses?",
-        "description": "Business School Courses provide structured education in economics, management, finance, and entrepreneurship.\n\n🎓 Curriculum Highlights\n- Undergraduate: Foundations of economics, management, and marketing\n- MBA: Strategy, leadership, operations, financial modeling\n- EMBA: High-level decision-making, global leadership, corporate transformation\n\n📚 Source Institutions\n- Harvard Business School, Wharton, INSEAD, LBS, CEIBS\n\n🌐 Resources\n- Harvard MBA Curriculum\n- Wharton MBA Academics",
-        "tags": ["business school", "business school courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 74,
-        "title": "📈 What is Undergraduate Courses?",
-        "description": "Undergraduate Business Courses form the academic backbone for future MBAs, entrepreneurs, and corporate leaders.\n\n📘 Typical Duration\n- 3–4 years\n- Often leads to BBA, BSBA, or BA in Business\n\n🧱 Core Components\n- Economics (Micro/Macro), Accounting, Marketing, Business Ethics\n\n🌐 Global Comparison\n- Wharton Undergraduate Program: Offers flexibility with concentrations like finance, operations\n- LSE BSc Management: Strong on economic foundations and data",
-        "tags": ["business school", "undergraduate courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 75,
-        "title": "📊 What is MBA Courses?",
-        "description": "MBA Programs deliver intensive training in leadership, finance, marketing, and decision-making.\n\n🏫 Common Structure\n- Year 1: Core Courses\n- Year 2: Electives + Capstone Project / Exchange\n\n🧠 Skills Developed\n- Strategic thinking, cross-cultural communication, data-driven leadership\n\n📺 Multimedia\n- Inside INSEAD MBA\n- HBS Case Study Teaching",
-        "tags": ["business school", "mba courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 76,
-        "title": "💼 What is Financial Masters Courses?",
-        "description": "Master of Finance Programs focus on investment, corporate finance, risk, and modeling.\n\n🏦 Typical Modules\n- Quantitative Methods\n- Derivatives & Risk\n- Portfolio Theory\n- Corporate Valuation\n\n📊 Notable Schools\n- MIT Sloan MFin\n- LBS MSc Finance\n- HEC Paris MiF",
-        "tags": ["business school", "financial masters courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 77,
-        "title": "🧠 What is EMBA Courses?",
-        "description": "Executive MBA (EMBA) targets experienced professionals looking to accelerate their careers into C-suite leadership.\n\n📊 Characteristics\n- Weekend or modular format\n- Global campuses and international residencies\n\n📈 Core Areas\n- Strategic Management\n- Negotiation\n- Cross-Border Leadership\n\n🏫 Example Programs\n- Wharton EMBA\n- Kellogg-HKUST EMBA\n- INSEAD-Tsinghua EMBA",
-        "tags": ["business school", "emba courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 78,
-        "title": "📘 What is Marketing Courses?",
-        "description": "Marketing courses explore customer behavior, branding, pricing, and analytics.\n\n📊 Common Modules\n- Brand Strategy\n- Digital Marketing\n- Pricing and Channel Strategy\n- Consumer Psychology\n\n🧰 Tools\n- A/B Testing\n- CRM & Personalization\n- Customer Lifetime Value\n\n📚 Leading Schools\n- Kellogg (Marketing Science)\n- NYU Stern (Digital Strategy)",
-        "tags": ["business school", "marketing courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 79,
-        "title": "🗂️ What is Operations Courses?",
-        "description": "Operations Management deals with optimizing systems and processes in goods and service delivery.\n\n⚙️ Topics\n- Supply Chain Design\n- Inventory Models\n- Lean and Six Sigma\n- Process Flow Analysis\n\n📈 Use Cases\n- Amazon (Fulfillment Ops)\n- Toyota (Just-in-Time)\n\n🧮 Quant Skills\n- Queueing Theory\n- Linear Programming",
-        "tags": ["business school", "operations courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 80,
-        "title": "📣 What is Strategy Courses?",
-        "description": "Strategy training focuses on how businesses create competitive advantage, respond to disruption, and grow sustainably.\n\n🧭 Topics Covered\n- Corporate Strategy\n- Business Model Innovation\n- M&A and Restructuring\n- Network Effects\n\n📘 Key Thinkers\n- Michael Porter\n- Clayton Christensen\n\n📺 Case Study\n- Netflix vs Blockbuster",
-        "tags": ["business school", "strategy courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 81,
-        "title": "📦 What is Entrepreneurship Courses?",
-        "description": "Entrepreneurship courses focus on how to identify opportunities, design products, raise capital, and scale ventures.\n\n💡 Topics\n- Business Model Canvas\n- Lean Startup\n- Fundraising & Term Sheets\n- Founder Psychology\n\n🚀 Sample Programs\n- Stanford GSB Startup Garage\n- HBS Entrepreneurial Finance\n\n🧪 Tools\n- Pitch Decks, MVP Prototyping, Customer Development",
-        "tags": ["business school", "entrepreneurship courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 82,
-        "title": "📉 What is Accounting Courses?",
-        "description": "Accounting builds foundational skills in understanding financial statements, budgeting, auditing, and compliance.\n\n📊 Core Concepts\n- GAAP & IFRS\n- Financial vs Managerial Accounting\n- Cost Allocation, Depreciation\n\n🧾 Applications\n- Equity Research\n- Internal Control\n- Tax Planning",
-        "tags": ["business school", "accounting courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 83,
-        "title": "🌐 What is International Business Courses?",
-        "description": "International Business explores how companies operate across borders, manage cultural differences, and navigate global risks.\n\n🌍 Core Topics\n- Global Strategy\n- Foreign Direct Investment\n- Trade Policy and Currency Risk\n\n🌐 Case Examples\n- Huawei Supply Chain\n- McDonald's Global Franchising\n- Tesla's China Strategy",
-        "tags": ["business school", "international business courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 84,
-        "title": "🧾 What is Business Law Courses?",
-        "description": "Business Law focuses on legal frameworks impacting corporations, contracts, IP, labor, and regulation.\n\n⚖️ Modules\n- Contract Law\n- Corporate Governance\n- Intellectual Property\n- Antitrust & M&A Law\n\n📘 Real-World Case\n- Google EU Antitrust\n- Elon Musk vs Twitter (2022)",
-        "tags": ["business school", "business law courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 85,
-        "title": "🧮 What is Economics Courses?",
-        "description": "Economics modules in business school provide tools to analyze markets, behavior, policy, and firm-level decision making.\n\n📚 Topics\n- Supply & Demand\n- Elasticity & Pricing Power\n- Game Theory\n- Market Structures\n\n📊 Applications\n- Antitrust Case Analysis\n- Labor vs Capital Decisions\n- Regulation Impact Forecasts",
-        "tags": ["business school", "economics courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 86,
-        "title": "🔎 What is Business Ethics Courses?",
-        "description": "Business Ethics explores moral dilemmas in corporate behavior, stakeholder impact, and regulatory compliance.\n\n🧭 Key Themes\n- ESG (Environmental, Social, Governance)\n- Whistleblowing & Transparency\n- Stakeholder Theory vs Shareholder Theory\n\n📘 Scandals & Lessons\n- Theranos Fraud\n- Volkswagen Emissions\n- FTX and Crypto Collapse",
-        "tags": ["business school", "business ethics courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 87,
-        "title": "⛽ Commodity Price Shocks",
-        "description": "Sudden spikes or drops in oil, metals, or agricultural goods ripple through global supply chains and corporate margins.\n\n        ⛽ Impact\n        - Oil prices influence transportation, airlines, and plastics\n        - Food prices affect consumer staples and inflation trends\n📉 Risk\n        - Volatility in emerging markets due to reliance on commodity exports.\n        📺 How Commodity Markets Work",
-        "tags": ["global events", "stocks", "commodity price shocks"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 88,
-        "title": "💱 Currency Fluctuations",
-        "description": "Foreign exchange rate swings change competitiveness and earnings for international firms.\n\n        🌐 Effects\n        - Strong USD hurts exporters\n        - Weak currencies boost inflation and import costs\n🧠 Strategies\n        - Currency-hedged ETFs\n        - FX futures for multinational companies",
-        "tags": ["global events", "stocks", "currency fluctuations"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 89,
-        "title": "📰 Market Sentiment & Media",
-        "description": "News flow and narrative shifts—whether grounded in fundamentals or not—drive short-term moves.\n\n        📺 Influences\n        - Earnings headlines\n        - Tweet storms by key figures (e.g., Elon Musk)\n        - Financial media sentiment indices\n\n        📊 Tools\n        - Sentiment analysis using NLP\n        - Put/call ratios\n        - Fear and Greed index",
-        "tags": ["global events", "stocks", "market sentiment & media"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 90,
-        "title": "🤖 Technological Disruptions ⚙️",
-        "description": "Technological Disruptions such as AI breakthroughs or automation waves reshape entire industries and shift investor focus toward innovation leaders.\n    \n        🔄 Shift in Capital\n        - Traditional sectors face pressure, while tech and automation companies attract capital inflows.\n    \n        💡 Investment Angle\n        - Look for ETF themes (AI, robotics).\n        - Monitor patent filings and R&D spending trends.\n📚 Case\n        - ChatGPT launch led to surge in semiconductor stocks (e.g., Nvidia), reshaping tech valuations globally.\n    \n        🖥️ Reference\n        - AI Investment Boom – Forbes",
-        "tags": ["global events", "stocks", "technological disruptions ⚙️"],
-        "associatedGraphIDs": ["global-events-impact"]
-      },
-      {
-        "id": 91,
-        "title": "🏫 What is Business School Courses?",
-        "description": "Business School Courses provide structured education in economics, management, finance, and entrepreneurship.\n        \n        🎓 Curriculum Highlights\n        - Undergraduate: Foundations of economics, management, and marketing\n        - MBA: Strategy, leadership, operations, financial modeling\n        - EMBA: High-level decision-making, global leadership, corporate transformation\n        \n        📚 Source Institutions\n        - Harvard Business School, Wharton, INSEAD, LBS, CEIBS\n        \n        🌐 Resources\n        - Harvard MBA Curriculum\n        - Wharton MBA Academics",
-        "tags": ["business school", "business school courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 92,
-        "title": "📈 What is Undergraduate Courses?",
-        "description": "Undergraduate Business Courses form the academic backbone for future MBAs, entrepreneurs, and corporate leaders.\n        \n        📘 Typical Duration\n        - 3–4 years\n        - Often leads to BBA, BSBA, or BA in Business\n        \n        🧱 Core Components\n        - Economics (Micro/Macro), Accounting, Marketing, Business Ethics\n        \n        🌐 Global Comparison\n        - Wharton Undergraduate Program: Offers flexibility with concentrations like finance, operations\n        - LSE BSc Management: Strong on economic foundations and data",
-        "tags": ["business school", "undergraduate courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 93,
-        "title": "📊 What is MBA Courses?",
-        "description": "MBA Programs deliver intensive training in leadership, finance, marketing, and decision-making.\n        \n        🏫 Common Structure\n        - Year 1: Core Courses\n        - Year 2: Electives + Capstone Project / Exchange\n        \n        🧠 Skills Developed\n        - Strategic thinking, cross-cultural communication, data-driven leadership\n        \n        📺 Multimedia\n        - Inside INSEAD MBA\n        - HBS Case Study Teaching",
-        "tags": ["business school", "mba courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 94,
-        "title": "💼 What is Financial Masters Courses?",
-        "description": "Master of Finance Programs focus on investment, corporate finance, risk, and modeling.\n        \n        🏦 Typical Modules\n        - Quantitative Methods\n        - Derivatives & Risk\n        - Portfolio Theory\n        - Corporate Valuation\n        \n        📊 Notable Schools\n        - MIT Sloan MFin\n        - LBS MSc Finance\n        - HEC Paris MiF",
-        "tags": ["business school", "financial masters courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 95,
-        "title": "🧠 What is EMBA Courses?",
-        "description": "Executive MBA (EMBA) targets working professionals in upper management.\n        \n        💼 Format\n        - Modular / Part-time\n        - 16–22 months on average\n        \n        🔑 Focus Areas\n        - Strategic Leadership\n        - Innovation Management\n        - Global Transformation\n        \n        🌍 Schools\n        - Chicago Booth EMBA\n        - CEIBS EMBA\n        - INSEAD EMBA",
-        "tags": ["business school", "emba courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 96,
-        "title": "📘 What is Foundational Courses?",
-        "description": "Foundational Courses prepare undergraduates with broad knowledge in economics, finance, and management.\n        \n        📚 Modules Include\n        - Microeconomics / Macroeconomics\n        - Intro to Finance and Accounting\n        - Quantitative Methods\n        \n        🔎 Key Learning Outcomes\n        - Build economic intuition\n        - Understand how markets function\n        - Communicate financial data effectively",
-        "tags": ["business school", "foundational courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 97,
-        "title": "🗂️ What is Advanced/Professional Courses?",
-        "description": "Professional Courses equip students with job-ready business skills, project execution, and global perspective.\n        \n        💼 Areas of Focus\n        - Data Analytics\n        - Strategy Execution\n        - Global Supply Chains\n        \n        📘 Sample Course Materials\n        - MIT Sloan OpenCourseWare",
-        "tags": ["business school", "advanced/professional courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 98,
-        "title": "📣 What is Microeconomics?",
-        "description": "Microeconomics explores decisions made by individual consumers, firms, and industries.\n        \n        🔍 Key Concepts\n        - Demand/Supply\n        - Elasticity\n        - Utility & Cost\n        \n        📈 Use Case\n        - Price setting\n        - Product design\n        - Market segmentation",
-        "tags": ["business school", "microeconomics"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 99,
-        "title": "📦 What is Macroeconomics?",
-        "description": "Macroeconomics studies entire economies and aggregates such as GDP, inflation, and unemployment.\n        \n        📘 Theory Sources\n        - Keynesian Economics\n        - Monetarism\n        - IS-LM & AD-AS Models\n        \n        💡 Relevance\n        - Central bank policy analysis\n        - Investment cycles\n        - Political risk",
-        "tags": ["business school", "macroeconomics"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 100,
-        "title": "📉 What is Principles of Accounting?",
-        "description": "Principles of Accounting teaches the systematic recording, reporting, and analysis of financial transactions.\n        \n        📊 Concepts Covered\n        - Double-entry system\n        - Balance Sheet / Income Statement\n        - Accruals vs Cash Accounting\n        \n        🔗 External Resources\n        - AccountingCoach.com",
-        "tags": ["business school", "principles of accounting"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 101,
-        "title": "🌐 What is Principles of Marketing?",
-        "description": "Principles of Marketing introduces the core concepts of creating, communicating, and delivering value to customers.\n    \n        📊 Key Concepts\n        - Market segmentation and targeting\n        - 4Ps of Marketing: Product, Price, Place, Promotion\n        - Consumer behavior and branding\n    \n        💡 Why It Matters\n        Understanding marketing is critical for business growth, customer acquisition, and market positioning.\n    \n        📚 Learn More\n        - Coursera: Marketing Course",
-        "tags": ["business school", "principles of marketing"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 102,
-        "title": "🧾 What is Principles of Management?",
-        "description": "Principles of Management explores how to plan, lead, organize, and control an organization to achieve goals efficiently.\n    \n        📘 Topics Covered\n        - Planning and decision making\n        - Leadership and team management\n        - Organizational structure and culture\n    \n        📌 Classic Model\n        - Fayol's 14 Principles of Management\n        - Mintzberg's managerial roles\n    \n        💡 Why It Matters\n        Effective management fosters productivity, employee engagement, and strategic clarity.\n    \n        🔗 Explore\n        - Harvard Business Review: Management Essentials",
-        "tags": ["business school", "principles of management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 103,
-        "title": "🧮 What is Financial Markets and Institutions?",
-        "description": "Financial Markets and Institutions introduces how capital flows through various intermediaries and platforms that support the economy.\n    \n        🏦 Key Topics\n        - Types of markets: equity, bond, derivatives, money\n        - Role of institutions: banks, mutual funds, pension funds, central banks\n        - Interest rate dynamics and monetary policy transmission\n    \n        💡 Why It Matters\n        Financial markets allocate resources efficiently and impact investment, inflation, and employment.\n    \n        📘 Example Case\n        How the 2008 global financial crisis exposed systemic risk in interbank lending markets.\n    \n        🔊 AI Summary\n        Financial markets and institutions form the backbone of the economy by facilitating funding, investment, and liquidity.\n    \n        🧭 Workflow\n\nUnderstand roles of key financial institutions\nStudy structure of capital and debt markets\nAnalyze interest rate impact on investment\nExplore regulatory frameworks (e.g., Basel III)",
-        "tags": ["business school", "financial markets and institutions"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 104,
-        "title": "🔎 What is Operations Management?",
-        "description": "Operations Management is the discipline of designing, managing, and improving production and service delivery processes.\n    \n        ⚙️ Key Themes\n        - Supply chain design and logistics\n        - Quality management (e.g., Six Sigma, TQM)\n        - Lean systems and capacity planning\n    \n        💡 Why It Matters\n        Efficient operations improve customer satisfaction, reduce cost, and create competitive advantage.\n    \n        📘 Example Case\n        Toyota Production System (TPS) as a model of just-in-time manufacturing and lean innovation.\n    \n        🔊 AI Summary\n        Operations management ensures the smooth delivery of products and services while minimizing waste and maximizing value.\n    \n        🧭 Workflow\n\nMap the production or service process\nIdentify inefficiencies or delays\nApply optimization techniques (e.g., lean, Six Sigma)\nMonitor KPIs and continuously improve",
-        "tags": ["business school", "operations management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 105,
-        "title": "🚀 What is Business Data Analytics?",
-        "description": "Business Data Analytics is the use of data to make informed business decisions, uncover insights, and predict future outcomes.\n    \n        📊 Tools & Techniques\n        - Descriptive analytics (e.g., dashboards)\n        - Predictive analytics (e.g., regression, machine learning)\n        - Prescriptive analytics (e.g., optimization, simulation)\n    \n        💡 Why It Matters\n        Data-driven decision-making improves performance and enables strategic planning.\n    \n        📘 Example Case\n        How Target used customer data to predict pregnancy patterns and personalize marketing.\n    \n        🔊 AI Summary\n        Business analytics empowers decision-makers with evidence, uncovering hidden patterns to drive performance.\n    \n        🧭 Workflow\n\nCollect and clean relevant business data\nUse dashboards for descriptive insights\nApply forecasting or modeling for predictions\nRecommend actions using prescriptive tools",
-        "tags": ["business school", "business data analytics"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 106,
-        "title": "🪙 What is International Business?",
-        "description": "International Business explores the strategies and challenges of operating across national borders.\n    \n        🌍 Core Concepts\n        - Globalization and cross-border trade\n        - Foreign direct investment (FDI)\n        - Currency risk and political risk\n    \n        💡 Why It Matters\n        Understanding cultural, legal, and financial systems is essential for global expansion and risk management.\n    \n        📘 Example Case\n        Starbucks' global localization strategy: adapting coffee menus to local tastes (e.g., green tea latte in Asia).\n    \n        🔊 AI Summary\n        International business is about navigating diverse cultures, laws, and economies to build a global presence.\n    \n        🧭 Workflow\n\nConduct international market research\nEvaluate legal and currency risks\nChoose entry mode (joint venture, subsidiary, etc.)\nImplement localization strategy",
-        "tags": ["business school", "international business"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 107,
-        "title": "🏫 What is Core MBA Courses?",
-        "description": "Core MBA Courses form the foundation of business education and are essential for developing analytical and leadership skills.\n    \n        📚 Typical Courses\n        - Accounting\n        - Finance\n        - Marketing\n        - Organizational Behavior\n        - Operations Management\n        - Strategy\n💡 Why It Matters\n        These courses ensure that every MBA graduate understands the language of business and core decision-making frameworks.\n    \n        📘 Example Case\n        Wharton’s core curriculum requires students to take foundational courses before selecting electives, ensuring consistent competence across disciplines.\n    \n        🔊 Summary\n        Core MBA courses lay the groundwork for mastering business disciplines and developing cross-functional leadership skills.\n    \n        🧭 Workflow\n\nReview curriculum requirements\nTake diagnostic tests (e.g. accounting proficiency)\nProgress through structured modules (e.g. Financial Accounting → Corporate Finance)\nApply knowledge in team-based case studies",
-        "tags": ["business school", "core mba courses"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 108,
-        "title": "📈 What is MBA Electives?",
-        "description": "MBA Electives allow students to tailor their learning based on interests, career goals, or industry focus.\n    \n        🎯 Categories\n        - Entrepreneurship & Innovation\n        - Real Estate Finance\n        - Sustainability and ESG\n        - FinTech & Blockchain\n        - Luxury Brand Strategy\n        - Global Supply Chains\n💡 Why It Matters\n        Electives deepen specialization and help students differentiate themselves in the job market.\n    \n        📘 Example Case\n        At INSEAD, electives like “Psychological Issues in Management” provide a behavioral edge in leadership development.\n    \n        🔊 Summary\n        MBA electives turn a generalist business degree into a customizable launchpad for diverse careers.\n    \n        🧭 Workflow\n\nReview elective catalog and concentrations\nAttend sample classes or info sessions\nSelect based on industry interest or functional goals\nCombine electives with capstone projects or internships",
-        "tags": ["business school", "mba electives"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 109,
-        "title": "📊 What is Managerial Economics?",
-        "description": "Managerial Economics applies microeconomic theory and quantitative tools to business decision-making.\n    \n        📊 Key Concepts\n        - Price elasticity of demand\n        - Marginal analysis\n        - Game theory and competition\n        - Demand forecasting\n💡 Why It Matters\n        This subject equips managers with economic reasoning to optimize production, pricing, and market strategies.\n    \n        📘 Example Case\n        A firm analyzes elasticity to determine whether increasing price will raise revenue or reduce demand too steeply.\n    \n        🧭 Workflow\n\nIdentify business objective (e.g. maximize profit)\nApply relevant economic model (e.g. demand curve)\nUse data to estimate parameters\nSimulate outcomes and choose optimal decision",
-        "tags": ["business school", "managerial economics"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 110,
-        "title": "💼 What is Organizational Behavior?",
-        "description": "Organizational Behavior (OB) studies how individuals, teams, and systems behave in workplace settings.\n    \n        🧠 Topics Covered\n        - Motivation and leadership theories\n        - Team dynamics and conflict\n        - Organizational culture and design\n        - Change management\n💡 Why It Matters\n        Understanding human behavior at work leads to improved performance, retention, and employee satisfaction.\n    \n        📘 Example Case\n        A company uses Herzberg's theory to redesign job roles, boosting intrinsic motivation and reducing turnover.\n    \n        🧭 Workflow\n\nDiagnose team or individual issue\nSelect OB framework (e.g. Maslow, Hofstede)\nImplement behavioral or cultural intervention\nMeasure outcomes through engagement metrics",
-        "tags": ["business school", "organizational behavior"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 111,
-        "title": "🧠 What is Marketing Management?",
-        "description": "Marketing Management involves planning, executing, and measuring strategies that deliver value to customers and stakeholders.\n    \n        📦 Key Areas\n        - Segmentation, targeting, and positioning (STP)\n        - Marketing mix (4Ps: Product, Price, Place, Promotion)\n        - Branding, digital, and relationship marketing\n💡 Why It Matters\n        Effective marketing aligns customer needs with business objectives, driving sales and loyalty.\n    \n        📘 Example Case\n        Apple’s marketing combines premium pricing with aspirational branding and ecosystem lock-in.\n    \n        🧭 Workflow\n\nConduct market research\nSegment and target audience\nCraft marketing mix strategy\nMonitor results and adjust campaigns",
-        "tags": ["business school", "marketing management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 112,
-        "title": "📘 What is Financial Management?",
-        "description": "Financial Management teaches how to raise, allocate, and manage funds to optimize firm value.\n    \n        📉 Key Concepts\n        - Time value of money\n        - Capital budgeting\n        - Cost of capital & WACC\n        - Risk-return trade-offs\n💡 Why It Matters\n        It ensures companies make sound financial decisions that support growth, stability, and shareholder returns.\n    \n        📘 Example Case\n        A CFO uses discounted cash flow (DCF) analysis to decide whether to acquire a smaller competitor.\n    \n        🧭 Workflow\n\nForecast cash flows\nEstimate required return\nApply valuation method (e.g. NPV, IRR)\nChoose funding strategy (debt, equity)",
-        "tags": ["business school", "financial management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 113,
-        "title": "🗂️ What is Operations Management (MBA)?",
-        "description": "Operations Management focuses on designing and optimizing processes to deliver goods and services efficiently.\n    \n        🏭 Focus Areas\n        - Supply chain & logistics\n        - Quality control (e.g. Six Sigma)\n        - Capacity planning\n        - Lean and Agile operations\n💡 Why It Matters\n        Operations determine cost structure, customer satisfaction, and agility in competitive industries.\n    \n        📘 Example Case\n        Amazon streamlines operations through warehouse automation and predictive demand analytics.\n    \n        🧭 Workflow\n\nMap process flow (e.g. value stream mapping)\nIdentify inefficiencies or bottlenecks\nApply tools like Lean, TQM, or Six Sigma\nMonitor KPIs like cycle time and throughput",
-        "tags": ["business school", "operations management (mba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 114,
-        "title": "📣 What is Strategic Management?",
-        "description": "Strategic Management is the art and science of developing and executing long-term plans to achieve competitive advantage.\n    \n        📌 Key Frameworks\n        - SWOT and PESTEL\n        - Porter’s Five Forces\n        - Blue Ocean Strategy\n        - Balanced Scorecard\n💡 Why It Matters\n        Strategy aligns internal capabilities with external opportunities to ensure long-term survival and growth.\n    \n        📘 Example Case\n        Netflix’s shift from DVD rentals to streaming exemplifies visionary strategic realignment.\n    \n        🧭 Workflow\n\nAnalyze external and internal environment\nSet vision and goals\nChoose competitive strategy (cost, differentiation, focus)\nMonitor performance and adapt",
-        "tags": ["business school", "strategic management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 115,
-        "title": "📦 What is Entrepreneurship Management?",
-        "description": "Entrepreneurship Management explores the process of identifying, launching, and managing new ventures.\n    \n        🚀 Key Elements\n        - Opportunity recognition\n        - Business model canvas\n        - Lean startup methodology\n        - Funding strategies (angel, VC, crowdfunding)\n📘 Example Case\n        An entrepreneur applies Lean Startup principles to rapidly prototype a SaaS product, validate with users, and pivot based on feedback.\n    \n        🧭 Workflow\n\nIdentify unmet customer need\nDesign value proposition\nBuild MVP (minimum viable product)\nTest, pivot or scale\n\n💡 Why It Matters\n        Entrepreneurship fosters innovation and economic growth by transforming ideas into market-ready solutions.",
-        "tags": ["business school", "entrepreneurship management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 116,
-        "title": "📉 What is Project Management?",
-        "description": "Project Management is the discipline of planning, executing, and closing work to achieve specific goals within constraints.\n    \n        📦 Core Concepts\n        - Scope, time, and cost management\n        - Risk analysis and mitigation\n        - Gantt charts and critical path method\n        - Agile vs Waterfall methodologies\n📘 Example Case\n        A telecom company uses Agile sprints to manage development of a mobile app with cross-functional teams.\n    \n        🧭 Workflow\n\nDefine project objectives and deliverables\nPlan schedule, resources, and risks\nExecute and monitor tasks\nReview, deliver, and close project\n\n💡 Why It Matters\n        Efficient project management is essential for delivering results on time and within budget.",
-        "tags": ["business school", "project management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 117,
-        "title": "🌐 What is Supply Chain Management?",
-        "description": "Supply Chain Management (SCM) involves the coordination of materials, information, and finances as they move from supplier to customer.\n    \n        🔗 Key Topics\n        - Logistics and distribution\n        - Inventory and warehouse management\n        - Supplier relationships\n        - Demand forecasting\n📘 Example Case\n        Zara optimizes inventory turnover and shortens production cycles through vertically integrated supply chain practices.\n    \n        🧭 Workflow\n\nMap current supply chain and identify key partners\nAnalyze bottlenecks and inefficiencies\nImplement technology solutions (e.g. ERP)\nOptimize and monitor KPIs like lead time and cost\n\n💡 Why It Matters\n        A robust supply chain improves responsiveness, lowers costs, and increases customer satisfaction.",
-        "tags": ["business school", "supply chain management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 118,
-        "title": "🧾 What is Leadership Development?",
-        "description": "Leadership Development builds the mindset, skillset, and behaviors needed to lead teams and organizations effectively.\n    \n        🧠 Key Themes\n        - Emotional intelligence\n        - Situational leadership\n        - Coaching and feedback\n        - Influence without authority\n📘 Example Case\n        A company designs a rotational leadership program for high-potential employees to build cross-functional experience.\n    \n        🧭 Workflow\n\nAssess leadership potential and style\nDevelop personalized growth plan\nProvide mentoring, coaching, and assignments\nEvaluate impact through 360-degree feedback\n\n💡 Why It Matters\n        Effective leadership is the cornerstone of organizational resilience, culture, and innovation.",
-        "tags": ["business school", "leadership development"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 119,
-        "title": "🧮 What is E-commerce?",
-        "description": "E-commerce refers to the buying and selling of goods or services using digital platforms and technologies.\n    \n        🛍️ Key Areas\n        - B2C and B2B models\n        - Digital payment systems\n        - Online marketplaces (e.g. Amazon, Alibaba)\n        - Customer acquisition and retention strategies\n📘 Example Case\n        Shopify enables entrepreneurs to set up online storefronts using customizable templates and plug-ins.\n    \n        🧭 Workflow\n\nSelect e-commerce platform\nList products and setup payments\nIntegrate logistics and CRM tools\nLaunch marketing campaigns and analyze conversion\n\n💡 Why It Matters\n        E-commerce drives global trade, democratizes retail, and reshapes customer expectations in the digital age.",
-        "tags": ["business school", "e-commerce"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 120,
-        "title": "🔎 What is Core Courses (Financial Masters)?",
-        "description": "Core Courses in Financial Master’s programs form the analytical and theoretical foundation for advanced careers in finance.\n    \n        🏛️ Core Modules\n        - Corporate Finance\n        - Financial Accounting\n        - Quantitative Methods\n        - Financial Markets & Institutions\n        - Ethics in Finance\n📘 Example Case\n        Students learn to apply time value of money, valuation techniques, and capital budgeting to assess a firm’s investment project.\n    \n        🧭 Workflow\n\nComplete foundational finance theory\nBuild financial modeling proficiency (Excel, Python, R)\nSimulate real-world capital allocation decisions\nPresent investment recommendations\n\n💡 Why It Matters\n        These courses bridge academic finance with real-world application, preparing students for roles in banking, investment management, and consulting.",
-        "tags": ["business school", "core courses (financial masters)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 121,
-        "title": "🚀 What is Electives (Financial Masters)?",
-        "description": "Electives in Financial Master’s programs provide specialized focus in niche areas of the financial industry.\n    \n        🎯 Specialized Areas\n        - Behavioral Finance\n        - FinTech and Blockchain\n        - Private Equity & Venture Capital\n        - ESG Investing\n        - Real Estate Finance\n📘 Example Case\n        A student takes an elective in Algorithmic Trading, applying statistical arbitrage models using Python to backtest a trading strategy.\n    \n        🧭 Workflow\n\nChoose focus area aligned with career goals\nEngage in applied projects with data sets or case competitions\nNetwork with guest professionals and alumni\nDevelop niche skillset for industry placement\n\n💡 Why It Matters\n        Electives allow deep dives into emerging areas of finance and offer competitive edge in specialized domains.",
-        "tags": ["business school", "electives (financial masters)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 122,
-        "title": "🪙 What is Investment?",
-        "description": "Investment is the process of allocating capital to financial assets with the goal of earning returns and managing risk.\n    \n        📊 Core Concepts\n        - Risk vs. return trade-off\n        - Asset allocation and diversification\n        - Investment vehicles: stocks, bonds, ETFs\n        - Active vs. passive strategies\n    \n        📘 Example Case\n        Constructing a portfolio with 60% equities and 40% bonds using historical data to backtest performance over the past decade.\n    \n        🧭 Workflow\n\nDefine investment objectives\nAssess investor risk profile\nSelect asset mix and vehicles\nMonitor and rebalance portfolio\n\n💡 Why It Matters\n        Equips students with real-world strategies to grow wealth and preserve capital across market cycles.",
-        "tags": ["business school", "investment"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 123,
-        "title": "🏫 What is Corporate Finance?",
-        "description": "Corporate Finance studies how firms make decisions about investments, capital structure, and dividends.\n    \n        🏢 Key Topics\n        - Capital budgeting (NPV, IRR)\n        - Cost of capital (WACC)\n        - Financing decisions (debt vs. equity)\n        - Dividend policy\n    \n        📘 Example Case\n        A CFO decides whether to finance a $50M expansion via issuing bonds or equity, analyzing EPS dilution and debt ratios.\n    \n        🧭 Workflow\n\nEvaluate project cash flows\nAssess financing options and costs\nAnalyze impact on shareholder value\nMonitor performance and risk\n\n💡 Why It Matters\n        Enables optimal use of corporate resources to maximize firm value and strategic growth.",
-        "tags": ["business school", "corporate finance"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 124,
-        "title": "📈 What is Financial Markets?",
-        "description": "Financial Markets are systems where individuals and institutions trade financial securities, facilitating capital flow and economic stability.\n    \n        🌐 Market Types\n        - Capital markets: equity & debt\n        - Money markets: short-term liquidity instruments\n        - Derivatives & FX markets\n    \n        📘 Example Case\n        Comparing liquidity and volatility across NYSE and Hong Kong Stock Exchange using bid-ask spreads and volume data.\n    \n        🧭 Workflow\n\nIdentify asset classes and instruments\nUnderstand regulatory environment\nExplore pricing mechanisms\nAnalyze market microstructure and efficiency\n\n💡 Why It Matters\n        Understanding market mechanics is essential for making informed investment and policy decisions.",
-        "tags": ["business school", "financial markets"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 125,
-        "title": "📊 What is Econometrics?",
-        "description": "Econometrics applies statistical models to economic data to test hypotheses and forecast financial outcomes.\n    \n        📈 Topics\n        - Regression analysis (OLS, time-series)\n        - Model specification & diagnostics\n        - Panel data, VAR, GARCH models\n    \n        📘 Example Case\n        Using ARIMA models to forecast GDP growth or stock returns based on macroeconomic indicators.\n    \n        🧭 Workflow\n\nGather and clean financial data\nChoose appropriate econometric model\nEstimate and validate\nInterpret and apply insights\n\n💡 Why It Matters\n        Empowers students with data-driven techniques for modeling uncertainty and making evidence-based decisions.",
-        "tags": ["business school", "econometrics"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 126,
-        "title": "💼 What is International Finance?",
-        "description": "International Finance deals with the monetary interactions between two or more countries, analyzing exchange rates, capital flows, and global investment.\n    \n        🌍 Topics\n        - Exchange rate systems (fixed, floating)\n        - Interest rate parity, currency swaps\n        - Global capital mobility\n    \n        📘 Example Case\n        Hedging FX risk for a U.S. firm exporting to Europe by using forward contracts and evaluating exposure via delta hedging.\n    \n        🧭 Workflow\n\nAnalyze macroeconomic trends and FX rates\nApply parity conditions and arbitrage theory\nUse derivatives for currency risk management\nEvaluate international investment strategy\n\n💡 Why It Matters\n        Critical for managing global portfolios, MNC operations, and responding to geopolitical risks.",
-        "tags": ["business school", "international finance"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 127,
-        "title": "🧠 What is Financial Risk Management?",
-        "description": "Financial Risk Management focuses on identifying, assessing, and mitigating risks in financial institutions and portfolios.\n    \n        📊 Risk Categories\n        - Market risk (interest rate, currency, equity)\n        - Credit risk (default, counterparty)\n        - Operational and liquidity risk\n🛠 Tools & Techniques\n        - Value-at-Risk (VaR), stress testing\n        - Scenario analysis, sensitivity analysis\n        - Risk-adjusted return metrics (RAROC, Sharpe Ratio)\n    \n        🔍 Application\n        - Banking capital adequacy (Basel III)\n        - Hedge fund risk control\n        - Insurance and pension fund stability\n    \n        Category: Financial Masters → Risk & Compliance",
-        "tags": ["business school", "financial risk management"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 128,
-        "title": "📘 What is Fintech?",
-        "description": "Fintech refers to the integration of technology in delivering financial services more efficiently.\n    \n        💡 Key Areas\n        - Digital banking, robo-advisors, and mobile wallets\n        - Peer-to-peer lending and crowdfunding\n        - Blockchain, DeFi, and smart contracts\n🚀 Emerging Technologies\n        - AI in credit scoring and fraud detection\n        - APIs for embedded finance\n        - RegTech and SupTech for compliance automation\n    \n        📌 Case Examples\n        - Ant Financial, Stripe, Revolut, Robinhood\n    \n        Category: Financial Masters → Technology & Innovation",
-        "tags": ["business school", "fintech"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 129,
-        "title": "🗂️ What is Mergers and Acquisitions?",
-        "description": "Mergers and Acquisitions (M&A) involve consolidation strategies used by companies to grow, diversify, or gain competitive advantages.\n    \n        ⚖️ Deal Types\n        - Horizontal, vertical, and conglomerate mergers\n        - Hostile takeovers vs. friendly deals\n📊 Valuation Methods\n        - Comparable company analysis\n        - Precedent transactions\n        - Discounted cash flow (DCF) analysis\n🧩 Integration Challenges\n        - Culture clash, synergy realization\n        - Legal and regulatory barriers\n    \n        Category: Financial Masters → Corporate Finance",
-        "tags": ["business school", "mergers and acquisitions"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 130,
-        "title": "📣 What is Asset Securitization?",
-        "description": "Asset Securitization is the process of pooling illiquid assets (like loans or receivables) and converting them into tradable securities.\n    \n        🔧 Key Components\n        - Originator, Special Purpose Vehicle (SPV), investor\n        - Tranching: senior, mezzanine, equity layers\n        - Credit enhancement and ratings\n    \n        📚 Use Cases\n        - Mortgage-backed securities (MBS)\n        - Collateralized debt obligations (CDOs)\n        - Auto loan and credit card receivables securitization\n    \n        💡 Why It Matters\n        - Improves liquidity for financial institutions\n        - Distributes risk across investor classes\n        - Played a central role in the 2008 global financial crisis\n    \n        Category: Financial Masters → Advanced Finance",
-        "tags": ["business school", "asset securitization"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 131,
-        "title": "📦 What is Core Courses (EMBA)?",
-        "description": "Core Courses (EMBA) form the foundation of Executive MBA programs, offering seasoned professionals a broad understanding of essential business disciplines.\n    \n        📚 Typical Core Subjects\n        - Strategic Management\n        - Managerial Economics\n        - Accounting and Financial Reporting\n        - Global Business Environment\n🧠 Learning Objectives\n        - Develop leadership and strategic thinking\n        - Apply analytical tools to complex decision-making\n        - Navigate change in globalized markets\n    \n        🎯 Target Audience\n        - Mid to senior-level professionals\n        - Executives seeking cross-functional knowledge\n💼 Application\n        - Directly applicable to executive decision-making\n        - Case-based learning from real-world business challenges\n    \n        Category: EMBA → Core Curriculum",
-        "tags": ["business school", "core courses (emba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 132,
-        "title": "📉 What is Specialized Electives (EMBA)?",
-        "description": "Specialized Electives (EMBA) allow executives to tailor their education to specific interests such as innovation, digital transformation, or global finance.\n    \n        🧭 Elective Areas\n        - Entrepreneurship & Innovation\n        - Mergers & Acquisitions\n        - Sustainable Business Strategy\n        - Leading Digital Transformation\n📌 Program Features\n        - Often includes international modules\n        - Team-based consulting projects\n        - Industry-specific electives (e.g., Healthcare, Energy)\n    \n        💡 Why It Matters\n        - Allows customization and relevance to evolving leadership roles\n        - Supports vertical and lateral career growth\n    \n        Category: EMBA → Electives & Specializations",
-        "tags": ["business school", "specialized electives (emba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 133,
-        "title": "🌐 What is Economic Analysis?",
-        "description": "Economic Analysis equips EMBA students with tools to interpret economic data and understand macroeconomic and microeconomic forces impacting business.\n    \n        📊 Key Topics\n        - GDP, inflation, unemployment, interest rates\n        - Supply and demand, elasticity, market structures\n        - Business cycles and government intervention\n    \n        💡 Why It Matters\n        - Informs strategic planning and investment timing\n        - Helps executives evaluate market trends and policy risks\n    \n        📘 Tools\n        - Economic indicators\n        - Forecast models\n        - Real-world economic case studies\n    \n        Category: EMBA → Core Curriculum",
-        "tags": ["business school", "economic analysis"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 134,
-        "title": "🧾 What is Marketing Management (EMBA)?",
-        "description": "Marketing Management (EMBA) focuses on strategic marketing decisions aligned with corporate goals in competitive, digital, and global environments.\n    \n        🧠 Strategic Focus\n        - Brand positioning\n        - Customer segmentation\n        - Pricing and go-to-market planning\n    \n        📈 Tools & Frameworks\n        - 4Ps, STP, Customer Journey Mapping\n        - Digital marketing metrics and ROI models\n    \n        💼 Applications\n        - Designing B2B and B2C strategies\n        - Leading cross-functional marketing teams\n    \n        Category: EMBA → Core Curriculum",
-        "tags": ["business school", "marketing management (emba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 135,
-        "title": "🧮 What is Strategic Management Accounting?",
-        "description": "Strategic Management Accounting bridges accounting with corporate strategy, helping leaders use financial data for competitive advantage.\n    \n        📘 Key Topics\n        - Cost behavior and cost-volume-profit analysis\n        - Activity-based costing\n        - Balanced scorecards and performance metrics\n    \n        💡 Why It Matters\n        - Supports long-term strategic choices through data\n        - Helps in resource allocation and pricing decisions\n    \n        🛠 Use Cases\n        - Product profitability assessment\n        - Strategic budgeting and planning\n        - Financial alignment with KPIs\n    \n        Category: EMBA → Finance & Accounting",
-        "tags": ["business school", "strategic management accounting"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 136,
-        "title": "🔎 What is Organizational Behavior (EMBA)?",
-        "description": "Organizational Behavior (EMBA) explores how individuals and teams behave in complex organizations, with a focus on leadership and performance.\n    \n        🌱 Core Concepts\n        - Motivation theories and leadership styles\n        - Organizational culture and change\n        - Group dynamics and team performance\n    \n        💬 Application\n        - Influencing culture as a senior leader\n        - Managing resistance to change\n        - Enhancing organizational agility\n    \n        📘 Based On\n        - Psychology, sociology, behavioral economics\n    \n        Category: EMBA → Leadership & People",
-        "tags": ["business school", "organizational behavior (emba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 137,
-        "title": "🚀 What is Operations Management (EMBA)?",
-        "description": "Operations Management (EMBA) teaches how to design, improve, and control business operations at a strategic level.\n    \n        ⚙️ Core Areas\n        - Process design and capacity planning\n        - Quality management and Lean principles\n        - Supply chain integration\n    \n        📈 Business Impact\n        - Improves efficiency and cost control\n        - Enables scalable growth\n        - Enhances customer satisfaction\n    \n        💡 Why It Matters\n        - Critical for manufacturing, logistics, and service sectors\n        - Supports digital transformation and sustainability goals\n    \n        Category: EMBA → Core Curriculum",
-        "tags": ["business school", "operations management (emba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 138,
-        "title": "🪙 What is The Chinese Economy?",
-        "description": "The Chinese Economy explores the evolution, characteristics, and global impact of China’s economic model.\n    \n        🇨🇳 Key Themes\n        - State-capitalism and SOEs\n        - Urbanization and regional development\n        - Innovation, consumption, and digital infrastructure\n💡 Why It Matters\n        - China’s economy is the second largest in the world\n        - Offers strategic opportunities in global trade, finance, and tech\n🔍 Applications\n        - Investment entry analysis for MNCs\n        - Public policy understanding for regulatory navigation\n        - Supply chain and sourcing strategies for multinationals\n    \n        Category: EMBA → Global Perspective",
-        "tags": ["business school", "the chinese economy"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 139,
-        "title": "🏫 What is Leadership Development (EMBA)?",
-        "description": "Leadership Development (EMBA) helps executives refine their leadership style, emotional intelligence, and strategic influence.\n    \n        🧭 Focus Areas\n        - Executive presence and communication\n        - Ethical leadership and values-based decision-making\n        - Coaching, mentoring, and team empowerment\n📘 Tools Used\n        - 360° feedback\n        - Leadership diagnostics\n        - Simulation-based learning\n    \n        💡 Why It Matters\n        - Modern organizations require adaptive, empathetic, and visionary leaders\n        - Enables cross-cultural team management in global businesses\n    \n        Category: EMBA → Leadership & People",
-        "tags": ["business school", "leadership development (emba)"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 140,
-        "title": "📈 What is Overseas Modules?",
-        "description": "Overseas Modules provide immersive learning experiences in international business hubs through university partnerships and company visits.\n    \n        ✈️ Components\n        - Lectures at top foreign business schools (e.g., INSEAD, Wharton)\n        - Corporate visits (e.g., Amazon, Toyota, McKinsey)\n        - Cross-cultural negotiation simulations\n    \n        🌐 Regions Offered\n        - North America, Europe, Asia-Pacific\n    \n        💡 Why It Matters\n        - Enhances global business acumen\n        - Builds international networks\n        - Offers real-time exposure to diverse business models\n    \n        Category: EMBA → Global Perspective",
-        "tags": ["business school", "overseas modules"],
-        "associatedGraphIDs": ["business-school"]
-      },
-      {
-        "id": 141,
-        "title": "📊 What is Digital Transformation?",
-        "description": "Digital Transformation equips executives with frameworks to lead technological change and redefine business models.\n    \n        🚀 Key Topics\n        - AI, cloud, blockchain, and data strategy\n        - Digital operating models and innovation culture\n        - Legacy system modernization and agile governance\n💡 Why It Matters\n        - Every sector is undergoing disruption\n        - Survival hinges on digital agility, innovation, and scalable infrastructure\n🧠 Strategic Application\n        - Leading end-to-end transformation\n        - Tech adoption roadmaps\n        - Customer-centric design through digital interfaces\n    \n        Category: EMBA → Technology & Strategy",
-        "tags": ["business school", "digital transformation"],
-        "associatedGraphIDs": ["business-school"]
-      }
+        {
+            "id": 0,
+            "title": "💹 Stock Investing: Master the Art of Long-Term Wealth",
+            "description": "Learn long-term value investing strategies, fundamental analysis, and portfolio design to build sustainable wealth.",
+            "tags": [
+                "investing",
+                "stocks",
+                "wealth"
+            ],
+            "associatedGraphIDs": [
+                "stock-investing"
+            ]
+        },
+        {
+            "id": 1,
+            "title": "🔍 Analyzing Stock Trends: Spot the Market's Hidden Signals",
+            "description": "Explore trendlines, indicators, market phases, and chart patterns to better understand market movements.",
+            "tags": [
+                "trend",
+                "analysis",
+                "charts"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "🏦 Discover the Inner Workings of the Stock Market",
+            "description": "Uncover the structure of exchanges, trading rules, indices, liquidity, and market participants.",
+            "tags": [
+                "stock market",
+                "trading",
+                "exchanges"
+            ],
+            "associatedGraphIDs": [
+                "stock-market"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "🌍 Investing Fundamentals for Global Markets",
+            "description": "Understand the foundations of investing, portfolio management, and the different styles and metrics used worldwide.",
+            "tags": [
+                "investing",
+                "global",
+                "portfolio"
+            ],
+            "associatedGraphIDs": [
+                "investing"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "🔄 Best Practices: Diversify and Rebalance Your Investments",
+            "description": "Explore asset selection, diversification, and rebalancing techniques to manage risk and optimize returns.",
+            "tags": [
+                "diversification",
+                "rebalancing",
+                "risk management"
+            ],
+            "associatedGraphIDs": [
+                "investing-practices"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "⚡ Day Trading Strategies: Quick Decisions in a Fast Market",
+            "description": "Learn candlestick patterns, scalping, momentum plays, and intraday risk control to excel at day trading.",
+            "tags": [
+                "day trading",
+                "scalping",
+                "momentum"
+            ],
+            "associatedGraphIDs": [
+                "day-trading"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "🌐 How Global Events Impact Stock Prices",
+            "description": "Discover how geopolitical, economic, and crisis-based events can shift market sentiment and affect stock performance.",
+            "tags": [
+                "global events",
+                "market sentiment",
+                "economics"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "🎓 Business School Courses: A Gateway to Modern Leadership",
+            "description": "Explore comprehensive business school curricula covering strategy, operations, finance, and entrepreneurship.",
+            "tags": [
+                "business school",
+                "MBA",
+                "leadership"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "📱 Develop and Sell Mobile Apps: From Idea to Marketplace",
+            "description": "Learn about app monetization, marketing, ASO, and product design strategies that lead to App Store success.",
+            "tags": [
+                "mobile apps",
+                "development",
+                "marketing"
+            ],
+            "associatedGraphIDs": [
+                "mobile-apps"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "📘 Economics Explained: From Theory to Real-World Impact",
+            "description": "Delve into macro and micro theories, models, inflation, and policy frameworks that shape our economic landscape.",
+            "tags": [
+                "economics",
+                "theory",
+                "policy"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "👤 Lessons from Ray Dalio: Principles for Life and Business",
+            "description": "Discover Ray Dalio's insights on life principles, economic models, and strategies that have influenced modern investing.",
+            "tags": [
+                "Ray Dalio",
+                "principles",
+                "investing"
+            ],
+            "associatedGraphIDs": [
+                "ray-dalio"
+            ]
+        },
+        {
+            "id": 11,
+            "title": "🧘 Learning to Meditate: Finding Focus in a Busy World",
+            "description": "Reduce stress and build focus through step-by-step mindmaps and mindfulness techniques.",
+            "tags": [
+                "meditation",
+                "mindfulness",
+                "focus"
+            ],
+            "associatedGraphIDs": [
+                "meditation"
+            ]
+        },
+        {
+            "id": 12,
+            "title": "📈 Trend Identification: Recognize Market Directions",
+            "description": "Learn to identify prevailing market trends—whether bullish, bearish, or neutral—using simple yet effective methods.",
+            "tags": [
+                "trend",
+                "identification",
+                "market"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 13,
+            "title": "🛠️ Indicators & Tools: Quantify the Market's Pulse",
+            "description": "Use technical indicators and analytical tools to confirm trends, spot reversals, and make informed trading decisions.",
+            "tags": [
+                "indicators",
+                "tools",
+                "technical analysis"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 14,
+            "title": "🔮 Chart Patterns: Decoding Signals for Entry and Exit",
+            "description": "Explore how recurring chart patterns reveal potential market behavior and guide trading strategies.",
+            "tags": [
+                "chart patterns",
+                "reversal",
+                "continuation"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 15,
+            "title": "⚖️ Risk & Strategy: Balancing Ambition with Caution",
+            "description": "Understand the importance of risk management and strategic planning in achieving long-term trading success.",
+            "tags": [
+                "risk",
+                "strategy",
+                "trading"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 16,
+            "title": "✏️ Trend Lines: Visualizing Market Momentum",
+            "description": "Learn how drawing trend lines can help you identify support, resistance, and the strength of market trends.",
+            "tags": [
+                "trend lines",
+                "support",
+                "resistance"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 17,
+            "title": "📉 Moving Averages: Smoothing Out Market Noise",
+            "description": "Discover how moving averages filter out short-term fluctuations to reveal underlying market trends.",
+            "tags": [
+                "moving averages",
+                "SMA",
+                "EMA"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 18,
+            "title": "⏳ Market Phases: The Rhythm of the Economy",
+            "description": "Explore how different market phases—from accumulation to distribution—affect investment decisions.",
+            "tags": [
+                "market phases",
+                "business cycle",
+                "investment"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 19,
+            "title": "🛡️ Support & Resistance: The Battle Lines of Price",
+            "description": "Learn how to identify key price levels that act as barriers or catalysts for market movements.",
+            "tags": [
+                "support",
+                "resistance",
+                "price levels"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 20,
+            "title": "📊 RSI: Detecting Overbought and Oversold Markets",
+            "description": "Understand the Relative Strength Index and how it can signal potential market reversals.",
+            "tags": [
+                "RSI",
+                "oscillator",
+                "momentum"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 21,
+            "title": "📉 MACD: Spotting Shifts in Market Momentum",
+            "description": "Learn how the MACD indicator helps traders identify changes in market momentum and potential trend reversals.",
+            "tags": [
+                "MACD",
+                "momentum",
+                "trend"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 22,
+            "title": "📐 Bollinger Bands: Tracking Market Volatility",
+            "description": "Discover how Bollinger Bands use moving averages and standard deviations to provide a dynamic view of market volatility.",
+            "tags": [
+                "Bollinger Bands",
+                "volatility",
+                "technical analysis"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 23,
+            "title": "🔊 Volume Analysis: Confirm Trends with Market Activity",
+            "description": "Use volume data to validate price movements and detect potential reversals or breakouts.",
+            "tags": [
+                "volume",
+                "analysis",
+                "trading"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 24,
+            "title": "📊 Chart Patterns: Recognize Entry and Exit Signals",
+            "description": "Identify familiar chart patterns that can hint at future market behavior, enabling timely entry and exit strategies.",
+            "tags": [
+                "chart patterns",
+                "signals",
+                "entry exit"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 25,
+            "title": "🕯️ Candlestick Patterns: Deciphering Market Stories",
+            "description": "Learn how Japanese candlestick patterns provide insights into market sentiment and potential reversals.",
+            "tags": [
+                "candlestick",
+                "patterns",
+                "technical analysis"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 26,
+            "title": "🚀 Breakouts & Pullbacks: Timing Your Market Moves",
+            "description": "Understand how to detect breakouts and pullbacks to optimize your trading entries and exits.",
+            "tags": [
+                "breakouts",
+                "pullbacks",
+                "timing"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 27,
+            "title": "📏 Price Channels: Defining Market Boundaries",
+            "description": "Discover how parallel trendlines can create price channels that highlight potential overbought or oversold zones.",
+            "tags": [
+                "price channels",
+                "trends",
+                "boundaries"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 28,
+            "title": "🛑 Stop-Loss Placement: Safeguard Your Investments",
+            "description": "Learn strategies for setting effective stop-loss orders to limit potential losses in volatile markets.",
+            "tags": [
+                "stop-loss",
+                "risk management",
+                "trading"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 29,
+            "title": "💡 Position Sizing: Optimize Risk and Reward",
+            "description": "Discover techniques to determine the optimal amount to invest in each trade, balancing potential gains with acceptable risk.",
+            "tags": [
+                "position sizing",
+                "risk management",
+                "investment"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 30,
+            "title": "🏄‍♂️ Trend Following Strategy: Ride the Market Wave",
+            "description": "Learn how to capitalize on sustained market trends by aligning your strategy with the prevailing direction.",
+            "tags": [
+                "trend following",
+                "strategy",
+                "investing"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 31,
+            "title": "↩️ Counter-Trend Strategy: Profit from Reversals",
+            "description": "Explore methods to identify and exploit short-term reversals in the market, turning contrarian moves into profit opportunities.",
+            "tags": [
+                "counter-trend",
+                "strategy",
+                "reversal"
+            ],
+            "associatedGraphIDs": [
+                "analyzing-trends"
+            ]
+        },
+        {
+            "id": 32,
+            "title": "💰 How to Become Rich by Investing Smartly",
+            "description": "Discover practical strategies and mindset shifts that top investors use to build wealth. Learn about long-term planning, diversification, and disciplined market analysis.",
+            "tags": [
+                "rich",
+                "investing",
+                "wealth",
+                "finance"
+            ],
+            "associatedGraphIDs": [
+                "investing",
+                "stock-investing"
+            ]
+        },
+        {
+            "id": 33,
+            "title": "💘 How to Date a Girl Successfully",
+            "description": "Explore the art of communication, confidence, and emotional intelligence that can help you build meaningful relationships.",
+            "tags": [
+                "dating",
+                "relationships",
+                "communication",
+                "confidence"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 34,
+            "title": "⏰ Why Am I Always Late? Unravel Time Management Secrets",
+            "description": "Analyze the reasons behind chronic lateness and learn techniques for better time management, scheduling, and self-discipline.",
+            "tags": [
+                "time management",
+                "lateness",
+                "discipline"
+            ],
+            "associatedGraphIDs": [
+                "meditation"
+            ]
+        },
+        {
+            "id": 35,
+            "title": "🌐 How to Build a Global Empire from Your Living Room",
+            "description": "Learn how digital innovation and an entrepreneurial mindset can break geographical barriers and turn small ideas into global ventures.",
+            "tags": [
+                "entrepreneurship",
+                "global",
+                "innovation",
+                "digital"
+            ],
+            "associatedGraphIDs": [
+                "mobile-apps",
+                "business-school"
+            ]
+        },
+        {
+            "id": 36,
+            "title": "🚀 How to Turn a Small Idea into a Big Business",
+            "description": "Explore the process of scaling up—from identifying opportunities to executing effective business strategies that drive growth and profitability.",
+            "tags": [
+                "entrepreneurship",
+                "scaling",
+                "business growth"
+            ],
+            "associatedGraphIDs": [
+                "business-school",
+                "investing-practices"
+            ]
+        },
+        {
+            "id": 37,
+            "title": "📚 Why Traditional Education Fails in the Modern Economy",
+            "description": "Examine the gaps in conventional learning models and discover how innovative methods and online courses are reshaping success.",
+            "tags": [
+                "education",
+                "modern economy",
+                "innovation"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 38,
+            "title": "💻 How to Navigate Digital Transformation in Your Career",
+            "description": "Understand the impact of technology on industries and learn strategies to adapt, innovate, and stay ahead in a rapidly changing digital landscape.",
+            "tags": [
+                "digital transformation",
+                "career",
+                "innovation",
+                "technology"
+            ],
+            "associatedGraphIDs": [
+                "mobile-apps"
+            ]
+        },
+        {
+            "id": 39,
+            "title": "🤯 How to Master Leadership Without Losing Your Mind",
+            "description": "Discover leadership principles that balance strategic vision, emotional intelligence, and practical management to inspire teams and drive success.",
+            "tags": [
+                "leadership",
+                "management",
+                "emotional intelligence"
+            ],
+            "associatedGraphIDs": [
+                "business-school",
+                "meditation"
+            ]
+        },
+        {
+            "id": 40,
+            "title": "🔥 How to Innovate When Resources Are Scarce",
+            "description": "Learn creative problem-solving techniques and strategic resource management to foster innovation even in challenging conditions.",
+            "tags": [
+                "innovation",
+                "creativity",
+                "resource management"
+            ],
+            "associatedGraphIDs": [
+                "investing",
+                "investing-practices"
+            ]
+        },
+        {
+            "id": 41,
+            "title": "📈 Day Trading Secrets: Unlock the Market's Intraday Opportunities",
+            "description": "Dive into day trading strategies that combine technical analysis, rapid decision-making, and risk management to capitalize on volatile market movements.",
+            "tags": [
+                "day trading",
+                "intraday",
+                "volatile"
+            ],
+            "associatedGraphIDs": [
+                "day-trading"
+            ]
+        },
+        {
+            "id": 42,
+            "title": "💸 How to Capitalize on Economic Trends and Beat the Market",
+            "description": "Learn how to analyze economic indicators and leverage macroeconomic trends to inform your trading and investment decisions.",
+            "tags": [
+                "economics",
+                "market trends",
+                "investment"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 43,
+            "title": "🗣️ Why I Sometimes Fail to Communicate: A Lesson in Behavioral Finance",
+            "description": "Explore how behavioral biases and psychological factors impact communication and decision-making in financial markets and everyday life.",
+            "tags": [
+                "behavioral finance",
+                "communication",
+                "bias"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 44,
+            "title": "📈 What is Economics?",
+            "description": "The study of how societies use limited resources to produce valuable commodities and distribute them among different people.",
+            "tags": [
+                "economics",
+                "economics?"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 45,
+            "title": "📉 What is Microeconomics?",
+            "description": "Focuses on individual decision-makers within an economy—like households, workers, and businesses—and how they interact in markets.",
+            "tags": [
+                "economics",
+                "microeconomics"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 46,
+            "title": "📊 What is Macroeconomics?",
+            "description": "Looks at the economy as a whole, including topics like inflation, unemployment, and economic growth.",
+            "tags": [
+                "economics",
+                "macroeconomics"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 47,
+            "title": "📘 What is Supply and Demand?",
+            "description": "Explains how prices and quantities of goods are determined in a market system based on consumer and producer behavior.",
+            "tags": [
+                "economics",
+                "supply and demand"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 48,
+            "title": "💡 What is Opportunity Cost?",
+            "description": "The value of the next best alternative that is forgone when making a decision.",
+            "tags": [
+                "economics",
+                "opportunity cost"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 49,
+            "title": "🔮 What is GDP?",
+            "description": "Gross Domestic Product measures the total value of goods and services produced in a country over a specific period.",
+            "tags": [
+                "economics",
+                "gdp"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 50,
+            "title": "🧠 What is Inflation?",
+            "description": "The rate at which the general level of prices for goods and services is rising, reducing purchasing power.",
+            "tags": [
+                "economics",
+                "inflation"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 51,
+            "title": "📚 What is Unemployment?",
+            "description": "Occurs when people who are willing and able to work cannot find a job.",
+            "tags": [
+                "economics",
+                "unemployment"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 52,
+            "title": "💸 What is Fiscal Policy?",
+            "description": "Government policy regarding taxation and spending to influence the economy.",
+            "tags": [
+                "economics",
+                "fiscal policy"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 53,
+            "title": "🏛️ What is Monetary Policy?",
+            "description": "Central bank actions, such as changing interest rates, to control the money supply and stabilize the economy.",
+            "tags": [
+                "economics",
+                "monetary policy"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 54,
+            "title": "💬 What is Market Failure?",
+            "description": "When markets fail to allocate resources efficiently on their own, often justifying government intervention.",
+            "tags": [
+                "economics",
+                "market failure"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 55,
+            "title": "🔎 What is Elasticity?",
+            "description": "Measures how much the quantity demanded or supplied of a good responds to a change in price.",
+            "tags": [
+                "economics",
+                "elasticity"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 56,
+            "title": "🧾 What is Comparative Advantage?",
+            "description": "The ability of an entity to produce a good at a lower opportunity cost than another.",
+            "tags": [
+                "economics",
+                "comparative advantage"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 57,
+            "title": "💼 What is the Business Cycle?",
+            "description": "The periodic growth and decline in economic activity over time, including expansion, peak, recession, and recovery.",
+            "tags": [
+                "economics",
+                "business cycle"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 58,
+            "title": "🌍 What is International Trade?",
+            "description": "The exchange of goods and services across national borders, and its effects on economies.",
+            "tags": [
+                "economics",
+                "international trade"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 59,
+            "title": "🔧 What is Productivity?",
+            "description": "The amount of output produced per unit of input, often linked to technological progress and efficiency.",
+            "tags": [
+                "economics",
+                "productivity"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 60,
+            "title": "🏦 What is a Central Bank?",
+            "description": "A national institution that manages currency, money supply, and interest rates, such as the Federal Reserve.",
+            "tags": [
+                "economics",
+                "central bank"
+            ],
+            "associatedGraphIDs": [
+                "economics"
+            ]
+        },
+        {
+            "id": 61,
+            "title": "🌍 Impact of Global Events on Stocks",
+            "description": "Global Events can dramatically shift market behavior, driving investor fear or enthusiasm, impacting valuations and capital flows across sectors and geographies.\n\n💡 Why It Matters\n- Stock markets are highly sensitive to external shocks and policy responses.\n- Investors who anticipate or hedge against major events often outperform peers.\n🌍 Major Event Categories\n- Geopolitical risks (war, conflict)\n- Natural disasters (earthquakes, floods)\n- Global health crises (pandemics)\n- Central bank policies\n- Political shifts (elections)\n🎯 Use Case\n- Investors track news, apply scenario analysis, or use event-driven strategies to mitigate risk or seize short-term alpha opportunities.",
+            "tags": [
+                "global events",
+                "stocks",
+                "impact of global events on stocks"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 62,
+            "title": "💣 Geopolitical Tensions",
+            "description": "Wars, military escalations, and diplomatic disputes introduce global uncertainty that rattles investor confidence.\n\n📉 Impact\n- Defense stocks may rise, while broader markets fall.\n- Safe havens like gold or bonds attract inflows.\n- Energy prices often spike (e.g., Russia-Ukraine conflict and oil).\n📰 Example\n- 2022 Russia-Ukraine war caused volatility in European markets and energy stocks.\n📈 Short-Term Effects\n- Risk-off sentiment → shift to safe haven assets (gold, bonds)\n- Commodity prices (oil, wheat) spike\n🛡️ Risk Management\n- Diversify geographically\n- Increase cash buffer during heightened tensions\n📘 Reference\n- Council on Foreign Relations – Conflict Tracker",
+            "tags": [
+                "global events",
+                "stocks",
+                "geopolitical tensions"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 63,
+            "title": "🌀 Natural Disasters",
+            "description": "Earthquakes, floods, and wildfires can disrupt production, logistics, and regional economies.\n\n🌀 Economic Effects\n- Insurance claims spike, utilities and infrastructure companies often impacted.\n- Supply chains may suffer (e.g., Taiwan earthquakes and chip production delays).\n💼 Sectors Affected\n- Construction, commodities, retail (inventory damage), insurance.\n🧭 Response Strategy\n- Consider exposure to reinsurance and construction sectors.\n- Evaluate disaster recovery funds or ESG impact themes.\n📚 Case Study\n- Japan’s 2011 earthquake led to massive supply chain disruption in auto and electronics sectors.",
+            "tags": [
+                "global events",
+                "stocks",
+                "natural disasters"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 64,
+            "title": "🦠 Pandemics and Health Crises",
+            "description": "COVID-19 and other global pandemics introduce massive disruption across sectors, policy responses, and consumer behavior.\n\n💊 Economic Consequences\n- GDP drops, unemployment spikes, supply/demand shocks.\n- Acceleration of digital economy, remote work, e-commerce.\n💼 Affected Sectors\n- Healthcare (positive), airlines and hospitality (negative), tech (mixed).\n🧠 Investor Response\n- Rotate into remote/tech stocks.\n- Avoid high-contact businesses.\n📚 Reference\n- IMF and OECD pandemic economic impact reports.",
+            "tags": [
+                "global events",
+                "stocks",
+                "pandemics"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 65,
+            "title": "💼 Corporate Scandals and Governance",
+            "description": "Major frauds, accounting irregularities, or executive misconduct can tank stock prices and raise market mistrust.\n\n💥 Effects\n- Stock price collapse, lawsuits, delisting risks.\n- Industry-wide contagion (e.g., Enron, Wirecard).\n📈 Watch for\n- Sudden CFO resignation.\n- Short seller reports.\n🧰 Investor Tool\n- Monitor whistleblower data, Glassdoor reviews, forensic accounting reports.\n📚 Example\n- Enron (2001), Luckin Coffee (2020)",
+            "tags": [
+                "global events",
+                "stocks",
+                "corporate scandals"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 66,
+            "title": "🏦 Central Bank Rate Decisions",
+            "description": "Decisions on interest rates and monetary policy drive credit conditions, liquidity, and investor sentiment.\n\n📊 Market Impact\n- Rising rates → pressure on tech and growth stocks.\n- Lower rates → boost to housing, banks, equities.\n📆 Events to Track\n- FOMC meetings (Fed)\n- ECB, BOJ, PBoC announcements\n💡 Forward Guidance\n- Language used by central banks can signal future policy shifts.\n📘 Reference\n- Federal Reserve Dot Plot and Summary of Economic Projections.",
+            "tags": [
+                "global events",
+                "stocks",
+                "interest rates"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 67,
+            "title": "🗳️ Political Elections",
+            "description": "Elections shift policy landscapes. Changes in tax, trade, or regulation can affect entire sectors.\n\n🗺️ Market Themes\n- Defense spending under Republicans?\n- Green energy push by Democrats?\n📈 Election Year Volatility\n- Markets prefer predictable outcomes.\n📚 Example\n- 2020 US election impacted renewable energy, Big Tech regulation expectations.",
+            "tags": [
+                "global events",
+                "stocks",
+                "elections"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 68,
+            "title": "⚖️ Regulatory Changes",
+            "description": "New laws or enforcement actions can shift business models or introduce risk.\n\n🧾 Examples\n- Antitrust investigations in tech (Google, Meta).\n- SEC accounting rules (SPACs, crypto).\n- EU privacy laws (GDPR).\n📉 Market Response\n- Sharp re-ratings when regulation surprises investors.\n📘 Risk Monitoring\n- Watch law proposals, FTC/DOJ investigations.",
+            "tags": [
+                "global events",
+                "stocks",
+                "regulation"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 69,
+            "title": "⛽ Energy Crises and Oil Shocks",
+            "description": "Supply chain disruptions, war, or policy limits on fossil fuels lead to oil price shocks.\n\n💥 Sector Effects\n- Energy stocks rise, airlines fall.\n📊 Inflationary Pressure\n- Oil feeds into food, transport, manufacturing costs.\n📆 Examples\n- 1970s OPEC embargo\n- 2022 Ukraine war and oil prices\n🛢️ Hedge Strategy\n- Commodities, energy ETFs, options.",
+            "tags": [
+                "global events",
+                "stocks",
+                "oil"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 70,
+            "title": "💱 Currency Crises",
+            "description": "Rapid devaluation or speculative attacks destabilize economies and markets.\n\n🌍 Effects\n- Debt defaults, import costs soar, central bank intervention.\n📉 Investor Risk\n- Emerging markets, currency-exposed corporates.\n📘 Example\n- Argentina 2018, Turkey 2021\n🧠 Monitoring\n- FX reserves, bond yields, CDS spreads.",
+            "tags": [
+                "global events",
+                "stocks",
+                "currency crisis"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 71,
+            "title": "📰 Media and Misinformation",
+            "description": "Fake news, viral social posts, or rumors can rapidly shift market sentiment.\n\n💡 Investor Caution\n- Distinguish signal from noise.\n📉 Example\n- False tweet about White House explosion briefly crashed Dow in 2013.\n🔍 Tools\n- Use verified sources, sentiment monitoring tools.",
+            "tags": [
+                "global events",
+                "stocks",
+                "misinformation"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 72,
+            "title": "🤖 AI and Automation Shocks",
+            "description": "Sudden advances in automation/AI (e.g., ChatGPT) cause sector disruption, investor euphoria or fear.\n\n📊 Market Reaction\n- Rotation into AI winners (chips, software).\n- Layoffs in exposed industries (support, media).\n🧠 Monitor\n- Corporate AI investments\n- Regulatory pushback\n📚 Example\n- Microsoft, Nvidia surge on AI narrative.",
+            "tags": [
+                "global events",
+                "stocks",
+                "ai"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 73,
+            "title": "🏫 What is Business School Courses?",
+            "description": "Business School Courses provide structured education in economics, management, finance, and entrepreneurship.\n\n🎓 Curriculum Highlights\n- Undergraduate: Foundations of economics, management, and marketing\n- MBA: Strategy, leadership, operations, financial modeling\n- EMBA: High-level decision-making, global leadership, corporate transformation\n\n📚 Source Institutions\n- Harvard Business School, Wharton, INSEAD, LBS, CEIBS\n\n🌐 Resources\n- Harvard MBA Curriculum\n- Wharton MBA Academics",
+            "tags": [
+                "business school",
+                "business school courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 74,
+            "title": "📈 What is Undergraduate Courses?",
+            "description": "Undergraduate Business Courses form the academic backbone for future MBAs, entrepreneurs, and corporate leaders.\n\n📘 Typical Duration\n- 3–4 years\n- Often leads to BBA, BSBA, or BA in Business\n\n🧱 Core Components\n- Economics (Micro/Macro), Accounting, Marketing, Business Ethics\n\n🌐 Global Comparison\n- Wharton Undergraduate Program: Offers flexibility with concentrations like finance, operations\n- LSE BSc Management: Strong on economic foundations and data",
+            "tags": [
+                "business school",
+                "undergraduate courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 75,
+            "title": "📊 What is MBA Courses?",
+            "description": "MBA Programs deliver intensive training in leadership, finance, marketing, and decision-making.\n\n🏫 Common Structure\n- Year 1: Core Courses\n- Year 2: Electives + Capstone Project / Exchange\n\n🧠 Skills Developed\n- Strategic thinking, cross-cultural communication, data-driven leadership\n\n📺 Multimedia\n- Inside INSEAD MBA\n- HBS Case Study Teaching",
+            "tags": [
+                "business school",
+                "mba courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 76,
+            "title": "💼 What is Financial Masters Courses?",
+            "description": "Master of Finance Programs focus on investment, corporate finance, risk, and modeling.\n\n🏦 Typical Modules\n- Quantitative Methods\n- Derivatives & Risk\n- Portfolio Theory\n- Corporate Valuation\n\n📊 Notable Schools\n- MIT Sloan MFin\n- LBS MSc Finance\n- HEC Paris MiF",
+            "tags": [
+                "business school",
+                "financial masters courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 77,
+            "title": "🧠 What is EMBA Courses?",
+            "description": "Executive MBA (EMBA) targets experienced professionals looking to accelerate their careers into C-suite leadership.\n\n📊 Characteristics\n- Weekend or modular format\n- Global campuses and international residencies\n\n📈 Core Areas\n- Strategic Management\n- Negotiation\n- Cross-Border Leadership\n\n🏫 Example Programs\n- Wharton EMBA\n- Kellogg-HKUST EMBA\n- INSEAD-Tsinghua EMBA",
+            "tags": [
+                "business school",
+                "emba courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 78,
+            "title": "📘 What is Marketing Courses?",
+            "description": "Marketing courses explore customer behavior, branding, pricing, and analytics.\n\n📊 Common Modules\n- Brand Strategy\n- Digital Marketing\n- Pricing and Channel Strategy\n- Consumer Psychology\n\n🧰 Tools\n- A/B Testing\n- CRM & Personalization\n- Customer Lifetime Value\n\n📚 Leading Schools\n- Kellogg (Marketing Science)\n- NYU Stern (Digital Strategy)",
+            "tags": [
+                "business school",
+                "marketing courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 79,
+            "title": "🗂️ What is Operations Courses?",
+            "description": "Operations Management deals with optimizing systems and processes in goods and service delivery.\n\n⚙️ Topics\n- Supply Chain Design\n- Inventory Models\n- Lean and Six Sigma\n- Process Flow Analysis\n\n📈 Use Cases\n- Amazon (Fulfillment Ops)\n- Toyota (Just-in-Time)\n\n🧮 Quant Skills\n- Queueing Theory\n- Linear Programming",
+            "tags": [
+                "business school",
+                "operations courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 80,
+            "title": "📣 What is Strategy Courses?",
+            "description": "Strategy training focuses on how businesses create competitive advantage, respond to disruption, and grow sustainably.\n\n🧭 Topics Covered\n- Corporate Strategy\n- Business Model Innovation\n- M&A and Restructuring\n- Network Effects\n\n📘 Key Thinkers\n- Michael Porter\n- Clayton Christensen\n\n📺 Case Study\n- Netflix vs Blockbuster",
+            "tags": [
+                "business school",
+                "strategy courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 81,
+            "title": "📦 What is Entrepreneurship Courses?",
+            "description": "Entrepreneurship courses focus on how to identify opportunities, design products, raise capital, and scale ventures.\n\n💡 Topics\n- Business Model Canvas\n- Lean Startup\n- Fundraising & Term Sheets\n- Founder Psychology\n\n🚀 Sample Programs\n- Stanford GSB Startup Garage\n- HBS Entrepreneurial Finance\n\n🧪 Tools\n- Pitch Decks, MVP Prototyping, Customer Development",
+            "tags": [
+                "business school",
+                "entrepreneurship courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 82,
+            "title": "📉 What is Accounting Courses?",
+            "description": "Accounting builds foundational skills in understanding financial statements, budgeting, auditing, and compliance.\n\n📊 Core Concepts\n- GAAP & IFRS\n- Financial vs Managerial Accounting\n- Cost Allocation, Depreciation\n\n🧾 Applications\n- Equity Research\n- Internal Control\n- Tax Planning",
+            "tags": [
+                "business school",
+                "accounting courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 83,
+            "title": "🌐 What is International Business Courses?",
+            "description": "International Business explores how companies operate across borders, manage cultural differences, and navigate global risks.\n\n🌍 Core Topics\n- Global Strategy\n- Foreign Direct Investment\n- Trade Policy and Currency Risk\n\n🌐 Case Examples\n- Huawei Supply Chain\n- McDonald's Global Franchising\n- Tesla's China Strategy",
+            "tags": [
+                "business school",
+                "international business courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 84,
+            "title": "🧾 What is Business Law Courses?",
+            "description": "Business Law focuses on legal frameworks impacting corporations, contracts, IP, labor, and regulation.\n\n⚖️ Modules\n- Contract Law\n- Corporate Governance\n- Intellectual Property\n- Antitrust & M&A Law\n\n📘 Real-World Case\n- Google EU Antitrust\n- Elon Musk vs Twitter (2022)",
+            "tags": [
+                "business school",
+                "business law courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 85,
+            "title": "🧮 What is Economics Courses?",
+            "description": "Economics modules in business school provide tools to analyze markets, behavior, policy, and firm-level decision making.\n\n📚 Topics\n- Supply & Demand\n- Elasticity & Pricing Power\n- Game Theory\n- Market Structures\n\n📊 Applications\n- Antitrust Case Analysis\n- Labor vs Capital Decisions\n- Regulation Impact Forecasts",
+            "tags": [
+                "business school",
+                "economics courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 86,
+            "title": "🔎 What is Business Ethics Courses?",
+            "description": "Business Ethics explores moral dilemmas in corporate behavior, stakeholder impact, and regulatory compliance.\n\n🧭 Key Themes\n- ESG (Environmental, Social, Governance)\n- Whistleblowing & Transparency\n- Stakeholder Theory vs Shareholder Theory\n\n📘 Scandals & Lessons\n- Theranos Fraud\n- Volkswagen Emissions\n- FTX and Crypto Collapse",
+            "tags": [
+                "business school",
+                "business ethics courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 87,
+            "title": "⛽ Commodity Price Shocks",
+            "description": "Sudden spikes or drops in oil, metals, or agricultural goods ripple through global supply chains and corporate margins.\n\n        ⛽ Impact\n        - Oil prices influence transportation, airlines, and plastics\n        - Food prices affect consumer staples and inflation trends\n📉 Risk\n        - Volatility in emerging markets due to reliance on commodity exports.\n        📺 How Commodity Markets Work",
+            "tags": [
+                "global events",
+                "stocks",
+                "commodity price shocks"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 88,
+            "title": "💱 Currency Fluctuations",
+            "description": "Foreign exchange rate swings change competitiveness and earnings for international firms.\n\n        🌐 Effects\n        - Strong USD hurts exporters\n        - Weak currencies boost inflation and import costs\n🧠 Strategies\n        - Currency-hedged ETFs\n        - FX futures for multinational companies",
+            "tags": [
+                "global events",
+                "stocks",
+                "currency fluctuations"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 89,
+            "title": "📰 Market Sentiment & Media",
+            "description": "News flow and narrative shifts—whether grounded in fundamentals or not—drive short-term moves.\n\n        📺 Influences\n        - Earnings headlines\n        - Tweet storms by key figures (e.g., Elon Musk)\n        - Financial media sentiment indices\n\n        📊 Tools\n        - Sentiment analysis using NLP\n        - Put/call ratios\n        - Fear and Greed index",
+            "tags": [
+                "global events",
+                "stocks",
+                "market sentiment & media"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 90,
+            "title": "🤖 Technological Disruptions ⚙️",
+            "description": "Technological Disruptions such as AI breakthroughs or automation waves reshape entire industries and shift investor focus toward innovation leaders.\n    \n        🔄 Shift in Capital\n        - Traditional sectors face pressure, while tech and automation companies attract capital inflows.\n    \n        💡 Investment Angle\n        - Look for ETF themes (AI, robotics).\n        - Monitor patent filings and R&D spending trends.\n📚 Case\n        - ChatGPT launch led to surge in semiconductor stocks (e.g., Nvidia), reshaping tech valuations globally.\n    \n        🖥️ Reference\n        - AI Investment Boom – Forbes",
+            "tags": [
+                "global events",
+                "stocks",
+                "technological disruptions ⚙️"
+            ],
+            "associatedGraphIDs": [
+                "global-events-impact"
+            ]
+        },
+        {
+            "id": 91,
+            "title": "🏫 What is Business School Courses?",
+            "description": "Business School Courses provide structured education in economics, management, finance, and entrepreneurship.\n        \n        🎓 Curriculum Highlights\n        - Undergraduate: Foundations of economics, management, and marketing\n        - MBA: Strategy, leadership, operations, financial modeling\n        - EMBA: High-level decision-making, global leadership, corporate transformation\n        \n        📚 Source Institutions\n        - Harvard Business School, Wharton, INSEAD, LBS, CEIBS\n        \n        🌐 Resources\n        - Harvard MBA Curriculum\n        - Wharton MBA Academics",
+            "tags": [
+                "business school",
+                "business school courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 92,
+            "title": "📈 What is Undergraduate Courses?",
+            "description": "Undergraduate Business Courses form the academic backbone for future MBAs, entrepreneurs, and corporate leaders.\n        \n        📘 Typical Duration\n        - 3–4 years\n        - Often leads to BBA, BSBA, or BA in Business\n        \n        🧱 Core Components\n        - Economics (Micro/Macro), Accounting, Marketing, Business Ethics\n        \n        🌐 Global Comparison\n        - Wharton Undergraduate Program: Offers flexibility with concentrations like finance, operations\n        - LSE BSc Management: Strong on economic foundations and data",
+            "tags": [
+                "business school",
+                "undergraduate courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 93,
+            "title": "📊 What is MBA Courses?",
+            "description": "MBA Programs deliver intensive training in leadership, finance, marketing, and decision-making.\n        \n        🏫 Common Structure\n        - Year 1: Core Courses\n        - Year 2: Electives + Capstone Project / Exchange\n        \n        🧠 Skills Developed\n        - Strategic thinking, cross-cultural communication, data-driven leadership\n        \n        📺 Multimedia\n        - Inside INSEAD MBA\n        - HBS Case Study Teaching",
+            "tags": [
+                "business school",
+                "mba courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 94,
+            "title": "💼 What is Financial Masters Courses?",
+            "description": "Master of Finance Programs focus on investment, corporate finance, risk, and modeling.\n        \n        🏦 Typical Modules\n        - Quantitative Methods\n        - Derivatives & Risk\n        - Portfolio Theory\n        - Corporate Valuation\n        \n        📊 Notable Schools\n        - MIT Sloan MFin\n        - LBS MSc Finance\n        - HEC Paris MiF",
+            "tags": [
+                "business school",
+                "financial masters courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 95,
+            "title": "🧠 What is EMBA Courses?",
+            "description": "Executive MBA (EMBA) targets working professionals in upper management.\n        \n        💼 Format\n        - Modular / Part-time\n        - 16–22 months on average\n        \n        🔑 Focus Areas\n        - Strategic Leadership\n        - Innovation Management\n        - Global Transformation\n        \n        🌍 Schools\n        - Chicago Booth EMBA\n        - CEIBS EMBA\n        - INSEAD EMBA",
+            "tags": [
+                "business school",
+                "emba courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 96,
+            "title": "📘 What is Foundational Courses?",
+            "description": "Foundational Courses prepare undergraduates with broad knowledge in economics, finance, and management.\n        \n        📚 Modules Include\n        - Microeconomics / Macroeconomics\n        - Intro to Finance and Accounting\n        - Quantitative Methods\n        \n        🔎 Key Learning Outcomes\n        - Build economic intuition\n        - Understand how markets function\n        - Communicate financial data effectively",
+            "tags": [
+                "business school",
+                "foundational courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 97,
+            "title": "🗂️ What is Advanced/Professional Courses?",
+            "description": "Professional Courses equip students with job-ready business skills, project execution, and global perspective.\n        \n        💼 Areas of Focus\n        - Data Analytics\n        - Strategy Execution\n        - Global Supply Chains\n        \n        📘 Sample Course Materials\n        - MIT Sloan OpenCourseWare",
+            "tags": [
+                "business school",
+                "advanced/professional courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 98,
+            "title": "📣 What is Microeconomics?",
+            "description": "Microeconomics explores decisions made by individual consumers, firms, and industries.\n        \n        🔍 Key Concepts\n        - Demand/Supply\n        - Elasticity\n        - Utility & Cost\n        \n        📈 Use Case\n        - Price setting\n        - Product design\n        - Market segmentation",
+            "tags": [
+                "business school",
+                "microeconomics"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 99,
+            "title": "📦 What is Macroeconomics?",
+            "description": "Macroeconomics studies entire economies and aggregates such as GDP, inflation, and unemployment.\n        \n        📘 Theory Sources\n        - Keynesian Economics\n        - Monetarism\n        - IS-LM & AD-AS Models\n        \n        💡 Relevance\n        - Central bank policy analysis\n        - Investment cycles\n        - Political risk",
+            "tags": [
+                "business school",
+                "macroeconomics"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 100,
+            "title": "📉 What is Principles of Accounting?",
+            "description": "Principles of Accounting teaches the systematic recording, reporting, and analysis of financial transactions.\n        \n        📊 Concepts Covered\n        - Double-entry system\n        - Balance Sheet / Income Statement\n        - Accruals vs Cash Accounting\n        \n        🔗 External Resources\n        - AccountingCoach.com",
+            "tags": [
+                "business school",
+                "principles of accounting"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 101,
+            "title": "🌐 What is Principles of Marketing?",
+            "description": "Principles of Marketing introduces the core concepts of creating, communicating, and delivering value to customers.\n    \n        📊 Key Concepts\n        - Market segmentation and targeting\n        - 4Ps of Marketing: Product, Price, Place, Promotion\n        - Consumer behavior and branding\n    \n        💡 Why It Matters\n        Understanding marketing is critical for business growth, customer acquisition, and market positioning.\n    \n        📚 Learn More\n        - Coursera: Marketing Course",
+            "tags": [
+                "business school",
+                "principles of marketing"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 102,
+            "title": "🧾 What is Principles of Management?",
+            "description": "Principles of Management explores how to plan, lead, organize, and control an organization to achieve goals efficiently.\n    \n        📘 Topics Covered\n        - Planning and decision making\n        - Leadership and team management\n        - Organizational structure and culture\n    \n        📌 Classic Model\n        - Fayol's 14 Principles of Management\n        - Mintzberg's managerial roles\n    \n        💡 Why It Matters\n        Effective management fosters productivity, employee engagement, and strategic clarity.\n    \n        🔗 Explore\n        - Harvard Business Review: Management Essentials",
+            "tags": [
+                "business school",
+                "principles of management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 103,
+            "title": "🧮 What is Financial Markets and Institutions?",
+            "description": "Financial Markets and Institutions introduces how capital flows through various intermediaries and platforms that support the economy.\n    \n        🏦 Key Topics\n        - Types of markets: equity, bond, derivatives, money\n        - Role of institutions: banks, mutual funds, pension funds, central banks\n        - Interest rate dynamics and monetary policy transmission\n    \n        💡 Why It Matters\n        Financial markets allocate resources efficiently and impact investment, inflation, and employment.\n    \n        📘 Example Case\n        How the 2008 global financial crisis exposed systemic risk in interbank lending markets.\n    \n        🔊 AI Summary\n        Financial markets and institutions form the backbone of the economy by facilitating funding, investment, and liquidity.\n    \n        🧭 Workflow\n\nUnderstand roles of key financial institutions\nStudy structure of capital and debt markets\nAnalyze interest rate impact on investment\nExplore regulatory frameworks (e.g., Basel III)",
+            "tags": [
+                "business school",
+                "financial markets and institutions"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 104,
+            "title": "🔎 What is Operations Management?",
+            "description": "Operations Management is the discipline of designing, managing, and improving production and service delivery processes.\n    \n        ⚙️ Key Themes\n        - Supply chain design and logistics\n        - Quality management (e.g., Six Sigma, TQM)\n        - Lean systems and capacity planning\n    \n        💡 Why It Matters\n        Efficient operations improve customer satisfaction, reduce cost, and create competitive advantage.\n    \n        📘 Example Case\n        Toyota Production System (TPS) as a model of just-in-time manufacturing and lean innovation.\n    \n        🔊 AI Summary\n        Operations management ensures the smooth delivery of products and services while minimizing waste and maximizing value.\n    \n        🧭 Workflow\n\nMap the production or service process\nIdentify inefficiencies or delays\nApply optimization techniques (e.g., lean, Six Sigma)\nMonitor KPIs and continuously improve",
+            "tags": [
+                "business school",
+                "operations management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 105,
+            "title": "🚀 What is Business Data Analytics?",
+            "description": "Business Data Analytics is the use of data to make informed business decisions, uncover insights, and predict future outcomes.\n    \n        📊 Tools & Techniques\n        - Descriptive analytics (e.g., dashboards)\n        - Predictive analytics (e.g., regression, machine learning)\n        - Prescriptive analytics (e.g., optimization, simulation)\n    \n        💡 Why It Matters\n        Data-driven decision-making improves performance and enables strategic planning.\n    \n        📘 Example Case\n        How Target used customer data to predict pregnancy patterns and personalize marketing.\n    \n        🔊 AI Summary\n        Business analytics empowers decision-makers with evidence, uncovering hidden patterns to drive performance.\n    \n        🧭 Workflow\n\nCollect and clean relevant business data\nUse dashboards for descriptive insights\nApply forecasting or modeling for predictions\nRecommend actions using prescriptive tools",
+            "tags": [
+                "business school",
+                "business data analytics"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 106,
+            "title": "🪙 What is International Business?",
+            "description": "International Business explores the strategies and challenges of operating across national borders.\n    \n        🌍 Core Concepts\n        - Globalization and cross-border trade\n        - Foreign direct investment (FDI)\n        - Currency risk and political risk\n    \n        💡 Why It Matters\n        Understanding cultural, legal, and financial systems is essential for global expansion and risk management.\n    \n        📘 Example Case\n        Starbucks' global localization strategy: adapting coffee menus to local tastes (e.g., green tea latte in Asia).\n    \n        🔊 AI Summary\n        International business is about navigating diverse cultures, laws, and economies to build a global presence.\n    \n        🧭 Workflow\n\nConduct international market research\nEvaluate legal and currency risks\nChoose entry mode (joint venture, subsidiary, etc.)\nImplement localization strategy",
+            "tags": [
+                "business school",
+                "international business"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 107,
+            "title": "🏫 What is Core MBA Courses?",
+            "description": "Core MBA Courses form the foundation of business education and are essential for developing analytical and leadership skills.\n    \n        📚 Typical Courses\n        - Accounting\n        - Finance\n        - Marketing\n        - Organizational Behavior\n        - Operations Management\n        - Strategy\n💡 Why It Matters\n        These courses ensure that every MBA graduate understands the language of business and core decision-making frameworks.\n    \n        📘 Example Case\n        Wharton’s core curriculum requires students to take foundational courses before selecting electives, ensuring consistent competence across disciplines.\n    \n        🔊 Summary\n        Core MBA courses lay the groundwork for mastering business disciplines and developing cross-functional leadership skills.\n    \n        🧭 Workflow\n\nReview curriculum requirements\nTake diagnostic tests (e.g. accounting proficiency)\nProgress through structured modules (e.g. Financial Accounting → Corporate Finance)\nApply knowledge in team-based case studies",
+            "tags": [
+                "business school",
+                "core mba courses"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 108,
+            "title": "📈 What is MBA Electives?",
+            "description": "MBA Electives allow students to tailor their learning based on interests, career goals, or industry focus.\n    \n        🎯 Categories\n        - Entrepreneurship & Innovation\n        - Real Estate Finance\n        - Sustainability and ESG\n        - FinTech & Blockchain\n        - Luxury Brand Strategy\n        - Global Supply Chains\n💡 Why It Matters\n        Electives deepen specialization and help students differentiate themselves in the job market.\n    \n        📘 Example Case\n        At INSEAD, electives like “Psychological Issues in Management” provide a behavioral edge in leadership development.\n    \n        🔊 Summary\n        MBA electives turn a generalist business degree into a customizable launchpad for diverse careers.\n    \n        🧭 Workflow\n\nReview elective catalog and concentrations\nAttend sample classes or info sessions\nSelect based on industry interest or functional goals\nCombine electives with capstone projects or internships",
+            "tags": [
+                "business school",
+                "mba electives"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 109,
+            "title": "📊 What is Managerial Economics?",
+            "description": "Managerial Economics applies microeconomic theory and quantitative tools to business decision-making.\n    \n        📊 Key Concepts\n        - Price elasticity of demand\n        - Marginal analysis\n        - Game theory and competition\n        - Demand forecasting\n💡 Why It Matters\n        This subject equips managers with economic reasoning to optimize production, pricing, and market strategies.\n    \n        📘 Example Case\n        A firm analyzes elasticity to determine whether increasing price will raise revenue or reduce demand too steeply.\n    \n        🧭 Workflow\n\nIdentify business objective (e.g. maximize profit)\nApply relevant economic model (e.g. demand curve)\nUse data to estimate parameters\nSimulate outcomes and choose optimal decision",
+            "tags": [
+                "business school",
+                "managerial economics"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 110,
+            "title": "💼 What is Organizational Behavior?",
+            "description": "Organizational Behavior (OB) studies how individuals, teams, and systems behave in workplace settings.\n    \n        🧠 Topics Covered\n        - Motivation and leadership theories\n        - Team dynamics and conflict\n        - Organizational culture and design\n        - Change management\n💡 Why It Matters\n        Understanding human behavior at work leads to improved performance, retention, and employee satisfaction.\n    \n        📘 Example Case\n        A company uses Herzberg's theory to redesign job roles, boosting intrinsic motivation and reducing turnover.\n    \n        🧭 Workflow\n\nDiagnose team or individual issue\nSelect OB framework (e.g. Maslow, Hofstede)\nImplement behavioral or cultural intervention\nMeasure outcomes through engagement metrics",
+            "tags": [
+                "business school",
+                "organizational behavior"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 111,
+            "title": "🧠 What is Marketing Management?",
+            "description": "Marketing Management involves planning, executing, and measuring strategies that deliver value to customers and stakeholders.\n    \n        📦 Key Areas\n        - Segmentation, targeting, and positioning (STP)\n        - Marketing mix (4Ps: Product, Price, Place, Promotion)\n        - Branding, digital, and relationship marketing\n💡 Why It Matters\n        Effective marketing aligns customer needs with business objectives, driving sales and loyalty.\n    \n        📘 Example Case\n        Apple’s marketing combines premium pricing with aspirational branding and ecosystem lock-in.\n    \n        🧭 Workflow\n\nConduct market research\nSegment and target audience\nCraft marketing mix strategy\nMonitor results and adjust campaigns",
+            "tags": [
+                "business school",
+                "marketing management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 112,
+            "title": "📘 What is Financial Management?",
+            "description": "Financial Management teaches how to raise, allocate, and manage funds to optimize firm value.\n    \n        📉 Key Concepts\n        - Time value of money\n        - Capital budgeting\n        - Cost of capital & WACC\n        - Risk-return trade-offs\n💡 Why It Matters\n        It ensures companies make sound financial decisions that support growth, stability, and shareholder returns.\n    \n        📘 Example Case\n        A CFO uses discounted cash flow (DCF) analysis to decide whether to acquire a smaller competitor.\n    \n        🧭 Workflow\n\nForecast cash flows\nEstimate required return\nApply valuation method (e.g. NPV, IRR)\nChoose funding strategy (debt, equity)",
+            "tags": [
+                "business school",
+                "financial management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 113,
+            "title": "🗂️ What is Operations Management (MBA)?",
+            "description": "Operations Management focuses on designing and optimizing processes to deliver goods and services efficiently.\n    \n        🏭 Focus Areas\n        - Supply chain & logistics\n        - Quality control (e.g. Six Sigma)\n        - Capacity planning\n        - Lean and Agile operations\n💡 Why It Matters\n        Operations determine cost structure, customer satisfaction, and agility in competitive industries.\n    \n        📘 Example Case\n        Amazon streamlines operations through warehouse automation and predictive demand analytics.\n    \n        🧭 Workflow\n\nMap process flow (e.g. value stream mapping)\nIdentify inefficiencies or bottlenecks\nApply tools like Lean, TQM, or Six Sigma\nMonitor KPIs like cycle time and throughput",
+            "tags": [
+                "business school",
+                "operations management (mba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 114,
+            "title": "📣 What is Strategic Management?",
+            "description": "Strategic Management is the art and science of developing and executing long-term plans to achieve competitive advantage.\n    \n        📌 Key Frameworks\n        - SWOT and PESTEL\n        - Porter’s Five Forces\n        - Blue Ocean Strategy\n        - Balanced Scorecard\n💡 Why It Matters\n        Strategy aligns internal capabilities with external opportunities to ensure long-term survival and growth.\n    \n        📘 Example Case\n        Netflix’s shift from DVD rentals to streaming exemplifies visionary strategic realignment.\n    \n        🧭 Workflow\n\nAnalyze external and internal environment\nSet vision and goals\nChoose competitive strategy (cost, differentiation, focus)\nMonitor performance and adapt",
+            "tags": [
+                "business school",
+                "strategic management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 115,
+            "title": "📦 What is Entrepreneurship Management?",
+            "description": "Entrepreneurship Management explores the process of identifying, launching, and managing new ventures.\n    \n        🚀 Key Elements\n        - Opportunity recognition\n        - Business model canvas\n        - Lean startup methodology\n        - Funding strategies (angel, VC, crowdfunding)\n📘 Example Case\n        An entrepreneur applies Lean Startup principles to rapidly prototype a SaaS product, validate with users, and pivot based on feedback.\n    \n        🧭 Workflow\n\nIdentify unmet customer need\nDesign value proposition\nBuild MVP (minimum viable product)\nTest, pivot or scale\n\n💡 Why It Matters\n        Entrepreneurship fosters innovation and economic growth by transforming ideas into market-ready solutions.",
+            "tags": [
+                "business school",
+                "entrepreneurship management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 116,
+            "title": "📉 What is Project Management?",
+            "description": "Project Management is the discipline of planning, executing, and closing work to achieve specific goals within constraints.\n    \n        📦 Core Concepts\n        - Scope, time, and cost management\n        - Risk analysis and mitigation\n        - Gantt charts and critical path method\n        - Agile vs Waterfall methodologies\n📘 Example Case\n        A telecom company uses Agile sprints to manage development of a mobile app with cross-functional teams.\n    \n        🧭 Workflow\n\nDefine project objectives and deliverables\nPlan schedule, resources, and risks\nExecute and monitor tasks\nReview, deliver, and close project\n\n💡 Why It Matters\n        Efficient project management is essential for delivering results on time and within budget.",
+            "tags": [
+                "business school",
+                "project management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 117,
+            "title": "🌐 What is Supply Chain Management?",
+            "description": "Supply Chain Management (SCM) involves the coordination of materials, information, and finances as they move from supplier to customer.\n    \n        🔗 Key Topics\n        - Logistics and distribution\n        - Inventory and warehouse management\n        - Supplier relationships\n        - Demand forecasting\n📘 Example Case\n        Zara optimizes inventory turnover and shortens production cycles through vertically integrated supply chain practices.\n    \n        🧭 Workflow\n\nMap current supply chain and identify key partners\nAnalyze bottlenecks and inefficiencies\nImplement technology solutions (e.g. ERP)\nOptimize and monitor KPIs like lead time and cost\n\n💡 Why It Matters\n        A robust supply chain improves responsiveness, lowers costs, and increases customer satisfaction.",
+            "tags": [
+                "business school",
+                "supply chain management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 118,
+            "title": "🧾 What is Leadership Development?",
+            "description": "Leadership Development builds the mindset, skillset, and behaviors needed to lead teams and organizations effectively.\n    \n        🧠 Key Themes\n        - Emotional intelligence\n        - Situational leadership\n        - Coaching and feedback\n        - Influence without authority\n📘 Example Case\n        A company designs a rotational leadership program for high-potential employees to build cross-functional experience.\n    \n        🧭 Workflow\n\nAssess leadership potential and style\nDevelop personalized growth plan\nProvide mentoring, coaching, and assignments\nEvaluate impact through 360-degree feedback\n\n💡 Why It Matters\n        Effective leadership is the cornerstone of organizational resilience, culture, and innovation.",
+            "tags": [
+                "business school",
+                "leadership development"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 119,
+            "title": "🧮 What is E-commerce?",
+            "description": "E-commerce refers to the buying and selling of goods or services using digital platforms and technologies.\n    \n        🛍️ Key Areas\n        - B2C and B2B models\n        - Digital payment systems\n        - Online marketplaces (e.g. Amazon, Alibaba)\n        - Customer acquisition and retention strategies\n📘 Example Case\n        Shopify enables entrepreneurs to set up online storefronts using customizable templates and plug-ins.\n    \n        🧭 Workflow\n\nSelect e-commerce platform\nList products and setup payments\nIntegrate logistics and CRM tools\nLaunch marketing campaigns and analyze conversion\n\n💡 Why It Matters\n        E-commerce drives global trade, democratizes retail, and reshapes customer expectations in the digital age.",
+            "tags": [
+                "business school",
+                "e-commerce"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 120,
+            "title": "🔎 What is Core Courses (Financial Masters)?",
+            "description": "Core Courses in Financial Master’s programs form the analytical and theoretical foundation for advanced careers in finance.\n    \n        🏛️ Core Modules\n        - Corporate Finance\n        - Financial Accounting\n        - Quantitative Methods\n        - Financial Markets & Institutions\n        - Ethics in Finance\n📘 Example Case\n        Students learn to apply time value of money, valuation techniques, and capital budgeting to assess a firm’s investment project.\n    \n        🧭 Workflow\n\nComplete foundational finance theory\nBuild financial modeling proficiency (Excel, Python, R)\nSimulate real-world capital allocation decisions\nPresent investment recommendations\n\n💡 Why It Matters\n        These courses bridge academic finance with real-world application, preparing students for roles in banking, investment management, and consulting.",
+            "tags": [
+                "business school",
+                "core courses (financial masters)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 121,
+            "title": "🚀 What is Electives (Financial Masters)?",
+            "description": "Electives in Financial Master’s programs provide specialized focus in niche areas of the financial industry.\n    \n        🎯 Specialized Areas\n        - Behavioral Finance\n        - FinTech and Blockchain\n        - Private Equity & Venture Capital\n        - ESG Investing\n        - Real Estate Finance\n📘 Example Case\n        A student takes an elective in Algorithmic Trading, applying statistical arbitrage models using Python to backtest a trading strategy.\n    \n        🧭 Workflow\n\nChoose focus area aligned with career goals\nEngage in applied projects with data sets or case competitions\nNetwork with guest professionals and alumni\nDevelop niche skillset for industry placement\n\n💡 Why It Matters\n        Electives allow deep dives into emerging areas of finance and offer competitive edge in specialized domains.",
+            "tags": [
+                "business school",
+                "electives (financial masters)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 122,
+            "title": "🪙 What is Investment?",
+            "description": "Investment is the process of allocating capital to financial assets with the goal of earning returns and managing risk.\n    \n        📊 Core Concepts\n        - Risk vs. return trade-off\n        - Asset allocation and diversification\n        - Investment vehicles: stocks, bonds, ETFs\n        - Active vs. passive strategies\n    \n        📘 Example Case\n        Constructing a portfolio with 60% equities and 40% bonds using historical data to backtest performance over the past decade.\n    \n        🧭 Workflow\n\nDefine investment objectives\nAssess investor risk profile\nSelect asset mix and vehicles\nMonitor and rebalance portfolio\n\n💡 Why It Matters\n        Equips students with real-world strategies to grow wealth and preserve capital across market cycles.",
+            "tags": [
+                "business school",
+                "investment"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 123,
+            "title": "🏫 What is Corporate Finance?",
+            "description": "Corporate Finance studies how firms make decisions about investments, capital structure, and dividends.\n    \n        🏢 Key Topics\n        - Capital budgeting (NPV, IRR)\n        - Cost of capital (WACC)\n        - Financing decisions (debt vs. equity)\n        - Dividend policy\n    \n        📘 Example Case\n        A CFO decides whether to finance a $50M expansion via issuing bonds or equity, analyzing EPS dilution and debt ratios.\n    \n        🧭 Workflow\n\nEvaluate project cash flows\nAssess financing options and costs\nAnalyze impact on shareholder value\nMonitor performance and risk\n\n💡 Why It Matters\n        Enables optimal use of corporate resources to maximize firm value and strategic growth.",
+            "tags": [
+                "business school",
+                "corporate finance"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 124,
+            "title": "📈 What is Financial Markets?",
+            "description": "Financial Markets are systems where individuals and institutions trade financial securities, facilitating capital flow and economic stability.\n    \n        🌐 Market Types\n        - Capital markets: equity & debt\n        - Money markets: short-term liquidity instruments\n        - Derivatives & FX markets\n    \n        📘 Example Case\n        Comparing liquidity and volatility across NYSE and Hong Kong Stock Exchange using bid-ask spreads and volume data.\n    \n        🧭 Workflow\n\nIdentify asset classes and instruments\nUnderstand regulatory environment\nExplore pricing mechanisms\nAnalyze market microstructure and efficiency\n\n💡 Why It Matters\n        Understanding market mechanics is essential for making informed investment and policy decisions.",
+            "tags": [
+                "business school",
+                "financial markets"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 125,
+            "title": "📊 What is Econometrics?",
+            "description": "Econometrics applies statistical models to economic data to test hypotheses and forecast financial outcomes.\n    \n        📈 Topics\n        - Regression analysis (OLS, time-series)\n        - Model specification & diagnostics\n        - Panel data, VAR, GARCH models\n    \n        📘 Example Case\n        Using ARIMA models to forecast GDP growth or stock returns based on macroeconomic indicators.\n    \n        🧭 Workflow\n\nGather and clean financial data\nChoose appropriate econometric model\nEstimate and validate\nInterpret and apply insights\n\n💡 Why It Matters\n        Empowers students with data-driven techniques for modeling uncertainty and making evidence-based decisions.",
+            "tags": [
+                "business school",
+                "econometrics"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 126,
+            "title": "💼 What is International Finance?",
+            "description": "International Finance deals with the monetary interactions between two or more countries, analyzing exchange rates, capital flows, and global investment.\n    \n        🌍 Topics\n        - Exchange rate systems (fixed, floating)\n        - Interest rate parity, currency swaps\n        - Global capital mobility\n    \n        📘 Example Case\n        Hedging FX risk for a U.S. firm exporting to Europe by using forward contracts and evaluating exposure via delta hedging.\n    \n        🧭 Workflow\n\nAnalyze macroeconomic trends and FX rates\nApply parity conditions and arbitrage theory\nUse derivatives for currency risk management\nEvaluate international investment strategy\n\n💡 Why It Matters\n        Critical for managing global portfolios, MNC operations, and responding to geopolitical risks.",
+            "tags": [
+                "business school",
+                "international finance"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 127,
+            "title": "🧠 What is Financial Risk Management?",
+            "description": "Financial Risk Management focuses on identifying, assessing, and mitigating risks in financial institutions and portfolios.\n    \n        📊 Risk Categories\n        - Market risk (interest rate, currency, equity)\n        - Credit risk (default, counterparty)\n        - Operational and liquidity risk\n🛠 Tools & Techniques\n        - Value-at-Risk (VaR), stress testing\n        - Scenario analysis, sensitivity analysis\n        - Risk-adjusted return metrics (RAROC, Sharpe Ratio)\n    \n        🔍 Application\n        - Banking capital adequacy (Basel III)\n        - Hedge fund risk control\n        - Insurance and pension fund stability\n    \n        Category: Financial Masters → Risk & Compliance",
+            "tags": [
+                "business school",
+                "financial risk management"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 128,
+            "title": "📘 What is Fintech?",
+            "description": "Fintech refers to the integration of technology in delivering financial services more efficiently.\n    \n        💡 Key Areas\n        - Digital banking, robo-advisors, and mobile wallets\n        - Peer-to-peer lending and crowdfunding\n        - Blockchain, DeFi, and smart contracts\n🚀 Emerging Technologies\n        - AI in credit scoring and fraud detection\n        - APIs for embedded finance\n        - RegTech and SupTech for compliance automation\n    \n        📌 Case Examples\n        - Ant Financial, Stripe, Revolut, Robinhood\n    \n        Category: Financial Masters → Technology & Innovation",
+            "tags": [
+                "business school",
+                "fintech"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 129,
+            "title": "🗂️ What is Mergers and Acquisitions?",
+            "description": "Mergers and Acquisitions (M&A) involve consolidation strategies used by companies to grow, diversify, or gain competitive advantages.\n    \n        ⚖️ Deal Types\n        - Horizontal, vertical, and conglomerate mergers\n        - Hostile takeovers vs. friendly deals\n📊 Valuation Methods\n        - Comparable company analysis\n        - Precedent transactions\n        - Discounted cash flow (DCF) analysis\n🧩 Integration Challenges\n        - Culture clash, synergy realization\n        - Legal and regulatory barriers\n    \n        Category: Financial Masters → Corporate Finance",
+            "tags": [
+                "business school",
+                "mergers and acquisitions"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 130,
+            "title": "📣 What is Asset Securitization?",
+            "description": "Asset Securitization is the process of pooling illiquid assets (like loans or receivables) and converting them into tradable securities.\n    \n        🔧 Key Components\n        - Originator, Special Purpose Vehicle (SPV), investor\n        - Tranching: senior, mezzanine, equity layers\n        - Credit enhancement and ratings\n    \n        📚 Use Cases\n        - Mortgage-backed securities (MBS)\n        - Collateralized debt obligations (CDOs)\n        - Auto loan and credit card receivables securitization\n    \n        💡 Why It Matters\n        - Improves liquidity for financial institutions\n        - Distributes risk across investor classes\n        - Played a central role in the 2008 global financial crisis\n    \n        Category: Financial Masters → Advanced Finance",
+            "tags": [
+                "business school",
+                "asset securitization"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 131,
+            "title": "📦 What is Core Courses (EMBA)?",
+            "description": "Core Courses (EMBA) form the foundation of Executive MBA programs, offering seasoned professionals a broad understanding of essential business disciplines.\n    \n        📚 Typical Core Subjects\n        - Strategic Management\n        - Managerial Economics\n        - Accounting and Financial Reporting\n        - Global Business Environment\n🧠 Learning Objectives\n        - Develop leadership and strategic thinking\n        - Apply analytical tools to complex decision-making\n        - Navigate change in globalized markets\n    \n        🎯 Target Audience\n        - Mid to senior-level professionals\n        - Executives seeking cross-functional knowledge\n💼 Application\n        - Directly applicable to executive decision-making\n        - Case-based learning from real-world business challenges\n    \n        Category: EMBA → Core Curriculum",
+            "tags": [
+                "business school",
+                "core courses (emba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 132,
+            "title": "📉 What is Specialized Electives (EMBA)?",
+            "description": "Specialized Electives (EMBA) allow executives to tailor their education to specific interests such as innovation, digital transformation, or global finance.\n    \n        🧭 Elective Areas\n        - Entrepreneurship & Innovation\n        - Mergers & Acquisitions\n        - Sustainable Business Strategy\n        - Leading Digital Transformation\n📌 Program Features\n        - Often includes international modules\n        - Team-based consulting projects\n        - Industry-specific electives (e.g., Healthcare, Energy)\n    \n        💡 Why It Matters\n        - Allows customization and relevance to evolving leadership roles\n        - Supports vertical and lateral career growth\n    \n        Category: EMBA → Electives & Specializations",
+            "tags": [
+                "business school",
+                "specialized electives (emba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 133,
+            "title": "🌐 What is Economic Analysis?",
+            "description": "Economic Analysis equips EMBA students with tools to interpret economic data and understand macroeconomic and microeconomic forces impacting business.\n    \n        📊 Key Topics\n        - GDP, inflation, unemployment, interest rates\n        - Supply and demand, elasticity, market structures\n        - Business cycles and government intervention\n    \n        💡 Why It Matters\n        - Informs strategic planning and investment timing\n        - Helps executives evaluate market trends and policy risks\n    \n        📘 Tools\n        - Economic indicators\n        - Forecast models\n        - Real-world economic case studies\n    \n        Category: EMBA → Core Curriculum",
+            "tags": [
+                "business school",
+                "economic analysis"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 134,
+            "title": "🧾 What is Marketing Management (EMBA)?",
+            "description": "Marketing Management (EMBA) focuses on strategic marketing decisions aligned with corporate goals in competitive, digital, and global environments.\n    \n        🧠 Strategic Focus\n        - Brand positioning\n        - Customer segmentation\n        - Pricing and go-to-market planning\n    \n        📈 Tools & Frameworks\n        - 4Ps, STP, Customer Journey Mapping\n        - Digital marketing metrics and ROI models\n    \n        💼 Applications\n        - Designing B2B and B2C strategies\n        - Leading cross-functional marketing teams\n    \n        Category: EMBA → Core Curriculum",
+            "tags": [
+                "business school",
+                "marketing management (emba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 135,
+            "title": "🧮 What is Strategic Management Accounting?",
+            "description": "Strategic Management Accounting bridges accounting with corporate strategy, helping leaders use financial data for competitive advantage.\n    \n        📘 Key Topics\n        - Cost behavior and cost-volume-profit analysis\n        - Activity-based costing\n        - Balanced scorecards and performance metrics\n    \n        💡 Why It Matters\n        - Supports long-term strategic choices through data\n        - Helps in resource allocation and pricing decisions\n    \n        🛠 Use Cases\n        - Product profitability assessment\n        - Strategic budgeting and planning\n        - Financial alignment with KPIs\n    \n        Category: EMBA → Finance & Accounting",
+            "tags": [
+                "business school",
+                "strategic management accounting"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 136,
+            "title": "🔎 What is Organizational Behavior (EMBA)?",
+            "description": "Organizational Behavior (EMBA) explores how individuals and teams behave in complex organizations, with a focus on leadership and performance.\n    \n        🌱 Core Concepts\n        - Motivation theories and leadership styles\n        - Organizational culture and change\n        - Group dynamics and team performance\n    \n        💬 Application\n        - Influencing culture as a senior leader\n        - Managing resistance to change\n        - Enhancing organizational agility\n    \n        📘 Based On\n        - Psychology, sociology, behavioral economics\n    \n        Category: EMBA → Leadership & People",
+            "tags": [
+                "business school",
+                "organizational behavior (emba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 137,
+            "title": "🚀 What is Operations Management (EMBA)?",
+            "description": "Operations Management (EMBA) teaches how to design, improve, and control business operations at a strategic level.\n    \n        ⚙️ Core Areas\n        - Process design and capacity planning\n        - Quality management and Lean principles\n        - Supply chain integration\n    \n        📈 Business Impact\n        - Improves efficiency and cost control\n        - Enables scalable growth\n        - Enhances customer satisfaction\n    \n        💡 Why It Matters\n        - Critical for manufacturing, logistics, and service sectors\n        - Supports digital transformation and sustainability goals\n    \n        Category: EMBA → Core Curriculum",
+            "tags": [
+                "business school",
+                "operations management (emba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 138,
+            "title": "🪙 What is The Chinese Economy?",
+            "description": "The Chinese Economy explores the evolution, characteristics, and global impact of China’s economic model.\n    \n        🇨🇳 Key Themes\n        - State-capitalism and SOEs\n        - Urbanization and regional development\n        - Innovation, consumption, and digital infrastructure\n💡 Why It Matters\n        - China’s economy is the second largest in the world\n        - Offers strategic opportunities in global trade, finance, and tech\n🔍 Applications\n        - Investment entry analysis for MNCs\n        - Public policy understanding for regulatory navigation\n        - Supply chain and sourcing strategies for multinationals\n    \n        Category: EMBA → Global Perspective",
+            "tags": [
+                "business school",
+                "the chinese economy"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 139,
+            "title": "🏫 What is Leadership Development (EMBA)?",
+            "description": "Leadership Development (EMBA) helps executives refine their leadership style, emotional intelligence, and strategic influence.\n    \n        🧭 Focus Areas\n        - Executive presence and communication\n        - Ethical leadership and values-based decision-making\n        - Coaching, mentoring, and team empowerment\n📘 Tools Used\n        - 360° feedback\n        - Leadership diagnostics\n        - Simulation-based learning\n    \n        💡 Why It Matters\n        - Modern organizations require adaptive, empathetic, and visionary leaders\n        - Enables cross-cultural team management in global businesses\n    \n        Category: EMBA → Leadership & People",
+            "tags": [
+                "business school",
+                "leadership development (emba)"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 140,
+            "title": "📈 What is Overseas Modules?",
+            "description": "Overseas Modules provide immersive learning experiences in international business hubs through university partnerships and company visits.\n    \n        ✈️ Components\n        - Lectures at top foreign business schools (e.g., INSEAD, Wharton)\n        - Corporate visits (e.g., Amazon, Toyota, McKinsey)\n        - Cross-cultural negotiation simulations\n    \n        🌐 Regions Offered\n        - North America, Europe, Asia-Pacific\n    \n        💡 Why It Matters\n        - Enhances global business acumen\n        - Builds international networks\n        - Offers real-time exposure to diverse business models\n    \n        Category: EMBA → Global Perspective",
+            "tags": [
+                "business school",
+                "overseas modules"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 141,
+            "title": "📊 What is Digital Transformation?",
+            "description": "Digital Transformation equips executives with frameworks to lead technological change and redefine business models.\n    \n        🚀 Key Topics\n        - AI, cloud, blockchain, and data strategy\n        - Digital operating models and innovation culture\n        - Legacy system modernization and agile governance\n💡 Why It Matters\n        - Every sector is undergoing disruption\n        - Survival hinges on digital agility, innovation, and scalable infrastructure\n🧠 Strategic Application\n        - Leading end-to-end transformation\n        - Tech adoption roadmaps\n        - Customer-centric design through digital interfaces\n    \n        Category: EMBA → Technology & Strategy",
+            "tags": [
+                "business school",
+                "digital transformation"
+            ],
+            "associatedGraphIDs": [
+                "business-school"
+            ]
+        },
+        {
+            "id": 142,
+            "title": "📊 S&P 500 Overview: Understanding the Index",
+            "description": "Learn about the S&P 500 index, which includes 500 of the largest U.S. companies and serves as a benchmark for the overall U.S. stock market performance.",
+            "tags": [
+                "S&P 500",
+                "index",
+                "market benchmark"
+            ],
+            "associatedGraphIDs": [
+                "day-trading,investing"
+            ]
+        },
+        {
+            "id": 143,
+            "title": "🏢 Apple Inc.: A Key Player in the S&P 500",
+            "description": "Discover the role of Apple in the S&P 500 index and its impact on technology, market trends, and innovation.",
+            "tags": [
+                "Apple",
+                "S&P 500",
+                "technology",
+                "market leader"
+            ],
+            "associatedGraphIDs": [
+                "day-trading,investing"
+            ]
+        },
+        {
+            "id": 144,
+            "title": "📈 Microsoft: Growth and Stability in the S&P 500",
+            "description": "Explore Microsoft's consistent growth, its position within the S&P 500, and how it continues to drive the technology sector forward.",
+            "tags": [
+                "Microsoft",
+                "S&P 500",
+                "growth",
+                "technology"
+            ],
+            "associatedGraphIDs": [
+                "day-trading,investing"
+            ]
+        },
+        {
+            "id": 145,
+            "title": "💹 ETF Investing: S&P 500 Index Funds",
+            "description": "Learn how S&P 500 index funds and ETFs can provide diversified exposure to the largest U.S. companies while minimizing individual stock risk.",
+            "tags": [
+                "ETF",
+                "S&P 500",
+                "index funds",
+                "investment strategy"
+            ],
+            "associatedGraphIDs": [
+                "day-trading,investing"
+            ]
+        },
+        {
+            "id": 146,
+            "title": "📊 S&P 500 vs. Dow Jones: Which is the Better Market Indicator?",
+            "description": "Compare the S&P 500 index with the Dow Jones Industrial Average to understand the key differences and how each reflects market performance.",
+            "tags": [
+                "S&P 500",
+                "Dow Jones",
+                "market comparison",
+                "indices"
+            ],
+            "associatedGraphIDs": [
+                "day-trading,investing"
+            ]
+        }
     ]
-  }
-  
+}
