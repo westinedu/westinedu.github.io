@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Study Tips</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+</head>
+<body>
+  <!-- 搜索面板 -->
+  <div id="searchPanel">
+    <input id="searchInput" type="text" placeholder="search..." />
+      <!-- Cancel/Clear icon (styled as a button or span) -->
+      <button id="cancelButton" style="display: none;">&times;</button>
+    <ul id="searchResults"></ul>
+  </div>
+  
+  <div id="container" style="width:100vw; height:100vh; overflow:hidden;">
+  <div id="mapWrap" style="position: absolute; width: 100%; height: 100%;">
+    <!-- 独立连线层：覆盖整个容器，不影响鼠标交互 -->
+    <svg id="connLayer" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; z-index: 1;"></svg>
+    <!-- 节点层 -->
+    <div id="map" style="position: absolute; top: 0; left: 0; z-index: 2;">
+      <!-- 节点会在这里动态插入 -->
+    </div>
+  </div>
+</div>
+  
+  <!-- 功能按钮 -->
+  <div id="controls">
+    <button id="zoomIn">🔍+ zoom in</button>
+    <button id="zoomOut">🔍- zoom out</button>
+    <button id="btnVertical">vertical</button>
+    <button id="btnHorizontal">horizontal</button>
+    <button id="btnStar">star</button>
+  </div>
+  
+  <!-- 按顺序加载各个 JS 文件 -->
+  <!-- 先加载当前主题数据 -->
+  <script src="data/study_tips_data.js"></script>
+  <!-- 加载主逻辑 -->
+  <script src="main.js"></script>
+  <!-- 加载搜索功能 -->
+  <script src="search.js"></script>
+  <script>
+    // 初始化导图，使用当前数据文件里的数据（固定主题）
+    initMindmap(window.mindmapData);
+    // 初始化搜索功能，假设 main.js 中渲染后的节点存储在全局变量 nodes 中
+    setupSearchFeature(window.nodes);
+
+    // 延时500毫秒后自动聚焦到根节点（索引0）
+  setTimeout(() => { focusOnNode(0); }, 500);
+  </script>
+</body>
+</html>
