@@ -2,9 +2,16 @@ window.mindmapData = {
   nodes: [
     {
       text: "0. Ray Dalio",
+      description: `🧠 <strong>Ray Dalio</strong> is the billionaire founder of Bridgewater Associates, one of the world’s largest and most influential hedge funds.<br><br>
+
+📘 He is best known for developing the “Principles”-based management philosophy and for his macroeconomic insights into debt cycles, monetary policy, and global markets.<br><br>
+
+📊 Dalio’s frameworks, like the <strong>Long-Term Debt Cycle</strong> and <strong>Economic Machine</strong>, are widely used in economics and investing.<br><br>
+
+📺 <a href=\"https://www.youtube.com/watch?v=PHe0bXAIuk0\" target=\"_blank\">Watch: How the Economic Machine Works (video)</a><br>
+📖 <a href=\"https://www.principles.com\" target=\"_blank\">Read: Principles by Ray Dalio</a>
+`,
       important: true,
-      classic: "Founder of Bridgewater",
-      person: "Ray Dalio",
       image: "Ray Dalio.png"
     },
     {
@@ -233,10 +240,92 @@ window.mindmapData = {
       `,
       classic: "A workplace designed to challenge your thinking daily",
       expanded: true
+    }, {
+      text: "0. How Countries Go Broke",
+      description: `
+📌 <strong>Core Insight</strong>:<br><br>
+This book reveals that <strong>sovereign default</strong> is not a sudden event, but a <em>gradual unraveling</em> of a country’s political, economic, and institutional systems.<br><br>
+⚠️ Unlike companies, nations do not go through formal bankruptcy liquidation.<br>
+Instead, a country's collapse often appears through:<br>
+• 🔻 Debt default<br>
+• 💸 Hyperinflation<br>
+• 🌍 Capital flight<br>
+• 🧯 Collapse of public trust<br><br>
+💡 The process is slow-burning, driven by poor decisions and delayed reforms.
+    `,
+      classic: "A deep dive into sovereign debt crises and fiscal collapse",
+      expanded: true
+    },
+    {
+      text: "1. What is Sovereign Debt?",
+      description: `
+        💵 <strong>Sovereign debt</strong> refers to money borrowed by a country from domestic or international lenders.<br><br>
+        📌 Unlike corporate debt, there's no bankruptcy court to resolve disputes.<br>
+        🧩 Countries borrow to fund public services, infrastructure, and budget deficits.
+      `,
+      classic: "Debt with no court enforcement",
+      expanded: true
+    },
+    {
+      text: "2. How Countries Go Broke",
+      description: `
+        🔥 A nation goes broke not just from lack of money, but from loss of <strong>trust</strong>.<br><br>
+        ⚠️ Key factors:<br>
+        - Unsustainable debt levels 📉<br>
+        - Printing money to cover deficits 💸<br>
+        - Political instability 🏛️<br>
+        - Capital flight 🌍<br>
+        - Collapse of tax revenue 📉
+      `,
+      classic: "Default is political, not just financial",
+      expanded: true
+    },
+    {
+      text: "3. Case Studies",
+      description: `
+        📚 Real-world examples include:<br><br>
+        🇦🇷 Argentina: serial defaulter (2001, 2018)<br>
+        🇬🇷 Greece: Eurozone bailout crisis (2010–2015)<br>
+        🇿🇼 Zimbabwe: hyperinflation collapse (2008)<br>
+        🇷🇺 Russia: 1998 currency and debt crisis<br>
+        🇹🇷 Turkey: inflation and lira depreciation
+      `,
+      classic: "Each crisis tells a cautionary tale",
+      expanded: true
+    },
+    {
+      text: "4. The Role of Politics",
+      description: `
+        🗳️ Governments often delay hard reforms due to elections.<br>
+        📊 Populist promises increase spending without revenue.<br>
+        🚫 Cutting subsidies or wages may lead to unrest, so leaders avoid it—until it's too late.
+      `,
+      classic: "Short-term politics, long-term damage",
+      expanded: true
+    },
+    {
+      text: "5. IMF and Ratings Agencies",
+      description: `
+        🏦 The IMF acts as lender of last resort—often imposing strict conditions.<br>
+        📝 Credit rating downgrades (by S&P, Moody’s) trigger capital outflows and higher borrowing costs.<br>
+        🤝 Bailouts may restore confidence but carry moral hazard.
+      `,
+      classic: "Help that comes with strings",
+      expanded: true
+    },
+    {
+      text: "6. Prevention Strategies",
+      description: `
+        🛡️ How countries can avoid collapse:<br><br>
+        ✅ Keep debt-to-GDP manageable<br>
+        ✅ Limit foreign currency borrowing<br>
+        ✅ Maintain independent central banks 🏛️<br>
+        ✅ Build foreign reserves 💰<br>
+        ✅ Commit to fiscal discipline 📘
+      `,
+      classic: "Preventive medicine for economies",
+      expanded: true
     }
-    
-
-    
   ],
   connections: [
     [0, 1], [0, 2], [0, 3],
@@ -244,7 +333,9 @@ window.mindmapData = {
     [2, 7],
     [3, 8], [3, 9], 
     [0,4],
-    [4, 10], [4, 11], [4, 12]
+    [4, 10], [4, 11], [4, 12],
+    [2, 13], 
+    [13,14],[13,15],[13,16],[13,17],[13,18],[13,19]
   ]
 };
 
