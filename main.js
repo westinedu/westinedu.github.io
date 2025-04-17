@@ -1254,7 +1254,7 @@ function initSidebar() {
   // 创建 DOM
   const sidebar = document.createElement('nav');
   sidebar.id = 'sidebar';
-  sidebar.innerHTML = '<h2>目录导航</h2><ul id="toc"></ul>';
+  sidebar.innerHTML = '<h2>Outline</h2><ul id="toc"></ul>';
   document.body.appendChild(sidebar);
   // 调整主画布位置
   const container = document.getElementById('container');
