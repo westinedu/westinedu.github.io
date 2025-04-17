@@ -206,8 +206,8 @@ cancelDescBtn.addEventListener('click', (e) => {
 
 // 添加到卡片视图中
 div.appendChild(staticDescEl);
-// 编辑节点的按钮，开关  ***********************************************
-// div.appendChild(editDescBtn);
+// 真正的开发模式，编辑节点的按钮，编辑导出给生产环境使用，  开关  ***********************************************
+div.appendChild(editDescBtn);
 div.appendChild(saveDescBtn);
 div.appendChild(cancelDescBtn);
 
@@ -1196,7 +1196,8 @@ closeBtn.addEventListener('click', () => {
 const exportBtn = document.createElement('button');
 exportBtn.textContent = "💾 Export Data";
 exportBtn.id = "btnExportData";
-// document.getElementById('controls').appendChild(exportBtn);
+// 真正的导出按钮，开发模式使用，导出给生产环境用，  开关
+document.getElementById('controls').appendChild(exportBtn);
     
 
 // ⏳ 获取原始 <script src="data/xxx.js"> 文件路径
@@ -1247,6 +1248,98 @@ exportBtn.addEventListener('click', () => {
 });
 
 
+  /********* 18. 添加左侧的节点目录导航 **********/
+// ─────── 动态插入侧边栏 ───────
+function initSidebar() {
+  // 创建 DOM
+  const sidebar = document.createElement('nav');
+  sidebar.id = 'sidebar';
+  sidebar.innerHTML = '<h2>目录导航</h2><ul id="toc"></ul>';
+  document.body.appendChild(sidebar);
+  // 调整主画布位置
+  const container = document.getElementById('container');
+  // if (container) {
+  //   container.style.marginLeft = '260px';
+  //   container.style.width = 'calc(100vw - 260px)';
+  // }
+}
+
+// ─────── 构建目录树 & 渲染 ───────
+function buildTree(nodes) {
+  const root = {};
+  nodes.forEach((node, i) => {
+    (node.categoryPath || []).reduce((cur, seg) => {
+      cur.children = cur.children || {};
+      if (!cur.children[seg]) cur.children[seg] = { __nodes: [], children: {} };
+      return cur.children[seg];
+    }, root).__nodes.push(i);
+  });
+  return root.children;
+}
+
+
+
+function initToc() {
+  const toc = document.getElementById('toc');
+  toc.innerHTML = ''; // clear old
+
+  // 递归构建目录
+  function renderNodes(parentIndex, parentUl) {
+    (childrenMap[parentIndex] || []).forEach(idx => {
+      const li = document.createElement('li');
+      const a  = document.createElement('a');
+      a.textContent = nodes[idx].text;
+      a.href = 'javascript:;';
+      a.addEventListener('click', (e) => {
+        e.stopPropagation();
+        focusOnNode(idx);
+        if (li.classList.contains('has-children')) {
+          li.classList.toggle('open');
+        }
+      });
+
+      li.appendChild(a);
+
+      const kids = childrenMap[idx] || [];
+      if (kids.length) {
+        li.classList.add('has-children');
+        const childUl = document.createElement('ul');
+        renderNodes(idx, childUl);
+        li.appendChild(childUl);
+      }
+
+      parentUl.appendChild(li);
+    });
+  }
+
+  // 👉 添加 root 节点
+  const rootLi = document.createElement('li');
+  const rootA = document.createElement('a');
+  rootA.textContent = nodes[0].text;
+  rootA.href = 'javascript:;';
+  rootA.addEventListener('click', (e) => {
+    e.stopPropagation();
+    focusOnNode(0);
+    rootLi.classList.toggle('open');
+  });
+  rootLi.classList.add('has-children', 'open'); // 默认展开
+  rootLi.appendChild(rootA);
+
+  // 渲染 root 的子节点
+  const childUl = document.createElement('ul');
+  renderNodes(0, childUl);
+  rootLi.appendChild(childUl);
+
+  toc.appendChild(rootLi);
+}
+
+
+
+
+
+
+
+
 
     /********* 初始化布局**********/
 
@@ -1260,8 +1353,18 @@ exportBtn.addEventListener('click', () => {
       updateBoundingBox();
       setTimeout(() => focusOnNode(0), 100);
       activeNodeIndex = 0;
+
+// 页面加载完成后
+window.addEventListener('DOMContentLoaded', () => {
+  initSidebar();                     // 已有：插入 #sidebar、调整 #container
+//  initMindmap(window.mindmapData);   // 已有：构建 childrenMap, nodes…
+  initToc();                         // 新增：渲染纯节点目录
+  setupSearchFeature(window.nodes);  // 原有搜索
+  setTimeout(() => focusOnNode(0), 500);
+});
+
 }
 
 
 // 将 initMindmap 挂载到全局
-window.initMindmap = initMindmap;
+ window.initMindmap = initMindmap;
