@@ -207,7 +207,7 @@ cancelDescBtn.addEventListener('click', (e) => {
 // 添加到卡片视图中
 div.appendChild(staticDescEl);
 // 真正的开发模式，编辑节点的按钮，编辑导出给生产环境使用，  开关  ***********************************************
-div.appendChild(editDescBtn);
+// div.appendChild(editDescBtn);
 div.appendChild(saveDescBtn);
 div.appendChild(cancelDescBtn);
 
@@ -1197,7 +1197,7 @@ const exportBtn = document.createElement('button');
 exportBtn.textContent = "💾 Export Data";
 exportBtn.id = "btnExportData";
 // 真正的导出按钮，开发模式使用，导出给生产环境用，  开关
-document.getElementById('controls').appendChild(exportBtn);
+// document.getElementById('controls').appendChild(exportBtn);
     
 
 // ⏳ 获取原始 <script src="data/xxx.js"> 文件路径
