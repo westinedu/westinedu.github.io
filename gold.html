@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gold Investing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <!-- 搜索面板 -->
+  <div id="searchPanel">
+    <input id="searchInput" type="text" placeholder="search..." />
+      <!-- Cancel/Clear icon (styled as a button or span) -->
+      <button id="cancelButton" style="display: none;">&times;</button>
+    <ul id="searchResults"></ul>
+  </div>
+  
+  <div id="container" style="width:100vw; height:100vh; overflow:hidden;">
+  <div id="mapWrap" style="position: absolute; width: 100%; height: 100%;">
+    <!-- 独立连线层：覆盖整个容器，不影响鼠标交互 -->
+    <svg id="connLayer" 
+         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; z-index: 1;"></svg>
+    <!-- 节点层 -->
+    <div id="map" style="position: absolute; top: 0; left: 0; z-index: 2;">
+      <!-- 节点会在这里动态插入 -->
+    </div>
+  </div>
+  </div>
+  
+  <!-- 功能按钮 -->
+  <div id="controls">
+    <button id="zoomIn">zoom in</button>
+    <button id="zoomOut">zoom out</button>
+    <button id="btnVertical">vertical</button>
+    <button id="btnHorizontal">horizontal</button>
+    <button id="btnStar">star</button>
+  </div>
+  
+  <!-- 加载 JS 文件 -->
+  <script src="data/gold-data.js"></script>
+  <script src="main.js"></script>
+  <script src="search.js"></script>
+  <script>
+    // 初始化导图，使用当前主题的固定数据
+    initMindmap(window.mindmapData);
+    // 初始化搜索功能，假设 main.js 渲染后的节点存储在全局变量 nodes 中
+    setupSearchFeature(window.nodes);
+    // 如需自动聚焦根节点，可调用：
+    setTimeout(() => { focusOnNode(0); }, 500);
+  </script>
+</body>
+</html>
