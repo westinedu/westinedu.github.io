@@ -11,13 +11,29 @@
           "coverImage": "https://westinedu.github.io/images/gold-cover.jpg",
           "previewImage": "https://westinedu.github.io/images/gold-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/gold.html",
-          "description": "Long-term value investing strategies, fundamental analysis, and portfolio design.",
+          "description": "🟡 Gold Investment 101: Unlocking the Secrets to Wealth Preservation. Learn fundamental analysis, portfolio design, and how to evaluate gold’s role in wealth protection and growth.",
           "requiresSubscription": true,
           "productID": "com.aigraph.gold",
           "promotion": true,
-          "promotionOrder": 0,
-          "moreDescription": "Learn how to invest in stocks for the long term, focusing on value investing strategies. This course covers fundamental analysis, portfolio design, and the principles of successful investing."
-        },
+          "moreDescription":"<h2 style=\"color:#FFD700;\">🟡 Gold Investment 101: Unlocking the Secrets to Wealth Preservation</h2>\
+                    <h3 style=\"color:#00BFFF;\">🔹 Course Overview</h3>\
+                    <p>In today's volatile financial landscape, <strong>gold</strong> stands out as a timeless asset offering stability and growth potential. This course is designed for beginners and young investors eager to understand how gold can play a pivotal role in safeguarding and growing their wealth.</p>\
+                    <h3 style=\"color:#00BFFF;\">🔹 What You'll Learn</h3>\
+                    <ul>\
+                      <li><strong>Gold as a Safe Haven:</strong> Discover why gold is considered a safe haven during economic downturns and how it can protect your portfolio from market volatility.</li>\
+                      <li><strong>Investment Strategies:</strong> Learn various methods to invest in gold, including physical gold, ETFs, and mining stocks, tailored to your financial goals and risk tolerance.</li>\
+                      <li><strong>Market Analysis:</strong> Understand the factors influencing gold prices, such as inflation, currency fluctuations, and geopolitical events, and how to analyze market trends.</li>\
+                      <li><strong>Practical Tips:</strong> Gain insights into setting up your first gold investment, managing risks, and building a diversified portfolio.</li>\
+                    </ul>\
+                    <h3 style=\"color:#00BFFF;\">🔹 Why Choose This Course?</h3>\
+                    <ul>\
+                      <li><strong>Beginner-Friendly:</strong> No prior investment experience required.</li>\
+                      <li><strong>Expert Insights:</strong> Learn from seasoned professionals with years of experience in gold markets.</li>\
+                      <li><strong>Flexible Learning:</strong> Access course materials anytime, anywhere, and learn at your own pace.</li>\
+                      <li><strong>Actionable Knowledge:</strong> Equip yourself with practical skills to make informed investment decisions.</li>\
+                    </ul>\
+                    <h3 style=\"color:#00BFFF;\">🔹 Enroll Today</h3>\
+                    <p>Take the first step towards securing your financial future. Enroll in \"Gold Investment 101\" and start your journey to becoming a confident gold investor.</p>"},
         {
           "id": "stock-investing",
           "title": "Stock Investing",
@@ -94,7 +110,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.tariff_explanation",
           "promotion": true,
-          "promotionOrder": 1,
+          "promotionOrder": 0,
           "moreDescription": "Rising U.S. import tariffs have ripple effects across the entire economy. When tariffs increase (from 0% toward 100%), they act as a tax on traded goods, affecting prices, output, and financial markets. This deep-dive report presents an interactive causal visualization and analysis of how higher tariffs influence key macroeconomic indicators: international trade volume, inflation (CPI), corporate earnings & investment, overall GDP, the stock market, and household income & consumption. The goal is to make complex economic interdependencies intuitive – using a radial causal graph with a tariff-level slider – while grounding each link in solid economic theory and empirical evidence. By adjusting the tariff slider, users can observe dynamic changes  and access brief explanations for each causal link. The accompanying written analysis explains the theory (e.g. supply chain disruptions, deadweight loss, retaliation) and cites evidence from sources like the IMF, World Bank, WTO, Fed, OECD, and BEA to quantify these effects. This is a storytelling tool  to explore the economic impact of tariff policy in an engaging yet rigorous way."
         },
         {
@@ -194,7 +210,7 @@
           "previewImage": "https://westinedu.github.io/images/meditate-preview.jpg",
           "htmlUrl": "https://westinedu.github.io/LearningToMeditate_index1.0.html",
           "description": "Reduce stress, build focus, and develop mindfulness through step-by-step mindmaps.",
-          "requiresSubscription": true,
+          "requiresSubscription": false,
           "productID": "com.AIGraph0.meditation",
           "promotion": false,
           "moreDescription": "Learn to meditate effectively with step-by-step mindmaps designed to reduce stress, build focus, and develop mindfulness. This course provides practical techniques and insights to help you incorporate meditation into your daily life."
