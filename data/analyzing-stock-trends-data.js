@@ -27,7 +27,7 @@ window.mindmapData = {
         • <strong>Moving Averages</strong>: smoothing techniques to confirm longer-term direction<br>
         • <strong>Breakouts</strong>: identifying key levels where trends accelerate<br><br>
         💡 Confirmation requires multiple time frames and often volume validation.<br>
-        🔗 <a href="https://www.investopedia.com/articles/technical/03/060403.asp" target="_blank">How to Recognize Trends - Investopedia</a>
+        🔗 <a href="https://www.investopedia.com/articles/trading/07/rising_wedge.asp" target="_blank">How to Recognize Trends - Investopedia</a>
       `
     },
     {
@@ -44,7 +44,8 @@ window.mindmapData = {
         • <strong>Volume Oscillators</strong><br><br>
         📘 While indicators should support your analysis, they are most effective when used in conjunction with price structure and market context.<br>
         🔗 <a href="https://www.tradingview.com/ideas/technicalindicators/" target="_blank">TradingView: Popular Indicators</a>
-      `
+      `,
+      image: "images/Analyzing Stock Trends2.0.png"
     },
     {
       text: "3. Patterns & Structures",
@@ -74,14 +75,13 @@ window.mindmapData = {
         • <strong>Trailing stops</strong> to lock in gains<br>
         • <strong>Trend-following vs. mean-reversion strategies</strong><br><br>
         📘 Successful strategies follow rules and adapt to different market conditions.<br>
-        🔗 <a href="https://www.investopedia.com/articles/trading/06/tradingstrategies.asp" target="_blank">Investopedia: Trading Strategies</a><br>
         🔗 <a href="https://www.tradingview.com/ideas/riskmanagement/" target="_blank">TradingView: Risk Management Insights</a>
       `
     },    
 
     // 5~8: 原先的“趋势识别”子节点
     {
-      text: "5. Trend Lines",
+      text: "1.1 Trend Lines",
       description: `
         <strong>Trend Lines</strong> are straight lines drawn on a chart to connect successive swing highs or swing lows, visually highlighting the direction and strength of a trend.
         <br><br>
@@ -97,7 +97,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "6. Moving Averages",
+      text: "1.2 Moving Averages",
       description: `
         <strong>Moving Averages (MA)</strong> are technical tools that smooth price data over a set period, helping traders identify trends and filter out short-term volatility.
         <br><br>
@@ -111,7 +111,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "7. Market Phases",
+      text: "1.3 Market Phases",
       description: `
         The <strong>Four Market Phases</strong> describe the cyclical behavior of asset prices based on supply, demand, and investor psychology.
         Recognizing these phases helps traders align strategies with current market conditions.
@@ -126,7 +126,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "8. Support & Resistance",
+      text: "1.4 Support & Resistance",
       description: `
         <strong>Support and Resistance</strong> are price levels where markets tend to reverse or stall due to concentration of buying or selling interest.
         These zones act as psychological thresholds and trading decision points.
@@ -142,7 +142,7 @@ window.mindmapData = {
 
     // 9~12: 原先的“指标和工具”子节点
     {
-      text: "9. RSI",
+      text: "2.1 RSI",
       description: `
         The <strong>Relative Strength Index (RSI)</strong> is a momentum oscillator that measures the speed and change of price movements.
         It ranges from 0 to 100 and helps identify overbought or oversold conditions.
@@ -157,7 +157,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "10. MACD",
+      text: "2.2 MACD",
       description: `
         <strong>MACD (Moving Average Convergence Divergence)</strong> is a trend-following momentum indicator that shows the relationship between two moving averages of price.
         <br><br>
@@ -173,7 +173,7 @@ window.mindmapData = {
        videoUrl:"https://www.youtube.com/embed/W78Xg_pnJ1A?si=MYfNVX31YWQDhhmC"
     },
     {
-      text: "11. Bollinger Bands",
+      text: "2.3 Bollinger Bands",
       description: `
         <strong>Bollinger Bands</strong> consist of a moving average and two standard deviation lines that expand and contract based on market volatility.
         Created by John Bollinger, they help traders visualize overbought or oversold conditions.
@@ -187,7 +187,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "12. Volume Analysis",
+      text: "2.4 Volume Analysis",
       description: `
         <strong>Volume Analysis</strong> interprets the number of shares or contracts traded to confirm trends or reversals.
         It is a fundamental yet often overlooked tool in technical analysis.
@@ -205,7 +205,7 @@ window.mindmapData = {
 
     // 13~16: 原先的“形态和结构”子节点
     {
-      text: "13. Chart Patterns",
+      text: "3.1 Chart Patterns",
       description: `
         <strong>Chart Patterns</strong> are recognizable shapes formed by price movements that signal potential future behavior.
         They are classified as continuation or reversal patterns depending on how they relate to the existing trend.
@@ -222,7 +222,7 @@ window.mindmapData = {
        videoUrl:"https://www.youtube.com/embed/aRlWle9smww?si=w_bmTAHv9dZc1Pya"
     },
     {
-      text: "14. Candlestick Patterns",
+      text: "3.2 Candlestick Patterns",
       description: `
         <strong>Candlestick Patterns</strong> are short-term visual cues based on Japanese candlestick formations that indicate market sentiment and potential reversals.
         They are widely used for entry and exit decisions.
@@ -239,7 +239,7 @@ window.mindmapData = {
        videoUrl:"https://www.youtube.com/embed/tW13N4Hll88?si=00sliPvkI8n7Y2fg"
     },
     {
-      text: "15. Breakouts & Pullbacks",
+      text: "3.3 Breakouts & Pullbacks",
       description: `
         <strong>Breakouts and Pullbacks</strong> are crucial price behaviors that signal the start or continuation of trends.
         A breakout occurs when price moves outside a well-defined level or pattern, often on increased volume.
@@ -247,11 +247,12 @@ window.mindmapData = {
         🔓 <strong>Breakouts</strong>: signal fresh momentum after consolidation<br>
         🔄 <strong>Pullbacks</strong>: short-term retracements in the trend direction, offering re-entry points<br><br>
         📘 Wait for confirmation (e.g. candle close, volume) to avoid false breakouts.<br>
-        🔗 <a href="https://www.babypips.com/learn/forex/false-breakouts" target="_blank">BabyPips: Breakouts & Pullbacks</a>
-      `
+        📺 YouTube: How to Avoid False Breakouts
+      `,
+      videoUrl:"https://www.youtube.com/embed/ZudTPpJCbbA?si=44aUDqYE0gXzchrv"
     },
     {
-      text: "16. Price Channels",
+      text: "3.4 Price Channels",
       description: `
         <strong>Price Channels</strong> are technical tools formed by drawing two parallel trendlines around price action.
         They help define trend boundaries and are used for identifying overbought/oversold zones or breakout setups.
@@ -268,7 +269,7 @@ window.mindmapData = {
 
     // 17~20: 原先的“风险管理和策略”子节点
     {
-      text: "17. Stop-Loss Placement",
+      text: "4.1 Stop-Loss Placement",
       person: "Alexander Elder",
       description: `
         <strong>Stop-Loss Placement</strong> is a cornerstone of capital protection. It limits losses when trades move against you.
@@ -284,7 +285,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "18. Position Sizing",
+      text: "4.2 Position Sizing",
       person: "Van K. Tharp",
       description: `
         <strong>Position Sizing</strong> determines how much capital to allocate per trade based on risk tolerance.
@@ -300,7 +301,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "19. Trend Following Strategy",
+      text: "4.3 Trend Following Strategy",
       person: "Richard Dennis",
       description: `
         <strong>Trend Following</strong> is a strategy that profits from sustained price movement. 
@@ -316,7 +317,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "20. Counter-Trend Strategy",
+      text: "4.4 Counter-Trend Strategy",
       person: "John Bollinger",
       description: `
         <strong>Counter-Trend Strategy</strong> (or Mean Reversion) seeks to identify short-term extremes that are likely to revert back to the mean.
