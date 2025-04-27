@@ -1,4 +1,4 @@
-// main.js  V2.2 展播功能已完成  
+// main.js  V2.7 侧边导航栏折叠按钮已可单独点击
 // 全局变量
 window.nodes = [];
 window.connections = [];
@@ -1265,73 +1265,94 @@ function initSidebar() {
 }
 
 // ─────── 构建目录树 & 渲染 ───────
-function buildTree(nodes) {
-  const root = {};
-  nodes.forEach((node, i) => {
-    (node.categoryPath || []).reduce((cur, seg) => {
-      cur.children = cur.children || {};
-      if (!cur.children[seg]) cur.children[seg] = { __nodes: [], children: {} };
-      return cur.children[seg];
-    }, root).__nodes.push(i);
-  });
-  return root.children;
+// 在全局维护选中状态
+let currentSelectedIndex = 0;
+
+function MenuSelect(idx) {
+  document.querySelectorAll('#toc li').forEach(li => li.classList.remove('selected'));
+  const selectedLi = document.querySelector(`#toc li[data-index="${idx}"]`);
+  if (selectedLi) selectedLi.classList.add('selected');
+  currentSelectedIndex = idx;
+  focusOnNode(idx);
 }
 
+function renderNodes(parentIndex, parentUl) {
+  (childrenMap[parentIndex] || []).forEach(idx => {
+    const li = document.createElement('li');
+    li.dataset.index = idx;
 
+    const a = document.createElement('a');
+    a.textContent = nodes[idx].text;
+    a.href = 'javascript:;';
+    a.addEventListener('click', e => MenuSelect(idx));
+
+    li.appendChild(a);
+
+    const kids = childrenMap[idx] || [];
+    if (kids.length) {
+        li.classList.add('has-children');
+
+        // 先创建按钮
+        const toggleBtn = document.createElement('button');
+        toggleBtn.className = 'menu-toggle-btn';
+        toggleBtn.textContent = '▶';
+        li.appendChild(toggleBtn); // 按钮添加在链接之后
+
+        // 再创建子菜单
+        const childUl = document.createElement('ul');
+        renderNodes(idx, childUl);
+        li.appendChild(childUl); // 子菜单添加在按钮之后
+
+        toggleBtn.addEventListener('click', e => {
+            li.classList.toggle('open');
+            toggleBtn.textContent = li.classList.contains('open') ? '▼' : '▶';
+        });
+    }
+
+    parentUl.appendChild(li);
+  });
+}
 
 function initToc() {
   const toc = document.getElementById('toc');
-  toc.innerHTML = ''; // clear old
+  toc.innerHTML = '';
 
-  // 递归构建目录
-  function renderNodes(parentIndex, parentUl) {
-    (childrenMap[parentIndex] || []).forEach(idx => {
-      const li = document.createElement('li');
-      const a  = document.createElement('a');
-      a.textContent = nodes[idx].text;
-      a.href = 'javascript:;';
-      a.addEventListener('click', (e) => {
-        e.stopPropagation();
-        focusOnNode(idx);
-        if (li.classList.contains('has-children')) {
-          li.classList.toggle('open');
-        }
-      });
-
-      li.appendChild(a);
-
-      const kids = childrenMap[idx] || [];
-      if (kids.length) {
-        li.classList.add('has-children');
-        const childUl = document.createElement('ul');
-        renderNodes(idx, childUl);
-        li.appendChild(childUl);
-      }
-
-      parentUl.appendChild(li);
-    });
-  }
-
-  // 👉 添加 root 节点
   const rootLi = document.createElement('li');
+  rootLi.dataset.index = 0;
+  
   const rootA = document.createElement('a');
   rootA.textContent = nodes[0].text;
   rootA.href = 'javascript:;';
-  rootA.addEventListener('click', (e) => {
-    e.stopPropagation();
-    focusOnNode(0);
-    rootLi.classList.toggle('open');
-  });
-  rootLi.classList.add('has-children', 'open'); // 默认展开
+  rootA.addEventListener('click', e => MenuSelect(0));
   rootLi.appendChild(rootA);
+  
+  const kids = childrenMap[0] || [];
+  if (kids.length) {
+    // 先添加按钮
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'menu-toggle-btn';
+    toggleBtn.textContent = '▼';
+    rootLi.appendChild(toggleBtn); // 按钮在链接之后
 
-  // 渲染 root 的子节点
-  const childUl = document.createElement('ul');
-  renderNodes(0, childUl);
-  rootLi.appendChild(childUl);
+    // 再添加子菜单
+    const childUl = document.createElement('ul');
+    renderNodes(0, childUl);
+    rootLi.appendChild(childUl);
 
+    rootLi.classList.add('has-children', 'open');
+    toggleBtn.addEventListener('click', e => {
+        rootLi.classList.toggle('open');
+        toggleBtn.textContent = rootLi.classList.contains('open') ? '▼' : '▶';
+    });
+  }
+
+  rootLi.classList.add('selected');
   toc.appendChild(rootLi);
 }
+
+
+
+
 
 
 
@@ -1362,8 +1383,8 @@ window.addEventListener('DOMContentLoaded', () => {
   setupSearchFeature(window.nodes);  // 原有搜索
   setTimeout(() => focusOnNode(0), 500);
 });
-
 }
+
 
 
 // 将 initMindmap 挂载到全局
