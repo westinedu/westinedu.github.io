@@ -32,7 +32,7 @@ window.mindmapData = {
       formula: "Risk per trade = Account Size × 2%"
     },
     {
-      text: "4. Technical Analysis",
+      text: "1.1 Technical Analysis",
       classic: "Price Action & Indicators",
       person: "Steve Nison",
       description: "Use charts and indicators to forecast price moves, such as moving averages and RSI.",
@@ -41,7 +41,7 @@ window.mindmapData = {
 
     },
     {
-      text: "5. Fundamental Analysis",
+      text: "1.2 Fundamental Analysis",
       classic: "Earnings, News, Macro",
       person: "Benjamin Graham",
       description: "Analyze market trends based on macroeconomics and financial reports; follow GDP and interest rate data.",
@@ -49,7 +49,7 @@ window.mindmapData = {
       chart: "https://www.visualcapitalist.com/wp-content/uploads/2020/01/earnings_chart.jpg"
     },
     {
-      text: "6. Sentiment Analysis",
+      text: "1.3 Sentiment Analysis",
       classic: "Fear & Greed Index",
       person: "CNN Money",
       description: "Gauge sentiment via volume, implied volatility, and news—e.g., the VIX index.",
@@ -57,7 +57,7 @@ window.mindmapData = {
       chart: "https://production.cdntwrk.com/media/1133/fear-greed-index.png"
     },
     {
-      text: "7. Trendlines",
+      text: "1.1.1 Trendlines",
       classic: "Support/Resistance Projection",
       person: "W.D. Gann",
       description: "Connect highs/lows to spot trends; used by W.D. Gann to identify price direction.",
@@ -65,7 +65,7 @@ window.mindmapData = {
       chart: "https://www.tradingview.com/x/xyzTrendlineImage/"
     },
     {
-      text: "8. Chart Patterns",
+      text: "1.1.2 Chart Patterns",
       classic: "Head & Shoulders, Triangles",
       person: "Thomas Bulkowski",
       description: "Recognize head-and-shoulders, double bottoms, etc., to predict reversals or continuations.",
@@ -73,7 +73,7 @@ window.mindmapData = {
       // videoUrl: "https://www.youtube.com/embed/kT2UAr7Xz14"
     },
     {
-      text: "9. Technical Indicators",
+      text: "1.1.3 Technical Indicators",
       classic: "Moving Averages, RSI, MACD",
       person: "J. Welles Wilder",
       image: "https://via.placeholder.com/100?text=Wilder",
@@ -82,35 +82,35 @@ window.mindmapData = {
       formula: "RSI = 100 - [100 / (1 + RS)]"
     },
     {
-      text: "10. Uptrend Line",
+      text: "1.1.1.1 Uptrend Line",
       classic: "Trendline Support",
       person: "Charles Dow",
       description: "An uptrend line connects a series of higher lows and indicates a sustained upward movement in price. Traders use it to spot strong bullish momentum and plan long entries during pullbacks.",
       application: "Buy near support in an uptrend line, often in conjunction with volume confirmation."
     },
     {
-      text: "11. Downtrend Line",
+      text: "1.1.1.2 Downtrend Line",
       classic: "Trendline Resistance",
       person: "Charles Dow",
       description: "A downtrend line connects descending highs and signals bearish momentum. It's a visual cue that sellers are in control, and prices are likely to fall unless the trendline is broken.",
       application: "Short opportunities occur when price touches the downtrend line and fails to break above."
     },
     {
-      text: "12. Reversal Patterns",
+      text: "1.1.2.1 Reversal Patterns",
       classic: "Double Top, Head & Shoulders",
       person: "Thomas Bulkowski",
       description: "Reversal patterns signal a shift in trend direction. Common examples include head-and-shoulders (bearish) and double bottoms (bullish), often used in combination with volume and support/resistance levels.",
       application: "Helps identify exits from existing trends and entries into new ones."
     },
     {
-      text: "13. Continuation Patterns",
+      text: "1.1.2.2 Continuation Patterns",
       classic: "Flags, Pennants, Triangles",
       person: "Bulkowski / Classical Chartists",
       description: "These patterns suggest that a trend will resume after a brief consolidation. Flags and pennants are popular in intraday setups due to their repeatability and tight stop placement.",
       application: "Used for entering positions after breakout confirmation."
     },
     {
-      text: "14. Moving Averages",
+      text: "1.1.3.1 Moving Averages",
       classic: "Simple/Exponential MAs",
       person: "Richard Donchian",
       description: "Moving Averages smooth out price fluctuations and help identify the direction of the trend. Traders use crossovers (e.g., 9 EMA over 20 EMA) for signals.",
@@ -118,7 +118,7 @@ window.mindmapData = {
       formula: "SMA = (Sum of Prices) / n"
     },
     {
-      text: "15. Relative Strength Index (RSI)",
+      text: "1.1.3.2 Relative Strength Index (RSI)",
       classic: "RSI Oscillator",
       person: "J. Welles Wilder",
       description: "RSI is a momentum oscillator that measures the speed and change of price movements on a scale of 0–100. Levels above 70 are often considered overbought, while below 30 are oversold.",
@@ -126,70 +126,70 @@ window.mindmapData = {
       formula: "RSI = 100 - [100 / (1 + RS)]"
     },
     {
-      text: "16. Macroeconomic Data",
+      text: "1.2.1 Macroeconomic Data",
       classic: "GDP, Inflation, Employment Reports",
       person: "Central Banks",
       description: "Key economic indicators such as GDP growth, CPI inflation, and unemployment rates influence trader sentiment and market volatility. Often lead to sharp intraday price moves.",
       application: "Avoid entering trades just before high-impact macro news releases."
     },
     {
-      text: "17. Company Earnings Reports",
+      text: "1.2.2 Company Earnings Reports",
       classic: "Earnings Surprise Theory",
       person: "Zacks Research",
       description: "Quarterly earnings releases significantly impact stock prices. Earnings beats or misses can trigger gaps and high volume trades. Guidance updates are also critical.",
       application: "Popular day trading setups revolve around pre-market gaps from earnings announcements."
     },
     {
-      text: "18. Industry Trends",
+      text: "1.2.3 Industry Trends",
       classic: "Sector Rotation Theory",
       person: "Fidelity Research",
       description: "Strong moves in certain industries—like tech, energy, or biotech—can signal short-term opportunities. Market rotates between sectors based on news and macro factors.",
       application: "Watch sector ETFs and lead stocks to identify strength or weakness."
     },
     {
-      text: "19. Market Volume",
+      text: "1.3.1 Market Volume",
       classic: "Volume Precedes Price",
       person: "Richard Wyckoff",
       description: "Volume indicates the strength of a price move. Sudden spikes in volume often precede big moves. Volume is used to confirm breakouts, validate reversals, and spot institutional interest.",
       application: "Use volume surge to validate breakouts and avoid false moves."
     },
     {
-      text: "20. Implied Volatility (Options)",
+      text: "1.3.2 Implied Volatility (Options)",
       classic: "Options Pricing Model",
       person: "Black-Scholes Model",
       description: "Implied volatility (IV) reflects the market's forecast of a likely movement in a security's price. It’s derived from options prices and spikes during uncertainty. Higher IV often indicates higher premiums and bigger expected moves.",
       application: "Day traders use IV to gauge expected volatility and avoid entering before large news releases."
     },
     {
-      text: "21. News Sentiment",
+      text: "1.3.3 News Sentiment",
       classic: "Market Reaction Theory",
       person: "Bloomberg / Twitter API",
       description: "News sentiment analysis involves evaluating the emotional tone behind headlines. Breaking news, tweets, or economic headlines can cause sudden price jumps. AI tools and social sentiment dashboards are becoming key in modern day trading.",
       application: "Used for fast reaction trades, particularly in earnings season or political headlines."
     },
     {
-      text: "22. Goal Setting",
+      text: "2.1 Goal Setting",
       classic: "SMART Goals Framework",
       person: "Brian Tracy",
       description: "Clear goals provide structure and discipline. SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) help traders track progress and stay emotionally grounded.",
       application: "Helps avoid overtrading and ensures traders stick to realistic daily targets."
     },
     {
-      text: "23. Instrument Selection",
+      text: "2.2 Instrument Selection",
       classic: "High Beta Stock Scanning",
       person: "Finviz / Trade Ideas",
       description: "Choosing the right asset to trade is critical. Traders often scan for stocks with high volatility, strong trends, or relevant news catalysts. Popular tools filter for volume spikes and price breakouts.",
       application: "Improves win rate by focusing on stocks in play rather than slow movers."
     },
     {
-      text: "24. Time Frame",
+      text: "2.3 Time Frame",
       classic: "Multi-Time Frame Analysis",
       person: "Brian Shannon",
       description: "Time frames in day trading define how long a trader holds positions and how candles are formed. Common setups use 1-min for entries, 5-min for structure, and 15-min/1H for confirmation.",
       application: "Combining short and long timeframes helps identify the best moments to enter and avoid traps."
     },
     {
-      text: "25. Stop-Loss Setting",
+      text: "3.1 Stop-Loss Setting",
       classic: "ATR-Based Stops",
       person: "Chuck LeBeau",
       description: "Stop-losses protect traders from large losses by predefining risk. Dynamic stop strategies use volatility or chart structure, such as placing stops under recent support or 1.5× ATR.",
@@ -197,7 +197,7 @@ window.mindmapData = {
       formula: "Stop Price = Entry Price - (1.5 × ATR)"
     },
     {
-      text: "26. Position Sizing",
+      text: "3.2 Position Sizing",
       classic: "Kelly Criterion / Fixed Fraction",
       person: "Ralph Vince",
       description: "Position sizing controls how much capital is allocated to a trade. It balances risk exposure with account size. Smaller sizing during high volatility can avoid drawdowns.",
@@ -205,14 +205,14 @@ window.mindmapData = {
       formula: "Position Size = (Risk per Trade) / (Stop Loss Distance)"
     },
     {
-      text: "27. Diversification",
+      text: "3.3 Diversification",
       classic: "Modern Portfolio Theory",
       person: "Harry Markowitz",
       description: "Diversifying trades reduces the impact of a single bad position. Even for day traders, this can include trading different sectors or asset classes (stocks, ETFs, crypto).",
       application: "Helps reduce emotional pressure from one trade and balances exposure."
     },
     {
-      text: "28. Profit Target (1%-3%)",
+      text: "2.1.1 Profit Target (1%-3%)",
       classic: "Risk-Reward Ratio",
       person: "Dr. Van Tharp",
       description: "Setting a consistent profit target helps structure trades and measure effectiveness. A typical daily goal is 1%-3% depending on volatility and capital base.",
@@ -220,7 +220,7 @@ window.mindmapData = {
       formula: "Target = Entry + (Risk × Reward Ratio)"
     },
     {
-      text: "29. Loss Tolerance (2%)",
+      text: "2.1.2 Loss Tolerance (2%)",
       classic: "Daily Max Drawdown Rule",
       person: "Mark Douglas",
       description: "Professional traders often stop trading for the day after losing 2% of capital. This prevents tilt trading and large emotional losses. Loss limits are enforced through tools or discipline.",
@@ -228,14 +228,14 @@ window.mindmapData = {
     },
     
     {
-      text: "30. Liquidity",
+      text: "2.2.1 Liquidity",
       classic: "Bid-Ask Spread Efficiency",
       person: "Market Makers",
       description: "Liquidity reflects how easily assets can be bought or sold without significantly affecting the price. High liquidity ensures tighter spreads and smoother executions, which is essential for intraday traders looking for precision and speed.",
       application: "Focus on high-volume stocks with narrow spreads to reduce slippage and trading costs."
     },
     {
-      text: "31. Volatility",
+      text: "2.2.2 Volatility",
       classic: "ATR (Average True Range)",
       person: "J. Welles Wilder",
       description: "Volatility measures how much a stock's price moves over a given time. High volatility presents more trading opportunities but also greater risk. Tools like ATR help quantify it.",
@@ -243,28 +243,28 @@ window.mindmapData = {
       formula: "ATR = Moving Average of True Range over n periods"
     },
     {
-      text: "32. Trading Session Timing",
+      text: "2.3.1 Trading Session Timing",
       classic: "Opening Range Theory",
       person: "Toby Crabel",
       description: "Different market sessions offer varying levels of liquidity and price action. The first and last hours of the trading day usually see the highest volume and volatility.",
       application: "Plan entries around the open (9:30–10:30) and exit before lunch lulls or post-3 PM volatility."
     },
     {
-      text: "33. Support & Resistance",
+      text: "3.1.1 Support & Resistance",
       classic: "Horizontal Levels / Fibonacci Zones",
       person: "Technical Traders",
       description: "Support is a price level where buying pressure tends to hold the price up, while resistance is where selling often caps price advances. Identifying these zones is foundational for any trader.",
       application: "Entries near support or resistance with volume confirmation can increase edge and reduce risk."
     },
     {
-      text: "34. Price Range",
+      text: "3.1.2 Price Range",
       classic: "Range Expansion/Contraction",
       person: "Market Profile Traders",
       description: "Price range measures the high-low spread of an asset over a time period. A contracting range signals indecision, while an expanding range suggests breakout conditions.",
       application: "Use range to choose between breakout or mean-reversion setups."
     },
     {
-      text: "35. Capital Allocation Ratio",
+      text: "3.2.1 Capital Allocation Ratio",
       classic: "Fixed Fraction Model",
       person: "Ralph Vince",
       description: "Capital allocation defines how much of your account is used per trade or strategy. Conservative ratios (1–3%) are common to reduce drawdown risk while staying consistently in the game.",
@@ -272,21 +272,21 @@ window.mindmapData = {
       formula: "Capital Allocation = Account Balance × Risk %"
     },
     {
-      text: "36. Avoid Overtrading",
+      text: "3.2.2 Avoid Overtrading",
       classic: "Decision Fatigue Theory",
       person: "Mark Douglas",
       description: "Overtrading stems from emotional impulses or lack of planning. It often leads to excessive losses and burnout. Successful traders execute only high-probability setups.",
       application: "Set a daily trade limit or take breaks to maintain focus and discipline."
     },
     {
-      text: "37. Diverse Sectors",
+      text: "3.3.1 Diverse Sectors",
       classic: "Sector Rotation Analysis",
       person: "Institutional Traders",
       description: "Monitoring different sectors (tech, financials, energy, etc.) allows traders to spot relative strength or weakness. Hot sectors often produce more opportunities and momentum.",
       application: "Track sector ETFs and trade leaders within strong sectors for better performance."
     },
     {
-      text: "38. Different Financial Instruments",
+      text: "3.3.2 Different Financial Instruments",
       classic: "Cross-Asset Diversification",
       person: "Multi-Asset Fund Managers",
       description: "Day traders can explore futures, ETFs, forex, or crypto beyond just stocks. Each has unique volatility, leverage, and trading hours, allowing flexibility and diversification.",
