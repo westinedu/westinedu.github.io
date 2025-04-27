@@ -52,7 +52,7 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "5. Pain + Reflection = Progress",
+      text: "1.1 Pain + Reflection = Progress",
       description: `
         <strong>Pain + Reflection = Progress</strong> is Ray Dalio’s central formula for growth.
     
@@ -75,12 +75,12 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "6. Don't confuse what you wish were true...",
+      text: "1.2 Don't confuse what you wish were true...",
       description: "Don't confuse what you wish were true with what is really true.",
       expanded: false
     },
     {
-      text: "7. Principles: Life and Work",
+      text: "2.1 Principles: Life and Work",
       description: `
         <strong>Principles: Life and Work</strong> is Ray Dalio’s influential book published in 2017, where he shares personal and professional principles developed over decades leading Bridgewater Associates.
     
@@ -109,7 +109,7 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "8. The Changing World Order",
+      text: "3.1 The Changing World Order",
       description: `
         <strong>The Changing World Order</strong> is a visual essay and video presentation based on Dalio's book and research on long-term macroeconomic cycles and geopolitical shifts.
     
@@ -138,7 +138,7 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "9. How the Economic Machine Works",
+      text: "3.2 How the Economic Machine Works",
       description: `
         <strong>How the Economic Machine Works</strong> is Ray Dalio’s 30-minute animated explainer that has become a foundational resource for understanding macroeconomics.
     
@@ -167,7 +167,7 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "10. Radical Transparency",
+      text: "4.1 Radical Transparency",
       description: `
         <strong>Radical Transparency</strong> refers to Dalio’s approach to open, unfiltered communication within an organization.
     
@@ -189,7 +189,7 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "11. Idea Meritocracy",
+      text: "4.2 Idea Meritocracy",
       description: `
         <strong>Idea Meritocracy</strong> is a system where the best ideas win—not the most powerful person.
     
@@ -217,7 +217,7 @@ window.mindmapData = {
       expanded: true
     },
     {
-      text: "12. Bridgewater Culture",
+      text: "4.3 Bridgewater Culture",
       description: `
         <strong>Bridgewater Culture</strong> is both admired and controversial. Known for its "radical truth and transparency," it's been described as a social experiment in honesty.
     
@@ -241,7 +241,7 @@ window.mindmapData = {
       classic: "A workplace designed to challenge your thinking daily",
       expanded: true
     }, {
-      text: "0. How Countries Go Broke",
+      text: "2.2 How Countries Go Broke",
       description: `
 📌 <strong>Core Insight</strong>:<br><br>
 This book reveals that <strong>sovereign default</strong> is not a sudden event, but a <em>gradual unraveling</em> of a country’s political, economic, and institutional systems.<br><br>
@@ -257,7 +257,7 @@ Instead, a country's collapse often appears through:<br>
       expanded: true
     },
     {
-      text: "1. What is Sovereign Debt?",
+      text: "2.2.1 What is Sovereign Debt?",
       description: `
         💵 <strong>Sovereign debt</strong> refers to money borrowed by a country from domestic or international lenders.<br><br>
         📌 Unlike corporate debt, there's no bankruptcy court to resolve disputes.<br>
@@ -267,7 +267,7 @@ Instead, a country's collapse often appears through:<br>
       expanded: true
     },
     {
-      text: "2. How Countries Go Broke",
+      text: "2.2.2 How Countries Go Broke",
       description: `
         🔥 A nation goes broke not just from lack of money, but from loss of <strong>trust</strong>.<br><br>
         ⚠️ Key factors:<br>
@@ -281,7 +281,7 @@ Instead, a country's collapse often appears through:<br>
       expanded: true
     },
     {
-      text: "3. Case Studies",
+      text: "2.2.3 Case Studies",
       description: `
         📚 Real-world examples include:<br><br>
         🇦🇷 Argentina: serial defaulter (2001, 2018)<br>
@@ -294,7 +294,7 @@ Instead, a country's collapse often appears through:<br>
       expanded: true
     },
     {
-      text: "4. The Role of Politics",
+      text: "2.2.4 The Role of Politics",
       description: `
         🗳️ Governments often delay hard reforms due to elections.<br>
         📊 Populist promises increase spending without revenue.<br>
@@ -304,7 +304,7 @@ Instead, a country's collapse often appears through:<br>
       expanded: true
     },
     {
-      text: "5. IMF and Ratings Agencies",
+      text: "2.2.5 IMF and Ratings Agencies",
       description: `
         🏦 The IMF acts as lender of last resort—often imposing strict conditions.<br>
         📝 Credit rating downgrades (by S&P, Moody’s) trigger capital outflows and higher borrowing costs.<br>
@@ -314,7 +314,7 @@ Instead, a country's collapse often appears through:<br>
       expanded: true
     },
     {
-      text: "6. Prevention Strategies",
+      text: "2.2.6 Prevention Strategies",
       description: `
         🛡️ How countries can avoid collapse:<br><br>
         ✅ Keep debt-to-GDP manageable<br>
