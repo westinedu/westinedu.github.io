@@ -21,7 +21,8 @@ window.mindmapData = {
       
           <h4>📌 Inspiration</h4>
           - Apps like <em>Calm, Duolingo, Notion</em> started as indie efforts before scaling globally.
-        `
+        `,
+        "videoUrl": "https://www.youtube.com/embed/zNz6jxbDpfk?si=tHdZRQJoikuOn3eH",
       },      
       // 一级分支
       {
@@ -88,7 +89,7 @@ window.mindmapData = {
       },
       // App Development 下
       {
-        text: "4. Platform Selection 🧩",
+        text: "1.1 Platform Selection 🧩",
         description: `
           <strong>Platform Selection</strong> means deciding where your app will run—iOS, Android, or both—and what tools to use to build it.
       
@@ -106,7 +107,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "5. Development Tools & Frameworks ",
+        text: "1.2 Development Tools & Frameworks ",
         description: `
           <strong>Development frameworks</strong> streamline how apps are built and deployed across platforms. 
           They reduce boilerplate code and speed up cross-platform development.
@@ -128,7 +129,7 @@ window.mindmapData = {
       },
       
       {
-        text: "6. UI/UX Design 🎨",
+        text: "1.3 UI/UX Design 🎨",
         description: `
           <strong>UI/UX Design</strong> determines how your app looks (UI) and how it feels to use (UX). 
           Beautiful design is worthless without good usability—and vice versa.
@@ -148,7 +149,7 @@ window.mindmapData = {
       },
       
       {
-        text: "7. Testing & QA ✅",
+        text: "1.4 Testing & QA ✅",
         description: `
           <strong>Testing</strong> ensures your app works as intended and avoids bugs before launch. 
           Users don’t forgive crashes or broken features, especially in first impressions.
@@ -168,7 +169,7 @@ window.mindmapData = {
       },
       
       {
-        text: "8. Deployment 🚀",
+        text: "1.5 Deployment 🚀",
         description: `
           <strong>Deployment</strong> is the process of releasing your app to users via official app stores. 
           It includes code signing, packaging, uploading, and complying with each platform’s policies.
@@ -188,7 +189,7 @@ window.mindmapData = {
       
       // Platform Selection 下
       {
-        text: "9. iOS 🍏",
+        text: "1.1.1 iOS 🍏",
         description: `
           <strong>iOS</strong> development refers to building apps for Apple’s mobile ecosystem—iPhones, iPads, and Apple Watch. 
           It is known for its loyal user base, high revenue potential, and tight design standards.
@@ -209,7 +210,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "10. Android 🤖",
+        text: "1.1.2 Android 🤖",
         description: `
           <strong>Android</strong> powers the majority of smartphones worldwide, offering vast global reach, especially in emerging markets.
       
@@ -229,7 +230,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "11. Cross-Platform 🔄",
+        text: "1.1.3 Cross-Platform 🔄",
         description: `
           <strong>Cross-Platform</strong> frameworks allow you to build apps for both iOS and Android with a single codebase, reducing costs and time.
       
@@ -251,7 +252,7 @@ window.mindmapData = {
       },
       // Development Tools 下
       {
-        text: "12. Swift / Objective-C 🍎",
+        text: "1.2.1 Swift / Objective-C 🍎",
         description: `
           <strong>Swift</strong> and <strong>Objective-C</strong> are Apple’s native languages for iOS development. Swift is now the standard, offering safer, cleaner syntax.
       
@@ -268,7 +269,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "13. Kotlin / Java ☕",
+        text: "1.2.2 Kotlin / Java ☕",
         description: `
           <strong>Kotlin</strong> is Google’s preferred language for Android apps, known for its concise and expressive syntax.
       
@@ -285,7 +286,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "14. React Native / Flutter 💡",
+        text: "1.2.3 React Native / Flutter 💡",
         description: `
           <strong>React Native</strong> and <strong>Flutter</strong> are leading cross-platform choices for modern mobile development.
       
@@ -311,7 +312,7 @@ window.mindmapData = {
       
       // UI/UX Design 下
       {
-        text: "15. User Research 🧠",
+        text: "1.3.1 User Research 🧠",
         description: `
           <strong>User Research</strong> helps ensure you're building something people actually need. It uncovers user goals, pain points, and habits before coding begins.
       
@@ -331,7 +332,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "16. Prototyping ✍️",
+        text: "1.3.2 Prototyping ✍️",
         description: `
           <strong>Prototyping</strong> is the process of creating early visual and functional versions of your app idea to test concepts quickly.
       
@@ -353,7 +354,7 @@ window.mindmapData = {
       },
       // Marketing & Sales 下
       {
-        text: "17. App Store Optimization (ASO) 🏪",
+        text: "2.1 App Store Optimization (ASO) 🏪",
         description: `
           <strong>App Store Optimization (ASO)</strong> is the SEO of the app world. It ensures your app appears in relevant searches and attracts organic downloads.
       
@@ -371,7 +372,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "18. Social Media Marketing 📣",
+        text: "2.2 Social Media Marketing 📣",
         description: `
           <strong>Social Media Marketing</strong> builds awareness, community, and traffic through platforms like Instagram, TikTok, X (Twitter), and LinkedIn.
       
@@ -388,7 +389,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "19. Paid Advertising 💵",
+        text: "2.3 Paid Advertising 💵",
         description: `
           <strong>Paid Advertising</strong> helps you reach a broader audience quickly through platforms like Google Ads, Apple Search Ads, Facebook, and TikTok.
       
@@ -407,7 +408,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "20. Public Relations (PR) 📰",
+        text: "2.4 Public Relations (PR) 📰",
         description: `
           <strong>Public Relations (PR)</strong> helps generate buzz and trust by getting your app featured in media outlets, blogs, newsletters, or app roundups.
       
@@ -424,7 +425,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "21. Customer Reviews & Ratings 🌟",
+        text: "2.5 Customer Reviews & Ratings 🌟",
         description: `
           <strong>Customer Reviews & Ratings</strong> directly influence app store rankings and new user trust.
       
@@ -443,7 +444,7 @@ window.mindmapData = {
       },
       // Business & Monetization 下
       {
-        text: "22. Freemium Model 🎁",
+        text: "3.1 Freemium Model 🎁",
         description: `
           The <strong>Freemium Model</strong> lets users try the app for free while offering premium features behind a paywall.
       
@@ -465,7 +466,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "23. Paid Apps 💸",
+        text: "3.2 Paid Apps 💸",
         description: `
           <strong>Paid Apps</strong> charge users upfront before they can download. This model works best for utility apps, niche tools, and premium productivity apps.
       
@@ -483,7 +484,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "24. In-App Purchases (IAP) 🛒",
+        text: "3.3 In-App Purchases (IAP) 🛒",
         description: `
           <strong>In-App Purchases</strong> allow users to buy digital content or features from within the app. IAPs are flexible and can support multiple monetization flows.
       
@@ -502,7 +503,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "25. Subscription Model 🔁",
+        text: "3.4 Subscription Model 🔁",
         description: `
           The <strong>Subscription Model</strong> offers recurring access to premium features or content, providing predictable, long-term revenue.
       
@@ -524,7 +525,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "26. Ad Revenue 📺",
+        text: "3.5 Ad Revenue 📺",
         description: `
           <strong>Ad Revenue</strong> is generated by showing banner ads, interstitials, or rewarded video ads inside your app. It monetizes free users without requiring payment.
       
@@ -543,7 +544,7 @@ window.mindmapData = {
         `
       },
       {
-        text: "27. Analytics & Metrics 📊",
+        text: "3.6 Analytics & Metrics 📊",
         description: `
           <strong>Analytics & Metrics</strong> help you track user behavior, retention, revenue, and product performance. Without measurement, improvement is just guessing.
       
