@@ -1,785 +1,870 @@
 window.mindmapData = {
-  nodes: [
-    // Nodes 0 ~ 43 remain unchanged
-    { text: "0. Economics", 
-      important: true, 
-      classic: "Classic Theory: Market Equilibrium", 
-      person: "Adam Smith", 
-      // image: "https://via.placeholder.com/100?text=Adam+Smith",
-      description: `
-        <strong>Economics</strong> is the social science that studies how individuals, businesses, governments, and societies allocate scarce resources to satisfy unlimited wants.
-        It includes microeconomics and macroeconomics and is central to decision-making in both public and private sectors.
-        <br><br>
-        🔗 <a href="https://plato.stanford.edu/entries/economics/" target="_blank">Stanford Encyclopedia of Philosophy: Economics</a><br>
-        📺 What is Economics?
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/SwaCg7Gwtzw?si=B8gwg_1FIbPwHwCe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      `
-    },
-    { text: "1. Microeconomics",
-      description: `
-        <strong>Microeconomics</strong> studies the behavior of individual units such as consumers, firms, and markets. 
-        It focuses on how supply and demand interact to determine prices and quantities in specific markets.
-        <br><br>
-        📘 Topics include price theory, elasticity, market structures, and consumer choice.<br>
-        🔗 <a href="https://www.investopedia.com/terms/m/microeconomics.asp" target="_blank">Microeconomics - Investopedia</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=swnoF533C_c" target="_blank">Crash Course Microeconomics</a>
-      `
-    },
-    { text: "2. Macroeconomics",
-      description: `
-        <strong>Macroeconomics</strong> looks at the economy as a whole. It analyzes aggregate indicators like GDP, unemployment, inflation, and interest rates.
-        It is essential for understanding national policies and global economic trends.
-        <br><br>
-        🔗 <a href="https://www.imf.org/en/About/Factsheets/Sheets/2022/03/11/what-is-macroeconomics" target="_blank">What is Macroeconomics? (IMF)</a><br>
-        📺 Crash Course: Macroeconomics Intro
-      `,
-      videoUrl: "https://www.youtube.com/embed/d8uTB5XorBw?si=o9S6RlHO65Tx0elR"
-    },
-    { text: "3. Demand & Supply",
-      description: `
-        <strong>Demand & Supply</strong> are the foundational concepts of market economics. 
-        Demand reflects consumers' willingness and ability to purchase goods, while supply shows producers’ willingness to sell.
-        The interaction of both determines the market equilibrium.
-        <br><br>
-        🔗 <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium" target="_blank">Khan Academy: Supply & Demand</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=RRg5Zkzlcxk" target="_blank">Supply and Demand Explained</a>
-      `
-    },
-    { text: "4. Market Structures",
-      description: `
-        <strong>Market Structures</strong> describe the competitive environment in which firms operate. 
-        Key types include perfect competition, monopolistic competition, oligopoly, and monopoly.
-        Each structure affects pricing, output, and efficiency differently.
-        <br><br>
-        🔗 <a href="https://corporatefinanceinstitute.com/resources/economics/market-structure/" target="_blank">Market Structure Guide (CFI)</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=8m3v6UebVpY" target="_blank">Video: Types of Market Structures</a>
-      `
-    },
-    { text: "5. Production Theory",
-      description: `
-        <strong>Production Theory</strong> examines how firms convert inputs (labor, capital, raw materials) into outputs. 
-        It includes concepts like the production function, returns to scale, and technical efficiency.
-        <br><br>
-        📘 It helps firms optimize input usage and reduce costs.<br>
-        🔗 <a href="https://www.investopedia.com/terms/p/production-function.asp" target="_blank">Production Function - Investopedia</a>
-      `
-    },
-    { text: "6. Cost Theory",
-      description: `
-        <strong>Cost Theory</strong> explores how a firm’s costs change with different levels of output. 
-        It involves concepts like marginal cost, average cost, fixed and variable costs, and economies of scale.
-        <br><br>
-        📊 Cost theory is crucial for pricing and profit decisions.<br>
-        🔗 <a href="https://economicsconcepts.com/theory-of-cost.htm" target="_blank">Theory of Cost - Economics Concepts</a>
-      `
-    },
-    { text: "7. Utility Theory",
-      description: `
-        <strong>Utility Theory</strong> explains how individuals make consumption choices to maximize satisfaction or utility. 
-        It introduces cardinal (measurable) and ordinal (ranked) preferences.
-        <br><br>
-        📘 Utility theory underlies demand curves and consumer choice models.<br>
-        🔗 <a href="https://www.investopedia.com/terms/u/utility.asp" target="_blank">Utility - Investopedia</a>
-      `
-    },
-    { text: "8. GDP",
-      description: `
-        <strong>Gross Domestic Product (GDP)</strong> is the total market value of all final goods and services produced in a country in a given period.
-        It serves as a key indicator of economic performance and growth.
-        <br><br>
-        🔗 <a href="https://www.bea.gov/resources/learning-about-gdp" target="_blank">BEA: Understanding GDP</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=ZwcuT2H0Apk" target="_blank">Crash Course: What is GDP?</a>
-      `
-    },
-    { text: "9. Inflation",
-      description: `
-        <strong>Inflation</strong> is the rate at which the general level of prices for goods and services rises over time, decreasing purchasing power.
-        Moderate inflation is typical in growing economies, while high or hyperinflation can lead to economic instability.
-        Common measures include the <em>Consumer Price Index (CPI)</em> and <em>Producer Price Index (PPI)</em>.
-        <br><br>
-        🔗 <a href="https://www.investopedia.com/terms/i/inflation.asp" target="_blank">What Is Inflation? – Investopedia</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=3q1GNSDlErI" target="_blank">YouTube: Inflation Explained</a>
-      `
-    },
-    { text: "10. Unemployment",
-      description: `
-        <strong>Unemployment</strong> represents the portion of the labor force that is actively seeking but unable to find work.
-        It’s categorized into several types: frictional, structural, cyclical, and seasonal unemployment.
-        The unemployment rate is a key macroeconomic indicator.
-        <br><br>
-        🔗 <a href="https://www.bls.gov/cps/" target="_blank">U.S. Bureau of Labor Statistics – Employment Data</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=9Aq8bGj3Wq8" target="_blank">YouTube: Types of Unemployment</a>
-      `
-    },
-    { text: "11. Fiscal Policy",
-      description: `
-        <strong>Fiscal Policy</strong> refers to government use of taxation and spending to influence the economy.
-        It’s a major tool in Keynesian economics to manage aggregate demand and stabilize economic cycles.
-        <br><br>
-        📘 Expansionary policy boosts spending during recessions, while contractionary policy aims to cool down inflation.<br>
-        🔗 <a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy" target="_blank">IMF: Understanding Fiscal Policy</a>
-      `
-    },
-    { text: "12. Monetary Policy",
-      description: `
-        <strong>Monetary Policy</strong> is conducted by a country’s central bank (e.g., the Federal Reserve in the U.S.) to manage money supply and interest rates.
-        It aims to control inflation, stabilize currency, and promote economic growth.
-        <br><br>
-        🔗 <a href="https://www.federalreserve.gov/monetarypolicy.htm" target="_blank">Federal Reserve: Monetary Policy</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=q3aai09xJLI" target="_blank">YouTube: How Central Banks Manage the Economy</a>
-      `
-    },
-    { text: "13. International Trade",
-      description: `
-        <strong>International Trade</strong> involves the exchange of goods and services across national borders.
-        It enhances global efficiency through comparative advantage and economies of scale.
-        <br><br>
-        📘 Important concepts include trade surplus/deficit, tariffs, quotas, and free trade agreements.<br>
-        🔗 <a href="https://www.wto.org/" target="_blank">World Trade Organization (WTO)</a>
-      `
-    },
-    { text: "14. Exchange Rates",
-      description: `
-        <strong>Exchange Rates</strong> determine how much one currency is worth relative to another.
-        They influence trade flows, investment, inflation, and monetary policy.
-        Exchange regimes can be fixed, floating, or managed float.
-        <br><br>
-        🔗 <a href="https://www.investopedia.com/terms/e/exchangerate.asp" target="_blank">Exchange Rate Basics – Investopedia</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=TTjkHyFtYf8" target="_blank">YouTube: Currency Exchange Explained</a>
-      `
-    },
-    { text: "15. Supply-Demand Curve",
-      description: `
-        The <strong>Supply-Demand Curve</strong> graphically illustrates how price affects quantity supplied and demanded.
-        The intersection point—market equilibrium—represents a stable price and quantity where demand equals supply.
-        <br><br>
-        📘 Used to analyze policy impact, taxes, and price controls.<br>
-        🔗 <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium" target="_blank">Khan Academy: Market Equilibrium</a>
-      `
-    },
-    { text: "16. Perfect Competition",
-      description: `
-        <strong>Perfect Competition</strong> is a theoretical market structure where numerous small firms sell identical products, and no one has market power.
-        Prices are determined purely by supply and demand.
-        <br><br>
-        📘 Conditions include many sellers, homogeneous goods, free entry/exit, and perfect information.<br>
-        🔗 <a href="https://www.investopedia.com/terms/p/perfectcompetition.asp" target="_blank">Perfect Competition – Investopedia</a>
-      `
-    },
-    { text: "17. Cost-Benefit Analysis",
-      description: `
-        <strong>Cost-Benefit Analysis (CBA)</strong> is a decision-making tool that compares the expected costs and benefits of an action or project.
-        It is widely used in economics, policy planning, and business.
-        <br><br>
-        🔗 <a href="https://www.investopedia.com/terms/c/cost-benefitanalysis.asp" target="_blank">Investopedia: CBA Explained</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=3tL3D5rxb5I" target="_blank">YouTube: Intro to Cost-Benefit Analysis</a>
-      `
-    },
-    { text: "18. Law of Diminishing Returns",
-      description: `
-        The <strong>Law of Diminishing Returns</strong> states that adding more of one input (while keeping others constant) will eventually yield lower marginal output.
-        It is a key concept in production and labor analysis.
-        <br><br>
-        📘 Explains why total production rises at a decreasing rate after a point.<br>
-        🔗 <a href="https://www.investopedia.com/terms/l/lawofdiminishingreturns.asp" target="_blank">Investopedia: Diminishing Returns</a>
-      `
-    },    
-    { text: "19. Keynesian Theory",
-      important: true,
-      classic: "Classic Theory: Keynesian Theory",
-      person: "Keynes",
-      // image: "https://via.placeholder.com/100?text=Keynes",
-      description: `
-        <strong>Keynesian Theory</strong>, developed by John Maynard Keynes during the Great Depression, emphasizes the role of government spending and aggregate demand in influencing economic activity.
-        It challenges classical views that markets always self-correct.
-        <br><br>
-        📘 Key ideas: multiplier effect, fiscal stimulus, sticky wages and prices.<br>
-        🔗 <a href="https://www.investopedia.com/terms/k/keynesianeconomics.asp" target="_blank">Investopedia: Keynesian Economics</a><br>
-        📺 Keynesian vs Classical Economics
-      `,
-      videoUrl: "https://www.youtube.com/embed/o6UXRZ2XwgU?si=hzyVyrWxBT64lxxp"
-    },
-    { text: "20. Phillips Curve",
-      description: `
-        The <strong>Phillips Curve</strong> represents the short-term inverse relationship between inflation and unemployment.
-        Originally thought stable, it later showed breakdowns during stagflation, leading to new macroeconomic theories.
-        <br><br>
-        📘 Short-run trade-offs, but long-run neutrality.<br>
-        🔗 <a href="https://www.imf.org/external/pubs/ft/fandd/2015/03/basics.htm" target="_blank">IMF: Understanding the Phillips Curve</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=9u2T2W-n0kM" target="_blank">YouTube: Phillips Curve Explained</a>
-      `
-    },
-    { text: "21. IS-LM Model",
-      important: true,
-      classic: "Classic Theory: IS-LM Model",
-      person: "Keynes",
-      image: "https://via.placeholder.com/100?text=IS-LM",
-      description: `
-        The <strong>IS-LM Model</strong> describes the interaction between interest rates and real output in both goods and money markets.
-        The IS curve represents investment-saving equilibrium; the LM curve represents liquidity-money equilibrium.
-        <br><br>
-        📘 A core model in Keynesian macroeconomics.<br>
-        🔗 <a href="https://en.wikipedia.org/wiki/IS%E2%80%93LM_model" target="_blank">Wikipedia: IS–LM Model</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=bZAX12YbsAA" target="_blank">YouTube: IS-LM Visual Explanation</a>
-      `
-    },
-    { text: "22. Quantity Theory of Money",
-      description: `
-        The <strong>Quantity Theory of Money</strong> links money supply with price levels using the equation MV = PQ.
-        It's central to classical and monetarist views that inflation results from excessive money growth.
-        <br><br>
-        📘 Advocated by economists like Irving Fisher and Milton Friedman.<br>
-        🔗 <a href="https://www.investopedia.com/terms/q/quantity-theory-of-money.asp" target="_blank">Investopedia: Quantity Theory of Money</a>
-      `
-    },
-    { text: "23. Comparative Advantage",
-      description: `
-        <strong>Comparative Advantage</strong> is the ability of a country to produce a good at a lower opportunity cost than others.
-        It explains the rationale behind international trade, even when one country is less efficient in all goods.
-        <br><br>
-        📘 Introduced by David Ricardo in the 19th century.<br>
-        🔗 <a href="https://www.econlib.org/library/Topics/Details/comparativeadvantage.html" target="_blank">EconLib: Comparative Advantage</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=FpQpg3lckYY" target="_blank">YouTube: Trade & Comparative Advantage</a>
-      `
-    },
-    { text: "24. Purchasing Power Parity",
-      description: `
-        <strong>Purchasing Power Parity (PPP)</strong> compares currency values based on the cost of a standard basket of goods.
-        It reflects exchange rate adjustments needed for identical purchasing power.
-        <br><br>
-        📘 Often used by the IMF and World Bank for cross-country GDP comparisons.<br>
-        🔗 <a href="https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Purchasing-Power-Parity" target="_blank">IMF: PPP Explained</a>
-      `
-    },
-    { text: "25. Behavioral Economics",
-      description: `
-        <strong>Behavioral Economics</strong> blends insights from psychology with economic theory to better understand decision-making.
-        It reveals cognitive biases like loss aversion, anchoring, and mental accounting.
-        <br><br>
-        📘 Founders include Daniel Kahneman, Amos Tversky, and Richard Thaler.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/" target="_blank">BehavioralEconomics.com</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=JzN-Jg1bYqE" target="_blank">TED: Kahneman on Intuition and Bias</a>
-      `
-    },
-    { text: "26. Development Economics",
-      description: `
-        <strong>Development Economics</strong> studies how to improve economic conditions in low-income countries.
-        It focuses on poverty reduction, education, infrastructure, and sustainable growth.
-        <br><br>
-        📘 Key concepts: human capital, foreign aid, institutions, microfinance.<br>
-        🔗 <a href="https://en.wikipedia.org/wiki/Development_economics" target="_blank">Wikipedia: Development Economics</a>
-      `
-    },
-    { text: "27. Environmental Economics",
-      description: `
-        <strong>Environmental Economics</strong> analyzes how economic activities impact the environment and how policy can address issues like pollution and climate change.
-        It values natural resources and externalities.
-        <br><br>
-        📘 Tools: carbon pricing, Pigouvian taxes, tradable permits.<br>
-        🔗 <a href="https://www.epa.gov/environmental-economics" target="_blank">EPA: Environmental Economics Resources</a>
-      `
-    },
-    { text: "28. Health Economics",
-      description: `
-        <strong>Health Economics</strong> examines the behavior of individuals, providers, and governments in the healthcare market.
-        It analyzes costs, access, efficiency, and outcomes of healthcare systems.
-        <br><br>
-        📘 Topics: insurance design, moral hazard, cost-effectiveness, health equity.<br>
-        🔗 <a href="https://www.who.int/health-topics/health-economics#tab=tab_1" target="_blank">WHO: What is Health Economics?</a>
-      `
-    },    
-    { text: "29. International Finance",
-      classic: "",
-      formula: "",
-      Nobel: "",
-      chart: "",
-      application: "",
-      description: `
-        <strong>International Finance</strong> focuses on financial interactions between countries, including foreign exchange, international investment, capital flows, and global risk.
-        It encompasses balance of payments, exchange rate systems, and cross-border portfolio management.
-        <br><br>
-        📘 Key topics include fixed vs. floating currencies, currency crises, and interest rate parity.<br>
-        🔗 <a href="https://www.imf.org/en/Publications/WP/Issues/2016/12/31/An-Introduction-to-International-Finance-43109" target="_blank">IMF: Introduction to International Finance</a>
-      `
-    },
-    { text: "30. Financial Markets",
-      classic: "",
-      formula: "",
-      Nobel: "",
-      chart: "",
-      application: "Stock exchanges, bond markets, money markets, derivatives trading",
-      description: `
-        <strong>Financial Markets</strong> are venues where buyers and sellers trade financial instruments like stocks, bonds, currencies, and derivatives.
-        They serve the functions of price discovery, liquidity, capital allocation, and risk sharing.
-        <br><br>
-        📘 Market types: primary vs. secondary, equity vs. debt, public vs. private.<br>
-        🔗 <a href="https://www.investopedia.com/terms/f/financial-market.asp" target="_blank">Investopedia: Financial Markets</a>
-      `
-    },
-    { text: "31. Corporate Finance",
-      classic: "",
-      formula: "",
-      Nobel: "",
-      chart: "",
-      application: "Capital budgeting, dividend policy, capital structure",
-      description: `
-        <strong>Corporate Finance</strong> deals with how companies raise, allocate, and manage capital to maximize shareholder value.
-        It includes investment decisions, financing methods, and risk management within the firm.
-        <br><br>
-        📘 Tools: Net Present Value (NPV), Internal Rate of Return (IRR), Weighted Average Cost of Capital (WACC).<br>
-        🔗 <a href="https://www.cfainstitute.org/en/research/foundation/2014/corporate-finance" target="_blank">CFA Institute: Corporate Finance Guide</a>
-      `
-    },
-    { text: "32. Investment Analysis",
-      classic: "",
-      formula: "",
-      Nobel: "",
-      chart: "",
-      application: "Security selection, valuation models, asset allocation",
-      description: `
-        <strong>Investment Analysis</strong> involves evaluating securities, portfolios, and markets to make informed investment decisions.
-        Analysts use both fundamental and technical approaches to assess value and risk.
-        <br><br>
-        📘 Common tools include P/E ratios, DCF models, and technical indicators.<br>
-        🔗 <a href="https://www.investopedia.com/terms/i/investmentanalysis.asp" target="_blank">Investopedia: Investment Analysis</a>
-      `
-    },
-    { text: "33. Risk Management",
-      classic: "",
-      formula: "",
-      Nobel: "",
-      chart: "",
-      application: "Hedging, insurance, VAR, credit risk assessment",
-      description: `
-        <strong>Risk Management</strong> is the process of identifying, analyzing, and mitigating risks that could impact financial performance.
-        It is essential in corporate finance, investment, banking, and regulation.
-        <br><br>
-        📘 Key methods: diversification, hedging, derivatives, Value-at-Risk (VaR).<br>
-        🔗 <a href="https://www.investopedia.com/terms/r/riskmanagement.asp" target="_blank">Investopedia: Risk Management</a>
-      `
-    },
-    { text: "34. Derivatives",
-      classic: "",
-      formula: "",
-      nobel: "",
-      chart: "",
-      application: "Hedging, speculation, arbitrage, structured products",
-      description: `
-        <strong>Derivatives</strong> are financial instruments whose value is derived from an underlying asset, such as options, futures, swaps, and forwards.
-        They are widely used for hedging, leveraging, and risk transfer.
-        <br><br>
-        📘 Derivatives pricing theory (e.g., Black-Scholes model) revolutionized modern finance.<br>
-        🔗 <a href="https://www.cmegroup.com/education/courses/introduction-to-derivatives/what-are-derivatives.html" target="_blank">CME Group: What Are Derivatives?</a>
-      `
-    },
-    { text: "35. Portfolio Theory",
-      classic: "Modern Portfolio Theory (MPT)",
-      formula: "E(Rp) = Σ wi·E(Ri),  σ²(Rp) = ΣΣ wi·wj·Cov(Ri, Rj)",
-      nobel: "Harry Markowitz (1990)",
-      chart: "Efficient Frontier",
-      application: "Asset allocation, diversification, risk-return optimization",
-      description: `
-        <strong>Portfolio Theory</strong> analyzes how investors can construct portfolios to optimize expected return based on risk.
-        It emphasizes diversification and quantifies risk through variance and covariance.
-        <br><br>
-        📘 Introduced by Markowitz, later expanded by Sharpe (CAPM) and others.<br>
-        🔗 <a href="https://corporatefinanceinstitute.com/resources/wealth-management/modern-portfolio-theory-mpt/" target="_blank">CFI: Modern Portfolio Theory</a><br>
-        📺 YouTube: MPT & Efficient Frontier
-      `,
-      videoUrl: "https://www.youtube.com/embed/8TJQhQ2GZ0Y?si=efAe_1KadL2ObEwT"
-    },
-    { text: "36. Asset Pricing",
-      classic: "Capital Asset Pricing Model (CAPM), Arbitrage Pricing Theory (APT)",
-      formula: "E(Ri) = Rf + βi(E(Rm) - Rf)",
-      nobel: "William Sharpe (1990), Eugene Fama & Robert Shiller (2013)",
-      chart: "Security Market Line (SML)",
-      application: "Valuation, expected return estimation, cost of capital",
-      description: `
-        <strong>Asset Pricing</strong> explores how securities are priced in financial markets based on risk and return.
-        Foundational models include the CAPM and APT, which relate expected return to systematic risk.
-        <br><br>
-        📘 Important for capital budgeting, stock valuation, and portfolio management.<br>
-        🔗 <a href="https://www.cfainstitute.org/en/research/foundation/2015/asset-pricing" target="_blank">CFA Institute: Asset Pricing Overview</a>
-      `
-    },    
-    { text: "37. Game Theory",
-      classic: "Nash Equilibrium",
-      formula: "",
-      Nobel: "John Nash (1994), Robert Aumann (2005)",
-      chart: "Payoff Matrix, Extensive Form Tree",
-      application: "Strategic decision-making, auctions, oligopoly pricing, diplomacy",
-      description: `
-        <strong>Game Theory</strong> is the study of strategic interaction among rational decision-makers.
-        It analyzes outcomes when the choices of individuals depend on the actions of others.
-        <br><br>
-        📘 Key concepts include dominant strategies, Nash equilibrium, and zero-sum games.<br>
-        🔗 <a href="https://plato.stanford.edu/entries/game-theory/" target="_blank">Stanford Encyclopedia of Philosophy: Game Theory</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=MHS-htjGgSY" target="_blank">YouTube: Game Theory in Real Life</a>
-      `
-    },
-    { text: "38. Public Economics",
-      classic: "Samuelson's Theory of Public Goods",
-      formula: "",
-      Nobel: "James Mirrlees & William Vickrey (1996)",
-      chart: "Externalities Diagram, Laffer Curve",
-      application: "Tax policy, government spending, welfare programs",
-      description: `
-        <strong>Public Economics</strong> studies government policies through the lens of efficiency and equity.
-        It focuses on taxation, public goods, social insurance, and market failures.
-        <br><br>
-        📘 Public economics provides the rationale behind redistribution and public provision of services.<br>
-        🔗 <a href="https://www.econlib.org/library/Enc/PublicGoods.html" target="_blank">EconLib: Public Goods</a>
-      `
-    },
-    { text: "39. Urban Economics",
-      classic: "Monocentric City Model",
-      formula: "",
-      Nobel: "",
-      chart: "Bid-Rent Curve, Urban Density Gradient",
-      application: "Zoning, housing markets, city growth, transportation planning",
-      description: `
-        <strong>Urban Economics</strong> studies spatial organization of economic activity within cities.
-        It examines how land use, housing prices, commuting, and zoning policies affect urban structure.
-        <br><br>
-        📘 Also explores topics like gentrification, urban poverty, and infrastructure.<br>
-        🔗 <a href="https://en.wikipedia.org/wiki/Urban_economics" target="_blank">Wikipedia: Urban Economics</a>
-      `
-    },
-    { text: "40. Agricultural Economics",
-      classic: "",
-      formula: "",
-      Nobel: "",
-      chart: "",
-      application: "Food policy, subsidies, land use, rural development",
-      description: `
-        <strong>Agricultural Economics</strong> applies economic principles to the production, distribution, and consumption of agricultural goods.
-        It addresses pricing, resource use, food security, and sustainability.
-        <br><br>
-        📘 Topics include crop insurance, market regulation, and global food trade.<br>
-        🔗 <a href="https://www.ers.usda.gov/" target="_blank">USDA: Economic Research Service</a>
-      `
-    },
-    { text: "41. Labor Economics",
-      classic: "Human Capital Theory (Becker)",
-      formula: "",
-      Nobel: "Gary Becker (1992), David Card (2021)",
-      chart: "Labor Supply and Demand Curves, Wage Distribution",
-      application: "Wages, employment, education, inequality, unions",
-      description: `
-        <strong>Labor Economics</strong> studies the supply and demand for labor and the determination of wages.
-        It also investigates how labor markets interact with education, gender, and public policy.
-        <br><br>
-        📘 Human capital, labor mobility, discrimination, and market segmentation are key topics.<br>
-        🔗 <a href="https://www.nber.org/programs-projects/programs-working-groups/labor-studies" target="_blank">NBER: Labor Studies Program</a>
-      `
-    },
-    { text: "42. Political Economy",
-      classic: "Public Choice Theory",
-      formula: "",
-      Nobel: "James Buchanan (1986)",
-      chart: "",
-      application: "Policy design, lobbying, voting, constitutional economics",
-      description: `
-        <strong>Political Economy</strong> analyzes how economic theory and political forces influence public policy.
-        It explores the interaction between institutions, incentives, and power structures.
-        <br><br>
-        📘 Topics include rent-seeking, voting rules, and government failure.<br>
-        🔗 <a href="https://www.econlib.org/library/Enc/PoliticalEconomy.html" target="_blank">EconLib: Political Economy</a>
-      `
-    },
-    { text: "43. Behavioral Finance",
-      classic: "Prospect Theory (Kahneman & Tversky)",
-      formula: "",
-      Nobel: "Daniel Kahneman (2002), Richard Thaler (2017)",
-      chart: "Value Function Curve, Disposition Effect Chart",
-      application: "Investor psychology, market anomalies, loss aversion",
-      description: `
-        <strong>Behavioral Finance</strong> studies how psychological factors affect investor behavior and market outcomes.
-        It explains irrational phenomena like overconfidence, herding, and framing effects.
-        <br><br>
-        📘 A core field in post-2000 finance theory development.<br>
-        🔗 <a href="https://www.cfainstitute.org/en/advocacy/market-integrity-insights/behavioral-finance-in-practice" target="_blank">CFA: Behavioral Finance in Practice</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=wD5X6rgsN3M" target="_blank">YouTube: Richard Thaler on Human Biases</a>
-      `
-    },    
-
-    // -----------------------
-    // Newly added nodes (44 ~ 63)
-    // -----------------------
-
-    // Children of Supply-Demand Curve (Node 15)
+  "nodes": [
     {
-      text: "44. Law of Demand",
-      description: `
-        The <strong>Law of Demand</strong> states that, all else being equal, as the price of a good decreases, the quantity demanded increases, and vice versa.
-        This inverse relationship is foundational in consumer behavior and demand curves.
-        <br><br>
-        📘 It assumes rational buyers, ceteris paribus (other factors held constant).<br>
-        🔗 <a href="https://www.investopedia.com/terms/l/lawofdemand.asp" target="_blank">Investopedia: Law of Demand</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=1WfGhuEDJZw" target="_blank">YouTube: Law of Demand Explained</a>
-      `
+      "text": "0. Economics",
+      "important": true,
+      "classic": "Classic Theory: Market Equilibrium",
+      "person": "Adam Smith",
+      "description": "\n        <strong>Economics</strong> is the social science that studies how individuals, businesses, governments, and societies allocate scarce resources to satisfy unlimited wants.\n        It includes microeconomics and macroeconomics and is central to decision-making in both public and private sectors.\n        <br><br>\n        🔗 <a href=\"https://plato.stanford.edu/entries/economics/\" target=\"_blank\">Stanford Encyclopedia of Philosophy: Economics</a><br>\n        📺 What is Economics?\n        <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/SwaCg7Gwtzw?si=B8gwg_1FIbPwHwCe\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n      ",
+      "parent": null,
+      "expanded": true,
+      "el": {},
+      "width": 280.0001220703125,
+      "height": 194.25003051757812,
+      "x": 1103.8983647411417,
+      "y": 672.3973166136258,
+      "visible": true
     },
     {
-      text: "45. Law of Supply",
-      description: `
-        The <strong>Law of Supply</strong> posits that as the price of a good increases, producers are willing to supply more of it, and vice versa.
-        This positive relationship underpins the upward-sloping supply curve.
-        <br><br>
-        📘 Reflects the incentive for producers to earn more profits at higher prices.<br>
-        🔗 <a href="https://www.investopedia.com/terms/l/lawofsupply.asp" target="_blank">Investopedia: Law of Supply</a><br>
-        📺 <a href="https://www.youtube.com/watch?v=LRp5MNDo4FQ" target="_blank">YouTube: Supply in Economics</a>
-      `
+      "text": "1. Microeconomics",
+      "description": "\n        <strong>Microeconomics</strong> studies the behavior of individual units such as consumers, firms, and markets. \n        It focuses on how supply and demand interact to determine prices and quantities in specific markets.\n        <br><br>\n        📘 Topics include price theory, elasticity, market structures, and consumer choice.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/m/microeconomics.asp\" target=\"_blank\">Microeconomics - Investopedia</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=swnoF533C_c\" target=\"_blank\">Crash Course Microeconomics</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39996337890625,
+      "x": 1269.3198241403566,
+      "y": 859.8426173555594,
+      "visible": true
     },
     {
-      text: "46. Elasticities",
-      description: `
-        <strong>Elasticity</strong> measures the responsiveness of quantity demanded or supplied to changes in price, income, or other goods' prices.
-        <br><br>
-        🧮 Key types include:<br>
-        • <strong>Price Elasticity of Demand</strong><br>
-        • <strong>Income Elasticity of Demand</strong><br>
-        • <strong>Cross-Price Elasticity</strong><br>
-        • <strong>Elasticity of Supply</strong><br>
-        <br>
-        📘 Elasticities are crucial for setting prices, understanding tax impacts, and policy design.<br>
-        🔗 <a href="https://www.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial" target="_blank">Khan Academy: Elasticity Overview</a>
-      `
+      "text": "2. Macroeconomics",
+      "description": "\n        <strong>Macroeconomics</strong> looks at the economy as a whole. It analyzes aggregate indicators like GDP, unemployment, inflation, and interest rates.\n        It is essential for understanding national policies and global economic trends.\n        <br><br>\n        🔗 <a href=\"https://www.imf.org/en/About/Factsheets/Sheets/2022/03/11/what-is-macroeconomics\" target=\"_blank\">What is Macroeconomics? (IMF)</a><br>\n        📺 Crash Course: Macroeconomics Intro\n      ",
+      "videoUrl": "https://www.youtube.com/embed/d8uTB5XorBw?si=o9S6RlHO65Tx0elR",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 279.99993896484375,
+      "height": 244,
+      "x": 855.1406708997913,
+      "y": 697.2892782625801,
+      "visible": true
     },
     {
-      text: "47. Consumer Surplus",
-      description: `
-        <strong>Consumer Surplus</strong> is the difference between what consumers are willing to pay and what they actually pay.
-        It represents the economic benefit to buyers in a transaction.
-        <br><br>
-        📊 Graphically, it's the area below the demand curve and above the market price.<br>
-        📘 Useful in welfare economics and policy analysis.<br>
-        🔗 <a href="https://www.investopedia.com/terms/c/consumer_surplus.asp" target="_blank">Investopedia: Consumer Surplus</a><br>
-        
-      `,
-      // videoUrl: "https://www.youtube.com/embed/kT2UAr7Xz14"
+      "text": "1.1 Demand & Supply",
+      "description": "\n        <strong>Demand & Supply</strong> are the foundational concepts of market economics. \n        Demand reflects consumers' willingness and ability to purchase goods, while supply shows producers’ willingness to sell.\n        The interaction of both determines the market equilibrium.\n        <br><br>\n        🔗 <a href=\"https://www.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium\" target=\"_blank\">Khan Academy: Supply & Demand</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=RRg5Zkzlcxk\" target=\"_blank\">Supply and Demand Explained</a>\n      ",
+      "parent": 1,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1548.1211827305779,
+      "y": 901.8882488473946,
+      "visible": true
     },
     {
-      text: "48. Producer Surplus",
-      description: `
-        <strong>Producer Surplus</strong> is the difference between the price a producer receives and the minimum price they’re willing to accept.
-        It reflects the benefit sellers gain from market participation.
-        <br><br>
-        📊 On a supply-demand diagram, it's the area above the supply curve and below the market price.<br>
-        📘 Often analyzed alongside consumer surplus to evaluate total welfare.<br>
-        🔗 <a href="https://www.investopedia.com/terms/p/producersurplus.asp" target="_blank">Producer Surplus - Investopedia</a>
-      `
+      "text": "1.2 Market Structures",
+      "description": "\n        <strong>Market Structures</strong> describe the competitive environment in which firms operate. \n        Key types include perfect competition, monopolistic competition, oligopoly, and monopoly.\n        Each structure affects pricing, output, and efficiency differently.\n        <br><br>\n        🔗 <a href=\"https://corporatefinanceinstitute.com/resources/economics/market-structure/\" target=\"_blank\">Market Structure Guide (CFI)</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=8m3v6UebVpY\" target=\"_blank\">Video: Types of Market Structures</a>\n      ",
+      "parent": 1,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1348.4808652957863,
+      "y": 1108.4929488119283,
+      "visible": true
     },
     {
-      text: "49. Case Study: Gas Price Shocks",
-      description: `
-        <strong>Gas Price Shocks</strong> serve as real-world illustrations of supply-demand shifts.
-        For example, when oil supply is restricted due to geopolitical tensions or natural disasters, prices rise sharply, and quantity demanded falls.
-        <br><br>
-        📈 The short-run inelasticity of demand causes steep price reactions.<br>
-        📘 Long-run adaptation includes switching to fuel-efficient cars or alternative transport.<br>
-        `
-        // 📺 <a href="https://www.youtube.com/watch?v=G7TV9sMb5ZI" target="_blank">YouTube: How Gas Prices Affect Markets</a>
-      
+      "text": "1.3 Production Theory",
+      "description": "\n        <strong>Production Theory</strong> examines how firms convert inputs (labor, capital, raw materials) into outputs. \n        It includes concepts like the production function, returns to scale, and technical efficiency.\n        <br><br>\n        📘 It helps firms optimize input usage and reduce costs.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/p/production-function.asp\" target=\"_blank\">Production Function - Investopedia</a>\n      ",
+      "parent": 1,
+      "expanded": true,
+      "el": {},
+      "width": 280.0001220703125,
+      "height": 102.39996337890625,
+      "x": 1251.275951946594,
+      "y": 1150.183719506696,
+      "visible": true
     },
     {
-      text: "50. Video: Crash Course #4",
-      description: `
-        An introductory video to <strong>Demand and Supply</strong>, explaining market behavior using animated graphics and real-world examples.
-        Highly recommended for beginners.
-        <br><br>
-        📺 <iframe width="100%" height="200" src="https://www.youtube.com/embed/g9aDizJpd_s?si=PhB6linlJ763d2p8" title="Crash Course Economics: Supply and Demand" frameborder="0" allowfullscreen></iframe>
-      `,
-
-    },
-    
-    // Children of IS-LM Model (Node 21)
-    {
-      text: "51. IS Curve",
-      description: `
-        The <strong>IS Curve</strong> (Investment-Saving Curve) represents the combinations of interest rates and output (GDP) at which the goods market is in equilibrium.
-        It is derived from the Keynesian cross and reflects how changes in the interest rate affect investment and, subsequently, output.
-        <br><br>
-        📉 The IS curve is downward sloping because lower interest rates stimulate investment, increasing aggregate demand and output.<br>
-        📘 Fiscal policy shifts the IS curve left or right.<br>
-        🔗 <a href="https://www.economicsdiscussion.net/is-lm-model/is-curve/31579" target="_blank">IS Curve Explained</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=r2X3h-HZkYI" target="_blank">YouTube: IS Curve Intuition</a>
-      
+      "text": "1.4 Cost Theory",
+      "description": "\n        <strong>Cost Theory</strong> explores how a firm’s costs change with different levels of output. \n        It involves concepts like marginal cost, average cost, fixed and variable costs, and economies of scale.\n        <br><br>\n        📊 Cost theory is crucial for pricing and profit decisions.<br>\n        🔗 <a href=\"https://economicsconcepts.com/theory-of-cost.htm\" target=\"_blank\">Theory of Cost - Economics Concepts</a>\n      ",
+      "parent": 1,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39996337890625,
+      "x": 1147.476236114971,
+      "y": 1170.4946656594984,
+      "visible": true
     },
     {
-      text: "52. LM Curve",
-      description: `
-        The <strong>LM Curve</strong> (Liquidity Preference-Money Supply Curve) shows the combinations of interest rates and output where the money market is in equilibrium.
-        It reflects the relationship between income and demand for money, given a fixed money supply.
-        <br><br>
-        📈 The LM curve is upward sloping because as income rises, people demand more money, pushing up interest rates (if supply is fixed).<br>
-        📘 Monetary policy (e.g., changing money supply) shifts the LM curve.<br>
-        🔗 <a href="https://www.economicshelp.org/blog/glossary/lm-curve/" target="_blank">Economics Help: LM Curve</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=cFh8AE5wUlA" target="_blank">YouTube: LM Curve Basics</a>
-      
+      "text": "1.5 Utility Theory",
+      "description": "\n        <strong>Utility Theory</strong> explains how individuals make consumption choices to maximize satisfaction or utility. \n        It introduces cardinal (measurable) and ordinal (ranked) preferences.\n        <br><br>\n        📘 Utility theory underlies demand curves and consumer choice models.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/u/utility.asp\" target=\"_blank\">Utility - Investopedia</a>\n      ",
+      "parent": 1,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1068.0874691893443,
+      "y": 1171.1132475400182,
+      "visible": true
     },
     {
-      text: "53. Shifts in IS/LM",
-      description: `
-        <strong>Shifts in the IS and LM curves</strong> explain how fiscal and monetary policies influence equilibrium output and interest rates.
-        <br><br>
-        🔄 <strong>IS curve shifts</strong> occur due to changes in government spending, taxes, or autonomous consumption/investment.<br>
-        💵 <strong>LM curve shifts</strong> happen when the central bank changes the money supply or liquidity preferences change.<br><br>
-        📘 These shifts are essential tools in analyzing macroeconomic stabilization policy.<br>
-        🔗 <a href="https://www.intelligent-trader.com/the-is-lm-model-explained/" target="_blank">IS-LM Model with Shifts</a>
-      `
+      "text": "2.1 GDP",
+      "description": "\n        <strong>Gross Domestic Product (GDP)</strong> is the total market value of all final goods and services produced in a country in a given period.\n        It serves as a key indicator of economic performance and growth.\n        <br><br>\n        🔗 <a href=\"https://www.bea.gov/resources/learning-about-gdp\" target=\"_blank\">BEA: Understanding GDP</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=ZwcuT2H0Apk\" target=\"_blank\">Crash Course: What is GDP?</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 279.99993896484375,
+      "height": 102.4000244140625,
+      "x": 990.7688635262808,
+      "y": 1159.4309047314032,
+      "visible": true
     },
     {
-      text: "54. Liquidity Preference",
-      description: `
-        <strong>Liquidity Preference</strong> is a concept developed by Keynes to explain the demand for money.
-        It states that people prefer liquidity (holding cash) and only give it up in exchange for interest.<br><br>
-        ✋ There are three motives for holding money:<br>
-        • Transactions<br>
-        • Precautionary<br>
-        • Speculative<br><br>
-        📘 The interest rate adjusts to balance money demand and supply.<br>
-        🔗 <a href="https://www.investopedia.com/terms/l/liquiditypreference.asp" target="_blank">Liquidity Preference - Investopedia</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=XEDCEnCV0PE" target="_blank">YouTube: Keynes & Liquidity Preference</a>
-      
+      "text": "2.2 Inflation",
+      "description": "\n        <strong>Inflation</strong> is the rate at which the general level of prices for goods and services rises over time, decreasing purchasing power.\n        Moderate inflation is typical in growing economies, while high or hyperinflation can lead to economic instability.\n        Common measures include the <em>Consumer Price Index (CPI)</em> and <em>Producer Price Index (PPI)</em>.\n        <br><br>\n        🔗 <a href=\"https://www.investopedia.com/terms/i/inflation.asp\" target=\"_blank\">What Is Inflation? – Investopedia</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=3q1GNSDlErI\" target=\"_blank\">YouTube: Inflation Explained</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 102.4000244140625,
+      "x": 893.0238929153834,
+      "y": 1125.7536412989748,
+      "visible": true
     },
     {
-      text: "55. Video: IS-LM Explanation",
-      description: `
-        This educational video offers a <strong>visual explanation of the IS-LM model</strong>, showing how the equilibrium in both the goods and money markets is jointly determined.
-        <br><br>
-        📽️ Understand policy impacts through dynamic graph animations.<br>
-        🔗 <a href="https://www.youtube.com/watch?v=EXAMPLE_VIDEO_ID" target="_blank">Watch on YouTube</a><br><br>
-        📺 <iframe width="100%" height="200" src="https://www.youtube.com/embed/e_3clidGpfE?si=a6ahAklhgIZp1JwR" title="IS-LM Model Explanation" frameborder="0" allowfullscreen></iframe>
-      `
-    },
-    
-
-    // Children of Behavioral Economics (Node 25)
-    {
-      text: "56. Prospect Theory",
-      description: `
-        <strong>Prospect Theory</strong>, developed by Daniel Kahneman and Amos Tversky, explains how people make decisions under risk and uncertainty.
-        It challenges classical expected utility theory by showing that individuals evaluate gains and losses relative to a reference point, rather than final outcomes.
-        <br><br>
-        🧠 Key ideas:<br>
-        • <strong>Loss Aversion</strong>: losses hurt more than equivalent gains please<br>
-        • <strong>Diminishing sensitivity</strong>: value function is concave for gains, convex for losses<br>
-        • <strong>Probability weighting</strong>: people overweight small probabilities and underweight large ones<br><br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/prospect-theory/" target="_blank">BehavioralEconomics.com: Prospect Theory</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=gfGtCfeJ_BA" target="_blank">YouTube: Prospect Theory in Action</a>
-      
+      "text": "2.3 Unemployment",
+      "description": "\n        <strong>Unemployment</strong> represents the portion of the labor force that is actively seeking but unable to find work.\n        It’s categorized into several types: frictional, structural, cyclical, and seasonal unemployment.\n        The unemployment rate is a key macroeconomic indicator.\n        <br><br>\n        🔗 <a href=\"https://www.bls.gov/cps/\" target=\"_blank\">U.S. Bureau of Labor Statistics – Employment Data</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=9Aq8bGj3Wq8\" target=\"_blank\">YouTube: Types of Unemployment</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39996337890625,
+      "x": 711.7896837413571,
+      "y": 982.6404185266404,
+      "visible": true
     },
     {
-      text: "57. Bounded Rationality",
-      description: `
-        <strong>Bounded Rationality</strong> is a theory by Herbert Simon that recognizes the cognitive limitations of human decision-makers.
-        Instead of optimizing, people often <em>satisfice</em> — choosing a solution that is good enough — due to limited time, information, or computational capacity.
-        <br><br>
-        📘 Bounded rationality helps explain real-world behavior like defaults, biases, and heuristics.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/bounded-rationality/" target="_blank">Mini Encyclopedia: Bounded Rationality</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=m7HcUdawS7M" target="_blank">YouTube: Bounded Rationality Explained</a>
-      
+      "text": "2.4 Fiscal Policy",
+      "description": "\n        <strong>Fiscal Policy</strong> refers to government use of taxation and spending to influence the economy.\n        It’s a major tool in Keynesian economics to manage aggregate demand and stabilize economic cycles.\n        <br><br>\n        📘 Expansionary policy boosts spending during recessions, while contractionary policy aims to cool down inflation.<br>\n        🔗 <a href=\"https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Fiscal-Policy\" target=\"_blank\">IMF: Understanding Fiscal Policy</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 614.1957587074887,
+      "y": 773.3495708918188,
+      "visible": true
     },
     {
-      text: "58. Nudge Theory",
-      description: `
-        <strong>Nudge Theory</strong>, popularized by Richard Thaler and Cass Sunstein, suggests that small changes in choice architecture can significantly influence behavior — without restricting freedom of choice.
-        <br><br>
-        🌱 Examples:<br>
-        • Placing healthy food at eye level<br>
-        • Auto-enrolling employees into retirement savings<br>
-        • Default organ donation settings<br><br>
-        📘 Nudges are subtle, cost-effective tools for public policy and behavioral design.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/nudge/" target="_blank">What is Nudge Theory?</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=lF5tUDyD8Vg" target="_blank">YouTube: Nudge - Behavioral Science in Practice</a>
-      
+      "text": "2.5 Monetary Policy",
+      "description": "\n        <strong>Monetary Policy</strong> is conducted by a country’s central bank (e.g., the Federal Reserve in the U.S.) to manage money supply and interest rates.\n        It aims to control inflation, stabilize currency, and promote economic growth.\n        <br><br>\n        🔗 <a href=\"https://www.federalreserve.gov/monetarypolicy.htm\" target=\"_blank\">Federal Reserve: Monetary Policy</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=q3aai09xJLI\" target=\"_blank\">YouTube: How Central Banks Manage the Economy</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 604.4730218305858,
+      "y": 696.3624341529501,
+      "visible": true
     },
     {
-      text: "59. Video: Dan Ariely TED Talk",
-      description: `
-        A brilliant <strong>TED Talk by Dan Ariely</strong>, a leading figure in behavioral economics, that reveals the hidden forces influencing irrational decision-making.
-        Using clever experiments, he explains why people cheat, procrastinate, and make emotional choices against their own interest.
-        <br><br>
-        📘 Ariely’s work bridges psychology, marketing, and public policy.<br>
-        🔗 <a href="https://www.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions" target="_blank">Watch on TED.com</a><br><br>
-        📺 <iframe width="100%" height="200" src="https://www.youtube.com/embed/9X68dm92HVI?si=wqMprkRLxjPCzMuZ" title="Dan Ariely TED Talk" frameborder="0" allowfullscreen></iframe>
-      `,
-      // videoUrl: "https://www.youtube.com/embed/EXAMPLE_VIDEO_ID"
-    },    
-
-    // Children of Behavioral Finance (Node 43)
-    {
-      text: "60. Overconfidence Bias",
-      description: `
-        <strong>Overconfidence Bias</strong> is a cognitive distortion where individuals overestimate their knowledge, prediction skills, or control over events.
-        In investing, this leads to excessive trading, underestimation of risks, and portfolio underperformance.
-        <br><br>
-        📉 Studies show that overconfident investors trade more frequently and achieve lower returns.<br>
-        📘 A key concept in explaining market anomalies and irrational behavior.<br>
-        🔗 <a href="https://corporatefinanceinstitute.com/resources/behavioral-finance/overconfidence-bias/" target="_blank">CFI: Overconfidence Bias</a><br>`
-        // 📺 <a href="https://www.youtube.com/watch?v=4ynO29zBOSU" target="_blank">YouTube: Overconfidence in Financial Markets</a>
-      
+      "text": "2.6 International Trade",
+      "description": "\n        <strong>International Trade</strong> involves the exchange of goods and services across national borders.\n        It enhances global efficiency through comparative advantage and economies of scale.\n        <br><br>\n        📘 Important concepts include trade surplus/deficit, tariffs, quotas, and free trade agreements.<br><br>\n\n\n\n\n<!--[if gte mso 9]><xml>\n <o:OfficeDocumentSettings>\n  <o:AllowPNG/>\n </o:OfficeDocumentSettings>\n</xml><![endif]-->\n\n\n<!--[if gte mso 9]><xml>\n <w:WordDocument>\n  <w:View>Normal</w:View>\n  <w:Zoom>0</w:Zoom>\n  <w:TrackMoves/>\n  <w:TrackFormatting/>\n  <w:PunctuationKerning/>\n  <w:ValidateAgainstSchemas/>\n  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>\n  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>\n  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>\n  <w:DoNotPromoteQF/>\n  <w:LidThemeOther>en-CN</w:LidThemeOther>\n  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>\n  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>\n  <w:Compatibility>\n   <w:BreakWrappedTables/>\n   <w:SnapToGridInCell/>\n   <w:WrapTextWithPunct/>\n   <w:UseAsianBreakRules/>\n   <w:DontGrowAutofit/>\n   <w:SplitPgBreakAndParaMark/>\n   <w:EnableOpenTypeKerning/>\n   <w:DontFlipMirrorIndents/>\n   <w:OverrideTableStyleHps/>\n   <w:UseFELayout/>\n  </w:Compatibility>\n  <m:mathPr>\n   <m:mathFont m:val=\"Cambria Math\"/>\n   <m:brkBin m:val=\"before\"/>\n   <m:brkBinSub m:val=\"&#45;-\"/>\n   <m:smallFrac m:val=\"off\"/>\n   <m:dispDef/>\n   <m:lMargin m:val=\"0\"/>\n   <m:rMargin m:val=\"0\"/>\n   <m:defJc m:val=\"centerGroup\"/>\n   <m:wrapIndent m:val=\"1440\"/>\n   <m:intLim m:val=\"subSup\"/>\n   <m:naryLim m:val=\"undOvr\"/>\n  </m:mathPr></w:WordDocument>\n</xml><![endif]--><!--[if gte mso 9]><xml>\n <w:LatentStyles DefLockedState=\"false\" DefUnhideWhenUsed=\"false\"\n  DefSemiHidden=\"false\" DefQFormat=\"false\" DefPriority=\"99\"\n  LatentStyleCount=\"376\">\n  <w:LsdException Locked=\"false\" Priority=\"0\" QFormat=\"true\" Name=\"Normal\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" QFormat=\"true\" Name=\"heading 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 7\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 8\"/>\n  <w:LsdException Locked=\"false\" Priority=\"9\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"heading 9\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 6\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 7\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 8\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index 9\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 7\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 8\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"toc 9\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Normal Indent\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"footnote text\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"annotation text\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"header\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"footer\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"index heading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"35\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"caption\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"table of figures\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"envelope address\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"envelope return\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"footnote reference\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"annotation reference\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"line number\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"page number\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"endnote reference\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"endnote text\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"table of authorities\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"macro\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"toa heading\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Bullet 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Number 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"10\" QFormat=\"true\" Name=\"Title\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Closing\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Signature\"/>\n  <w:LsdException Locked=\"false\" Priority=\"1\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"Default Paragraph Font\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text Indent\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"List Continue 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Message Header\"/>\n  <w:LsdException Locked=\"false\" Priority=\"11\" QFormat=\"true\" Name=\"Subtitle\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Salutation\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Date\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text First Indent\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text First Indent 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Note Heading\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text Indent 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Body Text Indent 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Block Text\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Hyperlink\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"FollowedHyperlink\"/>\n  <w:LsdException Locked=\"false\" Priority=\"22\" QFormat=\"true\" Name=\"Strong\"/>\n  <w:LsdException Locked=\"false\" Priority=\"20\" QFormat=\"true\" Name=\"Emphasis\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Document Map\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Plain Text\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"E-mail Signature\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Top of Form\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Bottom of Form\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Normal (Web)\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Acronym\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Address\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Cite\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Code\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Definition\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Keyboard\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Preformatted\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Sample\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Typewriter\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"HTML Variable\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Normal Table\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"annotation subject\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"No List\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Outline List 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Outline List 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Outline List 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Simple 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Simple 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Simple 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Classic 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Colorful 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Colorful 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Colorful 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Columns 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 6\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 7\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Grid 8\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 4\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 5\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 6\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 7\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table List 8\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table 3D effects 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table 3D effects 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table 3D effects 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Contemporary\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Elegant\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Professional\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Subtle 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Subtle 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Web 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Web 2\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Web 3\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Balloon Text\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" Name=\"Table Grid\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Table Theme\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" Name=\"Placeholder Text\"/>\n  <w:LsdException Locked=\"false\" Priority=\"1\" QFormat=\"true\" Name=\"No Spacing\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" Name=\"Revision\"/>\n  <w:LsdException Locked=\"false\" Priority=\"34\" QFormat=\"true\"\n   Name=\"List Paragraph\"/>\n  <w:LsdException Locked=\"false\" Priority=\"29\" QFormat=\"true\" Name=\"Quote\"/>\n  <w:LsdException Locked=\"false\" Priority=\"30\" QFormat=\"true\"\n   Name=\"Intense Quote\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"60\" Name=\"Light Shading Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"61\" Name=\"Light List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"62\" Name=\"Light Grid Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"63\" Name=\"Medium Shading 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"64\" Name=\"Medium Shading 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"65\" Name=\"Medium List 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"66\" Name=\"Medium List 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"67\" Name=\"Medium Grid 1 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"68\" Name=\"Medium Grid 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"69\" Name=\"Medium Grid 3 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"70\" Name=\"Dark List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"71\" Name=\"Colorful Shading Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"72\" Name=\"Colorful List Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"73\" Name=\"Colorful Grid Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"19\" QFormat=\"true\"\n   Name=\"Subtle Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"21\" QFormat=\"true\"\n   Name=\"Intense Emphasis\"/>\n  <w:LsdException Locked=\"false\" Priority=\"31\" QFormat=\"true\"\n   Name=\"Subtle Reference\"/>\n  <w:LsdException Locked=\"false\" Priority=\"32\" QFormat=\"true\"\n   Name=\"Intense Reference\"/>\n  <w:LsdException Locked=\"false\" Priority=\"33\" QFormat=\"true\" Name=\"Book Title\"/>\n  <w:LsdException Locked=\"false\" Priority=\"37\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" Name=\"Bibliography\"/>\n  <w:LsdException Locked=\"false\" Priority=\"39\" SemiHidden=\"true\"\n   UnhideWhenUsed=\"true\" QFormat=\"true\" Name=\"TOC Heading\"/>\n  <w:LsdException Locked=\"false\" Priority=\"41\" Name=\"Plain Table 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"42\" Name=\"Plain Table 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"43\" Name=\"Plain Table 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"44\" Name=\"Plain Table 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"45\" Name=\"Plain Table 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"40\" Name=\"Grid Table Light\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\" Name=\"Grid Table 1 Light\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\" Name=\"Grid Table 6 Colorful\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\" Name=\"Grid Table 7 Colorful\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"Grid Table 1 Light Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"Grid Table 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"Grid Table 3 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"Grid Table 4 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"Grid Table 5 Dark Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"Grid Table 6 Colorful Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"Grid Table 7 Colorful Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\" Name=\"List Table 1 Light\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\" Name=\"List Table 6 Colorful\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\" Name=\"List Table 7 Colorful\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 1\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 2\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 3\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 4\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 5\"/>\n  <w:LsdException Locked=\"false\" Priority=\"46\"\n   Name=\"List Table 1 Light Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"47\" Name=\"List Table 2 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"48\" Name=\"List Table 3 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"49\" Name=\"List Table 4 Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"50\" Name=\"List Table 5 Dark Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"51\"\n   Name=\"List Table 6 Colorful Accent 6\"/>\n  <w:LsdException Locked=\"false\" Priority=\"52\"\n   Name=\"List Table 7 Colorful Accent 6\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Mention\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Smart Hyperlink\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Hashtag\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Unresolved Mention\"/>\n  <w:LsdException Locked=\"false\" SemiHidden=\"true\" UnhideWhenUsed=\"true\"\n   Name=\"Smart Link\"/>\n </w:LatentStyles>\n</xml><![endif]-->\n\n<!--[if gte mso 10]>\n<style>\n /* Style Definitions */\n table.MsoNormalTable\n\t{mso-style-name:\"Table Normal\";\n\tmso-tstyle-rowband-size:0;\n\tmso-tstyle-colband-size:0;\n\tmso-style-noshow:yes;\n\tmso-style-priority:99;\n\tmso-style-parent:\"\";\n\tmso-padding-alt:0cm 5.4pt 0cm 5.4pt;\n\tmso-para-margin-top:0cm;\n\tmso-para-margin-right:0cm;\n\tmso-para-margin-bottom:8.0pt;\n\tmso-para-margin-left:0cm;\n\tline-height:115%;\n\tmso-pagination:widow-orphan;\n\tfont-size:12.0pt;\n\tfont-family:\"Aptos\",sans-serif;\n\tmso-ascii-font-family:Aptos;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-hansi-font-family:Aptos;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-font-kerning:1.0pt;\n\tmso-ligatures:standardcontextual;}\n</style>\n<![endif]-->\n\n\n\n<!--StartFragment-->\n\n<p class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\nline-height:normal\"><span style=\"font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;\nmso-font-kerning:0pt;mso-ligatures:none\">·</span><span style=\"font-family:&quot;Times New Roman&quot;,serif;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:\nnone\">&nbsp; <b>Trade Surplus / Deficit</b><o:p></o:p></span></p>\n\n<ul type=\"disc\">\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l4 level1 lfo1;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Trade Surplus</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Occurs when a country exports\n     more than it imports.<o:p></o:p></span></li>\n <ul type=\"circle\">\n  <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:\n      auto;line-height:normal;mso-list:l4 level2 lfo1;tab-stops:list 72.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n      mso-font-kerning:0pt;mso-ligatures:none\">Extension</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n      mso-font-kerning:0pt;mso-ligatures:none\">: A persistent trade surplus may\n      reflect strong export-oriented industries or currency undervaluation,\n      which can lead to political friction (e.g., currency manipulation\n      accusations).<o:p></o:p></span></li>\n </ul>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l4 level1 lfo1;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Trade Deficit</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Happens when imports exceed\n     exports.<o:p></o:p></span></li>\n <ul type=\"circle\">\n  <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:\n      auto;line-height:normal;mso-list:l4 level2 lfo1;tab-stops:list 72.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n      mso-font-kerning:0pt;mso-ligatures:none\">Extension</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n      mso-font-kerning:0pt;mso-ligatures:none\">: A moderate deficit can signal\n      robust consumer demand or inbound investment flows; however, large,\n      persistent deficits may raise concerns about domestic production decline\n      and foreign debt accumulation.<o:p></o:p></span></li>\n  <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:\n      auto;line-height:normal;mso-list:l4 level2 lfo1;tab-stops:list 72.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n      mso-font-kerning:0pt;mso-ligatures:none\">Current Hot Topic</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n      mso-font-kerning:0pt;mso-ligatures:none\">: U.S. trade deficits with\n      manufacturing-heavy regions; the debate over whether deficits matter for\n      overall economic health.<o:p></o:p></span></li>\n </ul>\n</ul>\n\n<p class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\nline-height:normal\"><span style=\"font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;\nmso-font-kerning:0pt;mso-ligatures:none\">·</span><span style=\"font-family:&quot;Times New Roman&quot;,serif;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:\nnone\">&nbsp; <b>Tariffs</b><o:p></o:p></span></p>\n\n<ul type=\"disc\">\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Definition</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Taxes placed on imported goods\n     to protect domestic industries or generate government revenue.<o:p></o:p></span></li>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l3 level1 lfo2;tab-stops:list 36.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Extension</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: High tariffs can protect local\n     jobs in the short term but often reduce efficiency and provoke retaliation\n     from trade partners. Tariff wars risk escalating global tensions.<o:p></o:p></span></li>\n</ul>\n\n<p class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\nline-height:normal\"><span style=\"font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;\nmso-font-kerning:0pt;mso-ligatures:none\">·</span><span style=\"font-family:&quot;Times New Roman&quot;,serif;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:\nnone\">&nbsp; <b>Quotas</b><o:p></o:p></span></p>\n\n<ul type=\"disc\">\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l2 level1 lfo3;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Definition</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Limits on the quantity of goods\n     that can be imported or exported during a specific period.<o:p></o:p></span></li>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l2 level1 lfo3;tab-stops:list 36.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Extension</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Often used to protect infant\n     industries or control goods deemed strategically important (e.g.,\n     agricultural quotas). They can create <i>quota rents</i>, which benefit\n     certain producers but raise overall prices for consumers.<o:p></o:p></span></li>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l2 level1 lfo3;tab-stops:list 36.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Current Hot Topic</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Debate over steel and aluminum\n     quotas to protect domestic metal industries vs. raising costs for\n     downstream manufacturers (e.g., automotive).<o:p></o:p></span></li>\n</ul>\n\n<p class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\nline-height:normal\"><span style=\"font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;\nmso-font-kerning:0pt;mso-ligatures:none\">·</span><span style=\"font-family:&quot;Times New Roman&quot;,serif;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:\nnone\">&nbsp; <b>Free Trade Agreements (FTAs)</b><o:p></o:p></span></p>\n\n<ul type=\"disc\">\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l0 level1 lfo4;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Definition</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Pacts between countries\n     reducing or eliminating trade barriers (tariffs, quotas, etc.).<o:p></o:p></span></li>\n</ul>\n\n<p class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\nline-height:normal\"><span style=\"font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;\nmso-font-kerning:0pt;mso-ligatures:none\">·</span><span style=\"font-family:&quot;Times New Roman&quot;,serif;\nmso-fareast-font-family:&quot;Times New Roman&quot;;mso-font-kerning:0pt;mso-ligatures:\nnone\">&nbsp; <b>Comparative Advantage &amp;\nEconomies of Scale</b><o:p></o:p></span></p>\n\n<ul type=\"disc\">\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l1 level1 lfo5;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Comparative Advantage</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: The ability of a country to\n     produce goods or services at a lower opportunity cost than other nations.<o:p></o:p></span></li>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l1 level1 lfo5;tab-stops:list 36.0pt\"><b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Economies of Scale</span></b><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: As production scales up, the\n     average costs per unit often decline, further enhancing competitiveness in\n     global markets.<o:p></o:p></span></li>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l1 level1 lfo5;tab-stops:list 36.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Extension</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Shifts in technology (e.g.,\n     automation, AI) can rapidly alter a nation’s comparative advantage;\n     government policies may aim to nurture new sectors (e.g., green\n     technology).<o:p></o:p></span></li>\n <li class=\"MsoNormal\" style=\"mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;\n     line-height:normal;mso-list:l1 level1 lfo5;tab-stops:list 36.0pt\"><i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">Current Hot Topic</span></i><span style=\"font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;;\n     mso-font-kerning:0pt;mso-ligatures:none\">: Ongoing debates about whether\n     advanced robotics and reshoring challenge traditional comparative\n     advantage roles.<o:p></o:p></span></li>\n</ul>\n\n<!--EndFragment--><div>\n        🔗 <a href=\"https://www.wto.org/\" target=\"_blank\">World Trade Organization (WTO)</a>\n      </div>",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 854.3999633789062,
+      "x": 483.47754336430273,
+      "y": 534.1352879581831,
+      "visible": true
     },
     {
-      text: "61. Loss Aversion",
-      description: `
-        <strong>Loss Aversion</strong> is the psychological tendency to prefer avoiding losses more strongly than acquiring equivalent gains.
-        A loss feels approximately twice as painful as the pleasure from a comparable gain.
-        <br><br>
-        📘 Central to Prospect Theory and explains why investors cling to losing assets or sell winners too early.<br>
-        🔗 <a href="https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/loss-aversion/" target="_blank">BehavioralEconomics.com: Loss Aversion</a><br> `
-        // 📺 <a href="https://www.youtube.com/watch?v=2KhGXl4Zx7I" target="_blank">YouTube: Why Losses Hurt More</a>
-    
+      "text": "2.7 Exchange Rates",
+      "description": "\n        <strong>Exchange Rates</strong> determine how much one currency is worth relative to another.\n        They influence trade flows, investment, inflation, and monetary policy.\n        Exchange regimes can be fixed, floating, or managed float.\n        <br><br>\n        🔗 <a href=\"https://www.investopedia.com/terms/e/exchangerate.asp\" target=\"_blank\">Exchange Rate Basics – Investopedia</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=TTjkHyFtYf8\" target=\"_blank\">YouTube: Currency Exchange Explained</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 279.99993896484375,
+      "height": 102.39999389648438,
+      "x": 628.4294093130457,
+      "y": 517.7064234617815,
+      "visible": true
     },
     {
-      text: "62. Herd Behavior",
-      description: `
-        <strong>Herd Behavior</strong> occurs when investors follow the majority, often without independent analysis.
-        This leads to speculative bubbles, crashes, and contagious market trends.
-        <br><br>
-        🐑 Examples:<br>
-        • Tech bubble (1990s)<br>
-        • Housing market crash (2008)<br>
-        • Meme stock rallies (GameStop, AMC)<br><br>
-        📘 Often driven by social proof, FOMO, and informational cascades.<br>
-        🔗 <a href="https://www.cfainstitute.org/en/research/cfa-digest/2014/08/herding-behavior-in-financial-markets" target="_blank">CFA: Herding in Financial Markets</a>
-      `
+      "text": "1.1.1 Supply-Demand Curve",
+      "description": "\n        The <strong>Supply-Demand Curve</strong> graphically illustrates how price affects quantity supplied and demanded.\n        The intersection point—market equilibrium—represents a stable price and quantity where demand equals supply.\n        <br><br>\n        📘 Used to analyze policy impact, taxes, and price controls.<br>\n        🔗 <a href=\"https://www.khanacademy.org/economics-finance-domain/microeconomics/supply-demand-equilibrium\" target=\"_blank\">Khan Academy: Market Equilibrium</a>\n      ",
+      "parent": 3,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1770.2325917252958,
+      "y": 1016.633714964279,
+      "visible": true
     },
     {
-      text: "63. Video: Behavioral Finance Overview",
-      description: `
-        This engaging video provides a concise <strong>overview of Behavioral Finance</strong>, including key cognitive biases, emotional drivers, and market implications.
-        It's ideal for students, investors, or anyone seeking to understand why markets often deviate from rational expectations.
-        <br><br>
-        📺 Covers heuristics, framing, mental accounting, and more.<br>`
-        // 📽️Watch on YouTube
-        // <iframe width="100%" height="200" src="https://www.youtube.com/embed/EXAMPLE_VIDEO_ID" title="Behavioral Finance Overview" frameborder="0" allowfullscreen></iframe>
-      
-    }    
+      "text": "1.2.1 Perfect Competition",
+      "description": "\n        <strong>Perfect Competition</strong> is a theoretical market structure where numerous small firms sell identical products, and no one has market power.\n        Prices are determined purely by supply and demand.\n        <br><br>\n        📘 Conditions include many sellers, homogeneous goods, free entry/exit, and perfect information.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/p/perfectcompetition.asp\" target=\"_blank\">Perfect Competition – Investopedia</a>\n      ",
+      "parent": 4,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.40008544921875,
+      "x": 1470.7721155731087,
+      "y": 1326.5407649110798,
+      "visible": true
+    },
+    {
+      "text": "1.3.1 Cost-Benefit Analysis",
+      "description": "\n        <strong>Cost-Benefit Analysis (CBA)</strong> is a decision-making tool that compares the expected costs and benefits of an action or project.\n        It is widely used in economics, policy planning, and business.\n        <br><br>\n        🔗 <a href=\"https://www.investopedia.com/terms/c/cost-benefitanalysis.asp\" target=\"_blank\">Investopedia: CBA Explained</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=3tL3D5rxb5I\" target=\"_blank\">YouTube: Intro to Cost-Benefit Analysis</a>\n      ",
+      "parent": 5,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1324.96474554932,
+      "y": 1389.0769209532314,
+      "visible": true
+    },
+    {
+      "text": "1.4.1 Law of Diminishing Returns",
+      "description": "\n        The <strong>Law of Diminishing Returns</strong> states that adding more of one input (while keeping others constant) will eventually yield lower marginal output.\n        It is a key concept in production and labor analysis.\n        <br><br>\n        📘 Explains why total production rises at a decreasing rate after a point.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/l/lawofdiminishingreturns.asp\" target=\"_blank\">Investopedia: Diminishing Returns</a>\n      ",
+      "parent": 6,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39990234375,
+      "x": 1169.2651718018856,
+      "y": 1419.5433401824348,
+      "visible": true
+    },
+    {
+      "text": "2.1.1 Keynesian Theory",
+      "important": true,
+      "classic": "Classic Theory: Keynesian Theory",
+      "person": "Keynes",
+      "description": "\n        <strong>Keynesian Theory</strong>, developed by John Maynard Keynes during the Great Depression, emphasizes the role of government spending and aggregate demand in influencing economic activity.\n        It challenges classical views that markets always self-correct.\n        <br><br>\n        📘 Key ideas: multiplier effect, fiscal stimulus, sticky wages and prices.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/k/keynesianeconomics.asp\" target=\"_blank\">Investopedia: Keynesian Economics</a><br>\n        📺 Keynesian vs Classical Economics\n      ",
+      "videoUrl": "https://www.youtube.com/embed/o6UXRZ2XwgU?si=hzyVyrWxBT64lxxp",
+      "parent": 8,
+      "expanded": true,
+      "el": {},
+      "width": 279.99993896484375,
+      "height": 289.75,
+      "x": 934.2041129188503,
+      "y": 1402.9476987902917,
+      "visible": true
+    },
+    {
+      "text": "2.2.1 Phillips Curve",
+      "description": "\n        The <strong>Phillips Curve</strong> represents the short-term inverse relationship between inflation and unemployment.\n        Originally thought stable, it later showed breakdowns during stagflation, leading to new macroeconomic theories.\n        <br><br>\n        📘 Short-run trade-offs, but long-run neutrality.<br>\n        🔗 <a href=\"https://www.imf.org/external/pubs/ft/fandd/2015/03/basics.htm\" target=\"_blank\">IMF: Understanding the Phillips Curve</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=9u2T2W-n0kM\" target=\"_blank\">YouTube: Phillips Curve Explained</a>\n      ",
+      "parent": 9,
+      "expanded": true,
+      "el": {},
+      "width": 279.99993896484375,
+      "height": 102.39990234375,
+      "x": 787.5866570025041,
+      "y": 1352.431803641649,
+      "visible": true
+    },
+    {
+      "text": "2.3.1 IS-LM Model",
+      "important": true,
+      "classic": "Classic Theory: IS-LM Model",
+      "person": "Keynes",
+      "image": "https://via.placeholder.com/100?text=IS-LM",
+      "description": "\n        The <strong>IS-LM Model</strong> describes the interaction between interest rates and real output in both goods and money markets.\n        The IS curve represents investment-saving equilibrium; the LM curve represents liquidity-money equilibrium.\n        <br><br>\n        📘 A core model in Keynesian macroeconomics.<br>\n        🔗 <a href=\"https://en.wikipedia.org/wiki/IS%E2%80%93LM_model\" target=\"_blank\">Wikipedia: IS–LM Model</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=bZAX12YbsAA\" target=\"_blank\">YouTube: IS-LM Visual Explanation</a>\n      ",
+      "parent": 10,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 168.625,
+      "x": 515.7353432414648,
+      "y": 1137.7619694831478,
+      "visible": true
+    },
+    {
+      "text": "2.4.1 Quantity Theory of Money",
+      "description": "\n        The <strong>Quantity Theory of Money</strong> links money supply with price levels using the equation MV = PQ.\n        It's central to classical and monetarist views that inflation results from excessive money growth.\n        <br><br>\n        📘 Advocated by economists like Irving Fisher and Milton Friedman.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/q/quantity-theory-of-money.asp\" target=\"_blank\">Investopedia: Quantity Theory of Money</a>\n      ",
+      "parent": 11,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39996337890625,
+      "x": 369.34445569066236,
+      "y": 823.8256980309153,
+      "visible": true
+    },
+    {
+      "text": "2.6.1 Comparative Advantage",
+      "description": "\n        <strong>Comparative Advantage</strong> is the ability of a country to produce a good at a lower opportunity cost than others.\n        It explains the rationale behind international trade, even when one country is less efficient in all goods.\n        <br><br>\n        📘 Introduced by David Ricardo in the 19th century.<br>\n        🔗 <a href=\"https://www.econlib.org/library/Topics/Details/comparativeadvantage.html\" target=\"_blank\">EconLib: Comparative Advantage</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=FpQpg3lckYY\" target=\"_blank\">YouTube: Trade & Comparative Advantage</a>\n      ",
+      "parent": 13,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 358.2201356055708,
+      "y": 591.9984447730399,
+      "visible": true
+    },
+    {
+      "text": "2.7.1 Purchasing Power Parity",
+      "description": "\n        <strong>Purchasing Power Parity (PPP)</strong> compares currency values based on the cost of a standard basket of goods.\n        It reflects exchange rate adjustments needed for identical purchasing power.\n        <br><br>\n        📘 Often used by the IMF and World Bank for cross-country GDP comparisons.<br>\n        🔗 <a href=\"https://www.imf.org/en/Publications/fandd/issues/Series/Back-to-Basics/Purchasing-Power-Parity\" target=\"_blank\">IMF: PPP Explained</a>\n      ",
+      "parent": 14,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 102.39999389648438,
+      "x": 390.69493159899775,
+      "y": 440.3609768858594,
+      "visible": true
+    },
+    {
+      "text": "3. Behavioral Economics",
+      "description": "\n        <strong>Behavioral Economics</strong> blends insights from psychology with economic theory to better understand decision-making.\n        It reveals cognitive biases like loss aversion, anchoring, and mental accounting.\n        <br><br>\n        📘 Founders include Daniel Kahneman, Amos Tversky, and Richard Thaler.<br>\n        🔗 <a href=\"https://www.behavioraleconomics.com/\" target=\"_blank\">BehavioralEconomics.com</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=JzN-Jg1bYqE\" target=\"_blank\">TED: Kahneman on Intuition and Bias</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1085.2158413445354,
+      "y": 423.09636731833075,
+      "visible": true
+    },
+    {
+      "text": "4. Development Economics",
+      "description": "\n        <strong>Development Economics</strong> studies how to improve economic conditions in low-income countries.\n        It focuses on poverty reduction, education, infrastructure, and sustainable growth.\n        <br><br>\n        📘 Key concepts: human capital, foreign aid, institutions, microfinance.<br>\n        🔗 <a href=\"https://en.wikipedia.org/wiki/Development_economics\" target=\"_blank\">Wikipedia: Development Economics</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1159.5285982302203,
+      "y": 428.6653385681699,
+      "visible": true
+    },
+    {
+      "text": "5. Environmental Economics",
+      "description": "\n        <strong>Environmental Economics</strong> analyzes how economic activities impact the environment and how policy can address issues like pollution and climate change.\n        It values natural resources and externalities.\n        <br><br>\n        📘 Tools: carbon pricing, Pigouvian taxes, tradable permits.<br>\n        🔗 <a href=\"https://www.epa.gov/environmental-economics\" target=\"_blank\">EPA: Environmental Economics Resources</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1183.5200273040628,
+      "y": 435.41548007184286,
+      "visible": true
+    },
+    {
+      "text": "6. Health Economics",
+      "description": "\n        <strong>Health Economics</strong> examines the behavior of individuals, providers, and governments in the healthcare market.\n        It analyzes costs, access, efficiency, and outcomes of healthcare systems.\n        <br><br>\n        📘 Topics: insurance design, moral hazard, cost-effectiveness, health equity.<br>\n        🔗 <a href=\"https://www.who.int/health-topics/health-economics#tab=tab_1\" target=\"_blank\">WHO: What is Health Economics?</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1206.7201405237947,
+      "y": 444.52085353570754,
+      "visible": true
+    },
+    {
+      "text": "2.8 International Finance",
+      "classic": "",
+      "formula": "",
+      "Nobel": "",
+      "chart": "",
+      "application": "",
+      "description": "\n        <strong>International Finance</strong> focuses on financial interactions between countries, including foreign exchange, international investment, capital flows, and global risk.\n        It encompasses balance of payments, exchange rate systems, and cross-border portfolio management.\n        <br><br>\n        📘 Key topics include fixed vs. floating currencies, currency crises, and interest rate parity.<br>\n        🔗 <a href=\"https://www.imf.org/en/Publications/WP/Issues/2016/12/31/An-Introduction-to-International-Finance-43109\" target=\"_blank\">IMF: Introduction to International Finance</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 658.0907492802904,
+      "y": 446.00038642880685,
+      "visible": true
+    },
+    {
+      "text": "2.9 Financial Markets",
+      "classic": "",
+      "formula": "",
+      "Nobel": "",
+      "chart": "",
+      "application": "Stock exchanges, bond markets, money markets, derivatives trading",
+      "description": "\n        <strong>Financial Markets</strong> are venues where buyers and sellers trade financial instruments like stocks, bonds, currencies, and derivatives.\n        They serve the functions of price discovery, liquidity, capital allocation, and risk sharing.\n        <br><br>\n        📘 Market types: primary vs. secondary, equity vs. debt, public vs. private.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/f/financial-market.asp\" target=\"_blank\">Investopedia: Financial Markets</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 144.94998168945312,
+      "x": 683.8854031657561,
+      "y": 401.12418468074594,
+      "visible": true
+    },
+    {
+      "text": "2.10 Corporate Finance",
+      "classic": "",
+      "formula": "",
+      "Nobel": "",
+      "chart": "",
+      "application": "Capital budgeting, dividend policy, capital structure",
+      "description": "\n        <strong>Corporate Finance</strong> deals with how companies raise, allocate, and manage capital to maximize shareholder value.\n        It includes investment decisions, financing methods, and risk management within the firm.\n        <br><br>\n        📘 Tools: Net Present Value (NPV), Internal Rate of Return (IRR), Weighted Average Cost of Capital (WACC).<br>\n        🔗 <a href=\"https://www.cfainstitute.org/en/research/foundation/2014/corporate-finance\" target=\"_blank\">CFA Institute: Corporate Finance Guide</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 144.95001220703125,
+      "x": 714.1813152158234,
+      "y": 359.15520368932476,
+      "visible": true
+    },
+    {
+      "text": "2.11 Investment Analysis",
+      "classic": "",
+      "formula": "",
+      "Nobel": "",
+      "chart": "",
+      "application": "Security selection, valuation models, asset allocation",
+      "description": "\n        <strong>Investment Analysis</strong> involves evaluating securities, portfolios, and markets to make informed investment decisions.\n        Analysts use both fundamental and technical approaches to assess value and risk.\n        <br><br>\n        📘 Common tools include P/E ratios, DCF models, and technical indicators.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/i/investmentanalysis.asp\" target=\"_blank\">Investopedia: Investment Analysis</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 144.9499969482422,
+      "x": 748.6538056373779,
+      "y": 320.54322295096506,
+      "visible": true
+    },
+    {
+      "text": "2.12 Risk Management",
+      "classic": "",
+      "formula": "",
+      "Nobel": "",
+      "chart": "",
+      "application": "Hedging, insurance, VAR, credit risk assessment",
+      "description": "\n        <strong>Risk Management</strong> is the process of identifying, analyzing, and mitigating risks that could impact financial performance.\n        It is essential in corporate finance, investment, banking, and regulation.\n        <br><br>\n        📘 Key methods: diversification, hedging, derivatives, Value-at-Risk (VaR).<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/r/riskmanagement.asp\" target=\"_blank\">Investopedia: Risk Management</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 144.9499969482422,
+      "x": 786.933434453182,
+      "y": 285.70204515617843,
+      "visible": true
+    },
+    {
+      "text": "2.13 Derivatives",
+      "classic": "",
+      "formula": "",
+      "nobel": "",
+      "chart": "",
+      "application": "Hedging, speculation, arbitrage, structured products",
+      "description": "\n        <strong>Derivatives</strong> are financial instruments whose value is derived from an underlying asset, such as options, futures, swaps, and forwards.\n        They are widely used for hedging, leveraging, and risk transfer.\n        <br><br>\n        📘 Derivatives pricing theory (e.g., Black-Scholes model) revolutionized modern finance.<br>\n        🔗 <a href=\"https://www.cmegroup.com/education/courses/introduction-to-derivatives/what-are-derivatives.html\" target=\"_blank\">CME Group: What Are Derivatives?</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 144.9499969482422,
+      "x": 828.6099607718616,
+      "y": 255.00506148657337,
+      "visible": true
+    },
+    {
+      "text": "2.14 Portfolio Theory",
+      "classic": "Modern Portfolio Theory (MPT)",
+      "formula": "E(Rp) = Σ wi·E(Ri),  σ²(Rp) = ΣΣ wi·wj·Cov(Ri, Rj)",
+      "nobel": "Harry Markowitz (1990)",
+      "chart": "Efficient Frontier",
+      "application": "Asset allocation, diversification, risk-return optimization",
+      "description": "\n        <strong>Portfolio Theory</strong> analyzes how investors can construct portfolios to optimize expected return based on risk.\n        It emphasizes diversification and quantifies risk through variance and covariance.\n        <br><br>\n        📘 Introduced by Markowitz, later expanded by Sharpe (CAPM) and others.<br>\n        🔗 <a href=\"https://corporatefinanceinstitute.com/resources/wealth-management/modern-portfolio-theory-mpt/\" target=\"_blank\">CFI: Modern Portfolio Theory</a><br>\n        📺 YouTube: MPT & Efficient Frontier\n      ",
+      "videoUrl": "https://www.youtube.com/embed/8TJQhQ2GZ0Y?si=efAe_1KadL2ObEwT",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 366.04998779296875,
+      "x": 873.2367393192802,
+      "y": 228.78125,
+      "visible": true
+    },
+    {
+      "text": "2.15 Asset Pricing",
+      "classic": "Capital Asset Pricing Model (CAPM), Arbitrage Pricing Theory (APT)",
+      "formula": "E(Ri) = Rf + βi(E(Rm) - Rf)",
+      "nobel": "William Sharpe (1990), Eugene Fama & Robert Shiller (2013)",
+      "chart": "Security Market Line (SML)",
+      "application": "Valuation, expected return estimation, cost of capital",
+      "description": "\n        <strong>Asset Pricing</strong> explores how securities are priced in financial markets based on risk and return.\n        Foundational models include the CAPM and APT, which relate expected return to systematic risk.\n        <br><br>\n        📘 Important for capital budgeting, stock valuation, and portfolio management.<br>\n        🔗 <a href=\"https://www.cfainstitute.org/en/research/foundation/2015/asset-pricing\" target=\"_blank\">CFA Institute: Asset Pricing Overview</a>\n      ",
+      "parent": 2,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 224.04998779296875,
+      "x": 920.3355071138775,
+      "y": 207.3116499889568,
+      "visible": true
+    },
+    {
+      "text": "7. Game Theory",
+      "classic": "Nash Equilibrium",
+      "formula": "",
+      "Nobel": "John Nash (1994), Robert Aumann (2005)",
+      "chart": "Payoff Matrix, Extensive Form Tree",
+      "application": "Strategic decision-making, auctions, oligopoly pricing, diplomacy",
+      "description": "\n        <strong>Game Theory</strong> is the study of strategic interaction among rational decision-makers.\n        It analyzes outcomes when the choices of individuals depend on the actions of others.\n        <br><br>\n        📘 Key concepts include dominant strategies, Nash equilibrium, and zero-sum games.<br>\n        🔗 <a href=\"https://plato.stanford.edu/entries/game-theory/\" target=\"_blank\">Stanford Encyclopedia of Philosophy: Game Theory</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=MHS-htjGgSY\" target=\"_blank\">YouTube: Game Theory in Real Life</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280.0001220703125,
+      "height": 223.64999389648438,
+      "x": 1228.898364741142,
+      "y": 455.89096566751624,
+      "visible": true
+    },
+    {
+      "text": "8. Public Economics",
+      "classic": "Samuelson's Theory of Public Goods",
+      "formula": "",
+      "Nobel": "James Mirrlees & William Vickrey (1996)",
+      "chart": "Externalities Diagram, Laffer Curve",
+      "application": "Tax policy, government spending, welfare programs",
+      "description": "\n        <strong>Public Economics</strong> studies government policies through the lens of efficiency and equity.\n        It focuses on taxation, public goods, social insurance, and market failures.\n        <br><br>\n        📘 Public economics provides the rationale behind redistribution and public provision of services.<br>\n        🔗 <a href=\"https://www.econlib.org/library/Enc/PublicGoods.html\" target=\"_blank\">EconLib: Public Goods</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280.0001220703125,
+      "height": 206.375,
+      "x": 1249.8342827998395,
+      "y": 469.41281518466184,
+      "visible": true
+    },
+    {
+      "text": "9. Urban Economics",
+      "classic": "Monocentric City Model",
+      "formula": "",
+      "Nobel": "",
+      "chart": "Bid-Rent Curve, Urban Density Gradient",
+      "application": "Zoning, housing markets, city growth, transportation planning",
+      "description": "\n        <strong>Urban Economics</strong> studies spatial organization of economic activity within cities.\n        It examines how land use, housing prices, commuting, and zoning policies affect urban structure.\n        <br><br>\n        📘 Also explores topics like gentrification, urban poverty, and infrastructure.<br>\n        🔗 <a href=\"https://en.wikipedia.org/wiki/Urban_economics\" target=\"_blank\">Wikipedia: Urban Economics</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 185.89999389648438,
+      "x": 1269.319824140357,
+      "y": 484.95201587169254,
+      "visible": true
+    },
+    {
+      "text": "10. Agricultural Economics",
+      "classic": "",
+      "formula": "",
+      "Nobel": "",
+      "chart": "",
+      "application": "Food policy, subsidies, land use, rural development",
+      "description": "\n        <strong>Agricultural Economics</strong> applies economic principles to the production, distribution, and consumption of agricultural goods.\n        It addresses pricing, resource use, food security, and sustainability.\n        <br><br>\n        📘 Topics include crop insurance, market regulation, and global food trade.<br>\n        🔗 <a href=\"https://www.ers.usda.gov/\" target=\"_blank\">USDA: Economic Research Service</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 144.95001220703125,
+      "x": 1287.1613326985985,
+      "y": 502.3541321708963,
+      "visible": true
+    },
+    {
+      "text": "11. Labor Economics",
+      "classic": "Human Capital Theory (Becker)",
+      "formula": "",
+      "Nobel": "Gary Becker (1992), David Card (2021)",
+      "chart": "Labor Supply and Demand Curves, Wage Distribution",
+      "application": "Wages, employment, education, inequality, unions",
+      "description": "\n        <strong>Labor Economics</strong> studies the supply and demand for labor and the determination of wages.\n        It also investigates how labor markets interact with education, gender, and public policy.\n        <br><br>\n        📘 Human capital, labor mobility, discrimination, and market segmentation are key topics.<br>\n        🔗 <a href=\"https://www.nber.org/programs-projects/programs-working-groups/labor-studies\" target=\"_blank\">NBER: Labor Studies Program</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 223.64999389648438,
+      "x": 1303.1814915468726,
+      "y": 521.4462140322569,
+      "visible": true
+    },
+    {
+      "text": "12. Political Economy",
+      "classic": "Public Choice Theory",
+      "formula": "",
+      "Nobel": "James Buchanan (1986)",
+      "chart": "",
+      "application": "Policy design, lobbying, voting, constitutional economics",
+      "description": "\n        <strong>Political Economy</strong> analyzes how economic theory and political forces influence public policy.\n        It explores the interaction between institutions, incentives, and power structures.\n        <br><br>\n        📘 Topics include rent-seeking, voting rules, and government failure.<br>\n        🔗 <a href=\"https://www.econlib.org/library/Enc/PoliticalEconomy.html\" target=\"_blank\">EconLib: Political Economy</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 185.89999389648438,
+      "x": 1317.221085149181,
+      "y": 542.038515768752,
+      "visible": true
+    },
+    {
+      "text": "13. Behavioral Finance",
+      "classic": "Prospect Theory (Kahneman & Tversky)",
+      "formula": "",
+      "Nobel": "Daniel Kahneman (2002), Richard Thaler (2017)",
+      "chart": "Value Function Curve, Disposition Effect Chart",
+      "application": "Investor psychology, market anomalies, loss aversion",
+      "description": "\n        <strong>Behavioral Finance</strong> studies how psychological factors affect investor behavior and market outcomes.\n        It explains irrational phenomena like overconfidence, herding, and framing effects.\n        <br><br>\n        📘 A core field in post-2000 finance theory development.<br>\n        🔗 <a href=\"https://www.cfainstitute.org/en/advocacy/market-integrity-insights/behavioral-finance-in-practice\" target=\"_blank\">CFA: Behavioral Finance in Practice</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=wD5X6rgsN3M\" target=\"_blank\">YouTube: Richard Thaler on Human Biases</a>\n      ",
+      "parent": 0,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 240.92501831054688,
+      "x": 1346.1676862984114,
+      "y": 610.7079671910532,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.1 Law of Demand",
+      "description": "\n        The <strong>Law of Demand</strong> states that, all else being equal, as the price of a good decreases, the quantity demanded increases, and vice versa.\n        This inverse relationship is foundational in consumer behavior and demand curves.\n        <br><br>\n        📘 It assumes rational buyers, ceteris paribus (other factors held constant).<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/l/lawofdemand.asp\" target=\"_blank\">Investopedia: Law of Demand</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=1WfGhuEDJZw\" target=\"_blank\">YouTube: Law of Demand Explained</a>\n      ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 160,
+      "height": 102.39996337890625,
+      "x": 2101.5790082014364,
+      "y": 740.4659119028756,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.2 Law of Supply",
+      "description": "\n        The <strong>Law of Supply</strong> posits that as the price of a good increases, producers are willing to supply more of it, and vice versa.\n        This positive relationship underpins the upward-sloping supply curve.\n        <br><br>\n        📘 Reflects the incentive for producers to earn more profits at higher prices.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/l/lawofsupply.asp\" target=\"_blank\">Investopedia: Law of Supply</a><br>\n        📺 <a href=\"https://www.youtube.com/watch?v=LRp5MNDo4FQ\" target=\"_blank\">YouTube: Supply in Economics</a>\n      ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 160.0001220703125,
+      "height": 102.4000244140625,
+      "x": 2083.088658953773,
+      "y": 875.3415644251386,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.3 Elasticities",
+      "description": "\n        <strong>Elasticity</strong> measures the responsiveness of quantity demanded or supplied to changes in price, income, or other goods' prices.\n        <br><br>\n        🧮 Key types include:<br>\n        • <strong>Price Elasticity of Demand</strong><br>\n        • <strong>Income Elasticity of Demand</strong><br>\n        • <strong>Cross-Price Elasticity</strong><br>\n        • <strong>Elasticity of Supply</strong><br>\n        <br>\n        📘 Elasticities are crucial for setting prices, understanding tax impacts, and policy design.<br>\n        🔗 <a href=\"https://www.khanacademy.org/economics-finance-domain/microeconomics/elasticity-tutorial\" target=\"_blank\">Khan Academy: Elasticity Overview</a>\n      ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 160.0001220703125,
+      "height": 102.4000244140625,
+      "x": 2046.4506482890067,
+      "y": 1006.4559832856716,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.4 Consumer Surplus",
+      "description": "\n        <strong>Consumer Surplus</strong> is the difference between what consumers are willing to pay and what they actually pay.\n        It represents the economic benefit to buyers in a transaction.\n        <br><br>\n        📊 Graphically, it's the area below the demand curve and above the market price.<br>\n        📘 Useful in welfare economics and policy analysis.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/c/consumer_surplus.asp\" target=\"_blank\">Investopedia: Consumer Surplus</a><br>\n        \n      ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 205.6500244140625,
+      "height": 102.4000244140625,
+      "x": 1992.344000720014,
+      "y": 1131.3791810811636,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.5 Producer Surplus",
+      "description": "\n        <strong>Producer Surplus</strong> is the difference between the price a producer receives and the minimum price they’re willing to accept.\n        It reflects the benefit sellers gain from market participation.\n        <br><br>\n        📊 On a supply-demand diagram, it's the area above the supply curve and below the market price.<br>\n        📘 Often analyzed alongside consumer surplus to evaluate total welfare.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/p/producersurplus.asp\" target=\"_blank\">Producer Surplus - Investopedia</a>\n      ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1921.771492853446,
+      "y": 1247.795914380247,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.6 Case Study: Gas Price Shocks",
+      "description": "\n        <strong>Gas Price Shocks</strong> serve as real-world illustrations of supply-demand shifts.\n        For example, when oil supply is restricted due to geopolitical tensions or natural disasters, prices rise sharply, and quantity demanded falls.\n        <br><br>\n        📈 The short-run inelasticity of demand causes steep price reactions.<br>\n        📘 Long-run adaptation includes switching to fuel-efficient cars or alternative transport.<br>\n        ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1836.041068595291,
+      "y": 1353.548592904829,
+      "visible": true
+    },
+    {
+      "text": "1.1.1.7 Video: Crash Course #4",
+      "description": "\n        An introductory video to <strong>Demand and Supply</strong>, explaining market behavior using animated graphics and real-world examples.\n        Highly recommended for beginners.\n        <br><br>\n        📺 <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/g9aDizJpd_s?si=PhB6linlJ763d2p8\" title=\"Crash Course Economics: Supply and Demand\" frameborder=\"0\" allowfullscreen></iframe>\n      ",
+      "parent": 15,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 1736.7415985887503,
+      "y": 1446.677266872769,
+      "visible": true
+    },
+    {
+      "text": "2.3.1.1 IS Curve",
+      "description": "\n        The <strong>IS Curve</strong> (Investment-Saving Curve) represents the combinations of interest rates and output (GDP) at which the goods market is in equilibrium.\n        It is derived from the Keynesian cross and reflects how changes in the interest rate affect investment and, subsequently, output.\n        <br><br>\n        📉 The IS curve is downward sloping because lower interest rates stimulate investment, increasing aggregate demand and output.<br>\n        📘 Fiscal policy shifts the IS curve left or right.<br>\n        🔗 <a href=\"https://www.economicsdiscussion.net/is-lm-model/is-curve/31579\" target=\"_blank\">IS Curve Explained</a><br>",
+      "parent": 21,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39990234375,
+      "x": 529.8506969801225,
+      "y": 1491.2191990386955,
+      "visible": true
+    },
+    {
+      "text": "2.3.1.2 LM Curve",
+      "description": "\n        The <strong>LM Curve</strong> (Liquidity Preference-Money Supply Curve) shows the combinations of interest rates and output where the money market is in equilibrium.\n        It reflects the relationship between income and demand for money, given a fixed money supply.\n        <br><br>\n        📈 The LM curve is upward sloping because as income rises, people demand more money, pushing up interest rates (if supply is fixed).<br>\n        📘 Monetary policy (e.g., changing money supply) shifts the LM curve.<br>\n        🔗 <a href=\"https://www.economicshelp.org/blog/glossary/lm-curve/\" target=\"_blank\">Economics Help: LM Curve</a><br>",
+      "parent": 21,
+      "expanded": true,
+      "el": {},
+      "width": 280.00006103515625,
+      "height": 102.4000244140625,
+      "x": 417.56372834358376,
+      "y": 1399.683207361571,
+      "visible": true
+    },
+    {
+      "text": "2.3.1.3 Shifts in IS/LM",
+      "description": "\n        <strong>Shifts in the IS and LM curves</strong> explain how fiscal and monetary policies influence equilibrium output and interest rates.\n        <br><br>\n        🔄 <strong>IS curve shifts</strong> occur due to changes in government spending, taxes, or autonomous consumption/investment.<br>\n        💵 <strong>LM curve shifts</strong> happen when the central bank changes the money supply or liquidity preferences change.<br><br>\n        📘 These shifts are essential tools in analyzing macroeconomic stabilization policy.<br>\n        🔗 <a href=\"https://www.intelligent-trader.com/the-is-lm-model-explained/\" target=\"_blank\">IS-LM Model with Shifts</a>\n      ",
+      "parent": 21,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.4000244140625,
+      "x": 319.68100274157246,
+      "y": 1292.883520439655,
+      "visible": true
+    },
+    {
+      "text": "2.3.1.4 Liquidity Preference",
+      "description": "\n        <strong>Liquidity Preference</strong> is a concept developed by Keynes to explain the demand for money.\n        It states that people prefer liquidity (holding cash) and only give it up in exchange for interest.<br><br>\n        ✋ There are three motives for holding money:<br>\n        • Transactions<br>\n        • Precautionary<br>\n        • Speculative<br><br>\n        📘 The interest rate adjusts to balance money demand and supply.<br>\n        🔗 <a href=\"https://www.investopedia.com/terms/l/liquiditypreference.asp\" target=\"_blank\">Liquidity Preference - Investopedia</a><br>",
+      "parent": 21,
+      "expanded": true,
+      "el": {},
+      "width": 279.9999694824219,
+      "height": 102.4000244140625,
+      "x": 238.25680462030948,
+      "y": 1173.0615647795717,
+      "visible": true
+    },
+    {
+      "text": "2.3.1.5 Video: IS-LM Explanation",
+      "description": "\n        This educational video offers a <strong>visual explanation of the IS-LM model</strong>, showing how the equilibrium in both the goods and money markets is jointly determined.\n        <br><br>\n        📽️ Understand policy impacts through dynamic graph animations.<br>\n        🔗 <a href=\"https://www.youtube.com/watch?v=EXAMPLE_VIDEO_ID\" target=\"_blank\">Watch on YouTube</a><br><br>\n        📺 <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/e_3clidGpfE?si=a6ahAklhgIZp1JwR\" title=\"IS-LM Model Explanation\" frameborder=\"0\" allowfullscreen></iframe>\n      ",
+      "parent": 21,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39996337890625,
+      "x": 175,
+      "y": 1042.732067860701,
+      "visible": true
+    },
+    {
+      "text": "3.1 Prospect Theory",
+      "description": "\n        <strong>Prospect Theory</strong>, developed by Daniel Kahneman and Amos Tversky, explains how people make decisions under risk and uncertainty.\n        It challenges classical expected utility theory by showing that individuals evaluate gains and losses relative to a reference point, rather than final outcomes.\n        <br><br>\n        🧠 Key ideas:<br>\n        • <strong>Loss Aversion</strong>: losses hurt more than equivalent gains please<br>\n        • <strong>Diminishing sensitivity</strong>: value function is concave for gains, convex for losses<br>\n        • <strong>Probability weighting</strong>: people overweight small probabilities and underweight large ones<br><br>\n        🔗 <a href=\"https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/prospect-theory/\" target=\"_blank\">BehavioralEconomics.com: Prospect Theory</a><br>",
+      "parent": 25,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.40000915527344,
+      "x": 974.4888421898809,
+      "y": 189.4344034690917,
+      "visible": true
+    },
+    {
+      "text": "3.2 Bounded Rationality",
+      "description": "\n        <strong>Bounded Rationality</strong> is a theory by Herbert Simon that recognizes the cognitive limitations of human decision-makers.\n        Instead of optimizing, people often <em>satisfice</em> — choosing a solution that is good enough — due to limited time, information, or computational capacity.\n        <br><br>\n        📘 Bounded rationality helps explain real-world behavior like defaults, biases, and heuristics.<br>\n        🔗 <a href=\"https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/bounded-rationality/\" target=\"_blank\">Mini Encyclopedia: Bounded Rationality</a><br>",
+      "parent": 25,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.40000915527344,
+      "x": 1035.5465605861045,
+      "y": 177.0913194070995,
+      "visible": true
+    },
+    {
+      "text": "3.3 Nudge Theory",
+      "description": "\n        <strong>Nudge Theory</strong>, popularized by Richard Thaler and Cass Sunstein, suggests that small changes in choice architecture can significantly influence behavior — without restricting freedom of choice.\n        <br><br>\n        🌱 Examples:<br>\n        • Placing healthy food at eye level<br>\n        • Auto-enrolling employees into retirement savings<br>\n        • Default organ donation settings<br><br>\n        📘 Nudges are subtle, cost-effective tools for public policy and behavioral design.<br>\n        🔗 <a href=\"https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/nudge/\" target=\"_blank\">What is Nudge Theory?</a><br>",
+      "parent": 25,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1097.6652074434332,
+      "y": 172.4361703731384,
+      "visible": true
+    },
+    {
+      "text": "3.4 Video: Dan Ariely TED Talk",
+      "description": "\n        A brilliant <strong>TED Talk by Dan Ariely</strong>, a leading figure in behavioral economics, that reveals the hidden forces influencing irrational decision-making.\n        Using clever experiments, he explains why people cheat, procrastinate, and make emotional choices against their own interest.\n        <br><br>\n        📘 Ariely’s work bridges psychology, marketing, and public policy.<br>\n        🔗 <a href=\"https://www.ted.com/talks/dan_ariely_are_we_in_control_of_our_own_decisions\" target=\"_blank\">Watch on TED.com</a><br><br>\n        📺 <iframe width=\"100%\" height=\"200\" src=\"https://www.youtube.com/embed/9X68dm92HVI?si=wqMprkRLxjPCzMuZ\" title=\"Dan Ariely TED Talk\" frameborder=\"0\" allowfullscreen></iframe>\n      ",
+      "parent": 25,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.40000915527344,
+      "x": 1159.8806027927947,
+      "y": 175.54121166700435,
+      "visible": true
+    },
+    {
+      "text": "13.1 Overconfidence Bias",
+      "description": "\n        <strong>Overconfidence Bias</strong> is a cognitive distortion where individuals overestimate their knowledge, prediction skills, or control over events.\n        In investing, this leads to excessive trading, underestimation of risks, and portfolio underperformance.\n        <br><br>\n        📉 Studies show that overconfident investors trade more frequently and achieve lower returns.<br>\n        📘 A key concept in explaining market anomalies and irrational behavior.<br>\n        🔗 <a href=\"https://corporatefinanceinstitute.com/resources/behavioral-finance/overconfidence-bias/\" target=\"_blank\">CFI: Overconfidence Bias</a><br>",
+      "parent": 43,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1557.0522582594672,
+      "y": 461.0881857432774,
+      "visible": true
+    },
+    {
+      "text": "13.2 Loss Aversion",
+      "description": "\n        <strong>Loss Aversion</strong> is the psychological tendency to prefer avoiding losses more strongly than acquiring equivalent gains.\n        A loss feels approximately twice as painful as the pleasure from a comparable gain.\n        <br><br>\n        📘 Central to Prospect Theory and explains why investors cling to losing assets or sell winners too early.<br>\n        🔗 <a href=\"https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/loss-aversion/\" target=\"_blank\">BehavioralEconomics.com: Loss Aversion</a><br> ",
+      "parent": 43,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1579.8103846718034,
+      "y": 519.0749461469597,
+      "visible": true
+    },
+    {
+      "text": "13.3 Herd Behavior",
+      "description": "\n        <strong>Herd Behavior</strong> occurs when investors follow the majority, often without independent analysis.\n        This leads to speculative bubbles, crashes, and contagious market trends.\n        <br><br>\n        🐑 Examples:<br>\n        • Tech bubble (1990s)<br>\n        • Housing market crash (2008)<br>\n        • Meme stock rallies (GameStop, AMC)<br><br>\n        📘 Often driven by social proof, FOMO, and informational cascades.<br>\n        🔗 <a href=\"https://www.cfainstitute.org/en/research/cfa-digest/2014/08/herding-behavior-in-financial-markets\" target=\"_blank\">CFA: Herding in Financial Markets</a>\n      ",
+      "parent": 43,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1595.1816013577861,
+      "y": 579.4415130321695,
+      "visible": true
+    },
+    {
+      "text": "13.4 Video: Behavioral Finance Overview",
+      "description": "\n        This engaging video provides a concise <strong>overview of Behavioral Finance</strong>, including key cognitive biases, emotional drivers, and market implications.\n        It's ideal for students, investors, or anyone seeking to understand why markets often deviate from rational expectations.\n        <br><br>\n        📺 Covers heuristics, framing, mental accounting, and more.<br>",
+      "parent": 43,
+      "expanded": true,
+      "el": {},
+      "width": 280,
+      "height": 102.39999389648438,
+      "x": 1602.9273226434077,
+      "y": 641.2509014912006,
+      "visible": true
+    }
   ],
-
-  connections: [
-    [0, 1], [0, 2],
-    [1, 3], [1, 4], [1, 5], [1, 6], [1, 7],
-    [2, 8], [2, 9], [2, 10], [2, 11], [2, 12], [2, 13], [2, 14],
-    [3, 15],
-    [4, 16],
-    [5, 17],
-    [6, 18],
-    [8, 19],
-    [9, 20],
-    [10, 21],
-    [11, 22],
-    [13, 23],
-    [14, 24],
-    [0, 25], [0, 26], [0, 27], [0, 28],
-    [2, 29], [2, 30], [2, 31], [2, 32],
-    [2, 33], [2, 34], [2, 35], [2, 36],
-    [0, 37], [0, 38], [0, 39], [0, 40],
-    [0, 41], [0, 42], [0, 43],
-    [15, 44], [15, 45], [15, 46], [15, 47], [15, 48], [15, 49], [15, 50],
-    [21, 51], [21, 52], [21, 53], [21, 54], [21, 55],
-    [25, 56], [25, 57], [25, 58], [25, 59],
-    [43, 60], [43, 61], [43, 62], [43, 63]
+  "connections": [
+    [0,1], [0,2], [0,25], [0,26], [0,27], [0,28], [0,37], [0,38], [0,39], [0,40], [0,41], [0,42], [0,43],
+    [1,3], [1,4], [1,5], [1,6], [1,7],
+    [2,8], [2,9], [2,10], [2,11], [2,12], [2,13], [2,14], [2,29], [2,30], [2,31], [2,32], [2,33], [2,34], [2,35], [2,36],
+    [3,15], [4,16], [5,17], [6,18], [8,19], [9,20], [10,21], [11,22], [13,23], [14,24],
+    [15,44], [15,45], [15,46], [15,47], [15,48], [15,49], [15,50],
+    [21,51], [21,52], [21,53], [21,54], [21,55],
+    [25,56], [25,57], [25,58], [25,59],
+    [43,60], [43,61], [43,62], [43,63]
   ]
 };
