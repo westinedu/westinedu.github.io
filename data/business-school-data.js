@@ -93,7 +93,7 @@ window.mindmapData = {
 
     // Undergraduate Courses 下的子节点
     {
-      text: "5. Foundational Courses",
+      text: "1.1 Foundational Courses",
       description: `
         <strong>Foundational Courses</strong> prepare undergraduates with broad knowledge in economics, finance, and management.
         
@@ -109,7 +109,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "6. Advanced/Professional Courses",
+      text: "1.2 Advanced/Professional Courses",
       description: `
         <strong>Professional Courses</strong> equip students with job-ready business skills, project execution, and global perspective.
         
@@ -125,7 +125,7 @@ window.mindmapData = {
 
     // Foundational Courses 的子节点
     {
-      text: "7. Microeconomics",
+      text: "1.1.1 Microeconomics",
       description: `
         <strong>Microeconomics</strong> explores decisions made by individual consumers, firms, and industries.
         
@@ -141,7 +141,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "8. Macroeconomics",
+      text: "1.1.2 Macroeconomics",
       description: `
         <strong>Macroeconomics</strong> studies entire economies and aggregates such as GDP, inflation, and unemployment.
         
@@ -157,7 +157,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "9. Principles of Accounting",
+      text: "1.1.3 Principles of Accounting",
       description: `
         <strong>Principles of Accounting</strong> teaches the systematic recording, reporting, and analysis of financial transactions.
         
@@ -171,7 +171,7 @@ window.mindmapData = {
       `
     },                             // 9
     {
-      text: "10. Principles of Marketing",
+      text: "1.1.4 Principles of Marketing",
       description: `
         <strong>Principles of Marketing</strong> introduces the core concepts of creating, communicating, and delivering value to customers.
     
@@ -201,7 +201,7 @@ window.mindmapData = {
       categoryPath: ["MBA", "Core", "Marketing"]
     },
     {
-      text: "11. Principles of Management",
+      text: "1.1.5 Principles of Management",
       description: `
         <strong>Principles of Management</strong> explores how to plan, lead, organize, and control an organization to achieve goals efficiently.
     
@@ -238,7 +238,7 @@ window.mindmapData = {
 
     // Advanced/Professional Courses 的子节点
     {
-      text: "12. Financial Markets and Institutions",
+      text: "1.2.1 Financial Markets and Institutions",
       description: `
         <strong>Financial Markets and Institutions</strong> introduces how capital flows through various intermediaries and platforms that support the economy.
     
@@ -268,7 +268,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Finance"
     },
     {
-      text: "13. Operations Management",
+      text: "1.2.2 Operations Management",
       description: `
         <strong>Operations Management</strong> is the discipline of designing, managing, and improving production and service delivery processes.
     
@@ -298,7 +298,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Operations"
     },
     {
-      text: "14. Business Data Analytics",
+      text: "1.2.3 Business Data Analytics",
       description: `
         <strong>Business Data Analytics</strong> is the use of data to make informed business decisions, uncover insights, and predict future outcomes.
     
@@ -328,7 +328,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Analytics"
     },
     {
-      text: "15. International Business",
+      text: "1.2.4 International Business",
       description: `
         <strong>International Business</strong> explores the strategies and challenges of operating across national borders.
     
@@ -361,7 +361,7 @@ window.mindmapData = {
 
     // MBA Courses 下的子节点
     {
-      text: "16. Core MBA Courses",
+      text: "2.1 Core MBA Courses",
       description: `
         <strong>Core MBA Courses</strong> form the foundation of business education and are essential for developing analytical and leadership skills.
     
@@ -394,7 +394,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=MBA+Core"
     },
     {
-      text: "17. MBA Electives",
+      text: "2.2 MBA Electives",
       description: `
         <strong>MBA Electives</strong> allow students to tailor their learning based on interests, career goals, or industry focus.
     
@@ -430,7 +430,7 @@ window.mindmapData = {
 
     // Core MBA Courses 的子节点
     {
-      text: "18. Managerial Economics",
+      text: "2.1.1   Managerial Economics",
       description: `
         <strong>Managerial Economics</strong> applies microeconomic theory and quantitative tools to business decision-making.
     
@@ -458,7 +458,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Economics"
     },
     {
-      text: "19. Organizational Behavior",
+      text: "2.1.2 Organizational Behavior",
       description: `
         <strong>Organizational Behavior (OB)</strong> studies how individuals, teams, and systems behave in workplace settings.
     
@@ -486,7 +486,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Org+Behavior"
     },
     {
-      text: "20. Marketing Management",
+      text: "2.1.3 Marketing Management",
       description: `
         <strong>Marketing Management</strong> involves planning, executing, and measuring strategies that deliver value to customers and stakeholders.
     
@@ -513,7 +513,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Marketing"
     },
     {
-      text: "21. Financial Management",
+      text: "2.1.4 Financial Management",
       description: `
         <strong>Financial Management</strong> teaches how to raise, allocate, and manage funds to optimize firm value.
     
@@ -541,7 +541,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Finance"
     },
     {
-      text: "22. Operations Management (MBA)",
+      text: "2.1.5 Operations Management (MBA)",
       description: `
         <strong>Operations Management</strong> focuses on designing and optimizing processes to deliver goods and services efficiently.
     
@@ -569,7 +569,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Ops+Mgmt"
     },
     {
-      text: "23. Strategic Management",
+      text: "2.1.6 Strategic Management",
       description: `
         <strong>Strategic Management</strong> is the art and science of developing and executing long-term plans to achieve competitive advantage.
     
@@ -600,7 +600,7 @@ window.mindmapData = {
 
     // MBA Electives 的子节点
     {
-      text: "24. Entrepreneurship Management",
+      text: "2.2.1 Entrepreneurship Management",
       description: `
         <strong>Entrepreneurship Management</strong> explores the process of identifying, launching, and managing new ventures.
     
@@ -628,7 +628,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Startup"
     },
     {
-      text: "25. Project Management",
+      text: "2.2.2 Project Management",
       description: `
         <strong>Project Management</strong> is the discipline of planning, executing, and closing work to achieve specific goals within constraints.
     
@@ -656,7 +656,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Project+Mgmt"
     },
     {
-      text: "26. Supply Chain Management",
+      text: "2.2.3 Supply Chain Management",
       description: `
         <strong>Supply Chain Management (SCM)</strong> involves the coordination of materials, information, and finances as they move from supplier to customer.
     
@@ -684,7 +684,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=SCM"
     },
     {
-      text: "27. Leadership Development",
+      text: "2.2.4 Leadership Development",
       description: `
         <strong>Leadership Development</strong> builds the mindset, skillset, and behaviors needed to lead teams and organizations effectively.
     
@@ -712,7 +712,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Leadership"
     },
     {
-      text: "28. E-commerce",
+      text: "2.2.5 E-commerce",
       description: `
         <strong>E-commerce</strong> refers to the buying and selling of goods or services using digital platforms and technologies.
     
@@ -743,7 +743,7 @@ window.mindmapData = {
 
     // Financial Masters Courses 下的子节点
     {
-      text: "29. Core Courses (Financial Masters)",
+      text: "3.1 Core Courses (Financial Masters)",
       description: `
         <strong>Core Courses</strong> in Financial Master’s programs form the analytical and theoretical foundation for advanced careers in finance.
     
@@ -772,7 +772,7 @@ window.mindmapData = {
       // image: "https://via.placeholder.com/120x80?text=Finance+Core"
     },
     {
-      text: "30. Electives (Financial Masters)",
+      text: "3.2 Electives (Financial Masters)",
       description: `
         <strong>Electives</strong> in Financial Master’s programs provide specialized focus in niche areas of the financial industry.
     
@@ -804,7 +804,7 @@ window.mindmapData = {
 
     // Core Courses (Financial Masters) 的子节点
     {
-      text: "31. Investment",
+      text: "3.1.1 Investment",
       categoryPath: ["Financial Masters", "Advanced Topics"],
       description: `
         <strong>Investment</strong> is the process of allocating capital to financial assets with the goal of earning returns and managing risk.
@@ -833,7 +833,7 @@ window.mindmapData = {
       // videoUrl: "https://www.youtube.com/embed/lXhNfBYPt74"
     },
     {
-      text: "32. Corporate Finance",
+      text: "3.1.2 Corporate Finance",
       categoryPath: ["Financial Masters", "Core Courses"],
       description: `
         <strong>Corporate Finance</strong> studies how firms make decisions about investments, capital structure, and dividends.
@@ -862,7 +862,7 @@ window.mindmapData = {
       // videoUrl: "https://www.youtube.com/embed/CWzwhJCU_1M"
     },
     {
-      text: "33. Financial Markets",
+      text: "3.1.3 Financial Markets",
       categoryPath: ["Financial Masters", "Core Courses"],
       description: `
         <strong>Financial Markets</strong> are systems where individuals and institutions trade financial securities, facilitating capital flow and economic stability.
@@ -890,7 +890,7 @@ window.mindmapData = {
       // videoUrl: "https://www.youtube.com/embed/F9o7tyT3OtA"
     },
     {
-      text: "34. Econometrics",
+      text: "3.1.4 Econometrics",
       categoryPath: ["Financial Masters", "Quantitative Tools"],
       description: `
         <strong>Econometrics</strong> applies statistical models to economic data to test hypotheses and forecast financial outcomes.
@@ -918,7 +918,7 @@ window.mindmapData = {
       // videoUrl: "https://www.youtube.com/embed/JyVJIMaN1vM"
     },
     {
-      text: "35. International Finance",
+      text: "3.1.5 International Finance",
       categoryPath: ["Financial Masters", "Global Finance"],
       description: `
         <strong>International Finance</strong> deals with the monetary interactions between two or more countries, analyzing exchange rates, capital flows, and global investment.
@@ -949,7 +949,7 @@ window.mindmapData = {
 
     // Electives (Financial Masters) 的子节点
     {
-      text: "36. Financial Risk Management",
+      text: "3.2.1 Financial Risk Management",
       categoryPath: ["Financial Masters", "Risk & Compliance"],
       description: `
         <strong>Financial Risk Management</strong> focuses on identifying, assessing, and mitigating risks in financial institutions and portfolios.
@@ -973,7 +973,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "37. Fintech",
+      text: "3.2.2 Fintech",
       categoryPath: ["Financial Masters", "Technology & Innovation"],
       description: `
         <strong>Fintech</strong> refers to the integration of technology in delivering financial services more efficiently.
@@ -995,7 +995,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "38. Mergers and Acquisitions",
+      text: "3.2.3 Mergers and Acquisitions",
       categoryPath: ["Financial Masters", "Corporate Finance"],
       description: `
         <strong>Mergers and Acquisitions (M&A)</strong> involve consolidation strategies used by companies to grow, diversify, or gain competitive advantages.
@@ -1017,7 +1017,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "39. Asset Securitization",
+      text: "3.2.4 Asset Securitization",
       categoryPath: ["Financial Masters", "Advanced Finance"],
       description: `
         <strong>Asset Securitization</strong> is the process of pooling illiquid assets (like loans or receivables) and converting them into tradable securities.
@@ -1044,7 +1044,7 @@ window.mindmapData = {
 
     // EMBA Courses 下的子节点
     {
-      text: "40. Core Courses (EMBA)",
+      text: "4.1 Core Courses (EMBA)",
       categoryPath: ["EMBA", "Core Curriculum"],
       description: `
         <strong>Core Courses (EMBA)</strong> form the foundation of Executive MBA programs, offering seasoned professionals a broad understanding of essential business disciplines.
@@ -1072,7 +1072,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "41. Specialized Electives (EMBA)",
+      text: "4.2 Specialized Electives (EMBA)",
       categoryPath: ["EMBA", "Electives & Specializations"],
       description: `
         <strong>Specialized Electives (EMBA)</strong> allow executives to tailor their education to specific interests such as innovation, digital transformation, or global finance.
@@ -1099,7 +1099,7 @@ window.mindmapData = {
 
     // Core Courses (EMBA) 的子节点
     {
-      text: "42. Economic Analysis",
+      text: "4.1.1 Economic Analysis",
       categoryPath: ["EMBA", "Core Curriculum"],
       description: `
         <strong>Economic Analysis</strong> equips EMBA students with tools to interpret economic data and understand macroeconomic and microeconomic forces impacting business.
@@ -1122,7 +1122,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "43. Marketing Management (EMBA)",
+      text: "4.1.2 Marketing Management (EMBA)",
       categoryPath: ["EMBA", "Core Curriculum"],
       description: `
         <strong>Marketing Management (EMBA)</strong> focuses on strategic marketing decisions aligned with corporate goals in competitive, digital, and global environments.
@@ -1144,7 +1144,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "44. Strategic Management Accounting",
+      text: "4.1.3 Strategic Management Accounting",
       categoryPath: ["EMBA", "Finance & Accounting"],
       description: `
         <strong>Strategic Management Accounting</strong> bridges accounting with corporate strategy, helping leaders use financial data for competitive advantage.
@@ -1167,7 +1167,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "45. Organizational Behavior (EMBA)",
+      text: "4.1.4 Organizational Behavior (EMBA)",
       categoryPath: ["EMBA", "Leadership & People"],
       description: `
         <strong>Organizational Behavior (EMBA)</strong> explores how individuals and teams behave in complex organizations, with a focus on leadership and performance.
@@ -1189,7 +1189,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "46. Operations Management (EMBA)",
+      text: "4.1.5 Operations Management (EMBA)",
       categoryPath: ["EMBA", "Core Curriculum"],
       description: `
         <strong>Operations Management (EMBA)</strong> teaches how to design, improve, and control business operations at a strategic level.
@@ -1215,7 +1215,7 @@ window.mindmapData = {
 
     // Specialized Electives (EMBA) 的子节点
     {
-      text: "47. The Chinese Economy",
+      text: "4.2.1 The Chinese Economy",
       categoryPath: ["EMBA", "Global Perspective"],
       description: `
         <strong>The Chinese Economy</strong> explores the evolution, characteristics, and global impact of China’s economic model.
@@ -1238,7 +1238,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "48. Leadership Development (EMBA)",
+      text: "4.2.2 Leadership Development (EMBA)",
       categoryPath: ["EMBA", "Leadership & People"],
       description: `
         <strong>Leadership Development (EMBA)</strong> helps executives refine their leadership style, emotional intelligence, and strategic influence.
@@ -1261,7 +1261,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "49. Overseas Modules",
+      text: "4.2.3 Overseas Modules",
       categoryPath: ["EMBA", "Global Perspective"],
       description: `
         <strong>Overseas Modules</strong> provide immersive learning experiences in international business hubs through university partnerships and company visits.
@@ -1283,7 +1283,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "50. Digital Transformation",
+      text: "4.2.4 Digital Transformation",
       categoryPath: ["EMBA", "Technology & Strategy"],
       description: `
         <strong>Digital Transformation</strong> equips executives with frameworks to lead technological change and redefine business models.
