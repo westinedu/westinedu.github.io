@@ -22,6 +22,7 @@ window.mindmapData = {
         "Learning to meditate starts with sitting, breathing, and noticing. It’s simple—but powerful when practiced daily."
       `,
       classic: "Core Elements: Techniques, Benefits, Preparation, Challenges",
+      "videoUrl": "https://www.youtube.com/embed/hlWiI4xVXKY?si=UdFzUs1pyugLgJ9N",
       person: "Various Teachers"
     },
 
@@ -41,7 +42,10 @@ window.mindmapData = {
     
         <h4>🌿 Prompt</h4>
         "Meditation benefits the body and mind—lowering stress, sharpening focus, and lifting emotional well-being."
-      `
+      `,
+
+      "videoUrl": "https://www.youtube.com/embed/gvJLmVYVvVM?si=jU95-IgFOvYMkYR3",
+
     },
     {
       text: "2. Common Techniques 🎧",
@@ -59,7 +63,8 @@ window.mindmapData = {
     
         <h4>🎧 Prompt</h4>
         "There’s no one way to meditate. Try mindfulness, mantras, or compassion techniques to find your rhythm."
-      `
+      `,
+      "videoUrl": "https://www.youtube.com/embed/v2mY36Ho1Sk?si=vExSdfsgIQo5o8lj",
     },
     {
       text: "3. Preparation 🛠️",
@@ -77,7 +82,8 @@ window.mindmapData = {
     
         <h4>🧺 Prompt</h4>
         "Create a calm space, sit comfortably, and breathe with intention—preparation sets the tone for deeper meditation."
-      `
+      `,
+      "videoUrl": "https://www.youtube.com/embed/JslvBcIVtDg?si=eDAmriPrdmqVmu3n",
     },
     {
       text: "4. Challenges 💥",
@@ -95,12 +101,13 @@ window.mindmapData = {
     
         <h4>🌀 Prompt</h4>
         "If your mind wanders, that’s okay. Coming back—again and again—is the practice itself."
-      `
+      `,
+      "videoUrl": "https://www.youtube.com/embed/ZizK2yBnncM?si=TtTwPJS-q5orikqc",
     },
 
     // 5~7: Benefits 下的子节点
     {
-      text: "5. Stress Reduction 😌",
+      text: "1.1 Stress Reduction 😌",
       description: `
         <strong>Stress Reduction</strong> is one of the most researched and celebrated benefits of meditation. It actively lowers the body's fight-or-flight response and helps regulate the nervous system.
     
@@ -118,7 +125,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "6. Improved Focus 🎯",
+      text: "1.2 Improved Focus 🎯",
       description: `
         <strong>Improved Focus</strong> is a powerful cognitive benefit of consistent meditation. The practice of returning to the breath or mantra strengthens your brain’s attention muscles.
     
@@ -135,7 +142,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "7. Emotional Well-being 💖",
+      text: "1.3 Emotional Well-being 💖",
       description: `
         <strong>Emotional Well-being</strong> means feeling more in control of your mood, reactions, and empathy. Meditation acts as emotional training—teaching awareness without judgment.
     
@@ -151,12 +158,13 @@ window.mindmapData = {
     
         <h4>💬 Analogy</h4>
         “Meditation is like emotional weather forecasting—you start noticing storms before they arrive.”
-      `
+      `,
+      "videoUrl": "https://www.youtube.com/embed/4KbSRXP0wik?si=Eguk5M5tjiSydHk1",
     },
 
     // 8~11: Techniques 下的子节点
     {
-      text: "8. Mindfulness Meditation 🌼",
+      text: "2.1 Mindfulness Meditation 🌼",
       description: `
         <strong>Mindfulness Meditation</strong> is the practice of paying attention to the present moment—without judgment or resistance.
     
@@ -176,7 +184,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "9. Transcendental Meditation 🕉️",
+      text: "2.2 Transcendental Meditation 🕉️",
       description: `
         <strong>Transcendental Meditation (TM)</strong> involves silently repeating a specific mantra to quiet the mind and reach a deep state of relaxed awareness.
     
@@ -198,7 +206,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "10. Loving-Kindness ❤️",
+      text: "2.3 Loving-Kindness ❤️",
       description: `
         <strong>Loving-Kindness Meditation</strong>, also called <em>Metta</em>, cultivates warmth, compassion, and goodwill toward yourself and others.
     
@@ -218,7 +226,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "11. Vipassana 👁️",
+      text: "2.4 Vipassana 👁️",
       description: `
         <strong>Vipassana Meditation</strong> is a traditional Buddhist practice aimed at cultivating insight by deeply observing bodily sensations and mental processes.
     
@@ -242,7 +250,7 @@ window.mindmapData = {
 
     // 12~15: Preparation 下的子节点
     {
-      text: "12. Environment 🛋️",
+      text: "3.1 Environment 🛋️",
       description: `
         <strong>Your Environment</strong> sets the stage for every meditation session. A cluttered, noisy, or uncomfortable space can subtly distract the mind.
     
@@ -260,7 +268,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "13. Posture 🧍‍♀️",
+      text: "3.2 Posture 🧍‍♀️",
       description: `
         <strong>Posture</strong> affects both physical comfort and mental alertness. It's not about rigid rules, but about stability and openness.
     
@@ -278,7 +286,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "14. Breathing 🌬️",
+      text: "3.3 Breathing 🌬️",
       description: `
         <strong>Breathing</strong> is the anchor of many meditation techniques. It's always with you, and it reflects your inner state.
     
@@ -294,10 +302,11 @@ window.mindmapData = {
     
         <h4>💬 Reflection</h4>
         “Your breath is your built-in reset button—press it gently, often.”
-      `
+      `,
+      "videoUrl": "https://www.youtube.com/embed/tybOi4hjZFQ?si=NMdCPO9U6YiZWG7T",
     },
     {
-      text: "15. Time of Day  ⏰",
+      text: "3.4 Time of Day  ⏰",
       description: `
         <strong>Time of Day</strong> impacts the energy and intention you bring into meditation. There’s no universal “best time”—only what’s consistent and realistic for you.
     
@@ -318,7 +327,7 @@ window.mindmapData = {
 
     // 16~19: Challenges 下的子节点
     {
-      text: "16. Restlessness 🌀",
+      text: "4.1 Restlessness 🌀",
       description: `
         <strong>Restlessness</strong> is one of the most common beginner hurdles. It can feel like an inner itch—your body wants to move, and your mind wants to escape.
     
@@ -335,7 +344,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "17. Inconsistent Practice 🔁",
+      text: "4.2 Inconsistent Practice 🔁",
       description: `
         <strong>Inconsistent Practice</strong> can stall progress and discourage even the most enthusiastic meditators. Life gets busy, habits get dropped—and guilt can follow.
     
@@ -354,7 +363,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "18. Physical Discomfort 💢",
+      text: "4.3 Physical Discomfort 💢",
       description: `
         <strong>Physical Discomfort</strong>—like back pain, numb legs, or tight shoulders—can pull your attention away from the present.
     
@@ -371,7 +380,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "19. Mental Chatter 🗯️",
+      text: "4.4 Mental Chatter 🗯️",
       description: `
         <strong>Mental Chatter</strong> refers to the stream of thoughts, plans, worries, and memories that bubble up when we sit quietly.
     
