@@ -117,7 +117,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "5. Fundamental Analysis",
+      text: "1.1 Fundamental Analysis",
       classic: "Security Analysis",
       person: "Benjamin Graham & David Dodd",
       description: `
@@ -138,7 +138,7 @@ window.mindmapData = {
       aiVoicePrompt: "Fundamental Analysis helps you understand the true worth of a company by analyzing its business and financial health."
     },
     {
-      text: "6. Technical Analysis",
+      text: "1.2 Technical Analysis",
       description: `
         <strong>Technical Analysis</strong> studies historical market data—primarily price and volume—to forecast future price movements.
     
@@ -154,7 +154,7 @@ window.mindmapData = {
       aiVoicePrompt: "Technical analysis uses charts and indicators to predict price trends based on past data."
     },
     {
-      text: "7. Quantitative Analysis",
+      text: "1.3 Quantitative Analysis",
       description: `
         <strong>Quantitative Analysis</strong> uses statistical and mathematical models to evaluate securities and make trading decisions.
     
@@ -172,7 +172,7 @@ window.mindmapData = {
       aiVoicePrompt: "Quantitative analysis applies math and data to build investment strategies based on statistical logic."
     },
     {
-      text: "8. Sentiment Analysis",
+      text: "1.4 Sentiment Analysis",
       description: `
         <strong>Sentiment Analysis</strong> captures the emotional tone of the market by analyzing news headlines, social media posts, and investor surveys.
     
@@ -190,7 +190,7 @@ window.mindmapData = {
       aiVoicePrompt: "Sentiment analysis decodes how the market feels by reading news and social media."
     },
     {
-      text: "9. Economic Indicators",
+      text: "1.5 Economic Indicators",
       //image: "https://via.placeholder.com/100?text=Macro",
       description: `
         <strong>Economic Indicators</strong> are macro-level statistics that reflect the overall health and direction of an economy.
@@ -210,7 +210,7 @@ window.mindmapData = {
       aiVoicePrompt: "Economic indicators help investors understand the big picture—like GDP, inflation, and jobs data."
     },
     {
-      text: "10. Technical Analysis",
+      text: "1.6 Technical Analysis",
       description: `
         <strong>Technical Analysis</strong> is a trading methodology focused on price action, chart patterns, and historical market data.
         
@@ -232,7 +232,7 @@ window.mindmapData = {
       aiVoicePrompt: "Technical analysis is about studying price charts and patterns to make trading decisions, without worrying about earnings or news."
     },
     {
-      text: "11. Fundamental Analysis",
+      text: "2.1 Fundamental Analysis",
       description: `
         <strong>Fundamental Analysis</strong> involves examining a company's financial health, industry position, and macro factors to determine intrinsic value.
     
@@ -253,7 +253,7 @@ window.mindmapData = {
       aiVoicePrompt: "Fundamental analysis means understanding a company's actual value based on financials, not just its price chart."
     },
     {
-      text: "12. Valuation Methods",
+      text: "2.2 Valuation Methods",
       description: `
         <strong>Valuation Methods</strong> are frameworks used to estimate the fair market value of an asset or company.
     
@@ -270,7 +270,7 @@ window.mindmapData = {
       aiVoicePrompt: "Valuation methods like discounted cash flow help determine if a stock is overpriced or undervalued based on future income."
     },
     {
-      text: "13. Quantitative Analysis",
+      text: "2.3 Quantitative Analysis",
       description: `
         <strong>Quantitative Analysis (Quant)</strong> applies mathematical and statistical techniques to evaluate market behavior and build systematic trading strategies.
     
@@ -295,7 +295,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "14. Algorithmic Trading",
+      text: "2.4 Algorithmic Trading",
       description: `
         <strong>Algorithmic Trading</strong> uses computer programs to execute trading strategies automatically based on rules and data.
     
@@ -315,7 +315,7 @@ window.mindmapData = {
       aiVoicePrompt: "Algorithmic trading uses computer code to automate buying and selling decisions based on market data."
     },
     {
-      text: "15. Risk Management",
+      text: "2.5 Risk Management",
       description: `
         <strong>Risk Management</strong> is the practice of identifying, analyzing, and minimizing financial loss. It ensures traders and investors survive through volatility and avoid catastrophic drawdowns.
     
@@ -335,7 +335,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "16. Order Types",
+      text: "2.6 Order Types",
       description: `
         <strong>Order Types</strong> define how your trade enters the market. Understanding them is key to execution and risk control.
     
@@ -356,7 +356,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "17. Technical Tools & Indicators",
+      text: "2.7 Technical Tools & Indicators",
       description: `
         <strong>Technical Indicators</strong> are tools used to interpret price and volume data. They help identify trends, reversals, and momentum shifts.
     
@@ -374,7 +374,7 @@ window.mindmapData = {
       `
     },
     {
-      text: "18. Chart Patterns",
+      text: "2.8 Chart Patterns",
       description: `
         <strong>Chart Patterns</strong> are visual formations in price charts that suggest future market behavior based on historical repetition.
     
