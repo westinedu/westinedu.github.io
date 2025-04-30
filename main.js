@@ -767,6 +767,7 @@ div.appendChild(speakBtn);
     document.querySelectorAll('.node').forEach(n => n.classList.remove("highlighted"));
     const el = document.querySelector(`.node[data-index="${index}"]`);
     el.classList.add("highlighted");
+    activeNodeIndex = index;
     el.style.zIndex = currentZIndex++;  // 每次聚焦，z-index 递增
     setTimeout(() => {
       el.classList.remove("highlighted");
