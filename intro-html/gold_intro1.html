@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gold Investment Mind‑Map – AIGraph</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+/* ───── Base ─────────────────────────────────────────── */
+:root{--brand:#d97706;--dark:#111}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f9fafb;color:var(--dark);line-height:1.55}
+h1,h2{font-weight:700}
+h1{font-size:2.4rem}
+h2{font-size:1.45rem;margin-bottom:.55em}
+p,li{font-size:1rem}
+
+/* ───── Hero Banner ─────────────────────────────────── */
+header{
+  background:#111 url("https://westinedu.github.io/images/gold-cover.jpg") center/cover no-repeat;
+  color:#fff;text-align:center;padding:64px 24px 72px
+}
+header .tagline{font-size:1.1rem;margin-top:8px;opacity:.9}
+.cta{
+  display:inline-block;margin-top:32px;padding:14px 34px;border-radius:6px;
+  background:var(--brand);color:#fff;font-size:1.05rem;text-decoration:none;
+  box-shadow:0 3px 6px rgba(0,0,0,.18)
+}
+.cta:active{transform:translateY(1px)}
+
+/* ───── Layout Sections ─────────────────────────────── */
+section{max-width:900px;margin:0 auto;padding:36px 24px}
+.stats{display:flex;flex-wrap:wrap;gap:16px;margin-top:24px}
+.stat{
+  flex:1 1 120px;background:#fff;border:1px solid #e5e7eb;border-radius:10px;
+  padding:18px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.04)
+}
+.stat b{display:block;font-size:1.7rem;margin-bottom:4px;color:var(--brand)}
+ul{margin-top:6px;padding-left:22px}
+li{margin:6px 0}
+
+/* ───── Responsive ──────────────────────────────────── */
+@media(max-width:620px){
+  h1{font-size:2rem}
+  header{padding:52px 16px 64px}
+}
+/* ── NEW: dim the hero banner with an overlay ── */
+header::before{
+  content:"";
+  position:absolute;inset:0;
+  background:rgba(0,0,0,.45);   /* darkness 0‑1 → adjust to taste  */
+  z-index:0;
+}
+
+header{position:relative}        /* create stacking context */
+header > *{position:relative;z-index:1}  /* lift real content above overlay */
+
+/* optional – tiny text shadow for extra clarity                        */
+header h1,header p{text-shadow:0 2px 6px rgba(0,0,0,.4)}
+</style>
+</head>
+<body>
+
+<!-- ── Hero ── -->
+<header>
+  <h1>Gold Investment Master‑Map</h1>
+  <p class="tagline">A panoramic view of drivers, vehicles and portfolio use‑cases</p>
+  <a href="aigraph://subscribe?product=com.aigraph.gold" class="cta">
+    Unlock the Gold Map →
+  </a>
+</header>
+
+<!-- ── Why this Map ── -->
+<section>
+  <h2>Why this mind‑map?</h2>
+  <div class="stats">
+    <div class="stat"><b>120+</b>nodes of knowledge</div>
+    <div class="stat"><b>45</b>curated deep‑links</div>
+    <div class="stat"><b>6</b>live mini‑widgets</div>
+  </div>
+</section>
+
+<!-- ── What you will learn / do ── -->
+<section>
+  <h2>What can you learn & do with it?</h2>
+  <ul>
+    <li>📈 Understand how <strong>real interest rates</strong> move gold and test scenarios with a slider</li>
+    <li>🏦 Track <strong>central‑bank demand</strong> and geopolitical risk overlays</li>
+    <li>🔀 Compare <strong>physical, ETF, futures & miners</strong> side‑by‑side</li>
+    <li>🛡️ Design a <strong>5–10 % gold sleeve</strong> to cut portfolio draw‑downs</li>
+    <li>⏱️ Spot seasonality & CPI‑surprise windows with built‑in widgets</li>
+  </ul>
+</section>
+
+<!-- ── Hot topics ── -->
+<section>
+  <h2>Hot topics for 2024 – 2025</h2>
+  <ul>
+    <li>🪙 <strong>Emerging‑market central banks</strong> remain net buyers – structural floor</li>
+    <li>💥 Negative <strong>real yields</strong> + geopolitical flare‑ups boost safe‑haven bids</li>
+    <li>🪄 <strong>Tokenised gold & Basel III NSFR</strong> reshape liquidity dynamics</li>
+  </ul>
+</section>
+
+<!-- ── CTA again ── -->
+<section>
+  <h2>Ready to level‑up your gold game?</h2>
+  <p>Tap below to unlock the full interactive map inside AIGraph (even works offline).</p>
+  <a href="aigraph://subscribe?product=com.aigraph.gold" class="cta">
+    Subscribe for US$ 4.99 →
+  </a>
+  <p style="margin-top:16px;font-size:.9rem">
+    Want every single map?<br>
+    <a href="aigraph://subscribe?product=com.AIGraph0.bundle">Check the All‑Access Bundle</a>
+  </p>
+</section>
+
+</body>
+</html>
