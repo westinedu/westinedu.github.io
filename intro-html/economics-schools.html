@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Timeline • Major Schools of Economics</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{
+  --bg: #f9fbff;
+  --card:#ffffff;
+  --primary:#08306b;
+  --accent:#2f80ed;
+  --radius:18px;
+  --shadow:0 6px 14px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+body{background:var(--bg);color:#333;line-height:1.5}
+header{padding:40px 5vw 24px}
+h1{font-size:clamp(26px,4vw,40px);color:var(--primary);margin-bottom:8px}
+p.lead{max-width:50ch;color:#555}
+
+.timeline-wrapper{
+  overflow-x:auto;scroll-behavior:smooth;padding:24px 0 56px 0;
+}
+.timeline{
+  display:flex;gap:48px;min-width:800px;padding:0 5vw;position:relative;
+}
+.timeline::before{
+  content:'';position:absolute;left:0;right:0;top:50%;height:4px;
+  background:linear-gradient(90deg,var(--accent) 0%,var(--accent) 25%,transparent 25%);
+  background-size:32px 4px;
+  z-index:0;
+}
+.school{
+  flex:0 0 260px;position:relative;z-index:1;
+}
+.card{
+  background:var(--card);border-radius:var(--radius);padding:20px 22px;
+  box-shadow:var(--shadow);position:relative;min-height:180px;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.card h2{
+  font-size:20px;margin-bottom:8px;color:var(--primary);
+  display:flex;align-items:center;gap:6px;
+}
+.card time{font-weight:600;color:var(--accent)}
+.card p{font-size:15px;margin-top:6px}
+@media(max-width:640px){
+  .timeline{gap:24px}
+  .school{flex:0 0 220px}
+  .card{min-height:160px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bird’s‑Eye Timeline of Economic Thought</h1>
+  <p class="lead">From <strong>Classical Political Economy</strong> to today’s <strong>Behavioural &amp; Data‑Driven</strong> approaches – see how each school shaped modern policy within a single scroll.</p>
+</header>
+
+<div class="timeline-wrapper">
+  <section class="timeline">
+    
+    <!-- 1776–1870 -->
+    <article class="school">
+      <div class="card">
+        <h2>📜 Classical</h2>
+        <time>1776 – 1870</time>
+        <p>Smith, Ricardo &amp; Mill lay foundations: free markets, comparative advantage, labour theory of value.</p>
+      </div>
+    </article>
+
+    <!-- 1870–1930 -->
+    <article class="school">
+      <div class="card">
+        <h2>📈 Neoclassical</h2>
+        <time>1870 – 1930</time>
+        <p>Marginalism, utility, equilibrium – Walras, Marshall. Mathematics enters the discipline.</p>
+      </div>
+    </article>
+
+    <!-- 1936–1970 -->
+    <article class="school">
+      <div class="card">
+        <h2>💰 Keynesian</h2>
+        <time>1936 – 1970</time>
+        <p>Keynes’s <em>General Theory</em> → fiscal stimulus, multiplier, IS‑LM. Dominates post‑war policy.</p>
+      </div>
+    </article>
+
+    <!-- 1950s–1980s -->
+    <article class="school">
+      <div class="card">
+        <h2>🏛 Chicago</h2>
+        <time>1950s – 80s</time>
+        <p>Friedman, monetarism, rational expectations; pushback on big‑government demand management.</p>
+      </div>
+    </article>
+
+    <!-- 1970s–1990s -->
+    <article class="school">
+      <div class="card">
+        <h2>⚙️ New Classical</h2>
+        <time>1970s – 90s</time>
+        <p>Lucas, Sargent: micro‑foundations, DSGE, policy ineffectiveness under perfect expectations.</p>
+      </div>
+    </article>
+
+    <!-- 1990s–Now -->
+    <article class="school">
+      <div class="card">
+        <h2>🔄 New Keynesian</h2>
+        <time>1990s –  </time>
+        <p>Sticky prices, Taylor rule, modern DSGE with frictions – backbone of most central‑bank models.</p>
+      </div>
+    </article>
+
+    <!-- 2000s–Now -->
+    <article class="school">
+      <div class="card">
+        <h2>🧠 Behavioural</h2>
+        <time>2000s –  </time>
+        <p>Kahneman, Thaler: biases, heuristics, prospect theory – integrating psychology &amp; data.</p>
+      </div>
+    </article>
+
+  </section>
+</div>
+
+</body>
+</html>
