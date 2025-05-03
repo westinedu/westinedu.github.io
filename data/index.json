@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.2",
   "categories": [
     {
       "name": "Finance & Investing",
@@ -19,7 +19,7 @@
           "moreDescription": "🟡 Gold Investment 101: Unlocking the Secrets to Wealth Preservation",
           "introHtmlUrl": "https://westinedu.github.io/intro-html/gold_intro.html",
           "tryTime": 30,     
-          "CTAHtmlUrl": "https://westinedu.github.io/intro-html/gold_intro1.html"
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/gold_intro1.html"
 
         },
         {
@@ -33,6 +33,7 @@
           "productID": "com.AIGraph0.stock_investing",
           "promotion": true,
           "introHtmlUrl": "https://westinedu.github.io/intro-html/stock-investing_intro.html",
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/Stock-investing_index1.0.html",
           "moreDescription": "Learn how to invest in stocks for the long term, focusing on value investing strategies. This course covers fundamental analysis, portfolio design, and the principles of successful investing."
         },
         {
@@ -46,6 +47,7 @@
           "productID": "com.AIGraph0.investing_trends",
           "promotion": true,
           "introHtmlUrl": "https://westinedu.github.io/intro-html/analyzing_trends_intro.html",
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/analyzing-stock-trends_index1.0.html",
           "moreDescription": "Dive into the world of stock trends and learn how to analyze them effectively. This course covers trendlines, indicators, market phases, and various chart patterns to help you make informed investment decisions."
         },
         {
@@ -58,6 +60,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.stock_market",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/Stock-market_index1.0.html",
           "moreDescription": "Understand the structure of stock exchanges, trading rules, indices, liquidity, and the various participants in the market. This course provides a comprehensive overview of how the stock market operates."
         },
         {
@@ -82,6 +85,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.investing_practices",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/Investing&Trading_index.html",
           "moreDescription": "Learn the best practices for asset selection, diversification, and rebalancing in your investment portfolio. This course provides practical insights to enhance your investment strategies."
         }
       ]
@@ -102,6 +106,7 @@
           "promotion": true,
           "promotionOrder": 1,
           "introHtmlUrl": "https://westinedu.github.io/intro-html/tariff-intro.html",
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/tariff_explanation.html",
           "moreDescription": "Rising U.S. import tariffs have ripple effects across the entire economy. When tariffs increase (from 0% toward 100%), they act as a tax on traded goods, affecting prices, output, and financial markets. This deep-dive report presents an interactive causal visualization and analysis of how higher tariffs influence key macroeconomic indicators: international trade volume, inflation (CPI), corporate earnings & investment, overall GDP, the stock market, and household income & consumption. The goal is to make complex economic interdependencies intuitive – using a radial causal graph with a tariff-level slider – while grounding each link in solid economic theory and empirical evidence. By adjusting the tariff slider, users can observe dynamic changes  and access brief explanations for each causal link. The accompanying written analysis explains the theory (e.g. supply chain disruptions, deadweight loss, retaliation) and cites evidence from sources like the IMF, World Bank, WTO, Fed, OECD, and BEA to quantify these effects. This is a storytelling tool  to explore the economic impact of tariff policy in an engaging yet rigorous way."
         },
         {
@@ -115,6 +120,7 @@
           "productID": "com.AIGraph0.day_trading",
           "promotion": false,
           "introHtmlUrl": "https://westinedu.github.io/intro-html/day-trading-intro.html",
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/DayTrading_index1.0.html",
           "moreDescription": "Master day trading strategies with a focus on candlestick patterns, scalping techniques, momentum plays, and effective intraday risk control. This course is designed for traders looking to enhance their skills in fast-paced markets."
         },
         {
@@ -127,6 +133,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.global_events",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/EventsOnStock_index1.0.html",
           "moreDescription": "Explore how geopolitical, economic, and crisis-based events impact market sentiment and stock prices. This course provides insights into the relationship between global events and trading strategies."
         }
       ]
@@ -158,6 +165,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.mobile_apps",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/MoblieAppSale_index1.0.html",
           "moreDescription": "Learn how to develop and sell mobile apps successfully. This course covers app monetization strategies, marketing techniques, App Store Optimization (ASO), and product design principles to help you achieve success in the competitive app market."
         }
       ]
@@ -177,6 +185,7 @@
           "productID": "com.AIGraph0.economics",
           "promotion": true,
           "introHtmlUrl": "https://westinedu.github.io/intro-html/economics_intro.html",
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/Economic_1.3_index.html",
           "moreDescription": "Explore macro and microeconomic theories and models, including inflation, unemployment, and policy frameworks. This course provides a comprehensive understanding of economic principles and their applications in real-world scenarios."
         },
         {
@@ -189,6 +198,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.ray_dalio",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/Ray-Dalio-index1.0.html",
           "moreDescription": "Delve into the life principles and economic models of Ray Dalio, founder of Bridgewater Associates. This course includes videos, insights into Bridgewater's culture and strategy, and a comprehensive overview of Dalio's investment philosophy."
         }
       ]
@@ -207,6 +217,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.meditation",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/LearningToMeditate_index1.0.html",
           "moreDescription": "Learn to meditate effectively with step-by-step mindmaps designed to reduce stress, build focus, and develop mindfulness. This course provides practical techniques and insights to help you incorporate meditation into your daily life."
         }
       ]
@@ -225,6 +236,7 @@
           "requiresSubscription": true,
           "productID": "com.AIGraph0.meditation",
           "promotion": false,
+          "CTAHtmlUrl": "https://westine.web.app/AIgraph/study-tips.html",
           "moreDescription": "Learn the effective study techniques employed by top students, including methods for efficient learning, time management, and staying motivated.📘 These techniques are designed to maximize learning efficiency and academic success.⚡ Implementing these methods will help you optimize your study habits and academic performance."
         }
       ]
