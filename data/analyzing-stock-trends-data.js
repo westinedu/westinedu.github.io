@@ -19,15 +19,83 @@ window.mindmapData = {
     {
       text: "1. Trend Identification",
       description: `
-        <strong>Trend Identification</strong> is the process of recognizing the prevailing market direction — whether bullish, bearish, or neutral.
-        A trend is defined by a series of higher highs and higher lows (uptrend), or lower highs and lower lows (downtrend).
-        <br><br>
-        🔍 Core methods include:<br>
-        • <strong>Price Action Analysis</strong>: visual inspection of chart movements<br>
-        • <strong>Moving Averages</strong>: smoothing techniques to confirm longer-term direction<br>
-        • <strong>Breakouts</strong>: identifying key levels where trends accelerate<br><br>
-        💡 Confirmation requires multiple time frames and often volume validation.<br>
-        🔗 <a href="https://www.investopedia.com/articles/trading/07/rising_wedge.asp" target="_blank">How to Recognize Trends - Investopedia</a>
+              <!-- Trend Identification Content -->
+
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">
+  <div style="width:4px;height:28px;background:#38bdf8;border-radius:4px;"></div>
+  <h3 style="margin:0;color:#0e7490;font-weight:700;letter-spacing:.3px;">
+    🔍 Trend Identification
+  </h3>
+</div>
+
+<p><strong>Trend Identification</strong> is the process of recognizing the prevailing market direction — whether bullish, bearish, or neutral. 
+A trend is defined by a series of higher highs and higher lows (<strong>uptrend</strong>), or lower highs and lower lows (<strong>downtrend</strong>).</p>
+
+<p><strong>📊 Core methods include:</strong></p>
+
+<!-- Table for Core Methods -->
+<table style="width:100%;border-collapse:collapse;font-size:0.95rem;">
+  <thead>
+    <tr>
+      <th style="width:30%;border-bottom:2px solid #bae6fd;text-align:left;padding:6px;">Method</th>
+      <th style="border-bottom:2px solid #bae6fd;text-align:left;padding:6px;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#f0f9ff;">
+      <td style="padding:6px 4px;"><strong>Price Action Analysis</strong></td>
+      <td style="padding:6px 4px;">Visual inspection of chart movements to identify trends.</td>
+    </tr>
+    <tr style="background:#ecfeff;">
+      <td style="padding:6px 4px;"><strong>Moving Averages</strong></td>
+      <td style="padding:6px 4px;">Smoothing techniques (SMA/EMA) to confirm longer-term market direction.</td>
+    </tr>
+    <tr style="background:#e0f2fe;">
+      <td style="padding:6px 4px;"><strong>Breakouts</strong></td>
+      <td style="padding:6px 4px;">Identifying key levels where trends accelerate.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>💡 Confirmation requires multiple time frames and often volume validation to ensure the trend is valid.</strong></p>
+
+<h4 style="color:#0e7490;margin-top:1rem;">📈 Key Insights & Takeaways</h4>
+<ul>
+  <li><strong>Trend Reversal Indicators:</strong> Watch for trendline breaks and price action indicating a change in direction.</li>
+  <li><strong>Volume Confirmation:</strong> Volume is essential in confirming trend strength. Rising volume during an uptrend indicates strength.</li>
+  <li><strong>Trend Duration:</strong> Longer trends typically yield larger profits, while short-term trends require quick exit strategies.</li>
+</ul>
+
+<p><strong>🔗 <a href="https://www.investopedia.com/articles/trading/04/092204.asp" target="_blank">How to Recognize Trends - Investopedia</a></strong></p>
+🔗 <a href="https://www.investopedia.com/articles/trading/07/rising_wedge.asp" target="_blank">How to Recognize Trends - Investopedia</a>
+
+<h4 style="color:#0e7490;margin-top:1rem;">📉 Practical Application</h4>
+<p>Traders apply these methods to spot potential entry points for long or short positions. Identifying uptrends early using moving averages or breakout patterns allows traders to maximize gains from a trend.</p>
+
+<!-- Image for Trend Identification -->
+<h4>📊 Visual Aid:</h4>
+<p>Below is an example chart showing key breakout levels and trend lines on a stock price graph. The breakout above resistance marks a potential entry point for an uptrend.</p>
+<img src="path_to_trend_identification_chart.png" alt="Trend Identification Chart" style="width:100%;">
+
+<!-- Formula Spotlight -->
+<h4 style="color:#0e7490;margin-top:1rem;">Formula Spotlight <span class="tag">famous formulas</span></h4>
+<p style="margin-bottom:0.3rem;">Trendline Breakout Calculation:</p>
+<pre style="background:#f9fafb;padding:6px 8px;border-radius:6px;">
+ΔP<sub>stock</sub> ≈ β × ΔP<sub>market</sub>  β ≈ 1.5
+</pre>
+
+<!-- Investor Tips -->
+<h4 style="color:#0e7490;">Investor Tips <span class="tag">response strategies</span></h4>
+<ol>
+  <li>Diversify across multiple timeframes for better trend confirmation.</li>
+  <li>Combine trend identification with fundamental analysis for a more comprehensive approach.</li>
+  <li>Use volume analysis to confirm trend strength.</li>
+</ol>
+
+<!-- Sources -->
+<hr>
+<small>Sources: Technical Analysis of the Financial Markets, Investopedia, Market Data</small>
+
       `
     },
     {

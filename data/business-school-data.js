@@ -111,15 +111,74 @@ window.mindmapData = {
     {
       text: "1.2 Advanced/Professional Courses",
       description: `
-        <strong>Professional Courses</strong> equip students with job-ready business skills, project execution, and global perspective.
-        
-        <h4>💼 Areas of Focus</h4>
-        - Data Analytics<br>
-        - Strategy Execution<br>
-        - Global Supply Chains
-        
-        <h4>📘 Sample Course Materials</h4>
-        - <a href="https://ocw.mit.edu/courses/sloan-school-of-management/" target="_blank">MIT Sloan OpenCourseWare</a>
+
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #2c3e50; margin: 0; font-size: 24px; border-left: 4px solid #27ae60; padding-left: 12px;">
+        🚀 Professional Courses
+    </h1>
+    
+    <p style="color: #34495e; line-height: 1.6; margin: 16px 0;">
+        Equip yourself with <strong style="color: #27ae60;">job-ready business skills</strong>, strategic execution capabilities, and a global leadership perspective.
+    </p>
+
+    <div style="display: grid; gap: 16px; margin: 16px 0;">
+        <!-- 核心技能 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #27ae60; font-size: 18px; margin: 0 0 12px 0;">🎯 Areas of Focus</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                <div style="padding: 16px; background: #27ae6011; border-radius: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                        <div style="width: 32px; height: 32px; background: #27ae60; border-radius: 6px; display: grid; place-items: center; color: white;">📊</div>
+                        <strong style="color: #27ae60;">Data Analytics</strong>
+                    </div>
+                    <div style="font-size: 14px;">
+                        Predictive modeling & business intelligence
+                    </div>
+                </div>
+                <div style="padding: 16px; background: #27ae6011; border-radius: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                        <div style="width: 32px; height: 32px; background: #27ae60; border-radius: 6px; display: grid; place-items: center; color: white;">♟️</div>
+                        <strong style="color: #27ae60;">Strategy Execution</strong>
+                    </div>
+                    <div style="font-size: 14px;">
+                        OKR frameworks & change management
+                    </div>
+                </div>
+                <div style="padding: 16px; background: #27ae6011; border-radius: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                        <div style="width: 32px; height: 32px; background: #27ae60; border-radius: 6px; display: grid; place-items: center; color: white;">🌐</div>
+                        <strong style="color: #27ae60;">Global Supply Chains</strong>
+                    </div>
+                    <div style="font-size: 14px;">
+                        Logistics optimization & risk mitigation
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学习资源 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #27ae60; font-size: 18px; margin: 0 0 12px 0;">📚 Sample Course Materials</h2>
+            <a href="https://ocw.mit.edu" 
+               style="display: flex; align-items: center; gap: 12px; 
+                      padding: 12px; border: 2px dashed #27ae60; 
+                      border-radius: 8px; text-decoration: none;
+                      transition: transform 0.2s ease;"
+               onmouseover="this.style.transform='translateX(8px)'" 
+               onmouseout="this.style.transform='none'">
+                <div style="background: #27ae60; width: 40px; height: 40px; border-radius: 6px; display: grid; place-items: center; color: white;">🏫</div>
+                <div>
+                    <div style="color: #27ae60; font-weight: bold;">MIT Sloan OpenCourseWare</div>
+                    <div style="color: #7f8c8d; font-size: 14px;">Strategic Management Specialization</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <p style="color: #7f8c8d; font-size: 14px; margin: 12px 0 0 0; border-top: 1px solid #eee; padding-top: 12px;">
+        <em>Pro Tip: 92% of employers prioritize candidates with specialized professional certifications.</em> 📌
+    </p>
+</div>
       `
     },                    // 6
 
@@ -127,64 +186,215 @@ window.mindmapData = {
     {
       text: "1.1.1 Microeconomics",
       description: `
-        <strong>Microeconomics</strong> explores decisions made by individual consumers, firms, and industries.
-        
-        <h4>🔍 Key Concepts</h4>
-        - Demand/Supply<br>
-        - Elasticity<br>
-        - Utility & Cost
-        
-        <h4>📈 Use Case</h4>
-        - Price setting<br>
-        - Product design<br>
-        - Market segmentation
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #2c3e50; margin: 0; font-size: 24px; border-left: 4px solid #3498db; padding-left: 12px;">
+        🎯  Microeconomics
+    </h1>
+    
+    <p style="color: #34495e; line-height: 1.6; margin: 16px 0;">
+        Microeconomics explores <strong style="color: #e74c3c;">decisions made by individual consumers, firms, and industries</strong>, revealing how choices shape markets.
+    </p>
+    
+    <div style="background: white; padding: 16px; border-radius: 8px; margin: 16px 0;">
+        <h2 style="color: #3498db; font-size: 18px; margin: 0 0 12px 0;">📚 Key Concepts</h2>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                <span style="position: absolute; left: 0; color: #3498db;">▹</span>
+                <strong>Demand/Supply:</strong> The invisible hand of markets
+            </li>
+            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                <span style="position: absolute; left: 0; color: #3498db;">▹</span>
+                <strong>Elasticity:</strong> Sensitivity to price changes
+            </li>
+            <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                <span style="position: absolute; left: 0; color: #3498db;">▹</span>
+                <strong>Utility & Cost:</strong> Balancing value and expenditure
+            </li>
+        </ul>
+    </div>
+
+    <div style="background: #3498db22; padding: 16px; border-radius: 8px; margin: 16px 0;">
+        <h2 style="color: #3498db; font-size: 18px; margin: 0 0 12px 0;">💡 Use Cases</h2>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <div style="background: white; padding: 8px 12px; border-radius: 20px; font-size: 14px;">💰 Price Setting</div>
+            <div style="background: white; padding: 8px 12px; border-radius: 20px; font-size: 14px;">🎨 Product Design</div>
+            <div style="background: white; padding: 8px 12px; border-radius: 20px; font-size: 14px;">📊 Market Segmentation</div>
+        </div>
+    </div>
+
+    <p style="color: #7f8c8d; font-size: 14px; margin: 12px 0 0 0; border-top: 1px solid #eee; padding-top: 12px;">
+        <em>Tip: Microeconomics is the DNA of everyday business decisions!</em>
+    </p>
+</div>
       `
     },
     {
       text: "1.1.2 Macroeconomics",
       description: `
-        <strong>Macroeconomics</strong> studies entire economies and aggregates such as GDP, inflation, and unemployment.
-        
-        <h4>📘 Theory Sources</h4>
-        - Keynesian Economics<br>
-        - Monetarism<br>
-        - IS-LM & AD-AS Models
-        
-        <h4>💡 Relevance</h4>
-        - Central bank policy analysis<br>
-        - Investment cycles<br>
-        - Political risk
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #2c3e50; margin: 0; font-size: 24px; border-left: 4px solid #27ae60; padding-left: 12px;">
+        🌍 Macroeconomics
+    </h1>
+    
+    <p style="color: #34495e; line-height: 1.6; margin: 16px 0;">
+        Macroeconomics studies <strong style="color: #27ae60;">entire economies and aggregates</strong> like 
+        <span style="background: #27ae6022; padding: 2px 6px; border-radius: 4px;">GDP</span>, 
+        <span style="background: #27ae6022; padding: 2px 6px; border-radius: 4px;">inflation</span>, and 
+        <span style="background: #27ae6022; padding: 2px 6px; border-radius: 4px;">unemployment</span>.
+    </p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;">
+        <!-- 理论来源 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #27ae60; font-size: 18px; margin: 0 0 12px 0;">📜 Theory Sources</h2>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: #27ae60;">►</span>
+                    Keynesian Economics
+                </li>
+                <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: #27ae60;">►</span>
+                    Monetarism
+                </li>
+                <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+                    <span style="position: absolute; left: 0; color: #27ae60;">►</span>
+                    IS-LM & AD-AS Models
+                </li>
+            </ul>
+        </div>
+
+        <!-- 应用场景 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #27ae60; font-size: 18px; margin: 0 0 12px 0;">🔗 Relevance</h2>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="background: #27ae6011; padding: 8px; border-radius: 6px; font-size: 14px;">
+                    📈 Central bank policy analysis
+                </div>
+                <div style="background: #27ae6011; padding: 8px; border-radius: 6px; font-size: 14px;">
+                    💼 Investment cycles
+                </div>
+                <div style="background: #27ae6011; padding: 8px; border-radius: 6px; font-size: 14px;">
+                    🌐 Political risk
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="color: #7f8c8d; font-size: 14px; margin: 12px 0 0 0; border-top: 1px solid #eee; padding-top: 12px;">
+        <em>Tip: Macroeconomics connects national policies to your daily life!</em>
+    </p>
+</div>
       `
     },
     {
       text: "1.1.3 Principles of Accounting",
       description: `
-        <strong>Principles of Accounting</strong> teaches the systematic recording, reporting, and analysis of financial transactions.
-        
-        <h4>📊 Concepts Covered</h4>
-        - Double-entry system<br>
-        - Balance Sheet / Income Statement<br>
-        - Accruals vs Cash Accounting
-        
-        <h4>🔗 External Resources</h4>
-        - <a href="https://www.accountingcoach.com/" target="_blank">AccountingCoach.com</a>
+
+
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #2c3e50; margin: 0; font-size: 24px; border-left: 4px solid #9b59b6; padding-left: 12px;">
+        📒  Principles of Accounting
+    </h1>
+    
+    <p style="color: #34495e; line-height: 1.6; margin: 16px 0;">
+        Learn the <strong style="color: #9b59b6;">systematic recording, reporting, and analysis</strong> of financial transactions — the language of business.
+    </p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;">
+        <!-- 核心概念 -->
+<div style="background: white; padding: 16px; border-radius: 8px; grid-column: 1 / -1;"> <!-- 新增 grid-column 跨列属性 -->
+    <h2 style="color: #9b59b6; font-size: 18px; margin: 0 0 12px 0;">📝 Concepts Covered</h2>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+        <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+            <span style="position: absolute; left: 0; color: #9b59b6;">▸</span>
+            <strong>Double-entry system:</strong> Debits = Credits
+        </li>
+        <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+            <span style="position: absolute; left: 0; color: #9b59b6;">▸</span>
+            <strong>Financial Statements:</strong> Balance Sheet & Income Statement
+        </li>
+        <li style="margin: 8px 0; padding-left: 24px; position: relative;">
+            <span style="position: absolute; left: 0; color: #9b59b6;">▸</span>
+            <strong>Accruals vs Cash Accounting:</strong> Timing is everything
+        </li>
+    </ul>
+</div>
+    </div>
+        <!-- 外部资源 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #9b59b6; font-size: 18px; margin: 0 0 12px 0;">🔗 External Resources</h2>
+            <div style="background: #9b59b611; padding: 12px; border-radius: 8px;">
+                <a href="https://www.accountingcoach.com" 
+                   style="color: #9b59b6; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                    🌐 <span style="border-bottom: 1px dashed #9b59b6;">AccountingCoach.com</span>
+                </a>
+            </div>
+        </div>
+
+
+    <p style="color: #7f8c8d; font-size: 14px; margin: 12px 0 0 0; border-top: 1px solid #eee; padding-top: 12px;">
+        <em>Tip: Master accounting principles to decode business health! 💼</em>
+    </p>
+</div>
       `
     },                             // 9
     {
       text: "1.1.4 Principles of Marketing",
       description: `
-        <strong>Principles of Marketing</strong> introduces the core concepts of creating, communicating, and delivering value to customers.
+        <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #2c3e50; margin: 0; font-size: 24px; border-left: 4px solid #e67e22; padding-left: 12px;">
+        🎯 Principles of Marketing
+    </h1>
     
-        <h4>📊 Key Concepts</h4>
-        - Market segmentation and targeting<br>
-        - 4Ps of Marketing: Product, Price, Place, Promotion<br>
-        - Consumer behavior and branding
-    
-        <h4>💡 Why It Matters</h4>
-        Understanding marketing is critical for business growth, customer acquisition, and market positioning.
-    
-        <h4>📚 Learn More</h4>
-        - <a href="https://www.coursera.org/learn/marketing" target="_blank">Coursera: Marketing Course</a>
+    <p style="color: #34495e; line-height: 1.6; margin: 16px 0;">
+        Master the <strong style="color: #e67e22;">art of creating, communicating, and delivering value</strong> to customers through strategic frameworks.
+    </p>
+
+    <div style="display: grid; gap: 16px; margin: 16px 0;">
+        <!-- 核心概念 -->
+        <div style="background: white; padding: 16px; border-radius: 8px; grid-column: 1 / -1;">
+            <h2 style="color: #e67e22; font-size: 18px; margin: 0 0 12px 0;">📦 Key Concepts</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                <div style="padding: 12px; background: #e67e2211; border-radius: 6px;">
+                    <div style="color: #e67e22; margin-bottom: 4px;">🎯 Segmentation</div>
+                    Market segmentation and targeting
+                </div>
+                <div style="padding: 12px; background: #e67e2211; border-radius: 6px;">
+                    <div style="color: #e67e22; margin-bottom: 4px;">📌 4Ps of Marketing</div>
+                    Product | Price | Place | Promotion
+                </div>
+                <div style="padding: 12px; background: #e67e2211; border-radius: 6px;">
+                    <div style="color: #e67e22; margin-bottom: 4px;">💡 Consumer Insights</div>
+                    Consumer behavior analysis & brand building
+                </div>
+            </div>
+        </div>
+
+        <!-- 重要性 -->
+        <div style="background: #e67e22; padding: 16px; border-radius: 8px; color: white;">
+            <h2 style="font-size: 18px; margin: 0 0 12px 0;">❗ Why It Matters</h2>
+            <p style="margin: 0; line-height: 1.5;">
+                Understanding marketing is critical for <br>
+                ✅ Customer acquisition<br>
+                ✅ Market positioning<br>
+                ✅ Business growth
+            </p>
+        </div>
+
+        <!-- 学习资源 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #e67e22; font-size: 18px; margin: 0 0 12px 0;">🎓 Learn More</h2>
+            <a href="https://www.coursera.org" 
+               style="display: flex; align-items: center; gap: 8px; color: #e67e22; text-decoration: none; padding: 8px; border: 1px dashed #e67e22; border-radius: 6px;">
+                🌍 <strong>Coursera:</strong> Marketing Specialization
+            </a>
+        </div>
+    </div>
+
+    <p style="color: #7f8c8d; font-size: 14px; margin: 12px 0 0 0; border-top: 1px solid #eee; padding-top: 12px;">
+        <em>Tip: Marketing is the bridge between products and people! 🌉</em>
+    </p>
+</div>
       `,
       videoUrl: "",
       image: "",
@@ -203,22 +413,91 @@ window.mindmapData = {
     {
       text: "1.1.5 Principles of Management",
       description: `
-        <strong>Principles of Management</strong> explores how to plan, lead, organize, and control an organization to achieve goals efficiently.
+       <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <h1 style="color: #2c3e50; margin: 0; font-size: 24px; border-left: 4px solid #2980b9; padding-left: 12px;">
+        📘 Principles of Management
+    </h1>
     
-        <h4>📘 Topics Covered</h4>
-        - Planning and decision making<br>
-        - Leadership and team management<br>
-        - Organizational structure and culture
-    
-        <h4>📌 Classic Model</h4>
-        - Fayol's 14 Principles of Management<br>
-        - Mintzberg's managerial roles
-    
-        <h4>💡 Why It Matters</h4>
-        Effective management fosters productivity, employee engagement, and strategic clarity.
-    
-        <h4>🔗 Explore</h4>
-        - <a href="https://hbr.org/2020/05/management-principles" target="_blank">Harvard Business Review: Management Essentials</a>
+    <p style="color: #34495e; line-height: 1.6; margin: 16px 0;">
+        Master the <strong style="color: #2980b9;">art of planning, leading, organizing, and controlling</strong> organizations for optimal efficiency.
+    </p>
+
+    <div style="display: grid; gap: 0px; margin: 0px 0;">
+        <!-- 核心主题 -->
+        <div style="background: white; padding: 0px; border-radius: 8px;">
+            <h2 style="color: #2980b9; font-size: 18px; margin: 0 0 12px 0;">📋 Topics Covered</h2>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+                <div style="padding: 12px; background: #2980b911; border-radius: 6px;">
+                    <div style="color: #2980b9; margin-bottom: 4px;">🗓 Planning</div>
+                    Planning and decision making
+                </div>
+                <div style="padding: 12px; background: #2980b911; border-radius: 6px;">
+                    <div style="color: #2980b9; margin-bottom: 4px;">👥 Leadership</div>
+                    Leadership and team management
+                </div>
+                <div style="padding: 12px; background: #2980b911; border-radius: 6px;">
+                    <div style="color: #2980b9; margin-bottom: 4px;">🏢 Structure</div>
+                    Organizational structure and culture
+                </div>
+            </div>
+        </div>
+
+        <!-- 经典模型 -->
+        <div style="background: white; padding: 0px; border-radius: 8px;">
+            <h2 style="color: #2980b9; font-size: 18px; margin: 0 0 12px 0;">🏛 Classic Models</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px;">
+                <div style="padding: 12px; border: 2px solid #2980b9; border-radius: 8px;">
+                    <strong style="color: #2980b9;">Fayol's Principles:</strong>
+                    <div style="margin-top: 8px; font-size: 14px;">
+                        Division of Labor → Authority → Discipline
+                    </div>
+                </div>
+                <div style="padding: 12px; border: 2px solid #2980b9; border-radius: 8px;">
+                    <strong style="color: #2980b9;">Mintzberg's Roles:</strong>
+                    <div style="margin-top: 8px; font-size: 14px;">
+                        Figurehead | Leader | Liaison
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 重要性 -->
+        <div style="background: #2980b9; padding: 0px; border-radius: 8px; color: white;">
+            <h2 style="font-size: 18px; margin: 0 0 12px 0;">⭐ Why It Matters - Effective management fosters</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px;">
+                <div style="padding: 12px; background: #ffffff22; border-radius: 6px;">
+                    🚀 Productivity
+                </div>
+                <div style="padding: 12px; background: #ffffff22; border-radius: 6px;">
+                    💼 85% Retention: Employee engagement
+                </div>
+                <div style="padding: 12px; background: #ffffff22; border-radius: 6px;">
+                    🎯 Strategic Clarity
+                </div>
+            </div>
+        </div>
+
+        <!-- 学习资源 -->
+        <div style="background: white; padding: 16px; border-radius: 8px;">
+            <h2 style="color: #2980b9; font-size: 18px; margin: 0 0 12px 0;">🔍 Explore</h2>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <a href="https://hbr.org" 
+                   style="display: flex; align-items: center; gap: 8px; 
+                          color: #2980b9; text-decoration: none; padding: 12px; 
+                          border: 2px dashed #2980b9; border-radius: 8px;
+                          transition: all 0.3s ease;" 
+                   onmouseover="this.style.background='#2980b911'" 
+                   onmouseout="this.style.background='transparent'">
+                    📚 Harvard Business Review: Management Essentials
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <p style="color: #7f8c8d; font-size: 14px; margin: 12px 0 0 0; border-top: 1px solid #eee; padding-top: 12px;">
+        <em>Pro Tip: Effective managers spend 60% less time on crisis management.</em> ⏳
+    </p>
+</div>
       `,
       // videoUrl: "https://www.youtube.com/embed/lDBAq3E-m3c",
       // image: "https://via.placeholder.com/120x80?text=Management",
