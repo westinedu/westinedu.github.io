@@ -1,5 +1,9 @@
 name: Daily Heatmap JSON Update
 
+# 显式开启写权限
+permissions:
+  contents: write
+  
 on:
   schedule:
     # 每天 UTC 1:00 触发（北京时间 9:00）
