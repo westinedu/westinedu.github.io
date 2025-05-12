@@ -95,9 +95,9 @@ Promise.all([
         if(!p.data) return '';          // 根/虚节点
         const d=p.data;
         if(d.children){ // 行业层
-          return `<b>${d.name}</b><br/>市值合计：$${fmtCap(d.value)}`;
+          return `<b>${d.name}</b><br/>Total Cap：$${fmtCap(d.value)}`;
         }
-        return `${d.name}<br/>市值：$${fmtCap(d.value[0])}<br/>涨跌：${d.change>0?'+':''}${d.change.toFixed(2)}%`;
+        return `${d.name}<br/>Cap：$${fmtCap(d.value[0])}<br/>Change：${d.change>0?'+':''}${d.change.toFixed(2)}%`;
       }
     },
     visualMap:{
