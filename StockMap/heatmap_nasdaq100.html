@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nasdaq 100 · Sector Treemap</title>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <style>
+        :root{
+      --card-bg:#fff;
+      --shadow:0 4px 12px rgba(0,0,0,.06);
+      --radius:12px;
+      --gap:24px;
+      --v-gap-small: 1px;   /* 图表与图例之间的间距，1rem约等于16px */
+      --v-gap-large: 2rem;   /* 标题与图表之间的间距，2rem约等于32px */
+    }
+    /* html,body{margin:0;padding:0;width:100%;height:100%;} */
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+    body{background:#f7f7f9;padding:var(--gap);color:#333;}
+    .card{
+  /* display:flex;
+  flex-direction:column; */
+  /* height:100%; */
+  padding:var(--gap);
+  background:var(--card-bg);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+
+}
+
+/* 标题（h2）与图表之间的下边距使用大间距变量 */
+.card > h2 {
+  margin: 0 0 0 0;
+}
+
+/* 图表容器与图例之间的下边距使用小间距变量 */
+.card > #chart {
+  margin: 0 0 0 0;
+}
+
+/* 图例本身不额外设置外边距（跟随上方chart的间距） */
+.card > .legend {
+  margin: 0;
+}
+    h2{font-size:26px;font-weight:600;text-align:center;margin-bottom:0px; }
+    #chart{ width:100%;height:80vh;}
+    .legend{display:flex;justify-content:center;align-items:center;gap:12px;margin-top:0px;flex-wrap:wrap;    }
+    .legend-item{display:flex;align-items:center;}
+    .swatch{width:80px;height:28px;border-radius:4px;border:1px solid rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:#fff;}
+
+  </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Nasdaq 100</h2>
+  <div id="chart"></div>
+  <div id="legend" class="legend"></div>
+</div>
+
+<script>
+/* ==== 颜色区间 & 图例渲染 ==== */
+const colorPieces=[
+  {min:-Infinity,max:-3,color:'#7b0000',label:'≤ -3%'},
+  {min:-3,max:-1.5,color:'#b22222',label:'-3 ~ -1.5%'},
+  {min:-1.5,max:-0.3,color:'#d55b5b',label:'-1.5 ~ -0.3%'},
+  {min:-0.3,max:0.3,color:'#d9d9d9',label:'-0.3 ~ 0.3%',textColor:'#333'},
+  {min:0.3,max:1.5,color:'#8bc34a',label:'0.3 ~ 1.5%'},
+  {min:1.5,max:3,color:'#4caf50',label:'1.5 ~ 3%'},
+  {min:3,max:Infinity,color:'#006400',label:'≥ 3%'}
+];
+// ===== 创建 TradingView 风格图例 =====
+const legendEl = document.getElementById('legend');
+  colorPieces.forEach(p => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    const txtColor = p.textColor || '#fff';
+    item.innerHTML = `<div class="swatch" style="background:${p.color};color:${txtColor}">${p.label}</div>`;
+    legendEl.appendChild(item);
+  });
+const fmtCap=n=>Number.isFinite(n)?n.toLocaleString('en-US'):'—';
+
+/* ==== 加载数据 ==== */
+Promise.all([
+  fetch('public/data/nasdaq100_heatmap.json').then(r=>r.json()),
+  fetch('NASDAQ100_sectors.json').then(r=>r.json())
+]).then(([heatmap,sectors])=>{
+  /* symbol -> sector */
+  const sectorDict=Object.fromEntries(sectors.map(o=>[o.symbol,o.sector||'Other']));
+
+  /* 按行业分组 */
+  const groups={};
+  heatmap.forEach(d=>{
+    const sym=d.name;
+    const cap=d.value;          // 市值
+    const change=d.colorValue;  // 涨跌幅
+    const sec=sectorDict[sym]||'Other';
+    if(!groups[sec]) groups[sec]=[];
+    groups[sec].push({name:sym,value:[cap,change],change});
+  });
+
+  /* treemap 两层结构 */
+  const treeData=Object.entries(groups).map(([sec,children])=>({
+    name:sec,
+    value:children.reduce((s,c)=>s+c.value[0],0),
+    children
+  }));
+
+  /* ==== 渲染图表 ==== */
+  const chart=echarts.init(document.getElementById('chart'));
+  chart.setOption({
+    // title:{text:'Dow Jones 30 — 按行业分布',left:'center'},
+    tooltip:{
+      formatter:p=>{
+        if(!p.data) return '';          // 根/虚节点
+        const d=p.data;
+        if(d.children){ // 行业层
+          return `<b>${d.name}</b><br/>市值合计：$${fmtCap(d.value)}`;
+        }
+        return `${d.name}<br/>市值：$${fmtCap(d.value[0])}<br/>涨跌：${d.change>0?'+':''}${d.change.toFixed(2)}%`;
+      }
+    },
+    visualMap:{
+      show:false,
+      type:'piecewise',
+      dimension:1,
+      pieces:colorPieces.map(p=>({min:p.min,max:p.max,color:p.color}))
+    },
+    series:[{
+      type:'treemap',top:10,bottom:20,
+      data:treeData,
+      roam:false,nodeClick:false,
+      breadcrumb:{show:false},
+      labelLayout:params=>{
+        if(!params.data) return {};
+        if(params.data.children) return {};    // 行业层
+        const area=params.rect.width*params.rect.height;
+        const fontSize=Math.min(Math.max(Math.sqrt(area)/8,10),16);
+        const color=Math.abs(params.data.change)<0.3?'#333':'#fff';
+        return {fontSize,color};
+      },
+      levels: [
+  {   // depth 0 → 根节点：隐藏即可
+    itemStyle: { borderWidth: 0, gapWidth: 0 },
+    label:     { show: false }
+  },
+  {   // depth 1 → 行业层（原行业配置）
+    itemStyle:{ borderWidth:3, gapWidth:3 },
+    upperLabel:{
+      show:true, height:24, formatter:'{b}',
+      color:'#000', fontSize:16, fontWeight:'bold',
+      textBorderColor:'#fff', textBorderWidth:2
+    },
+    // fallback：当块太小时使用普通 label
+    label:{
+      show:true, position:'insideTopLeft',
+      formatter:'{b}', color:'#000', fontSize:12
+    }
+  },
+  {   // depth 2 → 个股层（原个股配置）
+    label:{
+      show:true, position:'inside',
+      formatter:p=>`${p.data.name}\n${p.data.change>0?'+':''}${p.data.change.toFixed(2)}%`
+    }
+  }
+]
+    }]
+  });
+  window.addEventListener('resize',()=>chart.resize());
+}).catch(err=>{
+  console.error(err);
+  document.getElementById('chart').innerText='加载数据失败：'+err;
+});
+</script>
+</body>
+</html>
