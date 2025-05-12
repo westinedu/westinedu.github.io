@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>StockMap Heatmaps</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    /* 下拉菜单固定在左上角 */
+    #selector {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 10;
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+    /* iframe 占满全屏 */
+    #heatmapFrame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <select id="selector">
+    <option value="heatmap_sp500.html">S&amp;P 500</option>
+    <option value="heatmap_nasdaq100.html">NASDAQ-100</option>
+    <option value="heatmap_DowJones30.html">Dow Jones 30</option>
+  </select>
+
+  <iframe id="heatmapFrame" src="heatmap_sp500.html"></iframe>
+
+  <script>
+    const select = document.getElementById('selector');
+    const frame = document.getElementById('heatmapFrame');
+    // 切换时，改变 iframe 的 src
+    select.addEventListener('change', () => {
+      frame.src = select.value;
+    });
+  </script>
+</body>
+</html>
