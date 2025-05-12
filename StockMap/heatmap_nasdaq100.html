@@ -24,17 +24,19 @@
     height: 100vh;
     overflow: hidden;
   }
-  /* body {
+  body {
     padding: 0 !important;
     background: #fff;  /* 需要的话再加背景色 */
-  /* }  */
+  }
   /* 让 chart 区域撑满全屏 */
   #chart {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100vw;      /* 或 100% */
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -115,7 +117,7 @@ Promise.all([
       pieces:colorPieces.map(p=>({min:p.min,max:p.max,color:p.color}))
     },
     series:[{
-      type:'treemap',
+      type:'treemap',top:10,bottom:20,
       data:treeData,
       // —— 1. 打开缩放和平移（可选，但配合 zoomToNode 体验更流畅）
       roam: true,
