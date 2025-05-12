@@ -30,7 +30,7 @@ jobs:
     - name: Generate heatmap JSON
       working-directory: StockMap
       run: |
-        python StockMap/create_heapmap-json.py
+        python create_heapmap-json.py
 
     - name: Commit and push changes
       run: |
