@@ -108,8 +108,16 @@ Promise.all([
     series:[{
       type:'treemap',top:10,bottom:20,
       data:treeData,
-      roam:false,nodeClick:false,
-      breadcrumb:{show:false},
+      // —— 1. 打开缩放和平移（可选，但配合 zoomToNode 体验更流畅）
+      roam: true,
+      // —— 2. 点击节点时自动 zoom 到该节点
+      nodeClick: 'zoomToNode',
+      // —— 3. 显示面包屑，方便返回上一级
+      breadcrumb: {
+        show: true,
+        left: 'center',
+        top: 0
+      },
       labelLayout:params=>{
 
         const {width,height,text,rect} = params;
