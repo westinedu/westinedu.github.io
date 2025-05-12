@@ -131,12 +131,32 @@ Promise.all([
       roam:false,nodeClick:false,
       breadcrumb:{show:false},
       labelLayout:params=>{
-        if(!params.data) return {};
-        if(params.data.children) return {};    // 行业层
-        const area=params.rect.width*params.rect.height;
-        const fontSize=Math.min(Math.max(Math.sqrt(area)/8,10),16);
-        const color=Math.abs(params.data.change)<0.3?'#333':'#fff';
-        return {fontSize,color};
+
+        const {width,height,text,rect} = params;
+          // 解析 change 值
+          const parts = text.split('\n');
+          const changeValue = parseFloat(parts[1])||0;
+
+        const color=Math.abs(changeValue)<0.3?'#333':'#fff';
+
+
+        const r = params.rect;
+          // 如果不是叶子节点（有子 children），或者面积过小，就隐藏
+          // if (!r || r.width < 3  || r.height < 3) {
+          //   return {fontSize: 0};
+          // }
+          // 根据面积计算字号：√(w*h)/8，clamp [12,32]
+          const area = r.width * r.height;
+          fs = Math.max(8, Math.min(32, Math.sqrt(area) / 6));
+          if(area < 120) {
+            fs =  Math.sqrt(area) / 2;
+          }
+          return {
+            fontSize: fs,
+            // 文字颜色简化：灰色背景黑字，深色背景白字
+            color:  '#000',
+            lineHeight: fs
+          };
       },
       levels: [
   {   // depth 0 → 根节点：隐藏即可
