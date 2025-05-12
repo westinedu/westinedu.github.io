@@ -36,7 +36,7 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add StockMap/public/data/*.json
+        git add StockMap/public/data/{*_heatmap.json,aggs_*.json}
         # 如果有其它输出目录，也一并 add
         # git add public/data/*.json
         # 只在有变动时才提交
