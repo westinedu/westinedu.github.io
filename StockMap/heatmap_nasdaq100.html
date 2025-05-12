@@ -93,6 +93,12 @@ Promise.all([
       formatter:p=>{
         if(!p.data) return '';          // 根/虚节点
         const d=p.data;
+            // 1. 如果 name 不存在，就是全局根节点
+    if (!d.name) {
+      // 用 params.seriesName 显示 S&P 500 / NASDAQ-100 / Dow Jones 30
+      return `<b>${p.seriesName}</b><br/>Total Cap: ${fmtCap(d.value)}`;
+    }
+
         if(d.children){ // 行业层
           return `<b>${d.name}</b><br/>Total Cap：$${fmtCap(d.value)}`;
         }
