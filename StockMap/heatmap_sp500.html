@@ -67,7 +67,7 @@ const fmtCap=n=>Number.isFinite(n)?n.toLocaleString('en-US'):'—';
 
 /* ==== 加载数据 ==== */
 Promise.all([
-  fetch('public/data/sp500_heatmap.json').then(r=>r.json()),
+  fetch('public/data/SP500_heatmap.json').then(r=>r.json()),
   fetch('sp500_sectors.json').then(r=>r.json())
 ]).then(([heatmap,sectors])=>{
   /* symbol -> sector */
