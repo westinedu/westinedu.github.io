@@ -15,6 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # —— 在这里打印 UTC 时间 ——  
+    - name: Print UTC time
+      run: |
+        date --utc
+
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
