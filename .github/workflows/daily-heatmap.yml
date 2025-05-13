@@ -1,4 +1,4 @@
-name: Daily Heatmap JSON Update
+name: Market Hours Heatmap JSON Update
 
 # 显式开启写权限
 permissions:
@@ -7,7 +7,7 @@ permissions:
 on:
   schedule:
     # 每天 UTC 1:00 触发（北京时间 9:00）
-    - cron: '0 1 * * *'
+    - cron: '*/20 13-21 * * 1-5'  # UTC 13:00–21:59，每 20 分钟一次，包含 20:00–21:00 时段
   workflow_dispatch:  # 手动也能触发
 
 jobs:
@@ -34,23 +34,23 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests
+        pip install requests yfinance
 
     - name: Generate heatmap JSON
       working-directory: StockMap
       run: |
-        python create_heapmap-json.py
+        python create_realtime-heapmap-json.py
 
     - name: Commit and push changes
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add StockMap/public/data/{*_heatmap.json,aggs_*.json}
+        git add StockMap/public/data/{*_heatmap.json}
         # 如果有其它输出目录，也一并 add
         # git add public/data/*.json
         # 只在有变动时才提交
         if ! git diff --cached --exit-code; then
-          git commit -m "chore: daily heatmap update [skip ci]"
+          git commit -m "chore: realtime heatmap update [skip ci]"
           git push
         else
           echo "No changes to commit"
