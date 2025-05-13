@@ -45,13 +45,13 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add StockMap/public/data/{*_heatmap.json}
+        git add StockMap/public/data/{*_heatmap.json,3index_realtime_*.json}
         # 如果有其它输出目录，也一并 add
         # git add public/data/*.json
         # 只在有变动时才提交
-        if ! git diff --cached --exit-code; then
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
           git commit -m "chore: realtime heatmap update [skip ci]"
           git push
-        else
-          echo "No changes to commit"
         fi
