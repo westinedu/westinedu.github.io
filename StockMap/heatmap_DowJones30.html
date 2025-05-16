@@ -76,11 +76,12 @@ Promise.all([
   const groups={};
   heatmap.forEach(d=>{
     const sym=d.name;
+    const corpname=d.corpName;  // 公司名称
     const cap=d.value;          // 市值
     const change=d.colorValue;  // 涨跌幅
     const sec=sectorDict[sym]||'Other';
     if(!groups[sec]) groups[sec]=[];
-    groups[sec].push({name:sym,value:[cap,change],change});
+    groups[sec].push({name:sym,value:[cap,change],change,corpname});
   });
 
   /* treemap 两层结构 */
@@ -105,7 +106,7 @@ Promise.all([
         if(d.children){ // 行业层
           return `<b>${d.name}</b><br/>Total Cap：$${fmtCap(d.value)}`;
         }
-        return `${d.name}<br/>Cap：$${fmtCap(d.value[0])}<br/>Change：${d.change>0?'+':''}${d.change.toFixed(2)}%`;
+        return `${d.corpname}<br/>Cap：$${fmtCap(d.value[0])}<br/>Change：${d.change>0?'+':''}${d.change.toFixed(2)}%`;
       }
     },
     visualMap:{

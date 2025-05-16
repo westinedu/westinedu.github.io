@@ -43,6 +43,9 @@ def save_json(path: str, data) -> None:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+
+
+
 def fetch_real_time(tickers: list) -> dict:
     """
     批量抓取实时行情，结果写入 REALTIME_FILE，返回 {symbol: {...}}。
@@ -93,7 +96,8 @@ def build_heatmap(index_name: str, tickers: list, meta_map: dict, realtime: dict
         change_pct = rt.get('changePct') or 0
         shares = m.get('share_class_shares_outstanding') or m.get('weighted_shares_outstanding') or 0
         market_cap = shares * price
-        heat.append({'name': sym, 'value': market_cap, 'colorValue': change_pct})
+        corp_name = m.get('name') or sym
+        heat.append({'name': sym, 'value': market_cap, 'colorValue': change_pct, 'corpName': corp_name, 'price': price})
 
     out_path = os.path.join(DATA_DIR, f"{index_name}_heatmap.json")
     save_json(out_path, heat)
