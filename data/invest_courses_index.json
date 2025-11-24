@@ -1,0 +1,229 @@
+{
+  "version": "1.0",
+  "categories": [
+    {
+      "name": "Finance & Investing",
+      "icon": "💹",
+      "items": [
+        {
+          "id": "investing101",
+          "title": "Investing 101",
+          "coverImage": "https://westine.web.app/AIgraph/images/investing-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/investing-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Investing_index1.0.html",
+          "description": "Baseline index for new investors; foundations, metrics, and portfolio basics.",
+          "requiresSubscription": true,
+          "productID": "com.investcourse.investing101",
+          "promotion": false
+        },
+        {
+          "id": "stock-investing",
+          "title": "Stock Investing",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-investing-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-investing-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Stock-investing_index1.0.html",
+          "description": "Value investing, fundamentals, and long-term portfolio design.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.stock_investing",
+          "promotion": true
+        },
+        {
+          "id": "analyzing-trends",
+          "title": "Analyzing Stock Trends",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-trends-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-trends-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/analyzing-stock-trends_index1.0.html",
+          "description": "Trendlines, indicators, market phases, and chart patterns.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.investing_trends",
+          "promotion": true
+        },
+        {
+          "id": "stock-market",
+          "title": "Stock Market",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-market-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-market-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Stock-market_index1.0.html",
+          "description": "Exchanges, indices, liquidity, and market structure.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.stock_market",
+          "promotion": false
+        },
+        {
+          "id": "investing-tech",
+          "title": "Investing in Tech",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-market-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-market-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Investing-tech_index.html",
+          "description": "Sector nuances, metrics, and playbooks for technology investing.",
+          "requiresSubscription": true,
+          "productID": "com.investcourse.investing_tech",
+          "promotion": false
+        },
+        {
+          "id": "value-dos",
+          "title": "Value Investing Dos/Don'ts",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-investing-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-investing-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Value-Investing-Dos-and-Donts-EN.html",
+          "description": "Practical checklists for fundamentals and valuation discipline.",
+          "requiresSubscription": true,
+          "productID": "com.investcourse.value_dos",
+          "promotion": false
+        },
+        {
+          "id": "value-reading",
+          "title": "Value Investing Reading Mode",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-investing-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-investing-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/value-investing-readingMode-OK.html",
+          "description": "Reading-mode primer for value investing frameworks.",
+          "requiresSubscription": false,
+          "productID": "com.investcourse.value_reading",
+          "promotion": false
+        }
+      ]
+    },
+    {
+      "name": "Trading & Markets",
+      "icon": "📈",
+      "items": [
+        {
+          "id": "tariff-explanation",
+          "title": "Tariff Explanation",
+          "coverImage": "https://westine.web.app/AIgraph/images/tariff-explanation-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/tariff-explanation-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/tariff_explanation.html",
+          "description": "Interactive causal view of tariff shocks on macro and markets.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.tariff_explanation",
+          "promotion": true,
+          "promotionOrder": 0
+        },
+        {
+          "id": "day-trading",
+          "title": "Day Trading Strategies",
+          "coverImage": "https://westine.web.app/AIgraph/images/day-trading-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/day-trading-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/DayTrading_index1.0.html",
+          "description": "Scalping, momentum plays, and intraday risk control.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.day_trading",
+          "promotion": false
+        },
+        {
+          "id": "global-events-impact",
+          "title": "Impact of Global Events on Stocks",
+          "coverImage": "https://westine.web.app/AIgraph/images/global-events-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/global-events-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/EventsOnStock_index1.0.html",
+          "description": "Geopolitical and macro catalysts shaping sentiment.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.global_events",
+          "promotion": false
+        },
+        {
+          "id": "gold-playbook",
+          "title": "Gold Playbook",
+          "coverImage": "https://westine.web.app/AIgraph/images/stock-market-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/stock-market-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/gold.html",
+          "description": "Gold thesis and scenarios in a reading-mode deck.",
+          "requiresSubscription": false,
+          "productID": "com.investcourse.gold",
+          "promotion": false
+        }
+      ]
+    },
+    {
+      "name": "Business & Strategy",
+      "icon": "🏢",
+      "items": [
+        {
+          "id": "business-school",
+          "title": "Business School Courses",
+          "coverImage": "https://westine.web.app/AIgraph/images/business-school-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/business-school-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/business-school.html",
+          "description": "MBA/EMBA style modules: strategy, ops, finance.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.business_school",
+          "promotion": false
+        },
+        {
+          "id": "mobile-apps",
+          "title": "Develop and Sell Mobile Apps",
+          "coverImage": "https://westine.web.app/AIgraph/images/mobile-apps-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/mobile-apps-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/MoblieAppSale_index1.0.html",
+          "description": "Monetization, ASO, marketing, and product design for apps.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.mobile_apps",
+          "promotion": false
+        }
+      ]
+    },
+    {
+      "name": "Economics & Thought",
+      "icon": "📘",
+      "items": [
+        {
+          "id": "economics",
+          "title": "Economics",
+          "coverImage": "https://westine.web.app/AIgraph/images/economics-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/economics-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Economic_1.3_index.html",
+          "description": "Macro and micro models, inflation, unemployment, policy.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.economics",
+          "promotion": true
+        },
+        {
+          "id": "ray-dalio",
+          "title": "Ray Dalio",
+          "coverImage": "https://westine.web.app/AIgraph/images/ray-dalio-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/ray-dalio-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/Ray-Dalio-index1.0.html",
+          "description": "Principles, economic cycles, and Bridgewater strategy.",
+          "requiresSubscription": true,
+          "productID": "com.AIGraph0.ray_dalio",
+          "promotion": false
+        }
+      ]
+    },
+    {
+      "name": "Mind & Lifestyle",
+      "icon": "🧘",
+      "items": [
+        {
+          "id": "meditation",
+          "title": "Learning to Meditate",
+          "coverImage": "https://westine.web.app/AIgraph/images/meditate-cover.jpg",
+          "previewImage": "https://westine.web.app/AIgraph/images/meditate-preview.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/LearningToMeditate_index1.0.html",
+          "description": "Stress reduction, focus, and mindfulness via mindmaps.",
+          "requiresSubscription": false,
+          "productID": "com.AIGraph0.meditation",
+          "promotion": false
+        }
+      ]
+    },
+    {
+      "name": "Study Techniques",
+      "icon": "📚",
+      "items": [
+        {
+          "id": "study-techniques",
+          "title": "Study Techniques Harvard Students Use",
+          "coverImage": "https://westine.web.app/images/study-tips/cover.jpg",
+          "previewImage": "https://westine.web.app/images/study-tips/cover.jpg",
+          "htmlUrl": "https://westine.web.app/AIgraph/study-tips.html",
+          "description": "Efficient learning, time management, and retention methods.",
+          "requiresSubscription": false,
+          "productID": "com.AIGraph0.meditation",
+          "promotion": false
+        }
+      ]
+    }
+  ]
+}
