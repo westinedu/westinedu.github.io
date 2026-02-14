@@ -66,7 +66,7 @@ const fmtCap=n=>Number.isFinite(n)?n.toLocaleString('en-US'):'—';
 
 /* ==== 加载数据 ==== */
 Promise.all([
-  fetch('public/data/DowJones30_heatmap.json').then(r=>r.json()),
+  fetch('public/data/DowJones30_heatmap.json?ts=' + Date.now(), { cache: 'no-store' }).then(r=>r.json()),
   fetch('DJ30_sectors.json').then(r=>r.json())
 ]).then(([heatmap,sectors])=>{
   /* symbol -> sector */
@@ -93,6 +93,21 @@ Promise.all([
 
   /* ==== 渲染图表 ==== */
   const chart=echarts.init(document.getElementById('chart'));
+  const openStockFlow = (rawSymbol) => {
+    const symbol = String(rawSymbol || '').trim().toUpperCase();
+    if (!/^[A-Z0-9.^=-]{1,16}$/.test(symbol)) return;
+    const appUrl = `com.aigraph.app://stockflow?symbol=${encodeURIComponent(symbol)}`;
+    const webUrl = `https://do2invest.com/stockmap?symbol=${encodeURIComponent(symbol)}`;
+    try {
+      if (window.top) {
+        window.top.location.href = appUrl;
+      } else {
+        window.location.href = appUrl;
+      }
+    } catch (_) {
+      window.location.href = webUrl;
+    }
+  };
   chart.setOption({
     // title:{text:'Dow Jones 30 — 按行业分布',left:'center'},
     tooltip:{
@@ -181,6 +196,11 @@ Promise.all([
   }
 ]
     }]
+  });
+  chart.on('click', (params) => {
+    const node = params && params.data;
+    if (!node || node.children || !node.name) return;
+    openStockFlow(node.name);
   });
   window.addEventListener('resize',()=>chart.resize());
 }).catch(err=>{
