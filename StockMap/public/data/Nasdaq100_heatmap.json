@@ -23,7 +23,7 @@
   {
     "name": "ADI",
     "value": 167194858000.0,
-    "colorValue": 1.7322613,
+    "colorValue": 1.732252,
     "corpName": "Analog Devices, Inc.",
     "price": 337.1
   },
@@ -65,14 +65,14 @@
   {
     "name": "AMGN",
     "value": 198517154900.0,
-    "colorValue": 1.5150709,
+    "colorValue": 0.81649107,
     "corpName": "Amgen Inc",
     "price": 369.19
   },
   {
     "name": "AMZN",
     "value": 2109631044400.0,
-    "colorValue": -0.40581805,
+    "colorValue": -0.40581042,
     "corpName": "Amazon.Com Inc",
     "price": 198.79
   },
@@ -85,10 +85,10 @@
   },
   {
     "name": "APP",
-    "value": 120160518500.0,
-    "colorValue": 6.442992,
+    "value": 120195900550.0,
+    "colorValue": 6.5077295,
     "corpName": "Applovin Corporation Class A Common Stock",
-    "price": 390.55
+    "price": 390.665
   },
   {
     "name": "ARM",
@@ -114,7 +114,7 @@
   {
     "name": "AXON",
     "value": 33449809500.0,
-    "colorValue": -1.4088671,
+    "colorValue": -1.4088742,
     "corpName": "Axon Enterprise, Inc. Common Stock",
     "price": 429.67
   },
@@ -219,7 +219,7 @@
   {
     "name": "CSGP",
     "value": 18980831100.0,
-    "colorValue": -0.08882323,
+    "colorValue": -0.08883169,
     "corpName": "CoStar Group Inc",
     "price": 44.99
   },
@@ -233,7 +233,7 @@
   {
     "name": "CTAS",
     "value": 78109137600.0,
-    "colorValue": -1.1295638,
+    "colorValue": -1.1295714,
     "corpName": "Cintas Corp",
     "price": 193.44
   },
@@ -261,14 +261,14 @@
   {
     "name": "DXCM",
     "value": 28059114600.0,
-    "colorValue": 7.590649,
+    "colorValue": 7.590662,
     "corpName": "DexCom, Inc.",
     "price": 70.02
   },
   {
     "name": "EA",
     "value": 52285584400.0,
-    "colorValue": 0.079810634,
+    "colorValue": 0.07981825,
     "corpName": "Electronic Arts Inc",
     "price": 200.62
   },
@@ -296,14 +296,14 @@
   {
     "name": "FTNT",
     "value": 65428587600.0,
-    "colorValue": 1.5428381,
+    "colorValue": 1.5428473,
     "corpName": "Fortinet, Inc.",
     "price": 85.56
   },
   {
     "name": "GEHC",
     "value": 36786882600.0,
-    "colorValue": 2.148754,
+    "colorValue": 2.1487637,
     "corpName": "GE HealthCare Technologies Inc. Common Stock",
     "price": 80.34
   },
@@ -345,7 +345,7 @@
   {
     "name": "IDXX",
     "value": 50612327000.0,
-    "colorValue": 1.9685616,
+    "colorValue": 1.9685719,
     "corpName": "Idexx Laboratories Inc",
     "price": 629.35
   },
@@ -415,7 +415,7 @@
   {
     "name": "MAR",
     "value": 97450689300.0,
-    "colorValue": -0.33512786,
+    "colorValue": -0.3351364,
     "corpName": "Marriot International Class A Common Stock",
     "price": 353.89
   },
@@ -457,7 +457,7 @@
   {
     "name": "MNST",
     "value": 79460110800.0,
-    "colorValue": 0.3819209,
+    "colorValue": 0.3819115,
     "corpName": "Monster Beverage Corporation",
     "price": 81.48
   },
@@ -478,7 +478,7 @@
   {
     "name": "MSTR",
     "value": 33006775200.0,
-    "colorValue": 8.845532,
+    "colorValue": 8.845526,
     "corpName": "MicroStrategy Inc",
     "price": 133.88
   },
@@ -498,22 +498,22 @@
   },
   {
     "name": "NVDA",
-    "value": 4460564000000.0,
-    "colorValue": -2.2092676,
+    "value": 4459832000000.0,
+    "colorValue": -2.2410026,
     "corpName": "Nvidia Corp",
-    "price": 182.81
+    "price": 182.78
   },
   {
     "name": "NXPI",
     "value": 61750350900.0,
-    "colorValue": 0.9248896,
+    "colorValue": 0.924896,
     "corpName": "NXP Semiconductors N.V.",
     "price": 244.43
   },
   {
     "name": "ODFL",
     "value": 40989501500.0,
-    "colorValue": 4.1507263,
+    "colorValue": 4.1507177,
     "corpName": "Old Dominion Freight Line",
     "price": 193.21
   },
@@ -527,21 +527,21 @@
   {
     "name": "ORLY",
     "value": 5580181800.0,
-    "colorValue": 1.5229541,
+    "colorValue": 1.522946,
     "corpName": "O'Reilly Automotive, Inc.",
     "price": 96.66
   },
   {
     "name": "PANW",
     "value": 110537595000.0,
-    "colorValue": 2.6153166,
+    "colorValue": 2.6153262,
     "corpName": "Palo Alto Networks, Inc. Common Stock",
     "price": 166.95
   },
   {
     "name": "PAYX",
     "value": 33994732200.0,
-    "colorValue": 2.0655303,
+    "colorValue": 2.065539,
     "corpName": "Paychex Inc",
     "price": 94.38
   },
@@ -590,7 +590,7 @@
   {
     "name": "REGN",
     "value": 85256495500.0,
-    "colorValue": 2.4909024,
+    "colorValue": 2.4909105,
     "corpName": "Regeneron Pharmaceuticals Inc",
     "price": 803.17
   },
@@ -604,7 +604,7 @@
   {
     "name": "ROST",
     "value": 64628248200.0,
-    "colorValue": 0.8673272,
+    "colorValue": 0.86733514,
     "corpName": "Ross Stores Inc",
     "price": 196.54
   },
@@ -625,7 +625,7 @@
   {
     "name": "TEAM",
     "value": 13837476200.0,
-    "colorValue": -2.4283142,
+    "colorValue": -2.4283056,
     "corpName": "Atlassian Corporation Class A Common Stock",
     "price": 84.38
   },
@@ -695,7 +695,7 @@
   {
     "name": "XEL",
     "value": 47057848400.0,
-    "colorValue": 3.304625,
+    "colorValue": 3.304635,
     "corpName": "Xcel Energy, Inc.",
     "price": 81.59
   },
